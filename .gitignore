@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Large datasets (downloaded via scripts/, not for version control)
+data/
+
+# Large single-cell / genomics data files, wherever they end up
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.rda
+*.RData

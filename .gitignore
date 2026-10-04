@@ -11,3 +11,12 @@ data/
 *.rds
 *.rda
 *.RData
+
+# Editor settings
+.vscode/
+
+# Per-unit result tables (only summary CSVs are tracked)
+results/**/optotag_units_*.csv
+
+# Neurodata Without Borders files
+*.nwb

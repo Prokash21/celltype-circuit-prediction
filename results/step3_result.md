@@ -38,6 +38,7 @@ Test set. MSE in z-units over all neurons × windows × 10 steps. r = Pearson r 
 - api.brain-map.org still blocked; used the S3 mirror files from step 2 (`data/brain_observatory/`, not committed)
 - First run used alpha grid 1e-1 … 1e5 and the Cux2 population alpha landed on the top edge (1e5). Widened the grid to 1e7; the chosen alphas did not change, so 1e5 is a real minimum.
 - Cux2 per-neuron alpha is at the bottom edge (0.1): with 30 inputs and ~28k windows, regularisation barely matters there.
+- Lower alphas (<0.1) were not tested; with 30 inputs and ~28k windows the effect should be negligible.
 
 ## What I noticed
 - Both ridge models beat both baselines on both sessions (score +0.30 to +0.39). Most of the gain is at the far end of the horizon (step 10), where copy-last is bad.

@@ -35,6 +35,7 @@ Raw data goes to `data/` (not tracked by git).
 | --- | --- | --- |
 | 1 | Load one 2P session (Sst, VISp) and plot dF/F | [step1_result.md](results/step1_result.md) |
 | 2 | Copy-last and mean forecasting baselines (Sst, Cux2) | [step2_result.md](results/step2_result.md) |
+| 3 | Ridge forecasting, per neuron and population (Sst, Cux2) | [step3_result.md](results/step3_result.md) |
 
 ## Repo layout
 

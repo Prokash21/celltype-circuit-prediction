@@ -24,4 +24,7 @@ Date: 2026-10-12
 - allensdk import errors → pinned `setuptools<81`, `statsmodels<0.14.5`
 
 ## What I noticed
-- (draft, edit) Several neurons fire together at ~26, 41, 47 and 56 s.
+- Several neurons are co-active at ~26, 41, 47 and 56 s.
+- After the gratings start at 24.7 s, activity rises with some 3 s grating trials (checked with the stimulus table).
+- Events at ~41 s and ~47 s both match 225° grating trials (possible direction selectivity, to check later).
+- The last neuron declines slowly at the start, likely baseline drift.

@@ -20,3 +20,6 @@ results/**/optotag_units_*.csv
 
 # Neurodata Without Borders files
 *.nwb
+
+# Python virtual environment
+.venv/

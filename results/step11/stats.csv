@@ -1,0 +1,211 @@
+line,family,a,b,n,a_beats_b,ties,median_diff,mean_diff,p
+Cux2-CreERT2,ridge,S neuron,none,13,12,0,0.01744,0.01346,0.01709
+Cux2-CreERT2,ridge,S neuron,true,13,5,0,-0.0009395,-0.0005658,0.2439
+Cux2-CreERT2,ridge,S session,none,13,12,0,0.01678,0.01403,0.01709
+Cux2-CreERT2,ridge,S session,true,13,0,13,0,0,
+Cux2-CreERT2,ridge,S+b neuron,none,13,12,0,0.01704,0.01451,0.01343
+Cux2-CreERT2,ridge,S+b neuron,true,13,8,0,0.0002178,0.0004775,0.7354
+Cux2-CreERT2,ridge,S+b session,none,13,12,0,0.01678,0.01403,0.01709
+Cux2-CreERT2,ridge,S+b session,true,13,0,13,0,0,
+Cux2-CreERT2,ridge,R neuron,none,13,12,0,0.0176,0.01269,0.01709
+Cux2-CreERT2,ridge,R neuron,true,13,1,9,0,-0.001342,0.2733
+Cux2-CreERT2,ridge,R session,none,13,12,0,0.01678,0.01403,0.01709
+Cux2-CreERT2,ridge,R session,true,13,0,13,0,0,
+Cux2-CreERT2,ridge,A neuron,none,13,12,0,0.01646,0.01308,0.01709
+Cux2-CreERT2,ridge,A neuron,true,13,5,1,-0.000229,-0.0009479,0.1361
+Cux2-CreERT2,ridge,A session,none,13,12,0,0.01678,0.01403,0.01709
+Cux2-CreERT2,ridge,A session,true,13,0,13,0,0,
+Cux2-CreERT2,ridge,step 10 (a+b) neuron,none,13,12,0,0.01683,0.01429,0.01709
+Cux2-CreERT2,ridge,step 10 (a+b) neuron,true,13,5,2,0,0.0002571,0.9292
+Cux2-CreERT2,ridge,shuffled,none,13,12,0,0.01182,0.009184,0.02148
+Cux2-CreERT2,ridge,shuffled,true,13,0,0,-0.005244,-0.004846,0.0002441
+Cux2-CreERT2,ridge,true,none,13,12,0,0.01678,0.01403,0.01709
+Sst-IRES-Cre,ridge,S neuron,none,12,9,0,0.02255,0.01983,0.021
+Sst-IRES-Cre,ridge,S neuron,true,12,6,3,0.00198,0.002934,0.06632
+Sst-IRES-Cre,ridge,S session,none,12,9,0,0.0258,0.0169,0.05225
+Sst-IRES-Cre,ridge,S session,true,12,0,12,0,0,
+Sst-IRES-Cre,ridge,S+b neuron,none,12,9,0,0.02644,0.02041,0.021
+Sst-IRES-Cre,ridge,S+b neuron,true,12,7,4,0.002619,0.003508,0.02506
+Sst-IRES-Cre,ridge,S+b session,none,12,9,0,0.0258,0.0169,0.05225
+Sst-IRES-Cre,ridge,S+b session,true,12,0,12,0,0,
+Sst-IRES-Cre,ridge,R neuron,none,12,8,0,0.01998,0.008476,0.3394
+Sst-IRES-Cre,ridge,R neuron,true,12,0,6,-0.001291,-0.008424,0.02771
+Sst-IRES-Cre,ridge,R session,none,12,9,0,0.0258,0.01258,0.1514
+Sst-IRES-Cre,ridge,R session,true,12,0,11,0,-0.00432,0.3173
+Sst-IRES-Cre,ridge,A neuron,none,12,9,0,0.0235,0.02179,0.01611
+Sst-IRES-Cre,ridge,A neuron,true,12,7,4,0.004169,0.004893,0.02506
+Sst-IRES-Cre,ridge,A session,none,12,9,0,0.0258,0.0169,0.05225
+Sst-IRES-Cre,ridge,A session,true,12,0,12,0,0,
+Sst-IRES-Cre,ridge,step 10 (a+b) neuron,none,12,9,0,0.02466,0.02126,0.021
+Sst-IRES-Cre,ridge,step 10 (a+b) neuron,true,12,7,3,0.004543,0.004362,0.02088
+Sst-IRES-Cre,ridge,shuffled,none,12,0,0,-0.03027,-0.02883,0.0004883
+Sst-IRES-Cre,ridge,shuffled,true,12,1,0,-0.05718,-0.04573,0.003418
+Sst-IRES-Cre,ridge,true,none,12,9,0,0.0258,0.0169,0.05225
+Vip-IRES-Cre,ridge,S neuron,none,12,10,0,0.02776,0.02553,0.002441
+Vip-IRES-Cre,ridge,S neuron,true,12,7,4,0.002015,0.002706,0.01729
+Vip-IRES-Cre,ridge,S session,none,12,10,0,0.02505,0.02282,0.006836
+Vip-IRES-Cre,ridge,S session,true,12,0,12,0,0,
+Vip-IRES-Cre,ridge,S+b neuron,none,12,10,0,0.02723,0.02463,0.003418
+Vip-IRES-Cre,ridge,S+b neuron,true,12,6,4,4.251e-05,0.001814,0.09289
+Vip-IRES-Cre,ridge,S+b session,none,12,10,0,0.02505,0.02282,0.006836
+Vip-IRES-Cre,ridge,S+b session,true,12,0,12,0,0,
+Vip-IRES-Cre,ridge,R neuron,none,12,8,0,0.01885,-0.02288,0.6772
+Vip-IRES-Cre,ridge,R neuron,true,12,2,5,0,-0.0457,0.2367
+Vip-IRES-Cre,ridge,R session,none,12,8,0,0.01531,-0.03852,0.791
+Vip-IRES-Cre,ridge,R session,true,12,1,7,0,-0.06134,0.07962
+Vip-IRES-Cre,ridge,A neuron,none,12,11,0,0.02701,0.02685,0.0009766
+Vip-IRES-Cre,ridge,A neuron,true,12,6,4,0.0007463,0.004031,0.04995
+Vip-IRES-Cre,ridge,A session,none,12,10,0,0.02505,0.02282,0.006836
+Vip-IRES-Cre,ridge,A session,true,12,0,12,0,0,
+Vip-IRES-Cre,ridge,step 10 (a+b) neuron,none,12,10,0,0.02541,0.02404,0.003418
+Vip-IRES-Cre,ridge,step 10 (a+b) neuron,true,12,4,5,0,0.001223,0.398
+Vip-IRES-Cre,ridge,shuffled,none,12,2,0,-0.01806,-0.02722,0.002441
+Vip-IRES-Cre,ridge,shuffled,true,12,2,0,-0.04598,-0.05004,0.002441
+Vip-IRES-Cre,ridge,true,none,12,10,0,0.02505,0.02282,0.006836
+Pvalb-IRES-Cre,ridge,S neuron,none,9,9,0,0.04285,0.05202,0.003906
+Pvalb-IRES-Cre,ridge,S neuron,true,9,1,2,-0.004782,-0.00381,0.04252
+Pvalb-IRES-Cre,ridge,S session,none,9,9,0,0.05082,0.05583,0.003906
+Pvalb-IRES-Cre,ridge,S session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,ridge,S+b neuron,none,9,9,0,0.03799,0.04459,0.003906
+Pvalb-IRES-Cre,ridge,S+b neuron,true,9,1,4,0,-0.01124,0.07962
+Pvalb-IRES-Cre,ridge,S+b session,none,9,9,0,0.05082,0.05583,0.003906
+Pvalb-IRES-Cre,ridge,S+b session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,ridge,R neuron,none,9,5,0,0.006922,-0.107,0.5703
+Pvalb-IRES-Cre,ridge,R neuron,true,9,0,1,-0.02955,-0.1629,0.01172
+Pvalb-IRES-Cre,ridge,R session,none,9,5,0,0.02182,-0.118,0.6523
+Pvalb-IRES-Cre,ridge,R session,true,9,0,5,0,-0.1738,0.06789
+Pvalb-IRES-Cre,ridge,A neuron,none,9,9,0,0.04285,0.05147,0.003906
+Pvalb-IRES-Cre,ridge,A neuron,true,9,1,4,0,-0.004359,0.07962
+Pvalb-IRES-Cre,ridge,A session,none,9,9,0,0.05082,0.05583,0.003906
+Pvalb-IRES-Cre,ridge,A session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,ridge,step 10 (a+b) neuron,none,9,8,0,0.03454,0.04201,0.05469
+Pvalb-IRES-Cre,ridge,step 10 (a+b) neuron,true,9,1,4,0,-0.01381,0.07962
+Pvalb-IRES-Cre,ridge,shuffled,none,9,0,0,-0.06934,-0.1068,0.003906
+Pvalb-IRES-Cre,ridge,shuffled,true,9,0,0,-0.112,-0.1626,0.003906
+Pvalb-IRES-Cre,ridge,true,none,9,9,0,0.05082,0.05583,0.003906
+all lines,ridge,S neuron,none,46,40,0,0.01879,0.02581,1.55e-08
+all lines,ridge,S neuron,true,46,19,9,0,0.0005659,0.411
+all lines,ridge,S session,none,46,40,0,0.02052,0.02525,1.278e-07
+all lines,ridge,S session,true,46,0,46,0,0,
+all lines,ridge,S+b neuron,none,46,40,0,0.01968,0.02457,3.346e-08
+all lines,ridge,S+b neuron,true,46,22,12,0,-0.0006755,0.1392
+all lines,ridge,S+b session,none,46,40,0,0.02052,0.02525,1.278e-07
+all lines,ridge,S+b session,true,46,0,46,0,0,
+all lines,ridge,R neuron,none,46,33,0,0.01719,-0.02111,0.1242
+all lines,ridge,R neuron,true,46,3,21,0,-0.04636,0.0002399
+all lines,ridge,R session,none,46,34,0,0.01857,-0.02588,0.0804
+all lines,ridge,R session,true,46,1,36,0,-0.05113,0.00691
+all lines,ridge,A neuron,none,46,41,0,0.02042,0.02646,1.014e-09
+all lines,ridge,A neuron,true,46,19,13,0,0.001207,0.2565
+all lines,ridge,A session,none,46,40,0,0.02052,0.02525,1.278e-07
+all lines,ridge,A session,true,46,0,46,0,0,
+all lines,ridge,step 10 (a+b) neuron,none,46,39,0,0.02012,0.02408,4.714e-07
+all lines,ridge,step 10 (a+b) neuron,true,46,17,14,0,-0.001173,0.3126
+all lines,ridge,shuffled,none,46,14,0,-0.01924,-0.03292,2.132e-05
+all lines,ridge,shuffled,true,46,3,0,-0.03604,-0.05817,2.472e-10
+all lines,ridge,true,none,46,40,0,0.02052,0.02525,1.278e-07
+Cux2-CreERT2,MLP,S neuron,none,13,13,0,0.01254,0.01316,0.0002441
+Cux2-CreERT2,MLP,S neuron,true,13,9,0,0.0004061,8.876e-05,0.4548
+Cux2-CreERT2,MLP,S session,none,13,13,0,0.0142,0.01307,0.0002441
+Cux2-CreERT2,MLP,S session,true,13,0,13,0,0,
+Cux2-CreERT2,MLP,S+b neuron,none,13,13,0,0.01409,0.01357,0.0002441
+Cux2-CreERT2,MLP,S+b neuron,true,13,8,0,0.0004981,0.000496,0.09424
+Cux2-CreERT2,MLP,S+b session,none,13,13,0,0.0142,0.01307,0.0002441
+Cux2-CreERT2,MLP,S+b session,true,13,0,13,0,0,
+Cux2-CreERT2,MLP,R neuron,none,13,13,0,0.0142,0.01277,0.0002441
+Cux2-CreERT2,MLP,R neuron,true,13,2,9,0,-0.0003014,1
+Cux2-CreERT2,MLP,R session,none,13,13,0,0.0142,0.01307,0.0002441
+Cux2-CreERT2,MLP,R session,true,13,0,13,0,0,
+Cux2-CreERT2,MLP,A neuron,none,13,13,0,0.0135,0.01293,0.0002441
+Cux2-CreERT2,MLP,A neuron,true,13,8,1,0.0002766,-0.0001467,0.4328
+Cux2-CreERT2,MLP,A session,none,13,13,0,0.0142,0.01307,0.0002441
+Cux2-CreERT2,MLP,A session,true,13,0,13,0,0,
+Cux2-CreERT2,MLP,step 10 (a+b) neuron,none,13,13,0,0.01424,0.01348,0.0002441
+Cux2-CreERT2,MLP,step 10 (a+b) neuron,true,13,9,2,0.0003688,0.0004009,0.05046
+Cux2-CreERT2,MLP,shuffled,none,13,13,0,0.01096,0.01007,0.0002441
+Cux2-CreERT2,MLP,shuffled,true,13,0,0,-0.003205,-0.003004,0.0002441
+Cux2-CreERT2,MLP,true,none,13,13,0,0.0142,0.01307,0.0002441
+Sst-IRES-Cre,MLP,S neuron,none,12,9,0,0.006952,0.002894,0.4697
+Sst-IRES-Cre,MLP,S neuron,true,12,4,3,0,0.002448,0.7671
+Sst-IRES-Cre,MLP,S session,none,12,9,0,0.006952,0.0004459,0.5693
+Sst-IRES-Cre,MLP,S session,true,12,0,12,0,0,
+Sst-IRES-Cre,MLP,S+b neuron,none,12,9,0,0.00785,0.0008098,0.5693
+Sst-IRES-Cre,MLP,S+b neuron,true,12,4,4,0,0.0003639,0.2626
+Sst-IRES-Cre,MLP,S+b session,none,12,9,0,0.006952,0.0004459,0.5693
+Sst-IRES-Cre,MLP,S+b session,true,12,0,12,0,0,
+Sst-IRES-Cre,MLP,R neuron,none,12,8,0,0.004746,-0.0001493,0.5186
+Sst-IRES-Cre,MLP,R neuron,true,12,1,6,0,-0.0005952,0.3454
+Sst-IRES-Cre,MLP,R session,none,12,9,0,0.006952,0.0002266,0.5693
+Sst-IRES-Cre,MLP,R session,true,12,0,11,0,-0.0002193,0.3173
+Sst-IRES-Cre,MLP,A neuron,none,12,9,0,0.00611,0.0005763,0.5693
+Sst-IRES-Cre,MLP,A neuron,true,12,4,4,0,0.0001304,0.8886
+Sst-IRES-Cre,MLP,A session,none,12,9,0,0.006952,0.0004459,0.5693
+Sst-IRES-Cre,MLP,A session,true,12,0,12,0,0,
+Sst-IRES-Cre,MLP,step 10 (a+b) neuron,none,12,8,0,0.007609,0.0009335,0.6221
+Sst-IRES-Cre,MLP,step 10 (a+b) neuron,true,12,5,3,0,0.0004876,0.3139
+Sst-IRES-Cre,MLP,shuffled,none,12,0,0,-0.02222,-0.02766,0.0004883
+Sst-IRES-Cre,MLP,shuffled,true,12,1,0,-0.0292,-0.02811,0.006836
+Sst-IRES-Cre,MLP,true,none,12,9,0,0.006952,0.0004459,0.5693
+Vip-IRES-Cre,MLP,S neuron,none,12,12,0,0.02059,0.02311,0.0004883
+Vip-IRES-Cre,MLP,S neuron,true,12,5,4,0,-0.0002412,0.8886
+Vip-IRES-Cre,MLP,S session,none,12,12,0,0.02147,0.02335,0.0004883
+Vip-IRES-Cre,MLP,S session,true,12,0,12,0,0,
+Vip-IRES-Cre,MLP,S+b neuron,none,12,12,0,0.01932,0.02128,0.0004883
+Vip-IRES-Cre,MLP,S+b neuron,true,12,4,4,0,-0.002073,0.7794
+Vip-IRES-Cre,MLP,S+b session,none,12,12,0,0.02147,0.02335,0.0004883
+Vip-IRES-Cre,MLP,S+b session,true,12,0,12,0,0,
+Vip-IRES-Cre,MLP,R neuron,none,12,8,0,0.01516,-0.04252,0.3394
+Vip-IRES-Cre,MLP,R neuron,true,12,1,5,-0.00168,-0.06587,0.02799
+Vip-IRES-Cre,MLP,R session,none,12,8,0,0.01433,-0.05393,0.8501
+Vip-IRES-Cre,MLP,R session,true,12,0,7,0,-0.07728,0.04311
+Vip-IRES-Cre,MLP,A neuron,none,12,12,0,0.02033,0.0239,0.0004883
+Vip-IRES-Cre,MLP,A neuron,true,12,6,4,0.0002086,0.0005506,0.1614
+Vip-IRES-Cre,MLP,A session,none,12,12,0,0.02147,0.02335,0.0004883
+Vip-IRES-Cre,MLP,A session,true,12,0,12,0,0,
+Vip-IRES-Cre,MLP,step 10 (a+b) neuron,none,12,12,0,0.02236,0.02341,0.0004883
+Vip-IRES-Cre,MLP,step 10 (a+b) neuron,true,12,5,5,0,5.793e-05,0.398
+Vip-IRES-Cre,MLP,shuffled,none,12,0,0,-0.08135,-0.08936,0.0004883
+Vip-IRES-Cre,MLP,shuffled,true,12,0,0,-0.09934,-0.1127,0.0004883
+Vip-IRES-Cre,MLP,true,none,12,12,0,0.02147,0.02335,0.0004883
+Pvalb-IRES-Cre,MLP,S neuron,none,9,9,0,0.02887,0.06766,0.003906
+Pvalb-IRES-Cre,MLP,S neuron,true,9,1,2,-0.0005415,-0.004124,0.06298
+Pvalb-IRES-Cre,MLP,S session,none,9,9,0,0.03519,0.07178,0.003906
+Pvalb-IRES-Cre,MLP,S session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,MLP,S+b neuron,none,9,9,0,0.02887,0.06148,0.003906
+Pvalb-IRES-Cre,MLP,S+b neuron,true,9,1,4,0,-0.0103,0.138
+Pvalb-IRES-Cre,MLP,S+b session,none,9,9,0,0.03519,0.07178,0.003906
+Pvalb-IRES-Cre,MLP,S+b session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,MLP,R neuron,none,9,6,0,0.006107,-0.2129,1
+Pvalb-IRES-Cre,MLP,R neuron,true,9,0,1,-0.01307,-0.2847,0.01172
+Pvalb-IRES-Cre,MLP,R session,none,9,5,0,0.008099,-0.2326,0.9102
+Pvalb-IRES-Cre,MLP,R session,true,9,0,5,0,-0.3044,0.06789
+Pvalb-IRES-Cre,MLP,A neuron,none,9,9,0,0.02887,0.06664,0.003906
+Pvalb-IRES-Cre,MLP,A neuron,true,9,0,4,-1.14e-05,-0.00514,0.04311
+Pvalb-IRES-Cre,MLP,A session,none,9,9,0,0.03519,0.07178,0.003906
+Pvalb-IRES-Cre,MLP,A session,true,9,0,9,0,0,
+Pvalb-IRES-Cre,MLP,step 10 (a+b) neuron,none,9,9,0,0.02563,0.06993,0.003906
+Pvalb-IRES-Cre,MLP,step 10 (a+b) neuron,true,9,2,4,0,-0.001853,0.3452
+Pvalb-IRES-Cre,MLP,shuffled,none,9,0,0,-0.2555,-0.2807,0.003906
+Pvalb-IRES-Cre,MLP,shuffled,true,9,0,0,-0.2807,-0.3525,0.003906
+Pvalb-IRES-Cre,MLP,true,none,9,9,0,0.03519,0.07178,0.003906
+all lines,MLP,S neuron,none,46,43,0,0.0151,0.02374,3.346e-08
+all lines,MLP,S neuron,true,46,19,9,0,-0.0002061,0.5614
+all lines,MLP,S session,none,46,43,0,0.01477,0.02395,1.947e-07
+all lines,MLP,S session,true,46,0,46,0,0,
+all lines,MLP,S+b neuron,none,46,43,0,0.01511,0.02163,2.295e-07
+all lines,MLP,S+b neuron,true,46,17,12,0,-0.002322,0.6505
+all lines,MLP,S+b session,none,46,43,0,0.01477,0.02395,1.947e-07
+all lines,MLP,S+b session,true,46,0,46,0,0,
+all lines,MLP,R neuron,none,46,35,0,0.01233,-0.04917,0.01781
+all lines,MLP,R neuron,true,46,4,21,0,-0.07312,0.0004458
+all lines,MLP,R session,none,46,35,0,0.01214,-0.05582,0.09052
+all lines,MLP,R session,true,46,0,36,0,-0.07977,0.005062
+all lines,MLP,A neuron,none,46,43,0,0.01494,0.02308,1.648e-07
+all lines,MLP,A neuron,true,46,18,13,0,-0.0008694,0.7681
+all lines,MLP,A session,none,46,43,0,0.01477,0.02395,1.947e-07
+all lines,MLP,A session,true,46,0,46,0,0,
+all lines,MLP,step 10 (a+b) neuron,none,46,42,0,0.01485,0.02384,1.947e-07
+all lines,MLP,step 10 (a+b) neuron,true,46,21,14,0,-0.0001069,0.1447
+all lines,MLP,shuffled,none,46,13,0,-0.03616,-0.0826,1.648e-07
+all lines,MLP,shuffled,true,46,1,0,-0.0411,-0.1065,1.054e-11
+all lines,MLP,true,none,46,43,0,0.01477,0.02395,1.947e-07

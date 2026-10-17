@@ -1,0 +1,1105 @@
+id,line,features,scheme,clf,pred
+501271265,Cux2,all 8,5 folds,logreg,Cux2
+501704220,Cux2,all 8,5 folds,logreg,Cux2
+501836392,Cux2,all 8,5 folds,logreg,Cux2
+502115959,Cux2,all 8,5 folds,logreg,Cux2
+502205092,Cux2,all 8,5 folds,logreg,Cux2
+503109347,Cux2,all 8,5 folds,logreg,Cux2
+510514474,Cux2,all 8,5 folds,logreg,Cux2
+510517131,Cux2,all 8,5 folds,logreg,Cux2
+524691284,Cux2,all 8,5 folds,logreg,Cux2
+645413759,Cux2,all 8,5 folds,logreg,Cux2
+660513003,Cux2,all 8,5 folds,logreg,Cux2
+702934964,Cux2,all 8,5 folds,logreg,Cux2
+712178511,Cux2,all 8,5 folds,logreg,Cux2
+573720508,Sst,all 8,5 folds,logreg,Sst
+576095926,Sst,all 8,5 folds,logreg,Vip
+580043440,Sst,all 8,5 folds,logreg,Sst
+580163817,Sst,all 8,5 folds,logreg,Sst
+581150104,Sst,all 8,5 folds,logreg,Sst
+590047029,Sst,all 8,5 folds,logreg,Sst
+596779487,Sst,all 8,5 folds,logreg,Sst
+598635821,Sst,all 8,5 folds,logreg,Sst
+601423209,Sst,all 8,5 folds,logreg,Sst
+609894681,Sst,all 8,5 folds,logreg,Sst
+612044635,Sst,all 8,5 folds,logreg,Vip
+613968705,Sst,all 8,5 folds,logreg,Sst
+583279803,Vip,all 8,5 folds,logreg,Vip
+606353987,Vip,all 8,5 folds,logreg,Vip
+612543999,Vip,all 8,5 folds,logreg,Vip
+650079244,Vip,all 8,5 folds,logreg,Vip
+652091264,Vip,all 8,5 folds,logreg,Vip
+657078119,Vip,all 8,5 folds,logreg,Vip
+657389972,Vip,all 8,5 folds,logreg,Sst
+657390171,Vip,all 8,5 folds,logreg,Vip
+657650110,Vip,all 8,5 folds,logreg,Sst
+659495103,Vip,all 8,5 folds,logreg,Pvalb
+662361096,Vip,all 8,5 folds,logreg,Vip
+663479824,Vip,all 8,5 folds,logreg,Pvalb
+669861524,Pvalb,all 8,5 folds,logreg,Sst
+670395999,Pvalb,all 8,5 folds,logreg,Sst
+670728674,Pvalb,all 8,5 folds,logreg,Pvalb
+671164733,Pvalb,all 8,5 folds,logreg,Pvalb
+672206735,Pvalb,all 8,5 folds,logreg,Sst
+675477919,Pvalb,all 8,5 folds,logreg,Pvalb
+692345003,Pvalb,all 8,5 folds,logreg,Pvalb
+710504563,Pvalb,all 8,5 folds,logreg,Sst
+710778377,Pvalb,all 8,5 folds,logreg,Pvalb
+501271265,Cux2,all 8,5 folds,gboost,Cux2
+501704220,Cux2,all 8,5 folds,gboost,Cux2
+501836392,Cux2,all 8,5 folds,gboost,Cux2
+502115959,Cux2,all 8,5 folds,gboost,Pvalb
+502205092,Cux2,all 8,5 folds,gboost,Cux2
+503109347,Cux2,all 8,5 folds,gboost,Cux2
+510514474,Cux2,all 8,5 folds,gboost,Cux2
+510517131,Cux2,all 8,5 folds,gboost,Cux2
+524691284,Cux2,all 8,5 folds,gboost,Pvalb
+645413759,Cux2,all 8,5 folds,gboost,Cux2
+660513003,Cux2,all 8,5 folds,gboost,Cux2
+702934964,Cux2,all 8,5 folds,gboost,Cux2
+712178511,Cux2,all 8,5 folds,gboost,Cux2
+573720508,Sst,all 8,5 folds,gboost,Cux2
+576095926,Sst,all 8,5 folds,gboost,Cux2
+580043440,Sst,all 8,5 folds,gboost,Cux2
+580163817,Sst,all 8,5 folds,gboost,Pvalb
+581150104,Sst,all 8,5 folds,gboost,Cux2
+590047029,Sst,all 8,5 folds,gboost,Cux2
+596779487,Sst,all 8,5 folds,gboost,Cux2
+598635821,Sst,all 8,5 folds,gboost,Cux2
+601423209,Sst,all 8,5 folds,gboost,Pvalb
+609894681,Sst,all 8,5 folds,gboost,Cux2
+612044635,Sst,all 8,5 folds,gboost,Cux2
+613968705,Sst,all 8,5 folds,gboost,Cux2
+583279803,Vip,all 8,5 folds,gboost,Cux2
+606353987,Vip,all 8,5 folds,gboost,Cux2
+612543999,Vip,all 8,5 folds,gboost,Cux2
+650079244,Vip,all 8,5 folds,gboost,Pvalb
+652091264,Vip,all 8,5 folds,gboost,Cux2
+657078119,Vip,all 8,5 folds,gboost,Cux2
+657389972,Vip,all 8,5 folds,gboost,Cux2
+657390171,Vip,all 8,5 folds,gboost,Cux2
+657650110,Vip,all 8,5 folds,gboost,Pvalb
+659495103,Vip,all 8,5 folds,gboost,Cux2
+662361096,Vip,all 8,5 folds,gboost,Cux2
+663479824,Vip,all 8,5 folds,gboost,Cux2
+669861524,Pvalb,all 8,5 folds,gboost,Cux2
+670395999,Pvalb,all 8,5 folds,gboost,Cux2
+670728674,Pvalb,all 8,5 folds,gboost,Cux2
+671164733,Pvalb,all 8,5 folds,gboost,Pvalb
+672206735,Pvalb,all 8,5 folds,gboost,Cux2
+675477919,Pvalb,all 8,5 folds,gboost,Cux2
+692345003,Pvalb,all 8,5 folds,gboost,Cux2
+710504563,Pvalb,all 8,5 folds,gboost,Cux2
+710778377,Pvalb,all 8,5 folds,gboost,Pvalb
+501271265,Cux2,all 8,5 folds,sel,Cux2
+501704220,Cux2,all 8,5 folds,sel,Cux2
+501836392,Cux2,all 8,5 folds,sel,Cux2
+502115959,Cux2,all 8,5 folds,sel,Cux2
+502205092,Cux2,all 8,5 folds,sel,Cux2
+503109347,Cux2,all 8,5 folds,sel,Cux2
+510514474,Cux2,all 8,5 folds,sel,Cux2
+510517131,Cux2,all 8,5 folds,sel,Cux2
+524691284,Cux2,all 8,5 folds,sel,Cux2
+645413759,Cux2,all 8,5 folds,sel,Cux2
+660513003,Cux2,all 8,5 folds,sel,Cux2
+702934964,Cux2,all 8,5 folds,sel,Cux2
+712178511,Cux2,all 8,5 folds,sel,Cux2
+573720508,Sst,all 8,5 folds,sel,Sst
+576095926,Sst,all 8,5 folds,sel,Vip
+580043440,Sst,all 8,5 folds,sel,Sst
+580163817,Sst,all 8,5 folds,sel,Sst
+581150104,Sst,all 8,5 folds,sel,Sst
+590047029,Sst,all 8,5 folds,sel,Sst
+596779487,Sst,all 8,5 folds,sel,Sst
+598635821,Sst,all 8,5 folds,sel,Sst
+601423209,Sst,all 8,5 folds,sel,Sst
+609894681,Sst,all 8,5 folds,sel,Sst
+612044635,Sst,all 8,5 folds,sel,Vip
+613968705,Sst,all 8,5 folds,sel,Sst
+583279803,Vip,all 8,5 folds,sel,Vip
+606353987,Vip,all 8,5 folds,sel,Vip
+612543999,Vip,all 8,5 folds,sel,Vip
+650079244,Vip,all 8,5 folds,sel,Vip
+652091264,Vip,all 8,5 folds,sel,Vip
+657078119,Vip,all 8,5 folds,sel,Vip
+657389972,Vip,all 8,5 folds,sel,Sst
+657390171,Vip,all 8,5 folds,sel,Vip
+657650110,Vip,all 8,5 folds,sel,Sst
+659495103,Vip,all 8,5 folds,sel,Pvalb
+662361096,Vip,all 8,5 folds,sel,Vip
+663479824,Vip,all 8,5 folds,sel,Pvalb
+669861524,Pvalb,all 8,5 folds,sel,Sst
+670395999,Pvalb,all 8,5 folds,sel,Sst
+670728674,Pvalb,all 8,5 folds,sel,Pvalb
+671164733,Pvalb,all 8,5 folds,sel,Pvalb
+672206735,Pvalb,all 8,5 folds,sel,Sst
+675477919,Pvalb,all 8,5 folds,sel,Pvalb
+692345003,Pvalb,all 8,5 folds,sel,Pvalb
+710504563,Pvalb,all 8,5 folds,sel,Sst
+710778377,Pvalb,all 8,5 folds,sel,Pvalb
+501271265,Cux2,all 8,leave one mouse out,logreg,Cux2
+501704220,Cux2,all 8,leave one mouse out,logreg,Cux2
+501836392,Cux2,all 8,leave one mouse out,logreg,Cux2
+502115959,Cux2,all 8,leave one mouse out,logreg,Cux2
+502205092,Cux2,all 8,leave one mouse out,logreg,Cux2
+503109347,Cux2,all 8,leave one mouse out,logreg,Cux2
+510514474,Cux2,all 8,leave one mouse out,logreg,Cux2
+510517131,Cux2,all 8,leave one mouse out,logreg,Cux2
+524691284,Cux2,all 8,leave one mouse out,logreg,Cux2
+645413759,Cux2,all 8,leave one mouse out,logreg,Cux2
+660513003,Cux2,all 8,leave one mouse out,logreg,Cux2
+702934964,Cux2,all 8,leave one mouse out,logreg,Cux2
+712178511,Cux2,all 8,leave one mouse out,logreg,Cux2
+573720508,Sst,all 8,leave one mouse out,logreg,Sst
+576095926,Sst,all 8,leave one mouse out,logreg,Sst
+580043440,Sst,all 8,leave one mouse out,logreg,Sst
+580163817,Sst,all 8,leave one mouse out,logreg,Sst
+581150104,Sst,all 8,leave one mouse out,logreg,Sst
+590047029,Sst,all 8,leave one mouse out,logreg,Sst
+596779487,Sst,all 8,leave one mouse out,logreg,Sst
+598635821,Sst,all 8,leave one mouse out,logreg,Pvalb
+601423209,Sst,all 8,leave one mouse out,logreg,Sst
+609894681,Sst,all 8,leave one mouse out,logreg,Sst
+612044635,Sst,all 8,leave one mouse out,logreg,Vip
+613968705,Sst,all 8,leave one mouse out,logreg,Sst
+583279803,Vip,all 8,leave one mouse out,logreg,Vip
+606353987,Vip,all 8,leave one mouse out,logreg,Vip
+612543999,Vip,all 8,leave one mouse out,logreg,Vip
+650079244,Vip,all 8,leave one mouse out,logreg,Vip
+652091264,Vip,all 8,leave one mouse out,logreg,Vip
+657078119,Vip,all 8,leave one mouse out,logreg,Vip
+657389972,Vip,all 8,leave one mouse out,logreg,Sst
+657390171,Vip,all 8,leave one mouse out,logreg,Vip
+657650110,Vip,all 8,leave one mouse out,logreg,Sst
+659495103,Vip,all 8,leave one mouse out,logreg,Pvalb
+662361096,Vip,all 8,leave one mouse out,logreg,Vip
+663479824,Vip,all 8,leave one mouse out,logreg,Pvalb
+669861524,Pvalb,all 8,leave one mouse out,logreg,Sst
+670395999,Pvalb,all 8,leave one mouse out,logreg,Vip
+670728674,Pvalb,all 8,leave one mouse out,logreg,Pvalb
+671164733,Pvalb,all 8,leave one mouse out,logreg,Vip
+672206735,Pvalb,all 8,leave one mouse out,logreg,Sst
+675477919,Pvalb,all 8,leave one mouse out,logreg,Pvalb
+692345003,Pvalb,all 8,leave one mouse out,logreg,Pvalb
+710504563,Pvalb,all 8,leave one mouse out,logreg,Sst
+710778377,Pvalb,all 8,leave one mouse out,logreg,Sst
+501271265,Cux2,all 8,leave one mouse out,gboost,Cux2
+501704220,Cux2,all 8,leave one mouse out,gboost,Cux2
+501836392,Cux2,all 8,leave one mouse out,gboost,Cux2
+502115959,Cux2,all 8,leave one mouse out,gboost,Cux2
+502205092,Cux2,all 8,leave one mouse out,gboost,Cux2
+503109347,Cux2,all 8,leave one mouse out,gboost,Cux2
+510514474,Cux2,all 8,leave one mouse out,gboost,Cux2
+510517131,Cux2,all 8,leave one mouse out,gboost,Cux2
+524691284,Cux2,all 8,leave one mouse out,gboost,Cux2
+645413759,Cux2,all 8,leave one mouse out,gboost,Cux2
+660513003,Cux2,all 8,leave one mouse out,gboost,Cux2
+702934964,Cux2,all 8,leave one mouse out,gboost,Cux2
+712178511,Cux2,all 8,leave one mouse out,gboost,Cux2
+573720508,Sst,all 8,leave one mouse out,gboost,Sst
+576095926,Sst,all 8,leave one mouse out,gboost,Vip
+580043440,Sst,all 8,leave one mouse out,gboost,Sst
+580163817,Sst,all 8,leave one mouse out,gboost,Pvalb
+581150104,Sst,all 8,leave one mouse out,gboost,Sst
+590047029,Sst,all 8,leave one mouse out,gboost,Vip
+596779487,Sst,all 8,leave one mouse out,gboost,Sst
+598635821,Sst,all 8,leave one mouse out,gboost,Pvalb
+601423209,Sst,all 8,leave one mouse out,gboost,Sst
+609894681,Sst,all 8,leave one mouse out,gboost,Sst
+612044635,Sst,all 8,leave one mouse out,gboost,Vip
+613968705,Sst,all 8,leave one mouse out,gboost,Cux2
+583279803,Vip,all 8,leave one mouse out,gboost,Pvalb
+606353987,Vip,all 8,leave one mouse out,gboost,Vip
+612543999,Vip,all 8,leave one mouse out,gboost,Vip
+650079244,Vip,all 8,leave one mouse out,gboost,Vip
+652091264,Vip,all 8,leave one mouse out,gboost,Vip
+657078119,Vip,all 8,leave one mouse out,gboost,Sst
+657389972,Vip,all 8,leave one mouse out,gboost,Sst
+657390171,Vip,all 8,leave one mouse out,gboost,Pvalb
+657650110,Vip,all 8,leave one mouse out,gboost,Sst
+659495103,Vip,all 8,leave one mouse out,gboost,Sst
+662361096,Vip,all 8,leave one mouse out,gboost,Vip
+663479824,Vip,all 8,leave one mouse out,gboost,Sst
+669861524,Pvalb,all 8,leave one mouse out,gboost,Sst
+670395999,Pvalb,all 8,leave one mouse out,gboost,Pvalb
+670728674,Pvalb,all 8,leave one mouse out,gboost,Pvalb
+671164733,Pvalb,all 8,leave one mouse out,gboost,Pvalb
+672206735,Pvalb,all 8,leave one mouse out,gboost,Vip
+675477919,Pvalb,all 8,leave one mouse out,gboost,Vip
+692345003,Pvalb,all 8,leave one mouse out,gboost,Vip
+710504563,Pvalb,all 8,leave one mouse out,gboost,Sst
+710778377,Pvalb,all 8,leave one mouse out,gboost,Pvalb
+501271265,Cux2,all 8,leave one mouse out,sel,Cux2
+501704220,Cux2,all 8,leave one mouse out,sel,Cux2
+501836392,Cux2,all 8,leave one mouse out,sel,Cux2
+502115959,Cux2,all 8,leave one mouse out,sel,Cux2
+502205092,Cux2,all 8,leave one mouse out,sel,Cux2
+503109347,Cux2,all 8,leave one mouse out,sel,Cux2
+510514474,Cux2,all 8,leave one mouse out,sel,Cux2
+510517131,Cux2,all 8,leave one mouse out,sel,Cux2
+524691284,Cux2,all 8,leave one mouse out,sel,Cux2
+645413759,Cux2,all 8,leave one mouse out,sel,Cux2
+660513003,Cux2,all 8,leave one mouse out,sel,Cux2
+702934964,Cux2,all 8,leave one mouse out,sel,Cux2
+712178511,Cux2,all 8,leave one mouse out,sel,Cux2
+573720508,Sst,all 8,leave one mouse out,sel,Sst
+576095926,Sst,all 8,leave one mouse out,sel,Sst
+580043440,Sst,all 8,leave one mouse out,sel,Sst
+580163817,Sst,all 8,leave one mouse out,sel,Sst
+581150104,Sst,all 8,leave one mouse out,sel,Sst
+590047029,Sst,all 8,leave one mouse out,sel,Sst
+596779487,Sst,all 8,leave one mouse out,sel,Sst
+598635821,Sst,all 8,leave one mouse out,sel,Pvalb
+601423209,Sst,all 8,leave one mouse out,sel,Sst
+609894681,Sst,all 8,leave one mouse out,sel,Sst
+612044635,Sst,all 8,leave one mouse out,sel,Vip
+613968705,Sst,all 8,leave one mouse out,sel,Sst
+583279803,Vip,all 8,leave one mouse out,sel,Vip
+606353987,Vip,all 8,leave one mouse out,sel,Vip
+612543999,Vip,all 8,leave one mouse out,sel,Vip
+650079244,Vip,all 8,leave one mouse out,sel,Vip
+652091264,Vip,all 8,leave one mouse out,sel,Vip
+657078119,Vip,all 8,leave one mouse out,sel,Vip
+657389972,Vip,all 8,leave one mouse out,sel,Sst
+657390171,Vip,all 8,leave one mouse out,sel,Vip
+657650110,Vip,all 8,leave one mouse out,sel,Sst
+659495103,Vip,all 8,leave one mouse out,sel,Pvalb
+662361096,Vip,all 8,leave one mouse out,sel,Vip
+663479824,Vip,all 8,leave one mouse out,sel,Pvalb
+669861524,Pvalb,all 8,leave one mouse out,sel,Sst
+670395999,Pvalb,all 8,leave one mouse out,sel,Vip
+670728674,Pvalb,all 8,leave one mouse out,sel,Pvalb
+671164733,Pvalb,all 8,leave one mouse out,sel,Vip
+672206735,Pvalb,all 8,leave one mouse out,sel,Sst
+675477919,Pvalb,all 8,leave one mouse out,sel,Pvalb
+692345003,Pvalb,all 8,leave one mouse out,sel,Pvalb
+710504563,Pvalb,all 8,leave one mouse out,sel,Sst
+710778377,Pvalb,all 8,leave one mouse out,sel,Sst
+501271265,Cux2,n neurons + depth,5 folds,logreg,Cux2
+501704220,Cux2,n neurons + depth,5 folds,logreg,Vip
+501836392,Cux2,n neurons + depth,5 folds,logreg,Cux2
+502115959,Cux2,n neurons + depth,5 folds,logreg,Cux2
+502205092,Cux2,n neurons + depth,5 folds,logreg,Cux2
+503109347,Cux2,n neurons + depth,5 folds,logreg,Cux2
+510514474,Cux2,n neurons + depth,5 folds,logreg,Cux2
+510517131,Cux2,n neurons + depth,5 folds,logreg,Cux2
+524691284,Cux2,n neurons + depth,5 folds,logreg,Cux2
+645413759,Cux2,n neurons + depth,5 folds,logreg,Cux2
+660513003,Cux2,n neurons + depth,5 folds,logreg,Sst
+702934964,Cux2,n neurons + depth,5 folds,logreg,Cux2
+712178511,Cux2,n neurons + depth,5 folds,logreg,Cux2
+573720508,Sst,n neurons + depth,5 folds,logreg,Sst
+576095926,Sst,n neurons + depth,5 folds,logreg,Pvalb
+580043440,Sst,n neurons + depth,5 folds,logreg,Pvalb
+580163817,Sst,n neurons + depth,5 folds,logreg,Sst
+581150104,Sst,n neurons + depth,5 folds,logreg,Pvalb
+590047029,Sst,n neurons + depth,5 folds,logreg,Sst
+596779487,Sst,n neurons + depth,5 folds,logreg,Pvalb
+598635821,Sst,n neurons + depth,5 folds,logreg,Sst
+601423209,Sst,n neurons + depth,5 folds,logreg,Pvalb
+609894681,Sst,n neurons + depth,5 folds,logreg,Sst
+612044635,Sst,n neurons + depth,5 folds,logreg,Pvalb
+613968705,Sst,n neurons + depth,5 folds,logreg,Pvalb
+583279803,Vip,n neurons + depth,5 folds,logreg,Vip
+606353987,Vip,n neurons + depth,5 folds,logreg,Vip
+612543999,Vip,n neurons + depth,5 folds,logreg,Vip
+650079244,Vip,n neurons + depth,5 folds,logreg,Cux2
+652091264,Vip,n neurons + depth,5 folds,logreg,Vip
+657078119,Vip,n neurons + depth,5 folds,logreg,Vip
+657389972,Vip,n neurons + depth,5 folds,logreg,Sst
+657390171,Vip,n neurons + depth,5 folds,logreg,Vip
+657650110,Vip,n neurons + depth,5 folds,logreg,Pvalb
+659495103,Vip,n neurons + depth,5 folds,logreg,Sst
+662361096,Vip,n neurons + depth,5 folds,logreg,Sst
+663479824,Vip,n neurons + depth,5 folds,logreg,Pvalb
+669861524,Pvalb,n neurons + depth,5 folds,logreg,Sst
+670395999,Pvalb,n neurons + depth,5 folds,logreg,Sst
+670728674,Pvalb,n neurons + depth,5 folds,logreg,Cux2
+671164733,Pvalb,n neurons + depth,5 folds,logreg,Cux2
+672206735,Pvalb,n neurons + depth,5 folds,logreg,Pvalb
+675477919,Pvalb,n neurons + depth,5 folds,logreg,Pvalb
+692345003,Pvalb,n neurons + depth,5 folds,logreg,Sst
+710504563,Pvalb,n neurons + depth,5 folds,logreg,Sst
+710778377,Pvalb,n neurons + depth,5 folds,logreg,Sst
+501271265,Cux2,n neurons + depth,5 folds,gboost,Cux2
+501704220,Cux2,n neurons + depth,5 folds,gboost,Cux2
+501836392,Cux2,n neurons + depth,5 folds,gboost,Cux2
+502115959,Cux2,n neurons + depth,5 folds,gboost,Pvalb
+502205092,Cux2,n neurons + depth,5 folds,gboost,Cux2
+503109347,Cux2,n neurons + depth,5 folds,gboost,Cux2
+510514474,Cux2,n neurons + depth,5 folds,gboost,Cux2
+510517131,Cux2,n neurons + depth,5 folds,gboost,Cux2
+524691284,Cux2,n neurons + depth,5 folds,gboost,Pvalb
+645413759,Cux2,n neurons + depth,5 folds,gboost,Cux2
+660513003,Cux2,n neurons + depth,5 folds,gboost,Cux2
+702934964,Cux2,n neurons + depth,5 folds,gboost,Cux2
+712178511,Cux2,n neurons + depth,5 folds,gboost,Cux2
+573720508,Sst,n neurons + depth,5 folds,gboost,Cux2
+576095926,Sst,n neurons + depth,5 folds,gboost,Cux2
+580043440,Sst,n neurons + depth,5 folds,gboost,Cux2
+580163817,Sst,n neurons + depth,5 folds,gboost,Pvalb
+581150104,Sst,n neurons + depth,5 folds,gboost,Cux2
+590047029,Sst,n neurons + depth,5 folds,gboost,Cux2
+596779487,Sst,n neurons + depth,5 folds,gboost,Cux2
+598635821,Sst,n neurons + depth,5 folds,gboost,Cux2
+601423209,Sst,n neurons + depth,5 folds,gboost,Pvalb
+609894681,Sst,n neurons + depth,5 folds,gboost,Cux2
+612044635,Sst,n neurons + depth,5 folds,gboost,Cux2
+613968705,Sst,n neurons + depth,5 folds,gboost,Cux2
+583279803,Vip,n neurons + depth,5 folds,gboost,Cux2
+606353987,Vip,n neurons + depth,5 folds,gboost,Cux2
+612543999,Vip,n neurons + depth,5 folds,gboost,Cux2
+650079244,Vip,n neurons + depth,5 folds,gboost,Pvalb
+652091264,Vip,n neurons + depth,5 folds,gboost,Cux2
+657078119,Vip,n neurons + depth,5 folds,gboost,Cux2
+657389972,Vip,n neurons + depth,5 folds,gboost,Cux2
+657390171,Vip,n neurons + depth,5 folds,gboost,Cux2
+657650110,Vip,n neurons + depth,5 folds,gboost,Pvalb
+659495103,Vip,n neurons + depth,5 folds,gboost,Cux2
+662361096,Vip,n neurons + depth,5 folds,gboost,Cux2
+663479824,Vip,n neurons + depth,5 folds,gboost,Cux2
+669861524,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+670395999,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+670728674,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+671164733,Pvalb,n neurons + depth,5 folds,gboost,Pvalb
+672206735,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+675477919,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+692345003,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+710504563,Pvalb,n neurons + depth,5 folds,gboost,Cux2
+710778377,Pvalb,n neurons + depth,5 folds,gboost,Pvalb
+501271265,Cux2,n neurons + depth,5 folds,sel,Cux2
+501704220,Cux2,n neurons + depth,5 folds,sel,Vip
+501836392,Cux2,n neurons + depth,5 folds,sel,Cux2
+502115959,Cux2,n neurons + depth,5 folds,sel,Cux2
+502205092,Cux2,n neurons + depth,5 folds,sel,Cux2
+503109347,Cux2,n neurons + depth,5 folds,sel,Cux2
+510514474,Cux2,n neurons + depth,5 folds,sel,Cux2
+510517131,Cux2,n neurons + depth,5 folds,sel,Cux2
+524691284,Cux2,n neurons + depth,5 folds,sel,Cux2
+645413759,Cux2,n neurons + depth,5 folds,sel,Cux2
+660513003,Cux2,n neurons + depth,5 folds,sel,Sst
+702934964,Cux2,n neurons + depth,5 folds,sel,Cux2
+712178511,Cux2,n neurons + depth,5 folds,sel,Cux2
+573720508,Sst,n neurons + depth,5 folds,sel,Sst
+576095926,Sst,n neurons + depth,5 folds,sel,Pvalb
+580043440,Sst,n neurons + depth,5 folds,sel,Pvalb
+580163817,Sst,n neurons + depth,5 folds,sel,Sst
+581150104,Sst,n neurons + depth,5 folds,sel,Pvalb
+590047029,Sst,n neurons + depth,5 folds,sel,Sst
+596779487,Sst,n neurons + depth,5 folds,sel,Pvalb
+598635821,Sst,n neurons + depth,5 folds,sel,Sst
+601423209,Sst,n neurons + depth,5 folds,sel,Pvalb
+609894681,Sst,n neurons + depth,5 folds,sel,Sst
+612044635,Sst,n neurons + depth,5 folds,sel,Pvalb
+613968705,Sst,n neurons + depth,5 folds,sel,Pvalb
+583279803,Vip,n neurons + depth,5 folds,sel,Vip
+606353987,Vip,n neurons + depth,5 folds,sel,Vip
+612543999,Vip,n neurons + depth,5 folds,sel,Vip
+650079244,Vip,n neurons + depth,5 folds,sel,Cux2
+652091264,Vip,n neurons + depth,5 folds,sel,Vip
+657078119,Vip,n neurons + depth,5 folds,sel,Vip
+657389972,Vip,n neurons + depth,5 folds,sel,Sst
+657390171,Vip,n neurons + depth,5 folds,sel,Vip
+657650110,Vip,n neurons + depth,5 folds,sel,Pvalb
+659495103,Vip,n neurons + depth,5 folds,sel,Sst
+662361096,Vip,n neurons + depth,5 folds,sel,Sst
+663479824,Vip,n neurons + depth,5 folds,sel,Pvalb
+669861524,Pvalb,n neurons + depth,5 folds,sel,Sst
+670395999,Pvalb,n neurons + depth,5 folds,sel,Sst
+670728674,Pvalb,n neurons + depth,5 folds,sel,Cux2
+671164733,Pvalb,n neurons + depth,5 folds,sel,Cux2
+672206735,Pvalb,n neurons + depth,5 folds,sel,Pvalb
+675477919,Pvalb,n neurons + depth,5 folds,sel,Pvalb
+692345003,Pvalb,n neurons + depth,5 folds,sel,Sst
+710504563,Pvalb,n neurons + depth,5 folds,sel,Sst
+710778377,Pvalb,n neurons + depth,5 folds,sel,Sst
+501271265,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+501704220,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+501836392,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+502115959,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+502205092,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+503109347,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+510514474,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+510517131,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+524691284,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+645413759,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+660513003,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+702934964,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+712178511,Cux2,n neurons + depth,leave one mouse out,logreg,Cux2
+573720508,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+576095926,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+580043440,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+580163817,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+581150104,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+590047029,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+596779487,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+598635821,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+601423209,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+609894681,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+612044635,Sst,n neurons + depth,leave one mouse out,logreg,Pvalb
+613968705,Sst,n neurons + depth,leave one mouse out,logreg,Sst
+583279803,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+606353987,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+612543999,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+650079244,Vip,n neurons + depth,leave one mouse out,logreg,Cux2
+652091264,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+657078119,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+657389972,Vip,n neurons + depth,leave one mouse out,logreg,Pvalb
+657390171,Vip,n neurons + depth,leave one mouse out,logreg,Vip
+657650110,Vip,n neurons + depth,leave one mouse out,logreg,Pvalb
+659495103,Vip,n neurons + depth,leave one mouse out,logreg,Pvalb
+662361096,Vip,n neurons + depth,leave one mouse out,logreg,Pvalb
+663479824,Vip,n neurons + depth,leave one mouse out,logreg,Pvalb
+669861524,Pvalb,n neurons + depth,leave one mouse out,logreg,Pvalb
+670395999,Pvalb,n neurons + depth,leave one mouse out,logreg,Vip
+670728674,Pvalb,n neurons + depth,leave one mouse out,logreg,Cux2
+671164733,Pvalb,n neurons + depth,leave one mouse out,logreg,Vip
+672206735,Pvalb,n neurons + depth,leave one mouse out,logreg,Pvalb
+675477919,Pvalb,n neurons + depth,leave one mouse out,logreg,Pvalb
+692345003,Pvalb,n neurons + depth,leave one mouse out,logreg,Pvalb
+710504563,Pvalb,n neurons + depth,leave one mouse out,logreg,Sst
+710778377,Pvalb,n neurons + depth,leave one mouse out,logreg,Sst
+501271265,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+501704220,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+501836392,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+502115959,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+502205092,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+503109347,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+510514474,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+510517131,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+524691284,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+645413759,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+660513003,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+702934964,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+712178511,Cux2,n neurons + depth,leave one mouse out,gboost,Cux2
+573720508,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+576095926,Sst,n neurons + depth,leave one mouse out,gboost,Cux2
+580043440,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+580163817,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+581150104,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+590047029,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+596779487,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+598635821,Sst,n neurons + depth,leave one mouse out,gboost,Vip
+601423209,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+609894681,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+612044635,Sst,n neurons + depth,leave one mouse out,gboost,Sst
+613968705,Sst,n neurons + depth,leave one mouse out,gboost,Cux2
+583279803,Vip,n neurons + depth,leave one mouse out,gboost,Pvalb
+606353987,Vip,n neurons + depth,leave one mouse out,gboost,Vip
+612543999,Vip,n neurons + depth,leave one mouse out,gboost,Vip
+650079244,Vip,n neurons + depth,leave one mouse out,gboost,Cux2
+652091264,Vip,n neurons + depth,leave one mouse out,gboost,Cux2
+657078119,Vip,n neurons + depth,leave one mouse out,gboost,Pvalb
+657389972,Vip,n neurons + depth,leave one mouse out,gboost,Sst
+657390171,Vip,n neurons + depth,leave one mouse out,gboost,Pvalb
+657650110,Vip,n neurons + depth,leave one mouse out,gboost,Sst
+659495103,Vip,n neurons + depth,leave one mouse out,gboost,Cux2
+662361096,Vip,n neurons + depth,leave one mouse out,gboost,Cux2
+663479824,Vip,n neurons + depth,leave one mouse out,gboost,Sst
+669861524,Pvalb,n neurons + depth,leave one mouse out,gboost,Sst
+670395999,Pvalb,n neurons + depth,leave one mouse out,gboost,Pvalb
+670728674,Pvalb,n neurons + depth,leave one mouse out,gboost,Cux2
+671164733,Pvalb,n neurons + depth,leave one mouse out,gboost,Cux2
+672206735,Pvalb,n neurons + depth,leave one mouse out,gboost,Pvalb
+675477919,Pvalb,n neurons + depth,leave one mouse out,gboost,Pvalb
+692345003,Pvalb,n neurons + depth,leave one mouse out,gboost,Pvalb
+710504563,Pvalb,n neurons + depth,leave one mouse out,gboost,Cux2
+710778377,Pvalb,n neurons + depth,leave one mouse out,gboost,Sst
+501271265,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+501704220,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+501836392,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+502115959,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+502205092,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+503109347,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+510514474,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+510517131,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+524691284,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+645413759,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+660513003,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+702934964,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+712178511,Cux2,n neurons + depth,leave one mouse out,sel,Cux2
+573720508,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+576095926,Sst,n neurons + depth,leave one mouse out,sel,Sst
+580043440,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+580163817,Sst,n neurons + depth,leave one mouse out,sel,Sst
+581150104,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+590047029,Sst,n neurons + depth,leave one mouse out,sel,Sst
+596779487,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+598635821,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+601423209,Sst,n neurons + depth,leave one mouse out,sel,Sst
+609894681,Sst,n neurons + depth,leave one mouse out,sel,Sst
+612044635,Sst,n neurons + depth,leave one mouse out,sel,Pvalb
+613968705,Sst,n neurons + depth,leave one mouse out,sel,Sst
+583279803,Vip,n neurons + depth,leave one mouse out,sel,Vip
+606353987,Vip,n neurons + depth,leave one mouse out,sel,Vip
+612543999,Vip,n neurons + depth,leave one mouse out,sel,Vip
+650079244,Vip,n neurons + depth,leave one mouse out,sel,Cux2
+652091264,Vip,n neurons + depth,leave one mouse out,sel,Vip
+657078119,Vip,n neurons + depth,leave one mouse out,sel,Vip
+657389972,Vip,n neurons + depth,leave one mouse out,sel,Pvalb
+657390171,Vip,n neurons + depth,leave one mouse out,sel,Vip
+657650110,Vip,n neurons + depth,leave one mouse out,sel,Pvalb
+659495103,Vip,n neurons + depth,leave one mouse out,sel,Pvalb
+662361096,Vip,n neurons + depth,leave one mouse out,sel,Pvalb
+663479824,Vip,n neurons + depth,leave one mouse out,sel,Pvalb
+669861524,Pvalb,n neurons + depth,leave one mouse out,sel,Pvalb
+670395999,Pvalb,n neurons + depth,leave one mouse out,sel,Vip
+670728674,Pvalb,n neurons + depth,leave one mouse out,sel,Cux2
+671164733,Pvalb,n neurons + depth,leave one mouse out,sel,Vip
+672206735,Pvalb,n neurons + depth,leave one mouse out,sel,Pvalb
+675477919,Pvalb,n neurons + depth,leave one mouse out,sel,Pvalb
+692345003,Pvalb,n neurons + depth,leave one mouse out,sel,Pvalb
+710504563,Pvalb,n neurons + depth,leave one mouse out,sel,Sst
+710778377,Pvalb,n neurons + depth,leave one mouse out,sel,Sst
+501271265,Cux2,correlations,5 folds,logreg,Cux2
+501704220,Cux2,correlations,5 folds,logreg,Cux2
+501836392,Cux2,correlations,5 folds,logreg,Cux2
+502115959,Cux2,correlations,5 folds,logreg,Cux2
+502205092,Cux2,correlations,5 folds,logreg,Cux2
+503109347,Cux2,correlations,5 folds,logreg,Cux2
+510514474,Cux2,correlations,5 folds,logreg,Cux2
+510517131,Cux2,correlations,5 folds,logreg,Cux2
+524691284,Cux2,correlations,5 folds,logreg,Cux2
+645413759,Cux2,correlations,5 folds,logreg,Cux2
+660513003,Cux2,correlations,5 folds,logreg,Sst
+702934964,Cux2,correlations,5 folds,logreg,Cux2
+712178511,Cux2,correlations,5 folds,logreg,Cux2
+573720508,Sst,correlations,5 folds,logreg,Sst
+576095926,Sst,correlations,5 folds,logreg,Sst
+580043440,Sst,correlations,5 folds,logreg,Sst
+580163817,Sst,correlations,5 folds,logreg,Cux2
+581150104,Sst,correlations,5 folds,logreg,Sst
+590047029,Sst,correlations,5 folds,logreg,Vip
+596779487,Sst,correlations,5 folds,logreg,Sst
+598635821,Sst,correlations,5 folds,logreg,Vip
+601423209,Sst,correlations,5 folds,logreg,Sst
+609894681,Sst,correlations,5 folds,logreg,Sst
+612044635,Sst,correlations,5 folds,logreg,Vip
+613968705,Sst,correlations,5 folds,logreg,Cux2
+583279803,Vip,correlations,5 folds,logreg,Vip
+606353987,Vip,correlations,5 folds,logreg,Vip
+612543999,Vip,correlations,5 folds,logreg,Pvalb
+650079244,Vip,correlations,5 folds,logreg,Vip
+652091264,Vip,correlations,5 folds,logreg,Pvalb
+657078119,Vip,correlations,5 folds,logreg,Sst
+657389972,Vip,correlations,5 folds,logreg,Sst
+657390171,Vip,correlations,5 folds,logreg,Pvalb
+657650110,Vip,correlations,5 folds,logreg,Sst
+659495103,Vip,correlations,5 folds,logreg,Sst
+662361096,Vip,correlations,5 folds,logreg,Vip
+663479824,Vip,correlations,5 folds,logreg,Pvalb
+669861524,Pvalb,correlations,5 folds,logreg,Sst
+670395999,Pvalb,correlations,5 folds,logreg,Vip
+670728674,Pvalb,correlations,5 folds,logreg,Pvalb
+671164733,Pvalb,correlations,5 folds,logreg,Pvalb
+672206735,Pvalb,correlations,5 folds,logreg,Vip
+675477919,Pvalb,correlations,5 folds,logreg,Vip
+692345003,Pvalb,correlations,5 folds,logreg,Pvalb
+710504563,Pvalb,correlations,5 folds,logreg,Vip
+710778377,Pvalb,correlations,5 folds,logreg,Pvalb
+501271265,Cux2,correlations,5 folds,gboost,Cux2
+501704220,Cux2,correlations,5 folds,gboost,Cux2
+501836392,Cux2,correlations,5 folds,gboost,Cux2
+502115959,Cux2,correlations,5 folds,gboost,Pvalb
+502205092,Cux2,correlations,5 folds,gboost,Cux2
+503109347,Cux2,correlations,5 folds,gboost,Cux2
+510514474,Cux2,correlations,5 folds,gboost,Cux2
+510517131,Cux2,correlations,5 folds,gboost,Cux2
+524691284,Cux2,correlations,5 folds,gboost,Pvalb
+645413759,Cux2,correlations,5 folds,gboost,Cux2
+660513003,Cux2,correlations,5 folds,gboost,Cux2
+702934964,Cux2,correlations,5 folds,gboost,Cux2
+712178511,Cux2,correlations,5 folds,gboost,Cux2
+573720508,Sst,correlations,5 folds,gboost,Cux2
+576095926,Sst,correlations,5 folds,gboost,Cux2
+580043440,Sst,correlations,5 folds,gboost,Cux2
+580163817,Sst,correlations,5 folds,gboost,Pvalb
+581150104,Sst,correlations,5 folds,gboost,Cux2
+590047029,Sst,correlations,5 folds,gboost,Cux2
+596779487,Sst,correlations,5 folds,gboost,Cux2
+598635821,Sst,correlations,5 folds,gboost,Cux2
+601423209,Sst,correlations,5 folds,gboost,Pvalb
+609894681,Sst,correlations,5 folds,gboost,Cux2
+612044635,Sst,correlations,5 folds,gboost,Cux2
+613968705,Sst,correlations,5 folds,gboost,Cux2
+583279803,Vip,correlations,5 folds,gboost,Cux2
+606353987,Vip,correlations,5 folds,gboost,Cux2
+612543999,Vip,correlations,5 folds,gboost,Cux2
+650079244,Vip,correlations,5 folds,gboost,Pvalb
+652091264,Vip,correlations,5 folds,gboost,Cux2
+657078119,Vip,correlations,5 folds,gboost,Cux2
+657389972,Vip,correlations,5 folds,gboost,Cux2
+657390171,Vip,correlations,5 folds,gboost,Cux2
+657650110,Vip,correlations,5 folds,gboost,Pvalb
+659495103,Vip,correlations,5 folds,gboost,Cux2
+662361096,Vip,correlations,5 folds,gboost,Cux2
+663479824,Vip,correlations,5 folds,gboost,Cux2
+669861524,Pvalb,correlations,5 folds,gboost,Cux2
+670395999,Pvalb,correlations,5 folds,gboost,Cux2
+670728674,Pvalb,correlations,5 folds,gboost,Cux2
+671164733,Pvalb,correlations,5 folds,gboost,Pvalb
+672206735,Pvalb,correlations,5 folds,gboost,Cux2
+675477919,Pvalb,correlations,5 folds,gboost,Cux2
+692345003,Pvalb,correlations,5 folds,gboost,Cux2
+710504563,Pvalb,correlations,5 folds,gboost,Cux2
+710778377,Pvalb,correlations,5 folds,gboost,Pvalb
+501271265,Cux2,correlations,5 folds,sel,Cux2
+501704220,Cux2,correlations,5 folds,sel,Cux2
+501836392,Cux2,correlations,5 folds,sel,Cux2
+502115959,Cux2,correlations,5 folds,sel,Cux2
+502205092,Cux2,correlations,5 folds,sel,Cux2
+503109347,Cux2,correlations,5 folds,sel,Cux2
+510514474,Cux2,correlations,5 folds,sel,Cux2
+510517131,Cux2,correlations,5 folds,sel,Cux2
+524691284,Cux2,correlations,5 folds,sel,Cux2
+645413759,Cux2,correlations,5 folds,sel,Cux2
+660513003,Cux2,correlations,5 folds,sel,Sst
+702934964,Cux2,correlations,5 folds,sel,Cux2
+712178511,Cux2,correlations,5 folds,sel,Cux2
+573720508,Sst,correlations,5 folds,sel,Sst
+576095926,Sst,correlations,5 folds,sel,Sst
+580043440,Sst,correlations,5 folds,sel,Sst
+580163817,Sst,correlations,5 folds,sel,Cux2
+581150104,Sst,correlations,5 folds,sel,Sst
+590047029,Sst,correlations,5 folds,sel,Vip
+596779487,Sst,correlations,5 folds,sel,Sst
+598635821,Sst,correlations,5 folds,sel,Vip
+601423209,Sst,correlations,5 folds,sel,Sst
+609894681,Sst,correlations,5 folds,sel,Sst
+612044635,Sst,correlations,5 folds,sel,Vip
+613968705,Sst,correlations,5 folds,sel,Cux2
+583279803,Vip,correlations,5 folds,sel,Vip
+606353987,Vip,correlations,5 folds,sel,Vip
+612543999,Vip,correlations,5 folds,sel,Pvalb
+650079244,Vip,correlations,5 folds,sel,Vip
+652091264,Vip,correlations,5 folds,sel,Pvalb
+657078119,Vip,correlations,5 folds,sel,Sst
+657389972,Vip,correlations,5 folds,sel,Sst
+657390171,Vip,correlations,5 folds,sel,Pvalb
+657650110,Vip,correlations,5 folds,sel,Sst
+659495103,Vip,correlations,5 folds,sel,Sst
+662361096,Vip,correlations,5 folds,sel,Vip
+663479824,Vip,correlations,5 folds,sel,Pvalb
+669861524,Pvalb,correlations,5 folds,sel,Sst
+670395999,Pvalb,correlations,5 folds,sel,Vip
+670728674,Pvalb,correlations,5 folds,sel,Pvalb
+671164733,Pvalb,correlations,5 folds,sel,Pvalb
+672206735,Pvalb,correlations,5 folds,sel,Vip
+675477919,Pvalb,correlations,5 folds,sel,Vip
+692345003,Pvalb,correlations,5 folds,sel,Pvalb
+710504563,Pvalb,correlations,5 folds,sel,Vip
+710778377,Pvalb,correlations,5 folds,sel,Pvalb
+501271265,Cux2,correlations,leave one mouse out,logreg,Cux2
+501704220,Cux2,correlations,leave one mouse out,logreg,Cux2
+501836392,Cux2,correlations,leave one mouse out,logreg,Cux2
+502115959,Cux2,correlations,leave one mouse out,logreg,Cux2
+502205092,Cux2,correlations,leave one mouse out,logreg,Cux2
+503109347,Cux2,correlations,leave one mouse out,logreg,Cux2
+510514474,Cux2,correlations,leave one mouse out,logreg,Cux2
+510517131,Cux2,correlations,leave one mouse out,logreg,Cux2
+524691284,Cux2,correlations,leave one mouse out,logreg,Cux2
+645413759,Cux2,correlations,leave one mouse out,logreg,Cux2
+660513003,Cux2,correlations,leave one mouse out,logreg,Sst
+702934964,Cux2,correlations,leave one mouse out,logreg,Cux2
+712178511,Cux2,correlations,leave one mouse out,logreg,Cux2
+573720508,Sst,correlations,leave one mouse out,logreg,Sst
+576095926,Sst,correlations,leave one mouse out,logreg,Sst
+580043440,Sst,correlations,leave one mouse out,logreg,Sst
+580163817,Sst,correlations,leave one mouse out,logreg,Cux2
+581150104,Sst,correlations,leave one mouse out,logreg,Sst
+590047029,Sst,correlations,leave one mouse out,logreg,Vip
+596779487,Sst,correlations,leave one mouse out,logreg,Sst
+598635821,Sst,correlations,leave one mouse out,logreg,Vip
+601423209,Sst,correlations,leave one mouse out,logreg,Sst
+609894681,Sst,correlations,leave one mouse out,logreg,Sst
+612044635,Sst,correlations,leave one mouse out,logreg,Vip
+613968705,Sst,correlations,leave one mouse out,logreg,Cux2
+583279803,Vip,correlations,leave one mouse out,logreg,Vip
+606353987,Vip,correlations,leave one mouse out,logreg,Vip
+612543999,Vip,correlations,leave one mouse out,logreg,Pvalb
+650079244,Vip,correlations,leave one mouse out,logreg,Vip
+652091264,Vip,correlations,leave one mouse out,logreg,Pvalb
+657078119,Vip,correlations,leave one mouse out,logreg,Sst
+657389972,Vip,correlations,leave one mouse out,logreg,Sst
+657390171,Vip,correlations,leave one mouse out,logreg,Pvalb
+657650110,Vip,correlations,leave one mouse out,logreg,Sst
+659495103,Vip,correlations,leave one mouse out,logreg,Sst
+662361096,Vip,correlations,leave one mouse out,logreg,Vip
+663479824,Vip,correlations,leave one mouse out,logreg,Pvalb
+669861524,Pvalb,correlations,leave one mouse out,logreg,Sst
+670395999,Pvalb,correlations,leave one mouse out,logreg,Vip
+670728674,Pvalb,correlations,leave one mouse out,logreg,Pvalb
+671164733,Pvalb,correlations,leave one mouse out,logreg,Pvalb
+672206735,Pvalb,correlations,leave one mouse out,logreg,Vip
+675477919,Pvalb,correlations,leave one mouse out,logreg,Vip
+692345003,Pvalb,correlations,leave one mouse out,logreg,Pvalb
+710504563,Pvalb,correlations,leave one mouse out,logreg,Vip
+710778377,Pvalb,correlations,leave one mouse out,logreg,Pvalb
+501271265,Cux2,correlations,leave one mouse out,gboost,Cux2
+501704220,Cux2,correlations,leave one mouse out,gboost,Cux2
+501836392,Cux2,correlations,leave one mouse out,gboost,Cux2
+502115959,Cux2,correlations,leave one mouse out,gboost,Cux2
+502205092,Cux2,correlations,leave one mouse out,gboost,Cux2
+503109347,Cux2,correlations,leave one mouse out,gboost,Cux2
+510514474,Cux2,correlations,leave one mouse out,gboost,Cux2
+510517131,Cux2,correlations,leave one mouse out,gboost,Cux2
+524691284,Cux2,correlations,leave one mouse out,gboost,Cux2
+645413759,Cux2,correlations,leave one mouse out,gboost,Cux2
+660513003,Cux2,correlations,leave one mouse out,gboost,Cux2
+702934964,Cux2,correlations,leave one mouse out,gboost,Cux2
+712178511,Cux2,correlations,leave one mouse out,gboost,Cux2
+573720508,Sst,correlations,leave one mouse out,gboost,Sst
+576095926,Sst,correlations,leave one mouse out,gboost,Sst
+580043440,Sst,correlations,leave one mouse out,gboost,Cux2
+580163817,Sst,correlations,leave one mouse out,gboost,Cux2
+581150104,Sst,correlations,leave one mouse out,gboost,Sst
+590047029,Sst,correlations,leave one mouse out,gboost,Vip
+596779487,Sst,correlations,leave one mouse out,gboost,Sst
+598635821,Sst,correlations,leave one mouse out,gboost,Sst
+601423209,Sst,correlations,leave one mouse out,gboost,Vip
+609894681,Sst,correlations,leave one mouse out,gboost,Sst
+612044635,Sst,correlations,leave one mouse out,gboost,Pvalb
+613968705,Sst,correlations,leave one mouse out,gboost,Cux2
+583279803,Vip,correlations,leave one mouse out,gboost,Pvalb
+606353987,Vip,correlations,leave one mouse out,gboost,Pvalb
+612543999,Vip,correlations,leave one mouse out,gboost,Pvalb
+650079244,Vip,correlations,leave one mouse out,gboost,Pvalb
+652091264,Vip,correlations,leave one mouse out,gboost,Pvalb
+657078119,Vip,correlations,leave one mouse out,gboost,Cux2
+657389972,Vip,correlations,leave one mouse out,gboost,Pvalb
+657390171,Vip,correlations,leave one mouse out,gboost,Pvalb
+657650110,Vip,correlations,leave one mouse out,gboost,Sst
+659495103,Vip,correlations,leave one mouse out,gboost,Sst
+662361096,Vip,correlations,leave one mouse out,gboost,Pvalb
+663479824,Vip,correlations,leave one mouse out,gboost,Pvalb
+669861524,Pvalb,correlations,leave one mouse out,gboost,Cux2
+670395999,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+670728674,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+671164733,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+672206735,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+675477919,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+692345003,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+710504563,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+710778377,Pvalb,correlations,leave one mouse out,gboost,Pvalb
+501271265,Cux2,correlations,leave one mouse out,sel,Cux2
+501704220,Cux2,correlations,leave one mouse out,sel,Cux2
+501836392,Cux2,correlations,leave one mouse out,sel,Cux2
+502115959,Cux2,correlations,leave one mouse out,sel,Cux2
+502205092,Cux2,correlations,leave one mouse out,sel,Cux2
+503109347,Cux2,correlations,leave one mouse out,sel,Cux2
+510514474,Cux2,correlations,leave one mouse out,sel,Cux2
+510517131,Cux2,correlations,leave one mouse out,sel,Cux2
+524691284,Cux2,correlations,leave one mouse out,sel,Cux2
+645413759,Cux2,correlations,leave one mouse out,sel,Cux2
+660513003,Cux2,correlations,leave one mouse out,sel,Sst
+702934964,Cux2,correlations,leave one mouse out,sel,Cux2
+712178511,Cux2,correlations,leave one mouse out,sel,Cux2
+573720508,Sst,correlations,leave one mouse out,sel,Sst
+576095926,Sst,correlations,leave one mouse out,sel,Sst
+580043440,Sst,correlations,leave one mouse out,sel,Sst
+580163817,Sst,correlations,leave one mouse out,sel,Cux2
+581150104,Sst,correlations,leave one mouse out,sel,Sst
+590047029,Sst,correlations,leave one mouse out,sel,Vip
+596779487,Sst,correlations,leave one mouse out,sel,Sst
+598635821,Sst,correlations,leave one mouse out,sel,Vip
+601423209,Sst,correlations,leave one mouse out,sel,Sst
+609894681,Sst,correlations,leave one mouse out,sel,Sst
+612044635,Sst,correlations,leave one mouse out,sel,Vip
+613968705,Sst,correlations,leave one mouse out,sel,Cux2
+583279803,Vip,correlations,leave one mouse out,sel,Vip
+606353987,Vip,correlations,leave one mouse out,sel,Vip
+612543999,Vip,correlations,leave one mouse out,sel,Pvalb
+650079244,Vip,correlations,leave one mouse out,sel,Vip
+652091264,Vip,correlations,leave one mouse out,sel,Pvalb
+657078119,Vip,correlations,leave one mouse out,sel,Sst
+657389972,Vip,correlations,leave one mouse out,sel,Sst
+657390171,Vip,correlations,leave one mouse out,sel,Pvalb
+657650110,Vip,correlations,leave one mouse out,sel,Sst
+659495103,Vip,correlations,leave one mouse out,sel,Sst
+662361096,Vip,correlations,leave one mouse out,sel,Vip
+663479824,Vip,correlations,leave one mouse out,sel,Pvalb
+669861524,Pvalb,correlations,leave one mouse out,sel,Sst
+670395999,Pvalb,correlations,leave one mouse out,sel,Vip
+670728674,Pvalb,correlations,leave one mouse out,sel,Pvalb
+671164733,Pvalb,correlations,leave one mouse out,sel,Pvalb
+672206735,Pvalb,correlations,leave one mouse out,sel,Vip
+675477919,Pvalb,correlations,leave one mouse out,sel,Vip
+692345003,Pvalb,correlations,leave one mouse out,sel,Pvalb
+710504563,Pvalb,correlations,leave one mouse out,sel,Vip
+710778377,Pvalb,correlations,leave one mouse out,sel,Pvalb
+501271265,Cux2,dF/F scale,5 folds,logreg,Cux2
+501704220,Cux2,dF/F scale,5 folds,logreg,Cux2
+501836392,Cux2,dF/F scale,5 folds,logreg,Cux2
+502115959,Cux2,dF/F scale,5 folds,logreg,Cux2
+502205092,Cux2,dF/F scale,5 folds,logreg,Cux2
+503109347,Cux2,dF/F scale,5 folds,logreg,Cux2
+510514474,Cux2,dF/F scale,5 folds,logreg,Cux2
+510517131,Cux2,dF/F scale,5 folds,logreg,Cux2
+524691284,Cux2,dF/F scale,5 folds,logreg,Cux2
+645413759,Cux2,dF/F scale,5 folds,logreg,Cux2
+660513003,Cux2,dF/F scale,5 folds,logreg,Cux2
+702934964,Cux2,dF/F scale,5 folds,logreg,Cux2
+712178511,Cux2,dF/F scale,5 folds,logreg,Cux2
+573720508,Sst,dF/F scale,5 folds,logreg,Sst
+576095926,Sst,dF/F scale,5 folds,logreg,Sst
+580043440,Sst,dF/F scale,5 folds,logreg,Sst
+580163817,Sst,dF/F scale,5 folds,logreg,Cux2
+581150104,Sst,dF/F scale,5 folds,logreg,Sst
+590047029,Sst,dF/F scale,5 folds,logreg,Vip
+596779487,Sst,dF/F scale,5 folds,logreg,Pvalb
+598635821,Sst,dF/F scale,5 folds,logreg,Sst
+601423209,Sst,dF/F scale,5 folds,logreg,Sst
+609894681,Sst,dF/F scale,5 folds,logreg,Sst
+612044635,Sst,dF/F scale,5 folds,logreg,Vip
+613968705,Sst,dF/F scale,5 folds,logreg,Sst
+583279803,Vip,dF/F scale,5 folds,logreg,Vip
+606353987,Vip,dF/F scale,5 folds,logreg,Vip
+612543999,Vip,dF/F scale,5 folds,logreg,Vip
+650079244,Vip,dF/F scale,5 folds,logreg,Vip
+652091264,Vip,dF/F scale,5 folds,logreg,Vip
+657078119,Vip,dF/F scale,5 folds,logreg,Vip
+657389972,Vip,dF/F scale,5 folds,logreg,Vip
+657390171,Vip,dF/F scale,5 folds,logreg,Vip
+657650110,Vip,dF/F scale,5 folds,logreg,Sst
+659495103,Vip,dF/F scale,5 folds,logreg,Pvalb
+662361096,Vip,dF/F scale,5 folds,logreg,Vip
+663479824,Vip,dF/F scale,5 folds,logreg,Vip
+669861524,Pvalb,dF/F scale,5 folds,logreg,Pvalb
+670395999,Pvalb,dF/F scale,5 folds,logreg,Pvalb
+670728674,Pvalb,dF/F scale,5 folds,logreg,Cux2
+671164733,Pvalb,dF/F scale,5 folds,logreg,Cux2
+672206735,Pvalb,dF/F scale,5 folds,logreg,Sst
+675477919,Pvalb,dF/F scale,5 folds,logreg,Vip
+692345003,Pvalb,dF/F scale,5 folds,logreg,Vip
+710504563,Pvalb,dF/F scale,5 folds,logreg,Pvalb
+710778377,Pvalb,dF/F scale,5 folds,logreg,Pvalb
+501271265,Cux2,dF/F scale,5 folds,gboost,Cux2
+501704220,Cux2,dF/F scale,5 folds,gboost,Cux2
+501836392,Cux2,dF/F scale,5 folds,gboost,Cux2
+502115959,Cux2,dF/F scale,5 folds,gboost,Pvalb
+502205092,Cux2,dF/F scale,5 folds,gboost,Cux2
+503109347,Cux2,dF/F scale,5 folds,gboost,Cux2
+510514474,Cux2,dF/F scale,5 folds,gboost,Cux2
+510517131,Cux2,dF/F scale,5 folds,gboost,Cux2
+524691284,Cux2,dF/F scale,5 folds,gboost,Pvalb
+645413759,Cux2,dF/F scale,5 folds,gboost,Cux2
+660513003,Cux2,dF/F scale,5 folds,gboost,Cux2
+702934964,Cux2,dF/F scale,5 folds,gboost,Cux2
+712178511,Cux2,dF/F scale,5 folds,gboost,Cux2
+573720508,Sst,dF/F scale,5 folds,gboost,Cux2
+576095926,Sst,dF/F scale,5 folds,gboost,Cux2
+580043440,Sst,dF/F scale,5 folds,gboost,Cux2
+580163817,Sst,dF/F scale,5 folds,gboost,Pvalb
+581150104,Sst,dF/F scale,5 folds,gboost,Cux2
+590047029,Sst,dF/F scale,5 folds,gboost,Cux2
+596779487,Sst,dF/F scale,5 folds,gboost,Cux2
+598635821,Sst,dF/F scale,5 folds,gboost,Cux2
+601423209,Sst,dF/F scale,5 folds,gboost,Pvalb
+609894681,Sst,dF/F scale,5 folds,gboost,Cux2
+612044635,Sst,dF/F scale,5 folds,gboost,Cux2
+613968705,Sst,dF/F scale,5 folds,gboost,Cux2
+583279803,Vip,dF/F scale,5 folds,gboost,Cux2
+606353987,Vip,dF/F scale,5 folds,gboost,Cux2
+612543999,Vip,dF/F scale,5 folds,gboost,Cux2
+650079244,Vip,dF/F scale,5 folds,gboost,Pvalb
+652091264,Vip,dF/F scale,5 folds,gboost,Cux2
+657078119,Vip,dF/F scale,5 folds,gboost,Cux2
+657389972,Vip,dF/F scale,5 folds,gboost,Cux2
+657390171,Vip,dF/F scale,5 folds,gboost,Cux2
+657650110,Vip,dF/F scale,5 folds,gboost,Pvalb
+659495103,Vip,dF/F scale,5 folds,gboost,Cux2
+662361096,Vip,dF/F scale,5 folds,gboost,Cux2
+663479824,Vip,dF/F scale,5 folds,gboost,Cux2
+669861524,Pvalb,dF/F scale,5 folds,gboost,Cux2
+670395999,Pvalb,dF/F scale,5 folds,gboost,Cux2
+670728674,Pvalb,dF/F scale,5 folds,gboost,Cux2
+671164733,Pvalb,dF/F scale,5 folds,gboost,Pvalb
+672206735,Pvalb,dF/F scale,5 folds,gboost,Cux2
+675477919,Pvalb,dF/F scale,5 folds,gboost,Cux2
+692345003,Pvalb,dF/F scale,5 folds,gboost,Cux2
+710504563,Pvalb,dF/F scale,5 folds,gboost,Cux2
+710778377,Pvalb,dF/F scale,5 folds,gboost,Pvalb
+501271265,Cux2,dF/F scale,5 folds,sel,Cux2
+501704220,Cux2,dF/F scale,5 folds,sel,Cux2
+501836392,Cux2,dF/F scale,5 folds,sel,Cux2
+502115959,Cux2,dF/F scale,5 folds,sel,Cux2
+502205092,Cux2,dF/F scale,5 folds,sel,Cux2
+503109347,Cux2,dF/F scale,5 folds,sel,Cux2
+510514474,Cux2,dF/F scale,5 folds,sel,Cux2
+510517131,Cux2,dF/F scale,5 folds,sel,Cux2
+524691284,Cux2,dF/F scale,5 folds,sel,Cux2
+645413759,Cux2,dF/F scale,5 folds,sel,Cux2
+660513003,Cux2,dF/F scale,5 folds,sel,Cux2
+702934964,Cux2,dF/F scale,5 folds,sel,Cux2
+712178511,Cux2,dF/F scale,5 folds,sel,Cux2
+573720508,Sst,dF/F scale,5 folds,sel,Sst
+576095926,Sst,dF/F scale,5 folds,sel,Sst
+580043440,Sst,dF/F scale,5 folds,sel,Sst
+580163817,Sst,dF/F scale,5 folds,sel,Cux2
+581150104,Sst,dF/F scale,5 folds,sel,Sst
+590047029,Sst,dF/F scale,5 folds,sel,Vip
+596779487,Sst,dF/F scale,5 folds,sel,Pvalb
+598635821,Sst,dF/F scale,5 folds,sel,Sst
+601423209,Sst,dF/F scale,5 folds,sel,Sst
+609894681,Sst,dF/F scale,5 folds,sel,Sst
+612044635,Sst,dF/F scale,5 folds,sel,Vip
+613968705,Sst,dF/F scale,5 folds,sel,Sst
+583279803,Vip,dF/F scale,5 folds,sel,Vip
+606353987,Vip,dF/F scale,5 folds,sel,Vip
+612543999,Vip,dF/F scale,5 folds,sel,Vip
+650079244,Vip,dF/F scale,5 folds,sel,Vip
+652091264,Vip,dF/F scale,5 folds,sel,Vip
+657078119,Vip,dF/F scale,5 folds,sel,Vip
+657389972,Vip,dF/F scale,5 folds,sel,Vip
+657390171,Vip,dF/F scale,5 folds,sel,Vip
+657650110,Vip,dF/F scale,5 folds,sel,Sst
+659495103,Vip,dF/F scale,5 folds,sel,Pvalb
+662361096,Vip,dF/F scale,5 folds,sel,Vip
+663479824,Vip,dF/F scale,5 folds,sel,Vip
+669861524,Pvalb,dF/F scale,5 folds,sel,Pvalb
+670395999,Pvalb,dF/F scale,5 folds,sel,Pvalb
+670728674,Pvalb,dF/F scale,5 folds,sel,Cux2
+671164733,Pvalb,dF/F scale,5 folds,sel,Cux2
+672206735,Pvalb,dF/F scale,5 folds,sel,Sst
+675477919,Pvalb,dF/F scale,5 folds,sel,Vip
+692345003,Pvalb,dF/F scale,5 folds,sel,Vip
+710504563,Pvalb,dF/F scale,5 folds,sel,Pvalb
+710778377,Pvalb,dF/F scale,5 folds,sel,Pvalb
+501271265,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+501704220,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+501836392,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+502115959,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+502205092,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+503109347,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+510514474,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+510517131,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+524691284,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+645413759,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+660513003,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+702934964,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+712178511,Cux2,dF/F scale,leave one mouse out,logreg,Cux2
+573720508,Sst,dF/F scale,leave one mouse out,logreg,Sst
+576095926,Sst,dF/F scale,leave one mouse out,logreg,Sst
+580043440,Sst,dF/F scale,leave one mouse out,logreg,Sst
+580163817,Sst,dF/F scale,leave one mouse out,logreg,Cux2
+581150104,Sst,dF/F scale,leave one mouse out,logreg,Sst
+590047029,Sst,dF/F scale,leave one mouse out,logreg,Vip
+596779487,Sst,dF/F scale,leave one mouse out,logreg,Pvalb
+598635821,Sst,dF/F scale,leave one mouse out,logreg,Sst
+601423209,Sst,dF/F scale,leave one mouse out,logreg,Sst
+609894681,Sst,dF/F scale,leave one mouse out,logreg,Sst
+612044635,Sst,dF/F scale,leave one mouse out,logreg,Vip
+613968705,Sst,dF/F scale,leave one mouse out,logreg,Sst
+583279803,Vip,dF/F scale,leave one mouse out,logreg,Vip
+606353987,Vip,dF/F scale,leave one mouse out,logreg,Vip
+612543999,Vip,dF/F scale,leave one mouse out,logreg,Vip
+650079244,Vip,dF/F scale,leave one mouse out,logreg,Vip
+652091264,Vip,dF/F scale,leave one mouse out,logreg,Vip
+657078119,Vip,dF/F scale,leave one mouse out,logreg,Vip
+657389972,Vip,dF/F scale,leave one mouse out,logreg,Vip
+657390171,Vip,dF/F scale,leave one mouse out,logreg,Vip
+657650110,Vip,dF/F scale,leave one mouse out,logreg,Sst
+659495103,Vip,dF/F scale,leave one mouse out,logreg,Pvalb
+662361096,Vip,dF/F scale,leave one mouse out,logreg,Sst
+663479824,Vip,dF/F scale,leave one mouse out,logreg,Vip
+669861524,Pvalb,dF/F scale,leave one mouse out,logreg,Pvalb
+670395999,Pvalb,dF/F scale,leave one mouse out,logreg,Pvalb
+670728674,Pvalb,dF/F scale,leave one mouse out,logreg,Cux2
+671164733,Pvalb,dF/F scale,leave one mouse out,logreg,Cux2
+672206735,Pvalb,dF/F scale,leave one mouse out,logreg,Sst
+675477919,Pvalb,dF/F scale,leave one mouse out,logreg,Pvalb
+692345003,Pvalb,dF/F scale,leave one mouse out,logreg,Vip
+710504563,Pvalb,dF/F scale,leave one mouse out,logreg,Pvalb
+710778377,Pvalb,dF/F scale,leave one mouse out,logreg,Pvalb
+501271265,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+501704220,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+501836392,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+502115959,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+502205092,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+503109347,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+510514474,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+510517131,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+524691284,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+645413759,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+660513003,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+702934964,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+712178511,Cux2,dF/F scale,leave one mouse out,gboost,Cux2
+573720508,Sst,dF/F scale,leave one mouse out,gboost,Sst
+576095926,Sst,dF/F scale,leave one mouse out,gboost,Sst
+580043440,Sst,dF/F scale,leave one mouse out,gboost,Sst
+580163817,Sst,dF/F scale,leave one mouse out,gboost,Cux2
+581150104,Sst,dF/F scale,leave one mouse out,gboost,Vip
+590047029,Sst,dF/F scale,leave one mouse out,gboost,Vip
+596779487,Sst,dF/F scale,leave one mouse out,gboost,Sst
+598635821,Sst,dF/F scale,leave one mouse out,gboost,Pvalb
+601423209,Sst,dF/F scale,leave one mouse out,gboost,Sst
+609894681,Sst,dF/F scale,leave one mouse out,gboost,Sst
+612044635,Sst,dF/F scale,leave one mouse out,gboost,Vip
+613968705,Sst,dF/F scale,leave one mouse out,gboost,Sst
+583279803,Vip,dF/F scale,leave one mouse out,gboost,Vip
+606353987,Vip,dF/F scale,leave one mouse out,gboost,Vip
+612543999,Vip,dF/F scale,leave one mouse out,gboost,Vip
+650079244,Vip,dF/F scale,leave one mouse out,gboost,Vip
+652091264,Vip,dF/F scale,leave one mouse out,gboost,Vip
+657078119,Vip,dF/F scale,leave one mouse out,gboost,Vip
+657389972,Vip,dF/F scale,leave one mouse out,gboost,Vip
+657390171,Vip,dF/F scale,leave one mouse out,gboost,Vip
+657650110,Vip,dF/F scale,leave one mouse out,gboost,Vip
+659495103,Vip,dF/F scale,leave one mouse out,gboost,Cux2
+662361096,Vip,dF/F scale,leave one mouse out,gboost,Vip
+663479824,Vip,dF/F scale,leave one mouse out,gboost,Vip
+669861524,Pvalb,dF/F scale,leave one mouse out,gboost,Pvalb
+670395999,Pvalb,dF/F scale,leave one mouse out,gboost,Pvalb
+670728674,Pvalb,dF/F scale,leave one mouse out,gboost,Cux2
+671164733,Pvalb,dF/F scale,leave one mouse out,gboost,Cux2
+672206735,Pvalb,dF/F scale,leave one mouse out,gboost,Vip
+675477919,Pvalb,dF/F scale,leave one mouse out,gboost,Vip
+692345003,Pvalb,dF/F scale,leave one mouse out,gboost,Vip
+710504563,Pvalb,dF/F scale,leave one mouse out,gboost,Sst
+710778377,Pvalb,dF/F scale,leave one mouse out,gboost,Pvalb
+501271265,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+501704220,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+501836392,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+502115959,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+502205092,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+503109347,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+510514474,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+510517131,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+524691284,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+645413759,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+660513003,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+702934964,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+712178511,Cux2,dF/F scale,leave one mouse out,sel,Cux2
+573720508,Sst,dF/F scale,leave one mouse out,sel,Sst
+576095926,Sst,dF/F scale,leave one mouse out,sel,Sst
+580043440,Sst,dF/F scale,leave one mouse out,sel,Sst
+580163817,Sst,dF/F scale,leave one mouse out,sel,Cux2
+581150104,Sst,dF/F scale,leave one mouse out,sel,Sst
+590047029,Sst,dF/F scale,leave one mouse out,sel,Vip
+596779487,Sst,dF/F scale,leave one mouse out,sel,Pvalb
+598635821,Sst,dF/F scale,leave one mouse out,sel,Sst
+601423209,Sst,dF/F scale,leave one mouse out,sel,Sst
+609894681,Sst,dF/F scale,leave one mouse out,sel,Sst
+612044635,Sst,dF/F scale,leave one mouse out,sel,Vip
+613968705,Sst,dF/F scale,leave one mouse out,sel,Sst
+583279803,Vip,dF/F scale,leave one mouse out,sel,Vip
+606353987,Vip,dF/F scale,leave one mouse out,sel,Vip
+612543999,Vip,dF/F scale,leave one mouse out,sel,Vip
+650079244,Vip,dF/F scale,leave one mouse out,sel,Vip
+652091264,Vip,dF/F scale,leave one mouse out,sel,Vip
+657078119,Vip,dF/F scale,leave one mouse out,sel,Vip
+657389972,Vip,dF/F scale,leave one mouse out,sel,Vip
+657390171,Vip,dF/F scale,leave one mouse out,sel,Vip
+657650110,Vip,dF/F scale,leave one mouse out,sel,Sst
+659495103,Vip,dF/F scale,leave one mouse out,sel,Pvalb
+662361096,Vip,dF/F scale,leave one mouse out,sel,Sst
+663479824,Vip,dF/F scale,leave one mouse out,sel,Vip
+669861524,Pvalb,dF/F scale,leave one mouse out,sel,Pvalb
+670395999,Pvalb,dF/F scale,leave one mouse out,sel,Pvalb
+670728674,Pvalb,dF/F scale,leave one mouse out,sel,Cux2
+671164733,Pvalb,dF/F scale,leave one mouse out,sel,Cux2
+672206735,Pvalb,dF/F scale,leave one mouse out,sel,Sst
+675477919,Pvalb,dF/F scale,leave one mouse out,sel,Pvalb
+692345003,Pvalb,dF/F scale,leave one mouse out,sel,Vip
+710504563,Pvalb,dF/F scale,leave one mouse out,sel,Pvalb
+710778377,Pvalb,dF/F scale,leave one mouse out,sel,Pvalb

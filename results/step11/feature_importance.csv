@@ -1,0 +1,173 @@
+featset,clf,feature,mean,std
+S,logreg,z std (10 Hz),0.013778,0.020337
+S,logreg,skew,0.06119,0.050039
+S,logreg,kurtosis,0.064696,0.03407
+S,logreg,event rate (/min),0.010788,0.016119
+S,logreg,time above z=2,0.018788,0.029655
+S,logreg,IEI 0-0.3 s,0.041983,0.040591
+S,logreg,IEI 0.3-1 s,0.0076951,0.010967
+S,logreg,IEI 1-3 s,0.028511,0.017765
+S,logreg,IEI 3-10 s,0.018639,0.021315
+S,logreg,IEI 10-30 s,0.021483,0.018235
+S,logreg,IEI 30-inf s,0.017244,0.032914
+S,logreg,autocorr 0.1 s,0.0032454,0.010656
+S,logreg,autocorr 0.2 s,-0.00045196,0.016181
+S,logreg,autocorr 0.5 s,0.013025,0.044099
+S,logreg,autocorr 1 s,0.036366,0.055809
+S,logreg,autocorr 2 s,0.0013289,0.012301
+S,logreg,autocorr 5 s,0.00083468,0.013737
+S,logreg,power 0-0.1 Hz,-0.0096659,0.02241
+S,logreg,power 0.1-0.5 Hz,0.0072445,0.021564
+S,logreg,power 0.5-1 Hz,0.082737,0.037246
+S,logreg,power 1-2 Hz,0.010226,0.022872
+S,logreg,power 2-5 Hz,0.011898,0.02324
+S,logreg,mean z: gratings,0.0025348,0.019842
+S,logreg,mean z: natural movie,0.01962,0.016588
+S,logreg,mean z: spontaneous,0.011289,0.025208
+S,logreg,grating on - blank,0.004891,0.0095804
+S,logreg,dir 0,0.016724,0.017249
+S,logreg,dir 45,0.010024,0.020262
+S,logreg,dir 90,0.0086804,0.013092
+S,logreg,dir 135,0.013701,0.025945
+S,logreg,dir 180,0.0022634,0.0084962
+S,logreg,dir 225,0.00056789,0.012341
+S,logreg,dir 270,0.0053971,0.014979
+S,logreg,dir 315,0.0065137,0.011469
+S,logreg,tuning peak,0.0080793,0.016611
+S,logreg,DSI,-0.0014319,0.010833
+S,logreg,OSI,0.015087,0.022107
+S,gboost,z std (10 Hz),-0.0047087,0.007949
+S,gboost,skew,0.018979,0.026163
+S,gboost,kurtosis,0.065605,0.033651
+S,gboost,event rate (/min),0.013866,0.016696
+S,gboost,time above z=2,0.0043191,0.0044221
+S,gboost,IEI 0-0.3 s,0.085097,0.047231
+S,gboost,IEI 0.3-1 s,0.0079931,0.010176
+S,gboost,IEI 1-3 s,0.0082716,0.011117
+S,gboost,IEI 3-10 s,-0.00071428,0.0070243
+S,gboost,IEI 10-30 s,0.004378,0.0071224
+S,gboost,IEI 30-inf s,0.004561,0.0094715
+S,gboost,autocorr 0.1 s,-0.00063527,0.0037523
+S,gboost,autocorr 0.2 s,0.00025257,0.0037676
+S,gboost,autocorr 0.5 s,-9.2938e-05,0.00028643
+S,gboost,autocorr 1 s,0.0025536,0.007039
+S,gboost,autocorr 2 s,0.0027366,0.0043836
+S,gboost,autocorr 5 s,0.0031945,0.0052639
+S,gboost,power 0-0.1 Hz,-0.00050974,0.0034969
+S,gboost,power 0.1-0.5 Hz,0.0009884,0.0099882
+S,gboost,power 0.5-1 Hz,0.074246,0.03031
+S,gboost,power 1-2 Hz,0.00032115,0.0041754
+S,gboost,power 2-5 Hz,-0.00033979,0.0011775
+S,gboost,mean z: gratings,0.0083952,0.0058726
+S,gboost,mean z: natural movie,0.025254,0.016772
+S,gboost,mean z: spontaneous,0.0038646,0.007095
+S,gboost,grating on - blank,0.037314,0.0197
+S,gboost,dir 0,0.017405,0.015407
+S,gboost,dir 45,0.00037778,0.0024622
+S,gboost,dir 90,0.0011615,0.0053918
+S,gboost,dir 135,0.0097745,0.0064475
+S,gboost,dir 180,0.001159,0.0031547
+S,gboost,dir 225,0.00023502,0.0035068
+S,gboost,dir 270,0.0012734,0.0052858
+S,gboost,dir 315,-0.0022325,0.0041524
+S,gboost,tuning peak,0.012364,0.011246
+S,gboost,DSI,0.0057594,0.0035829
+S,gboost,OSI,0.0055338,0.0049105
+R,logreg,dF/F mean,0.211,0.10891
+R,logreg,dF/F std,0.059986,0.080595
+R,logreg,dF/F median,0.04109,0.060425
+R,logreg,dF/F p99,0.24526,0.1048
+R,logreg,corr with pop mean,0.019625,0.041398
+R,logreg,n neurons,0.37684,0.21693
+R,logreg,depth,0.10738,0.055632
+R,gboost,dF/F mean,0.00096609,0.004844
+R,gboost,dF/F std,0.020642,0.032909
+R,gboost,dF/F median,0.064824,0.057154
+R,gboost,dF/F p99,0.059684,0.034659
+R,gboost,corr with pop mean,0.0026695,0.022837
+R,gboost,n neurons,0.43522,0.1973
+R,gboost,depth,0.11529,0.12605
+A,logreg,dF/F mean,0.0094405,0.0087173
+A,logreg,dF/F std,0.069278,0.031255
+A,logreg,dF/F median,0.051737,0.033166
+A,logreg,dF/F p99,0.031654,0.0086215
+A,logreg,z std (10 Hz),0.025703,0.022421
+A,logreg,skew,0.12026,0.095941
+A,logreg,kurtosis,0.048233,0.016831
+A,logreg,event rate (/min),0.021965,0.036767
+A,logreg,time above z=2,0.034107,0.032144
+A,logreg,IEI 0-0.3 s,0.041269,0.033101
+A,logreg,IEI 0.3-1 s,0.012411,0.021228
+A,logreg,IEI 1-3 s,0.018655,0.010501
+A,logreg,IEI 3-10 s,0.018968,0.011806
+A,logreg,IEI 10-30 s,0.022677,0.024645
+A,logreg,IEI 30-inf s,0.0013528,0.013112
+A,logreg,autocorr 0.1 s,0.010352,0.015282
+A,logreg,autocorr 0.2 s,0.021121,0.016875
+A,logreg,autocorr 0.5 s,0.016418,0.030779
+A,logreg,autocorr 1 s,0.045619,0.046839
+A,logreg,autocorr 2 s,0.008178,0.0078831
+A,logreg,autocorr 5 s,0.00067423,0.005249
+A,logreg,power 0-0.1 Hz,0.0034869,0.010786
+A,logreg,power 0.1-0.5 Hz,0.025546,0.015661
+A,logreg,power 0.5-1 Hz,0.092123,0.02318
+A,logreg,power 1-2 Hz,0.03181,0.018268
+A,logreg,power 2-5 Hz,0.035872,0.038424
+A,logreg,mean z: gratings,0.011593,0.0093694
+A,logreg,mean z: natural movie,0.021613,0.024279
+A,logreg,mean z: spontaneous,0.024712,0.01425
+A,logreg,grating on - blank,0.017601,0.01187
+A,logreg,dir 0,0.022208,0.0091241
+A,logreg,dir 45,0.021271,0.018321
+A,logreg,dir 90,0.013029,0.008932
+A,logreg,dir 135,0.020831,0.023578
+A,logreg,dir 180,-0.0016696,0.0067551
+A,logreg,dir 225,0.0081258,0.011438
+A,logreg,dir 270,0.0062358,0.01398
+A,logreg,dir 315,0.01573,0.015055
+A,logreg,tuning peak,0.0078296,0.0060415
+A,logreg,DSI,0.0098737,0.0065436
+A,logreg,OSI,0.019512,0.023088
+A,logreg,corr with pop mean,0.032317,0.035294
+A,gboost,dF/F mean,0.01384,0.0097653
+A,gboost,dF/F std,0.013977,0.00595
+A,gboost,dF/F median,0.0055459,0.0067159
+A,gboost,dF/F p99,0.0039769,0.0098594
+A,gboost,z std (10 Hz),-0.0019914,0.011144
+A,gboost,skew,0.011831,0.0093582
+A,gboost,kurtosis,0.052936,0.047534
+A,gboost,event rate (/min),0.004603,0.0052436
+A,gboost,time above z=2,0.0013214,0.0019585
+A,gboost,IEI 0-0.3 s,0.064855,0.021729
+A,gboost,IEI 0.3-1 s,0.0093179,0.0087637
+A,gboost,IEI 1-3 s,0.0067711,0.0061285
+A,gboost,IEI 3-10 s,0.0015131,0.0015378
+A,gboost,IEI 10-30 s,0.0073692,0.011741
+A,gboost,IEI 30-inf s,0.0079378,0.0066519
+A,gboost,autocorr 0.1 s,-0.0002372,0.0019617
+A,gboost,autocorr 0.2 s,0.00071194,0.0017868
+A,gboost,autocorr 0.5 s,0.00053357,0.0029084
+A,gboost,autocorr 1 s,0.0071369,0.014051
+A,gboost,autocorr 2 s,0.0055395,0.0091436
+A,gboost,autocorr 5 s,0.0080782,0.0068829
+A,gboost,power 0-0.1 Hz,0.0008155,0.0024318
+A,gboost,power 0.1-0.5 Hz,-0.0012884,0.0046923
+A,gboost,power 0.5-1 Hz,0.035178,0.019942
+A,gboost,power 1-2 Hz,-0.0020979,0.010613
+A,gboost,power 2-5 Hz,0.0014401,0.0053251
+A,gboost,mean z: gratings,0.0040388,0.0052413
+A,gboost,mean z: natural movie,0.0099752,0.019325
+A,gboost,mean z: spontaneous,0.00099973,0.0034198
+A,gboost,grating on - blank,0.013094,0.019147
+A,gboost,dir 0,0.017272,0.011078
+A,gboost,dir 45,0.0030146,0.006909
+A,gboost,dir 90,0.00072775,0.0038861
+A,gboost,dir 135,0.0084706,0.022115
+A,gboost,dir 180,-0.0010643,0.0078217
+A,gboost,dir 225,0.0047183,0.0018801
+A,gboost,dir 270,0.0018686,0.004991
+A,gboost,dir 315,9.7291e-05,0.012796
+A,gboost,tuning peak,0.010828,0.010847
+A,gboost,DSI,0.0033949,0.0099684
+A,gboost,OSI,0.0063961,0.0065534
+A,gboost,corr with pop mean,0.15662,0.025962

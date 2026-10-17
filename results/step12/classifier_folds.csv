@@ -1,0 +1,33 @@
+fold,set,clf,C,inner_bacc,selected
+0,S,logreg,0.01,0.48084,True
+0,S,gboost,,0.29421,False
+0,S+state,logreg,0.01,0.4908,True
+0,S+state,gboost,,0.28286,False
+0,S inh,logreg,0.01,0.51374,True
+0,S inh,gboost,,0.42669,False
+0,S+state inh,logreg,0.01,0.52291,True
+0,S+state inh,gboost,,0.44982,False
+1,S,logreg,0.01,0.37896,True
+1,S,gboost,,0.27664,False
+1,S+state,logreg,0.01,0.37781,True
+1,S+state,gboost,,0.25866,False
+1,S inh,logreg,0.1,0.44514,True
+1,S inh,gboost,,0.37793,False
+1,S+state inh,logreg,0.01,0.45343,True
+1,S+state inh,gboost,,0.36792,False
+2,S,logreg,0.01,0.34211,True
+2,S,gboost,,0.27279,False
+2,S+state,logreg,0.01,0.33039,True
+2,S+state,gboost,,0.27187,False
+2,S inh,logreg,0.01,0.43714,True
+2,S inh,gboost,,0.38801,False
+2,S+state inh,logreg,0.01,0.42236,True
+2,S+state inh,gboost,,0.38613,False
+3,S,logreg,0.01,0.41333,True
+3,S,gboost,,0.297,False
+3,S+state,logreg,0.01,0.4208,True
+3,S+state,gboost,,0.28088,False
+3,S inh,logreg,0.01,0.44949,True
+3,S inh,gboost,,0.38976,False
+3,S+state inh,logreg,0.01,0.4703,True
+3,S+state inh,gboost,,0.38208,False

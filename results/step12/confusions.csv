@@ -1,0 +1,367 @@
+set,clf,true,pred,count
+S,logreg,EC,EC,3771
+S,logreg,EC,Lamp5,707
+S,logreg,EC,Pvalb,705
+S,logreg,EC,Sncg,508
+S,logreg,EC,Sst,635
+S,logreg,EC,Vip,358
+S,logreg,Lamp5,EC,166
+S,logreg,Lamp5,Lamp5,168
+S,logreg,Lamp5,Pvalb,51
+S,logreg,Lamp5,Sncg,77
+S,logreg,Lamp5,Sst,34
+S,logreg,Lamp5,Vip,47
+S,logreg,Pvalb,EC,87
+S,logreg,Pvalb,Lamp5,27
+S,logreg,Pvalb,Pvalb,271
+S,logreg,Pvalb,Sncg,3
+S,logreg,Pvalb,Sst,36
+S,logreg,Pvalb,Vip,12
+S,logreg,Sncg,EC,12
+S,logreg,Sncg,Lamp5,9
+S,logreg,Sncg,Pvalb,2
+S,logreg,Sncg,Sncg,21
+S,logreg,Sncg,Sst,0
+S,logreg,Sncg,Vip,9
+S,logreg,Sst,EC,28
+S,logreg,Sst,Lamp5,10
+S,logreg,Sst,Pvalb,21
+S,logreg,Sst,Sncg,5
+S,logreg,Sst,Sst,45
+S,logreg,Sst,Vip,4
+S,logreg,Vip,EC,127
+S,logreg,Vip,Lamp5,67
+S,logreg,Vip,Pvalb,39
+S,logreg,Vip,Sncg,43
+S,logreg,Vip,Sst,37
+S,logreg,Vip,Vip,57
+S,gboost,EC,EC,5486
+S,gboost,EC,Lamp5,547
+S,gboost,EC,Pvalb,323
+S,gboost,EC,Sncg,14
+S,gboost,EC,Sst,42
+S,gboost,EC,Vip,272
+S,gboost,Lamp5,EC,268
+S,gboost,Lamp5,Lamp5,201
+S,gboost,Lamp5,Pvalb,27
+S,gboost,Lamp5,Sncg,1
+S,gboost,Lamp5,Sst,5
+S,gboost,Lamp5,Vip,41
+S,gboost,Pvalb,EC,190
+S,gboost,Pvalb,Lamp5,24
+S,gboost,Pvalb,Pvalb,197
+S,gboost,Pvalb,Sncg,0
+S,gboost,Pvalb,Sst,3
+S,gboost,Pvalb,Vip,22
+S,gboost,Sncg,EC,27
+S,gboost,Sncg,Lamp5,13
+S,gboost,Sncg,Pvalb,1
+S,gboost,Sncg,Sncg,3
+S,gboost,Sncg,Sst,0
+S,gboost,Sncg,Vip,9
+S,gboost,Sst,EC,71
+S,gboost,Sst,Lamp5,15
+S,gboost,Sst,Pvalb,11
+S,gboost,Sst,Sncg,0
+S,gboost,Sst,Sst,9
+S,gboost,Sst,Vip,7
+S,gboost,Vip,EC,240
+S,gboost,Vip,Lamp5,62
+S,gboost,Vip,Pvalb,22
+S,gboost,Vip,Sncg,0
+S,gboost,Vip,Sst,7
+S,gboost,Vip,Vip,39
+S,sel,EC,EC,3771
+S,sel,EC,Lamp5,707
+S,sel,EC,Pvalb,705
+S,sel,EC,Sncg,508
+S,sel,EC,Sst,635
+S,sel,EC,Vip,358
+S,sel,Lamp5,EC,166
+S,sel,Lamp5,Lamp5,168
+S,sel,Lamp5,Pvalb,51
+S,sel,Lamp5,Sncg,77
+S,sel,Lamp5,Sst,34
+S,sel,Lamp5,Vip,47
+S,sel,Pvalb,EC,87
+S,sel,Pvalb,Lamp5,27
+S,sel,Pvalb,Pvalb,271
+S,sel,Pvalb,Sncg,3
+S,sel,Pvalb,Sst,36
+S,sel,Pvalb,Vip,12
+S,sel,Sncg,EC,12
+S,sel,Sncg,Lamp5,9
+S,sel,Sncg,Pvalb,2
+S,sel,Sncg,Sncg,21
+S,sel,Sncg,Sst,0
+S,sel,Sncg,Vip,9
+S,sel,Sst,EC,28
+S,sel,Sst,Lamp5,10
+S,sel,Sst,Pvalb,21
+S,sel,Sst,Sncg,5
+S,sel,Sst,Sst,45
+S,sel,Sst,Vip,4
+S,sel,Vip,EC,127
+S,sel,Vip,Lamp5,67
+S,sel,Vip,Pvalb,39
+S,sel,Vip,Sncg,43
+S,sel,Vip,Sst,37
+S,sel,Vip,Vip,57
+S+state,logreg,EC,EC,3779
+S+state,logreg,EC,Lamp5,601
+S+state,logreg,EC,Pvalb,620
+S+state,logreg,EC,Sncg,507
+S+state,logreg,EC,Sst,613
+S+state,logreg,EC,Vip,564
+S+state,logreg,Lamp5,EC,167
+S+state,logreg,Lamp5,Lamp5,158
+S+state,logreg,Lamp5,Pvalb,51
+S+state,logreg,Lamp5,Sncg,74
+S+state,logreg,Lamp5,Sst,33
+S+state,logreg,Lamp5,Vip,60
+S+state,logreg,Pvalb,EC,88
+S+state,logreg,Pvalb,Lamp5,22
+S+state,logreg,Pvalb,Pvalb,263
+S+state,logreg,Pvalb,Sncg,4
+S+state,logreg,Pvalb,Sst,42
+S+state,logreg,Pvalb,Vip,17
+S+state,logreg,Sncg,EC,12
+S+state,logreg,Sncg,Lamp5,9
+S+state,logreg,Sncg,Pvalb,2
+S+state,logreg,Sncg,Sncg,20
+S+state,logreg,Sncg,Sst,0
+S+state,logreg,Sncg,Vip,10
+S+state,logreg,Sst,EC,28
+S+state,logreg,Sst,Lamp5,8
+S+state,logreg,Sst,Pvalb,20
+S+state,logreg,Sst,Sncg,3
+S+state,logreg,Sst,Sst,44
+S+state,logreg,Sst,Vip,10
+S+state,logreg,Vip,EC,130
+S+state,logreg,Vip,Lamp5,59
+S+state,logreg,Vip,Pvalb,28
+S+state,logreg,Vip,Sncg,38
+S+state,logreg,Vip,Sst,36
+S+state,logreg,Vip,Vip,79
+S+state,gboost,EC,EC,5602
+S+state,gboost,EC,Lamp5,469
+S+state,gboost,EC,Pvalb,307
+S+state,gboost,EC,Sncg,10
+S+state,gboost,EC,Sst,37
+S+state,gboost,EC,Vip,259
+S+state,gboost,Lamp5,EC,296
+S+state,gboost,Lamp5,Lamp5,181
+S+state,gboost,Lamp5,Pvalb,22
+S+state,gboost,Lamp5,Sncg,1
+S+state,gboost,Lamp5,Sst,4
+S+state,gboost,Lamp5,Vip,39
+S+state,gboost,Pvalb,EC,219
+S+state,gboost,Pvalb,Lamp5,25
+S+state,gboost,Pvalb,Pvalb,176
+S+state,gboost,Pvalb,Sncg,0
+S+state,gboost,Pvalb,Sst,1
+S+state,gboost,Pvalb,Vip,15
+S+state,gboost,Sncg,EC,33
+S+state,gboost,Sncg,Lamp5,12
+S+state,gboost,Sncg,Pvalb,1
+S+state,gboost,Sncg,Sncg,2
+S+state,gboost,Sncg,Sst,0
+S+state,gboost,Sncg,Vip,5
+S+state,gboost,Sst,EC,73
+S+state,gboost,Sst,Lamp5,10
+S+state,gboost,Sst,Pvalb,12
+S+state,gboost,Sst,Sncg,0
+S+state,gboost,Sst,Sst,9
+S+state,gboost,Sst,Vip,9
+S+state,gboost,Vip,EC,251
+S+state,gboost,Vip,Lamp5,59
+S+state,gboost,Vip,Pvalb,16
+S+state,gboost,Vip,Sncg,0
+S+state,gboost,Vip,Sst,6
+S+state,gboost,Vip,Vip,38
+S+state,sel,EC,EC,3779
+S+state,sel,EC,Lamp5,601
+S+state,sel,EC,Pvalb,620
+S+state,sel,EC,Sncg,507
+S+state,sel,EC,Sst,613
+S+state,sel,EC,Vip,564
+S+state,sel,Lamp5,EC,167
+S+state,sel,Lamp5,Lamp5,158
+S+state,sel,Lamp5,Pvalb,51
+S+state,sel,Lamp5,Sncg,74
+S+state,sel,Lamp5,Sst,33
+S+state,sel,Lamp5,Vip,60
+S+state,sel,Pvalb,EC,88
+S+state,sel,Pvalb,Lamp5,22
+S+state,sel,Pvalb,Pvalb,263
+S+state,sel,Pvalb,Sncg,4
+S+state,sel,Pvalb,Sst,42
+S+state,sel,Pvalb,Vip,17
+S+state,sel,Sncg,EC,12
+S+state,sel,Sncg,Lamp5,9
+S+state,sel,Sncg,Pvalb,2
+S+state,sel,Sncg,Sncg,20
+S+state,sel,Sncg,Sst,0
+S+state,sel,Sncg,Vip,10
+S+state,sel,Sst,EC,28
+S+state,sel,Sst,Lamp5,8
+S+state,sel,Sst,Pvalb,20
+S+state,sel,Sst,Sncg,3
+S+state,sel,Sst,Sst,44
+S+state,sel,Sst,Vip,10
+S+state,sel,Vip,EC,130
+S+state,sel,Vip,Lamp5,59
+S+state,sel,Vip,Pvalb,28
+S+state,sel,Vip,Sncg,38
+S+state,sel,Vip,Sst,36
+S+state,sel,Vip,Vip,79
+S inh,logreg,Lamp5,Lamp5,282
+S inh,logreg,Lamp5,Pvalb,58
+S inh,logreg,Lamp5,Sncg,94
+S inh,logreg,Lamp5,Sst,55
+S inh,logreg,Lamp5,Vip,54
+S inh,logreg,Pvalb,Lamp5,57
+S inh,logreg,Pvalb,Pvalb,277
+S inh,logreg,Pvalb,Sncg,4
+S inh,logreg,Pvalb,Sst,83
+S inh,logreg,Pvalb,Vip,15
+S inh,logreg,Sncg,Lamp5,18
+S inh,logreg,Sncg,Pvalb,3
+S inh,logreg,Sncg,Sncg,24
+S inh,logreg,Sncg,Sst,1
+S inh,logreg,Sncg,Vip,7
+S inh,logreg,Sst,Lamp5,14
+S inh,logreg,Sst,Pvalb,28
+S inh,logreg,Sst,Sncg,6
+S inh,logreg,Sst,Sst,61
+S inh,logreg,Sst,Vip,4
+S inh,logreg,Vip,Lamp5,150
+S inh,logreg,Vip,Pvalb,41
+S inh,logreg,Vip,Sncg,56
+S inh,logreg,Vip,Sst,69
+S inh,logreg,Vip,Vip,54
+S inh,gboost,Lamp5,Lamp5,378
+S inh,gboost,Lamp5,Pvalb,53
+S inh,gboost,Lamp5,Sncg,5
+S inh,gboost,Lamp5,Sst,27
+S inh,gboost,Lamp5,Vip,80
+S inh,gboost,Pvalb,Lamp5,80
+S inh,gboost,Pvalb,Pvalb,271
+S inh,gboost,Pvalb,Sncg,1
+S inh,gboost,Pvalb,Sst,47
+S inh,gboost,Pvalb,Vip,37
+S inh,gboost,Sncg,Lamp5,32
+S inh,gboost,Sncg,Pvalb,5
+S inh,gboost,Sncg,Sncg,3
+S inh,gboost,Sncg,Sst,0
+S inh,gboost,Sncg,Vip,13
+S inh,gboost,Sst,Lamp5,23
+S inh,gboost,Sst,Pvalb,26
+S inh,gboost,Sst,Sncg,2
+S inh,gboost,Sst,Sst,39
+S inh,gboost,Sst,Vip,23
+S inh,gboost,Vip,Lamp5,194
+S inh,gboost,Vip,Pvalb,47
+S inh,gboost,Vip,Sncg,4
+S inh,gboost,Vip,Sst,30
+S inh,gboost,Vip,Vip,95
+S inh,sel,Lamp5,Lamp5,282
+S inh,sel,Lamp5,Pvalb,58
+S inh,sel,Lamp5,Sncg,94
+S inh,sel,Lamp5,Sst,55
+S inh,sel,Lamp5,Vip,54
+S inh,sel,Pvalb,Lamp5,57
+S inh,sel,Pvalb,Pvalb,277
+S inh,sel,Pvalb,Sncg,4
+S inh,sel,Pvalb,Sst,83
+S inh,sel,Pvalb,Vip,15
+S inh,sel,Sncg,Lamp5,18
+S inh,sel,Sncg,Pvalb,3
+S inh,sel,Sncg,Sncg,24
+S inh,sel,Sncg,Sst,1
+S inh,sel,Sncg,Vip,7
+S inh,sel,Sst,Lamp5,14
+S inh,sel,Sst,Pvalb,28
+S inh,sel,Sst,Sncg,6
+S inh,sel,Sst,Sst,61
+S inh,sel,Sst,Vip,4
+S inh,sel,Vip,Lamp5,150
+S inh,sel,Vip,Pvalb,41
+S inh,sel,Vip,Sncg,56
+S inh,sel,Vip,Sst,69
+S inh,sel,Vip,Vip,54
+S+state inh,logreg,Lamp5,Lamp5,283
+S+state inh,logreg,Lamp5,Pvalb,61
+S+state inh,logreg,Lamp5,Sncg,98
+S+state inh,logreg,Lamp5,Sst,48
+S+state inh,logreg,Lamp5,Vip,53
+S+state inh,logreg,Pvalb,Lamp5,53
+S+state inh,logreg,Pvalb,Pvalb,279
+S+state inh,logreg,Pvalb,Sncg,2
+S+state inh,logreg,Pvalb,Sst,87
+S+state inh,logreg,Pvalb,Vip,15
+S+state inh,logreg,Sncg,Lamp5,20
+S+state inh,logreg,Sncg,Pvalb,1
+S+state inh,logreg,Sncg,Sncg,24
+S+state inh,logreg,Sncg,Sst,1
+S+state inh,logreg,Sncg,Vip,7
+S+state inh,logreg,Sst,Lamp5,11
+S+state inh,logreg,Sst,Pvalb,27
+S+state inh,logreg,Sst,Sncg,5
+S+state inh,logreg,Sst,Sst,60
+S+state inh,logreg,Sst,Vip,10
+S+state inh,logreg,Vip,Lamp5,131
+S+state inh,logreg,Vip,Pvalb,33
+S+state inh,logreg,Vip,Sncg,55
+S+state inh,logreg,Vip,Sst,75
+S+state inh,logreg,Vip,Vip,76
+S+state inh,gboost,Lamp5,Lamp5,382
+S+state inh,gboost,Lamp5,Pvalb,53
+S+state inh,gboost,Lamp5,Sncg,5
+S+state inh,gboost,Lamp5,Sst,21
+S+state inh,gboost,Lamp5,Vip,82
+S+state inh,gboost,Pvalb,Lamp5,82
+S+state inh,gboost,Pvalb,Pvalb,274
+S+state inh,gboost,Pvalb,Sncg,0
+S+state inh,gboost,Pvalb,Sst,51
+S+state inh,gboost,Pvalb,Vip,29
+S+state inh,gboost,Sncg,Lamp5,32
+S+state inh,gboost,Sncg,Pvalb,4
+S+state inh,gboost,Sncg,Sncg,4
+S+state inh,gboost,Sncg,Sst,0
+S+state inh,gboost,Sncg,Vip,13
+S+state inh,gboost,Sst,Lamp5,25
+S+state inh,gboost,Sst,Pvalb,25
+S+state inh,gboost,Sst,Sncg,1
+S+state inh,gboost,Sst,Sst,39
+S+state inh,gboost,Sst,Vip,23
+S+state inh,gboost,Vip,Lamp5,192
+S+state inh,gboost,Vip,Pvalb,34
+S+state inh,gboost,Vip,Sncg,3
+S+state inh,gboost,Vip,Sst,31
+S+state inh,gboost,Vip,Vip,110
+S+state inh,sel,Lamp5,Lamp5,283
+S+state inh,sel,Lamp5,Pvalb,61
+S+state inh,sel,Lamp5,Sncg,98
+S+state inh,sel,Lamp5,Sst,48
+S+state inh,sel,Lamp5,Vip,53
+S+state inh,sel,Pvalb,Lamp5,53
+S+state inh,sel,Pvalb,Pvalb,279
+S+state inh,sel,Pvalb,Sncg,2
+S+state inh,sel,Pvalb,Sst,87
+S+state inh,sel,Pvalb,Vip,15
+S+state inh,sel,Sncg,Lamp5,20
+S+state inh,sel,Sncg,Pvalb,1
+S+state inh,sel,Sncg,Sncg,24
+S+state inh,sel,Sncg,Sst,1
+S+state inh,sel,Sncg,Vip,7
+S+state inh,sel,Sst,Lamp5,11
+S+state inh,sel,Sst,Pvalb,27
+S+state inh,sel,Sst,Sncg,5
+S+state inh,sel,Sst,Sst,60
+S+state inh,sel,Sst,Vip,10
+S+state inh,sel,Vip,Lamp5,131
+S+state inh,sel,Vip,Pvalb,33
+S+state inh,sel,Vip,Sncg,55
+S+state inh,sel,Vip,Sst,75
+S+state inh,sel,Vip,Vip,76

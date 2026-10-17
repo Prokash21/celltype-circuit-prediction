@@ -1,0 +1,185 @@
+test,type,family,a,b,n,a_beats_b,ties,median_diff,mean_diff,p
+sessions,all,ridge,true,none,17,9,0,0.0001122,0.001399,0.2633
+mice (signs only),all,ridge,true,none,4,2,0,0.000623,0.0007801,0.875
+sessions,all,ridge,true,control,17,9,0,0.0002733,0.00152,0.2069
+mice (signs only),all,ridge,true,control,4,2,0,0.0007763,0.0008904,0.875
+sessions,all,ridge,control,none,17,3,0,-0.0001266,-0.0001213,0.0005035
+mice (signs only),all,ridge,control,none,4,1,0,-0.0001251,-0.0001103,0.25
+sessions,all,ridge,S,none,17,17,0,0.005102,0.006221,1.526e-05
+mice (signs only),all,ridge,S,none,4,4,0,0.004655,0.005406,0.125
+sessions,all,ridge,S,true,17,17,0,0.004836,0.004823,1.526e-05
+mice (signs only),all,ridge,S,true,4,4,0,0.00486,0.004626,0.125
+sessions,all,ridge,S+state,none,17,17,0,0.00469,0.006137,1.526e-05
+mice (signs only),all,ridge,S+state,none,4,4,0,0.004486,0.00536,0.125
+sessions,all,ridge,S+state,true,17,17,0,0.004738,0.004738,1.526e-05
+mice (signs only),all,ridge,S+state,true,4,4,0,0.004661,0.00458,0.125
+sessions,all,ridge,shuffled,none,17,5,0,-0.002131,-0.0009069,0.4307
+mice (signs only),all,ridge,shuffled,none,4,2,0,-0.001614,-0.001481,0.875
+sessions,all,ridge,shuffled,true,17,0,0,-0.001948,-0.002305,1.526e-05
+mice (signs only),all,ridge,shuffled,true,4,0,0,-0.002237,-0.002262,0.125
+neurons,all,ridge,true,none,8199,4314,1,0.0005091,-0.0002575,5.376e-07
+unique cells,all,ridge,true,none,7774,4049,1,0.0003995,-0.0004181,5.318e-05
+neurons,all,ridge,true,control,8199,4371,0,0.0006582,-8.462e-05,5.028e-10
+unique cells,all,ridge,true,control,7774,4111,0,0.0005551,-0.0002501,2.07e-07
+neurons,all,ridge,S,none,8199,5958,0,0.003691,0.005717,0
+unique cells,all,ridge,S,none,7774,5635,0,0.003596,0.005665,0
+neurons,all,ridge,S,true,8199,3057,4333,0,0.005975,0
+unique cells,all,ridge,S,true,7774,2912,4116,0,0.006083,0
+neurons,EC,ridge,true,none,6684,3424,1,0.000261,-0.0007354,0.02153
+unique cells,EC,ridge,true,none,6684,3424,1,0.000261,-0.0007354,0.02153
+neurons,EC,ridge,true,control,6684,3478,0,0.000414,-0.0005701,0.001086
+unique cells,EC,ridge,true,control,6684,3478,0,0.000414,-0.0005701,0.001086
+neurons,EC,ridge,S,none,6684,4801,0,0.003422,0.005677,0
+unique cells,EC,ridge,S,none,6684,4801,0,0.003422,0.005677,0
+neurons,EC,ridge,S,true,6684,2369,3771,0,0.006412,1.677e-294
+unique cells,EC,ridge,S,true,6684,2369,3771,0,0.006412,1.677e-294
+sessions,EC,ridge,true,none,17,8,0,-0.0007293,0.002017,0.4874
+sessions,EC,ridge,true,control,17,8,0,-0.0005907,0.002132,0.4038
+sessions,EC,ridge,S,none,17,17,0,0.005073,0.006443,1.526e-05
+neurons,Lamp5,ridge,true,none,543,382,0,0.001679,0.00204,1.628e-22
+unique cells,Lamp5,ridge,true,none,387,265,0,0.001468,0.001898,2.716e-16
+neurons,Lamp5,ridge,true,control,543,379,0,0.001842,0.00236,8.199e-25
+unique cells,Lamp5,ridge,true,control,387,266,0,0.001699,0.00218,1.161e-18
+neurons,Lamp5,ridge,S,none,543,396,0,0.002694,0.00444,2.234e-30
+unique cells,Lamp5,ridge,S,none,387,282,0,0.002776,0.004445,1.557e-24
+neurons,Lamp5,ridge,S,true,543,254,168,0,0.002401,5.817e-12
+unique cells,Lamp5,ridge,S,true,387,192,101,0,0.002547,2.254e-10
+sessions,Lamp5,ridge,true,none,17,16,0,0.001427,0.00236,0.0002136
+sessions,Lamp5,ridge,true,control,17,16,0,0.001649,0.002632,4.578e-05
+sessions,Lamp5,ridge,S,none,17,16,0,0.002411,0.004125,0.001068
+neurons,Pvalb,ridge,true,none,436,307,0,0.005847,0.005628,3.233e-21
+unique cells,Pvalb,ridge,true,none,307,214,0,0.004984,0.004909,2.876e-14
+neurons,Pvalb,ridge,true,control,436,305,0,0.006002,0.005681,1.304e-20
+unique cells,Pvalb,ridge,true,control,307,213,0,0.004851,0.00497,6.818e-14
+neurons,Pvalb,ridge,S,none,436,376,0,0.009606,0.008891,4.523e-56
+unique cells,Pvalb,ridge,S,none,307,265,0,0.009254,0.008197,2.368e-38
+neurons,Pvalb,ridge,S,true,436,121,271,0,0.003262,4.198e-12
+unique cells,Pvalb,ridge,S,true,307,106,164,0,0.003289,1.625e-09
+sessions,Pvalb,ridge,true,none,16,11,0,0.00697,0.004836,0.02139
+sessions,Pvalb,ridge,true,control,16,11,0,0.007031,0.004879,0.02139
+sessions,Pvalb,ridge,S,none,16,15,0,0.009236,0.007786,0.0002136
+neurons,Sncg,ridge,true,none,53,38,0,0.004194,0.005583,0.001291
+unique cells,Sncg,ridge,true,none,37,24,0,0.003237,0.004403,0.02432
+neurons,Sncg,ridge,true,control,53,38,0,0.00413,0.006016,0.0006026
+unique cells,Sncg,ridge,true,control,37,25,0,0.004319,0.004882,0.01329
+neurons,Sncg,ridge,S,none,53,44,0,0.009059,0.007492,2.397e-07
+unique cells,Sncg,ridge,S,none,37,31,0,0.007352,0.007352,5.788e-07
+neurons,Sncg,ridge,S,true,53,21,21,0,0.001909,0.04542
+unique cells,Sncg,ridge,S,true,37,17,12,0,0.002949,0.05437
+sessions,Sncg,ridge,true,none,14,11,0,0.00426,0.005741,0.005249
+sessions,Sncg,ridge,true,control,14,12,0,0.005414,0.006195,0.005249
+sessions,Sncg,ridge,S,none,14,14,0,0.006707,0.00754,0.0001221
+neurons,Sst,ridge,true,none,113,45,0,-0.002337,-0.002887,0.01846
+unique cells,Sst,ridge,true,none,93,36,0,-0.002694,-0.002439,0.02588
+neurons,Sst,ridge,true,control,113,46,0,-0.002213,-0.002745,0.02353
+unique cells,Sst,ridge,true,control,93,36,0,-0.00249,-0.002346,0.02854
+neurons,Sst,ridge,S,none,113,75,0,0.004565,0.003276,0.0001926
+unique cells,Sst,ridge,S,none,93,60,0,0.003317,0.003027,0.001712
+neurons,Sst,ridge,S,true,113,53,45,0,0.006164,5.785e-07
+unique cells,Sst,ridge,S,true,93,46,34,0,0.005466,6.148e-06
+sessions,Sst,ridge,true,none,15,6,0,-0.002394,0.0002347,0.8904
+sessions,Sst,ridge,true,control,15,6,0,-0.002269,0.0002764,0.8469
+sessions,Sst,ridge,S,none,15,9,0,0.005024,0.00437,0.04126
+neurons,Vip,ridge,true,none,370,118,0,-0.001834,-0.001966,1.847e-19
+unique cells,Vip,ridge,true,none,266,86,0,-0.00164,-0.001926,4.358e-15
+neurons,Vip,ridge,true,control,370,125,0,-0.001554,-0.001758,3.868e-15
+unique cells,Vip,ridge,true,control,266,93,0,-0.001502,-0.001749,3.632e-12
+neurons,Vip,ridge,S,none,370,266,0,0.003806,0.005067,6.333e-26
+unique cells,Vip,ridge,S,none,266,196,0,0.003823,0.004911,1.843e-20
+neurons,Vip,ridge,S,true,370,239,57,0.004386,0.007033,4.081e-29
+unique cells,Vip,ridge,S,true,266,182,34,0.004709,0.006837,6.95e-23
+sessions,Vip,ridge,true,none,17,2,0,-0.001018,-0.001991,0.0008392
+sessions,Vip,ridge,true,control,17,4,0,-0.0009401,-0.001772,0.006653
+sessions,Vip,ridge,S,none,17,14,0,0.002871,0.004664,0.0005035
+sessions,all,MLP,true,none,17,14,0,0.001775,0.001774,0.0002136
+mice (signs only),all,MLP,true,none,4,3,0,0.001782,0.001469,0.25
+sessions,all,MLP,true,control,17,14,0,0.00153,0.001745,0.0002136
+mice (signs only),all,MLP,true,control,4,3,0,0.001612,0.001418,0.25
+sessions,all,MLP,control,none,17,10,0,6.923e-05,2.929e-05,0.7467
+mice (signs only),all,MLP,control,none,4,2,0,-2.737e-05,5.057e-05,1
+sessions,all,MLP,S,none,17,17,0,0.003077,0.002671,1.526e-05
+mice (signs only),all,MLP,S,none,4,4,0,0.00272,0.002377,0.125
+sessions,all,MLP,S,true,17,17,0,0.000749,0.0008964,1.526e-05
+mice (signs only),all,MLP,S,true,4,4,0,0.0009352,0.0009089,0.125
+sessions,all,MLP,S+state,none,17,17,0,0.003089,0.002629,1.526e-05
+mice (signs only),all,MLP,S+state,none,4,4,0,0.002668,0.002347,0.125
+sessions,all,MLP,S+state,true,17,16,0,0.0007772,0.0008547,3.052e-05
+mice (signs only),all,MLP,S+state,true,4,4,0,0.000886,0.0008781,0.125
+sessions,all,MLP,shuffled,none,17,11,0,0.0007695,0.0008294,0.03479
+mice (signs only),all,MLP,shuffled,none,4,3,0,0.0007161,0.0004803,0.375
+sessions,all,MLP,shuffled,true,17,0,0,-0.0008432,-0.0009447,1.526e-05
+mice (signs only),all,MLP,shuffled,true,4,0,0,-0.001066,-0.0009882,0.125
+neurons,all,MLP,true,none,8199,5867,0,0.001638,0.001586,0
+unique cells,all,MLP,true,none,7774,5542,0,0.001627,0.001548,4.403e-300
+neurons,all,MLP,true,control,8199,5540,0,0.001364,0.001471,1.452e-228
+unique cells,all,MLP,true,control,7774,5242,0,0.001342,0.001436,4.52e-209
+neurons,all,MLP,S,none,8199,6387,0,0.002365,0.002583,0
+unique cells,all,MLP,S,none,7774,6053,0,0.00234,0.002566,0
+neurons,all,MLP,S,true,8199,2418,4333,0,0.0009966,2.651e-75
+unique cells,all,MLP,S,true,7774,2297,4116,0,0.001017,7.26e-76
+neurons,EC,MLP,true,none,6684,4735,0,0.001635,0.001541,2.124e-253
+unique cells,EC,MLP,true,none,6684,4735,0,0.001635,0.001541,2.124e-253
+neurons,EC,MLP,true,control,6684,4473,0,0.001349,0.001428,5.861e-172
+unique cells,EC,MLP,true,control,6684,4473,0,0.001349,0.001428,5.861e-172
+neurons,EC,MLP,S,none,6684,5209,0,0.002333,0.002606,0
+unique cells,EC,MLP,S,none,6684,5209,0,0.002333,0.002606,0
+neurons,EC,MLP,S,true,6684,1872,3771,0,0.001065,1.952e-71
+unique cells,EC,MLP,S,true,6684,1872,3771,0,0.001065,1.952e-71
+sessions,EC,MLP,true,none,17,16,0,0.001803,0.001854,7.629e-05
+sessions,EC,MLP,true,control,17,15,0,0.001449,0.001863,0.0003815
+sessions,EC,MLP,S,none,17,17,0,0.003162,0.002739,1.526e-05
+neurons,Lamp5,MLP,true,none,543,409,0,0.001592,0.001634,1.259e-31
+unique cells,Lamp5,MLP,true,none,387,293,0,0.00156,0.001649,4.01e-23
+neurons,Lamp5,MLP,true,control,543,379,0,0.00137,0.0014,2.431e-25
+unique cells,Lamp5,MLP,true,control,387,275,0,0.001339,0.001416,1.881e-19
+neurons,Lamp5,MLP,S,none,543,395,0,0.001715,0.00186,6.778e-27
+unique cells,Lamp5,MLP,S,none,387,285,0,0.001759,0.001954,6.388e-22
+neurons,Lamp5,MLP,S,true,543,185,168,0,0.0002263,0.692
+unique cells,Lamp5,MLP,S,true,387,141,101,0,0.000305,0.5616
+sessions,Lamp5,MLP,true,none,17,15,0,0.001933,0.001811,0.0005035
+sessions,Lamp5,MLP,true,control,17,14,0,0.001341,0.00158,0.002579
+sessions,Lamp5,MLP,S,none,17,15,0,0.001295,0.0016,0.002579
+neurons,Pvalb,MLP,true,none,436,347,0,0.003579,0.00336,3.396e-36
+unique cells,Pvalb,MLP,true,none,307,236,0,0.00338,0.002883,2.358e-22
+neurons,Pvalb,MLP,true,control,436,336,0,0.003257,0.003385,7.365e-33
+unique cells,Pvalb,MLP,true,control,307,227,0,0.002882,0.002939,3.189e-20
+neurons,Pvalb,MLP,S,none,436,370,0,0.003292,0.003436,3.253e-49
+unique cells,Pvalb,MLP,S,none,307,250,0,0.00298,0.003015,1.638e-31
+neurons,Pvalb,MLP,S,true,436,78,271,0,7.616e-05,0.5466
+unique cells,Pvalb,MLP,S,true,307,66,164,0,0.0001321,0.5295
+sessions,Pvalb,MLP,true,none,16,12,0,0.00406,0.00301,0.004181
+sessions,Pvalb,MLP,true,control,16,12,0,0.00371,0.003063,0.004181
+sessions,Pvalb,MLP,S,none,16,12,0,0.003403,0.002992,0.001312
+neurons,Sncg,MLP,true,none,53,31,0,0.001588,0.002675,0.07024
+unique cells,Sncg,MLP,true,none,37,23,0,0.002553,0.001992,0.1579
+neurons,Sncg,MLP,true,control,53,29,0,0.001811,0.002393,0.1312
+unique cells,Sncg,MLP,true,control,37,20,0,0.001852,0.00174,0.2077
+neurons,Sncg,MLP,S,none,53,44,0,0.004178,0.004676,7.643e-07
+unique cells,Sncg,MLP,S,none,37,32,0,0.003521,0.004341,2.219e-06
+neurons,Sncg,MLP,S,true,53,25,21,0,0.002001,0.006701
+unique cells,Sncg,MLP,S,true,37,20,12,0.0006898,0.002349,0.011
+sessions,Sncg,MLP,true,none,14,9,0,0.002524,0.003129,0.04944
+sessions,Sncg,MLP,true,control,14,9,0,0.001661,0.002782,0.1189
+sessions,Sncg,MLP,S,none,14,14,0,0.004576,0.004786,0.0001221
+neurons,Sst,MLP,true,none,113,62,0,0.0009631,-0.0008396,0.7128
+unique cells,Sst,MLP,true,none,93,49,0,0.0005337,-0.0005681,0.7202
+neurons,Sst,MLP,true,control,113,62,0,0.0007236,-0.0007461,0.8154
+unique cells,Sst,MLP,true,control,93,51,0,0.0004217,-0.0004861,0.8466
+neurons,Sst,MLP,S,none,113,85,0,0.002805,0.002538,1.476e-07
+unique cells,Sst,MLP,S,none,93,68,0,0.002746,0.002413,4.468e-06
+neurons,Sst,MLP,S,true,113,52,45,0,0.003378,5.791e-06
+unique cells,Sst,MLP,S,true,93,46,34,0,0.002981,2.291e-05
+sessions,Sst,MLP,true,none,15,10,0,0.002006,0.001599,0.3028
+sessions,Sst,MLP,true,control,15,10,0,0.001714,0.001624,0.3303
+sessions,Sst,MLP,S,none,15,11,0,0.003837,0.003185,0.004272
+neurons,Vip,MLP,true,none,370,283,0,0.001083,0.0008346,2.816e-21
+unique cells,Vip,MLP,true,none,266,206,0,0.001089,0.0007279,8.36e-16
+neurons,Vip,MLP,true,control,370,261,0,0.0008702,0.0006556,3.443e-15
+unique cells,Vip,MLP,true,control,266,196,0,0.000839,0.0005573,4.112e-12
+neurons,Vip,MLP,S,none,370,284,0,0.002342,0.001941,3.625e-23
+unique cells,Vip,MLP,S,none,266,209,0,0.002169,0.001735,1.061e-17
+neurons,Vip,MLP,S,true,370,206,57,0.0006582,0.001106,2.057e-09
+unique cells,Vip,MLP,S,true,266,152,34,0.0007128,0.001007,1.14e-07
+sessions,Vip,MLP,true,none,17,13,0,0.0009747,0.0004013,0.07141
+sessions,Vip,MLP,true,control,17,12,0,0.0008143,0.0002494,0.1594
+sessions,Vip,MLP,S,none,17,14,0,0.00208,0.00175,0.003159

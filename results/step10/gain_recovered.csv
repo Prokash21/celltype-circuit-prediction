@@ -1,0 +1,26 @@
+line,family,pred,gain_pred,gain_true,frac,ci_lo,ci_hi,frac_foldpooled
+Cux2-CreERT2,ridge,d_pred_neuron,0.01429,0.01403,1.018,0.9924,1.072,1.027
+Cux2-CreERT2,ridge,d_pred_session,0.01403,0.01403,1,1,1,1
+Cux2-CreERT2,MLP,m2_pred_neuron,0.01348,0.01307,1.031,0.999,1.064,1.032
+Cux2-CreERT2,MLP,m2_pred_session,0.01307,0.01307,1,1,1,1
+Cux2-CreERT2,MLP,m2_soft,0.01406,0.01307,1.076,1.038,1.115,1.076
+Sst-IRES-Cre,ridge,d_pred_neuron,0.02126,0.0169,1.258,1.043,2.834,1.179
+Sst-IRES-Cre,ridge,d_pred_session,0.0169,0.0169,1,1,1,1
+Sst-IRES-Cre,MLP,m2_pred_neuron,0.0009335,0.0004459,2.094,-0.5046,2.563,1.094
+Sst-IRES-Cre,MLP,m2_pred_session,0.0004459,0.0004459,1,1,1,1
+Sst-IRES-Cre,MLP,m2_soft,0.003332,0.0004459,7.472,-6.188,8.712,1.549
+Vip-IRES-Cre,ridge,d_pred_neuron,0.02404,0.02282,1.054,0.9735,1.276,1.099
+Vip-IRES-Cre,ridge,d_pred_session,0.02282,0.02282,1,1,1,1
+Vip-IRES-Cre,MLP,m2_pred_neuron,0.02341,0.02335,1.002,0.9511,1.058,1.003
+Vip-IRES-Cre,MLP,m2_pred_session,0.02335,0.02335,1,1,1,1
+Vip-IRES-Cre,MLP,m2_soft,0.02486,0.02335,1.065,1.023,1.138,1.078
+Pvalb-IRES-Cre,ridge,d_pred_neuron,0.04201,0.05583,0.7526,0.2151,0.9973,0.7063
+Pvalb-IRES-Cre,ridge,d_pred_session,0.05583,0.05583,1,1,1,1
+Pvalb-IRES-Cre,MLP,m2_pred_neuron,0.06993,0.07178,0.9742,0.8862,1.005,0.9758
+Pvalb-IRES-Cre,MLP,m2_pred_session,0.07178,0.07178,1,1,1,1
+Pvalb-IRES-Cre,MLP,m2_soft,0.06929,0.07178,0.9652,0.9118,1.02,0.9859
+all lines,ridge,d_pred_neuron,0.02408,0.02525,0.9535,0.7298,1.112,1.001
+all lines,ridge,d_pred_session,0.02525,0.02525,1,1,1,1
+all lines,MLP,m2_pred_neuron,0.02384,0.02395,0.9955,0.9577,1.028,1.026
+all lines,MLP,m2_pred_session,0.02395,0.02395,1,1,1,1
+all lines,MLP,m2_soft,0.02488,0.02395,1.039,0.9885,1.157,1.082

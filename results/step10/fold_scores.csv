@@ -1,0 +1,276 @@
+line,fold,model,score,mse
+Cux2-CreERT2,0,b,0.364273,0.410188
+Cux2-CreERT2,0,d_true,0.384671,0.397027
+Cux2-CreERT2,0,d_pred_neuron,0.384504,0.397135
+Cux2-CreERT2,0,d_pred_session,0.384671,0.397027
+Cux2-CreERT2,0,e,0.355568,0.415806
+Cux2-CreERT2,0,m1,0.44108,0.360631
+Cux2-CreERT2,0,m2_true,0.454513,0.351963
+Cux2-CreERT2,0,m2_pred_neuron,0.454589,0.351914
+Cux2-CreERT2,0,m2_pred_session,0.454513,0.351963
+Cux2-CreERT2,0,m2_soft,0.454902,0.351712
+Cux2-CreERT2,0,m3,0.440039,0.361302
+Cux2-CreERT2,1,b,0.369815,0.342725
+Cux2-CreERT2,1,d_true,0.387452,0.333133
+Cux2-CreERT2,1,d_pred_neuron,0.388053,0.332806
+Cux2-CreERT2,1,d_pred_session,0.387452,0.333133
+Cux2-CreERT2,1,e,0.361691,0.347143
+Cux2-CreERT2,1,m1,0.452674,0.297663
+Cux2-CreERT2,1,m2_true,0.465741,0.290556
+Cux2-CreERT2,1,m2_pred_neuron,0.466053,0.290386
+Cux2-CreERT2,1,m2_pred_session,0.465741,0.290556
+Cux2-CreERT2,1,m2_soft,0.466971,0.289887
+Cux2-CreERT2,1,m3,0.454473,0.296684
+Cux2-CreERT2,2,b,0.342668,0.4446
+Cux2-CreERT2,2,d_true,0.359828,0.432993
+Cux2-CreERT2,2,d_pred_neuron,0.359661,0.433106
+Cux2-CreERT2,2,d_pred_session,0.359828,0.432993
+Cux2-CreERT2,2,e,0.336231,0.448954
+Cux2-CreERT2,2,m1,0.425349,0.388677
+Cux2-CreERT2,2,m2_true,0.439334,0.379218
+Cux2-CreERT2,2,m2_pred_neuron,0.439718,0.378958
+Cux2-CreERT2,2,m2_pred_session,0.439334,0.379218
+Cux2-CreERT2,2,m2_soft,0.4399,0.378835
+Cux2-CreERT2,2,m3,0.426963,0.387585
+Cux2-CreERT2,3,b,0.273349,0.494617
+Cux2-CreERT2,3,d_true,0.263517,0.501309
+Cux2-CreERT2,3,d_pred_neuron,0.264127,0.500894
+Cux2-CreERT2,3,d_pred_session,0.263517,0.501309
+Cux2-CreERT2,3,e,0.270892,0.496289
+Cux2-CreERT2,3,m1,0.365547,0.431859
+Cux2-CreERT2,3,m2_true,0.380434,0.421726
+Cux2-CreERT2,3,m2_pred_neuron,0.381508,0.420995
+Cux2-CreERT2,3,m2_pred_session,0.380434,0.421726
+Cux2-CreERT2,3,m2_soft,0.382547,0.420288
+Cux2-CreERT2,3,m3,0.361597,0.434548
+Cux2-CreERT2,4,b,0.346885,0.406856
+Cux2-CreERT2,4,d_true,0.360825,0.398172
+Cux2-CreERT2,4,d_pred_neuron,0.361544,0.397724
+Cux2-CreERT2,4,d_pred_session,0.360825,0.398172
+Cux2-CreERT2,4,e,0.342157,0.409801
+Cux2-CreERT2,4,m1,0.434076,0.352541
+Cux2-CreERT2,4,m2_true,0.444487,0.346055
+Cux2-CreERT2,4,m2_pred_neuron,0.444721,0.345909
+Cux2-CreERT2,4,m2_pred_session,0.444487,0.346055
+Cux2-CreERT2,4,m2_soft,0.445161,0.345635
+Cux2-CreERT2,4,m3,0.43372,0.352762
+Sst-IRES-Cre,0,b,0.351556,0.605653
+Sst-IRES-Cre,0,d_true,0.387967,0.571645
+Sst-IRES-Cre,0,d_pred_neuron,0.388821,0.570847
+Sst-IRES-Cre,0,d_pred_session,0.387967,0.571645
+Sst-IRES-Cre,0,e,0.342352,0.61425
+Sst-IRES-Cre,0,m1,0.519683,0.448621
+Sst-IRES-Cre,0,m2_true,0.532242,0.436891
+Sst-IRES-Cre,0,m2_pred_neuron,0.531205,0.43786
+Sst-IRES-Cre,0,m2_pred_session,0.532242,0.436891
+Sst-IRES-Cre,0,m2_soft,0.531899,0.437211
+Sst-IRES-Cre,0,m3,0.516819,0.451296
+Sst-IRES-Cre,1,b,0.393591,0.473355
+Sst-IRES-Cre,1,d_true,0.419173,0.453386
+Sst-IRES-Cre,1,d_pred_neuron,0.422474,0.450809
+Sst-IRES-Cre,1,d_pred_session,0.419173,0.453386
+Sst-IRES-Cre,1,e,0.381324,0.482931
+Sst-IRES-Cre,1,m1,0.530876,0.366192
+Sst-IRES-Cre,1,m2_true,0.517033,0.376998
+Sst-IRES-Cre,1,m2_pred_neuron,0.518309,0.376002
+Sst-IRES-Cre,1,m2_pred_session,0.517033,0.376998
+Sst-IRES-Cre,1,m2_soft,0.5226,0.372653
+Sst-IRES-Cre,1,m3,0.535554,0.362541
+Sst-IRES-Cre,2,b,0.410077,0.505299
+Sst-IRES-Cre,2,d_true,0.44214,0.477835
+Sst-IRES-Cre,2,d_pred_neuron,0.443713,0.476487
+Sst-IRES-Cre,2,d_pred_session,0.44214,0.477835
+Sst-IRES-Cre,2,e,0.404131,0.510391
+Sst-IRES-Cre,2,m1,0.526421,0.405644
+Sst-IRES-Cre,2,m2_true,0.527633,0.404606
+Sst-IRES-Cre,2,m2_pred_neuron,0.528057,0.404242
+Sst-IRES-Cre,2,m2_pred_session,0.527633,0.404606
+Sst-IRES-Cre,2,m2_soft,0.528559,0.403813
+Sst-IRES-Cre,2,m3,0.528125,0.404184
+Sst-IRES-Cre,3,b,0.400416,0.299293
+Sst-IRES-Cre,3,d_true,0.386418,0.30628
+Sst-IRES-Cre,3,d_pred_neuron,0.396609,0.301194
+Sst-IRES-Cre,3,d_pred_session,0.386418,0.30628
+Sst-IRES-Cre,3,e,0.405653,0.296679
+Sst-IRES-Cre,3,m1,0.507209,0.245985
+Sst-IRES-Cre,3,m2_true,0.51678,0.241208
+Sst-IRES-Cre,3,m2_pred_neuron,0.517484,0.240857
+Sst-IRES-Cre,3,m2_pred_session,0.51678,0.241208
+Sst-IRES-Cre,3,m2_soft,0.518427,0.240386
+Sst-IRES-Cre,3,m3,0.505916,0.246631
+Sst-IRES-Cre,4,b,0.362391,0.612464
+Sst-IRES-Cre,4,d_true,0.380511,0.595058
+Sst-IRES-Cre,4,d_pred_neuron,0.38214,0.593494
+Sst-IRES-Cre,4,d_pred_session,0.380511,0.595058
+Sst-IRES-Cre,4,e,0.357472,0.617188
+Sst-IRES-Cre,4,m1,0.556025,0.426466
+Sst-IRES-Cre,4,m2_true,0.561514,0.421193
+Sst-IRES-Cre,4,m2_pred_neuron,0.561555,0.421154
+Sst-IRES-Cre,4,m2_pred_session,0.561514,0.421193
+Sst-IRES-Cre,4,m2_soft,0.561947,0.420778
+Sst-IRES-Cre,4,m3,0.549732,0.432511
+Vip-IRES-Cre,0,b,0.274527,0.35568
+Vip-IRES-Cre,0,d_true,0.294881,0.345701
+Vip-IRES-Cre,0,d_pred_neuron,0.295855,0.345223
+Vip-IRES-Cre,0,d_pred_session,0.294881,0.345701
+Vip-IRES-Cre,0,e,0.27069,0.357561
+Vip-IRES-Cre,0,m1,0.370521,0.308617
+Vip-IRES-Cre,0,m2_true,0.390805,0.298672
+Vip-IRES-Cre,0,m2_pred_neuron,0.39143,0.298365
+Vip-IRES-Cre,0,m2_pred_session,0.390805,0.298672
+Vip-IRES-Cre,0,m2_soft,0.392708,0.297739
+Vip-IRES-Cre,0,m3,0.369231,0.309249
+Vip-IRES-Cre,1,b,0.258296,0.223711
+Vip-IRES-Cre,1,d_true,0.288563,0.214582
+Vip-IRES-Cre,1,d_pred_neuron,0.287162,0.215004
+Vip-IRES-Cre,1,d_pred_session,0.288563,0.214582
+Vip-IRES-Cre,1,e,0.249992,0.226216
+Vip-IRES-Cre,1,m1,0.324475,0.20375
+Vip-IRES-Cre,1,m2_true,0.363748,0.191905
+Vip-IRES-Cre,1,m2_pred_neuron,0.360546,0.19287
+Vip-IRES-Cre,1,m2_pred_session,0.363748,0.191905
+Vip-IRES-Cre,1,m2_soft,0.363551,0.191964
+Vip-IRES-Cre,1,m3,0.336502,0.200123
+Vip-IRES-Cre,2,b,0.210315,0.145052
+Vip-IRES-Cre,2,d_true,0.253078,0.137197
+Vip-IRES-Cre,2,d_pred_neuron,0.253078,0.137197
+Vip-IRES-Cre,2,d_pred_session,0.253078,0.137197
+Vip-IRES-Cre,2,e,0.202331,0.146518
+Vip-IRES-Cre,2,m1,0.337332,0.121721
+Vip-IRES-Cre,2,m2_true,0.361505,0.117281
+Vip-IRES-Cre,2,m2_pred_neuron,0.361505,0.117281
+Vip-IRES-Cre,2,m2_pred_session,0.361505,0.117281
+Vip-IRES-Cre,2,m2_soft,0.361606,0.117262
+Vip-IRES-Cre,2,m3,0.339186,0.12138
+Vip-IRES-Cre,3,b,0.337417,0.253665
+Vip-IRES-Cre,3,d_true,0.327037,0.257639
+Vip-IRES-Cre,3,d_pred_neuron,0.329244,0.256794
+Vip-IRES-Cre,3,d_pred_session,0.327037,0.257639
+Vip-IRES-Cre,3,e,0.332956,0.255372
+Vip-IRES-Cre,3,m1,0.438797,0.214852
+Vip-IRES-Cre,3,m2_true,0.447649,0.211463
+Vip-IRES-Cre,3,m2_pred_neuron,0.448787,0.211028
+Vip-IRES-Cre,3,m2_pred_session,0.447649,0.211463
+Vip-IRES-Cre,3,m2_soft,0.45194,0.20982
+Vip-IRES-Cre,3,m3,0.438516,0.21496
+Vip-IRES-Cre,4,b,0.289808,0.264528
+Vip-IRES-Cre,4,d_true,0.305149,0.258814
+Vip-IRES-Cre,4,d_pred_neuron,0.313084,0.255859
+Vip-IRES-Cre,4,d_pred_session,0.305149,0.258814
+Vip-IRES-Cre,4,e,0.288978,0.264838
+Vip-IRES-Cre,4,m1,0.406451,0.221082
+Vip-IRES-Cre,4,m2_true,0.417716,0.216886
+Vip-IRES-Cre,4,m2_pred_neuron,0.419512,0.216217
+Vip-IRES-Cre,4,m2_pred_session,0.417716,0.216886
+Vip-IRES-Cre,4,m2_soft,0.419744,0.21613
+Vip-IRES-Cre,4,m3,0.405539,0.221421
+Pvalb-IRES-Cre,0,b,0.186037,0.347591
+Pvalb-IRES-Cre,0,d_true,0.225348,0.330804
+Pvalb-IRES-Cre,0,d_pred_neuron,0.225348,0.330804
+Pvalb-IRES-Cre,0,d_pred_session,0.225348,0.330804
+Pvalb-IRES-Cre,0,e,0.183251,0.348781
+Pvalb-IRES-Cre,0,m1,0.309233,0.294982
+Pvalb-IRES-Cre,0,m2_true,0.346478,0.279077
+Pvalb-IRES-Cre,0,m2_pred_neuron,0.346478,0.279077
+Pvalb-IRES-Cre,0,m2_pred_session,0.346478,0.279077
+Pvalb-IRES-Cre,0,m2_soft,0.344142,0.280075
+Pvalb-IRES-Cre,0,m3,0.298039,0.299762
+Pvalb-IRES-Cre,1,b,0.00196874,0.171404
+Pvalb-IRES-Cre,1,d_true,0.111441,0.152603
+Pvalb-IRES-Cre,1,d_pred_neuron,0.111441,0.152603
+Pvalb-IRES-Cre,1,d_pred_session,0.111441,0.152603
+Pvalb-IRES-Cre,1,e,-0.00972231,0.173412
+Pvalb-IRES-Cre,1,m1,0.0598165,0.161469
+Pvalb-IRES-Cre,1,m2_true,0.239334,0.130638
+Pvalb-IRES-Cre,1,m2_pred_neuron,0.239334,0.130638
+Pvalb-IRES-Cre,1,m2_pred_session,0.239334,0.130638
+Pvalb-IRES-Cre,1,m2_soft,0.2352,0.131348
+Pvalb-IRES-Cre,1,m3,0.114658,0.15205
+Pvalb-IRES-Cre,2,b,0.286106,0.349818
+Pvalb-IRES-Cre,2,d_true,0.32522,0.330651
+Pvalb-IRES-Cre,2,d_pred_neuron,0.260439,0.362395
+Pvalb-IRES-Cre,2,d_pred_session,0.32522,0.330651
+Pvalb-IRES-Cre,2,e,0.275136,0.355193
+Pvalb-IRES-Cre,2,m1,0.398846,0.294573
+Pvalb-IRES-Cre,2,m2_true,0.422255,0.283103
+Pvalb-IRES-Cre,2,m2_pred_neuron,0.413136,0.287571
+Pvalb-IRES-Cre,2,m2_pred_session,0.422255,0.283103
+Pvalb-IRES-Cre,2,m2_soft,0.417973,0.285201
+Pvalb-IRES-Cre,2,m3,0.400771,0.29363
+Pvalb-IRES-Cre,3,b,0.276871,0.380899
+Pvalb-IRES-Cre,3,d_true,0.294795,0.371458
+Pvalb-IRES-Cre,3,d_pred_neuron,0.294846,0.371431
+Pvalb-IRES-Cre,3,d_pred_session,0.294795,0.371458
+Pvalb-IRES-Cre,3,e,0.276159,0.381274
+Pvalb-IRES-Cre,3,m1,0.370791,0.331428
+Pvalb-IRES-Cre,3,m2_true,0.406475,0.312632
+Pvalb-IRES-Cre,3,m2_pred_neuron,0.406671,0.312529
+Pvalb-IRES-Cre,3,m2_pred_session,0.406475,0.312632
+Pvalb-IRES-Cre,3,m2_soft,0.410616,0.310451
+Pvalb-IRES-Cre,3,m3,0.372955,0.330288
+Pvalb-IRES-Cre,4,b,0.206667,0.401501
+Pvalb-IRES-Cre,4,d_true,0.249514,0.379816
+Pvalb-IRES-Cre,4,d_pred_neuron,0.241204,0.384022
+Pvalb-IRES-Cre,4,d_pred_session,0.249514,0.379816
+Pvalb-IRES-Cre,4,e,0.20454,0.402577
+Pvalb-IRES-Cre,4,m1,0.327725,0.340234
+Pvalb-IRES-Cre,4,m2_true,0.351684,0.328109
+Pvalb-IRES-Cre,4,m2_pred_neuron,0.35335,0.327265
+Pvalb-IRES-Cre,4,m2_pred_session,0.351684,0.328109
+Pvalb-IRES-Cre,4,m2_soft,0.354056,0.326908
+Pvalb-IRES-Cre,4,m3,0.326443,0.340883
+all lines,0,b,0.358019,0.412121
+all lines,0,d_true,0.379396,0.398398
+all lines,0,d_pred_neuron,0.379313,0.398451
+all lines,0,d_pred_session,0.379396,0.398398
+all lines,0,e,0.349543,0.417562
+all lines,0,m1,0.440067,0.35945
+all lines,0,m2_true,0.454061,0.350467
+all lines,0,m2_pred_neuron,0.454106,0.350437
+all lines,0,m2_pred_session,0.454061,0.350467
+all lines,0,m2_soft,0.454424,0.350233
+all lines,0,m3,0.438781,0.360276
+all lines,1,b,0.367328,0.343407
+all lines,1,d_true,0.386595,0.33295
+all lines,1,d_pred_neuron,0.387413,0.332506
+all lines,1,d_pred_session,0.386595,0.33295
+all lines,1,e,0.358762,0.348057
+all lines,1,m1,0.455104,0.295764
+all lines,1,m2_true,0.467049,0.28928
+all lines,1,m2_pred_neuron,0.467366,0.289108
+all lines,1,m2_pred_session,0.467049,0.28928
+all lines,1,m2_soft,0.468649,0.288411
+all lines,1,m3,0.457747,0.294329
+all lines,2,b,0.342384,0.432882
+all lines,2,d_true,0.361202,0.420495
+all lines,2,d_pred_neuron,0.358757,0.422105
+all lines,2,d_pred_session,0.361202,0.420495
+all lines,2,e,0.33579,0.437223
+all lines,2,m1,0.427982,0.376536
+all lines,2,m2_true,0.441849,0.367408
+all lines,2,m2_pred_neuron,0.441885,0.367385
+all lines,2,m2_pred_session,0.441849,0.367408
+all lines,2,m2_soft,0.44225,0.367145
+all lines,2,m3,0.429614,0.375462
+all lines,3,b,0.278963,0.464708
+all lines,3,d_true,0.270739,0.470008
+all lines,3,d_pred_neuron,0.271599,0.469454
+all lines,3,d_pred_session,0.270739,0.470008
+all lines,3,e,0.276719,0.466154
+all lines,3,m1,0.371957,0.404773
+all lines,3,m2_true,0.387785,0.394572
+all lines,3,m2_pred_neuron,0.388798,0.393919
+all lines,3,m2_pred_session,0.387785,0.394572
+all lines,3,m2_soft,0.390096,0.393083
+all lines,3,m3,0.368588,0.406944
+all lines,4,b,0.34376,0.404092
+all lines,4,d_true,0.35829,0.395145
+all lines,4,d_pred_neuron,0.359176,0.394599
+all lines,4,d_pred_session,0.35829,0.395145
+all lines,4,e,0.339191,0.406905
+all lines,4,m1,0.436718,0.346851
+all lines,4,m2_true,0.447133,0.340438
+all lines,4,m2_pred_neuron,0.447431,0.340255
+all lines,4,m2_pred_session,0.447133,0.340438
+all lines,4,m2_soft,0.447865,0.339987
+all lines,4,m3,0.43609,0.347238

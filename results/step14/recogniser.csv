@@ -1,0 +1,133 @@
+dataset,target,kind,history,window,n,selected,frac_folds_selected,acc,bacc,logloss,chance_acc,chance_bacc,minutes,n_tiles,r2,mse,windows_picked
+bugeon,cluster,naive short summary (nearest centroid),3 min,history,8199,,,0.42652,,,,,,,,,
+bugeon,cluster,naive short summary (nearest centroid),10 min,history,8199,,,0.52897,,,,,,,,,
+bugeon,cluster,naive short summary (nearest centroid),30 min,history,8199,,,0.69057,,,,,,,,,
+bugeon,cluster,single window,,30 s,163980,,,0.36639,0.27384,1.934,0.14314,0.0625,0.49751,,,,
+bugeon,cluster,single window,,3 min,163980,,,0.59465,0.50888,1.1717,0.14314,0.0625,3.0119,,,,
+bugeon,cluster,single window,,10 min,163980,,,0.67893,0.61361,0.89269,0.14314,0.0625,9.9999,,,,
+bugeon,cluster,single window,,30 min,163980,,,0.75414,0.69373,0.66034,0.14314,0.0625,30,,,,
+bugeon,cluster,accumulated,3 min,30 s,8199,False,0,0.47542,0.32856,1.6031,,,,4.0774,,,
+bugeon,cluster,accumulated,3 min,3 min,8199,True,1,0.52043,0.43348,1.4138,,,,1,,,
+bugeon,cluster,accumulated,10 min,30 s,8199,False,0,0.52872,0.37899,1.4408,,,,18,,,
+bugeon,cluster,accumulated,10 min,3 min,8199,True,1,0.62971,0.53453,0.99895,,,,2.8716,,,
+bugeon,cluster,accumulated,10 min,10 min,8199,False,0,0.63398,0.58248,1.0447,,,,1,,,
+bugeon,cluster,accumulated,30 min,30 s,8199,False,0,0.55104,0.40122,1.399,,,,58.233,,,
+bugeon,cluster,accumulated,30 min,3 min,8199,False,0,0.69143,0.59742,0.81657,,,,8.8716,,,
+bugeon,cluster,accumulated,30 min,10 min,8199,False,0,0.70045,0.64155,0.7964,,,,2.2543,,,
+bugeon,cluster,accumulated,30 min,30 min,8199,True,1,0.73241,0.68738,0.71512,,,,1,,,
+bugeon,cluster,accumulated,full,30 s,8199,False,0,0.56251,0.4035,1.3995,,,,182.05,,,
+bugeon,cluster,accumulated,full,3 min,8199,False,0,0.73533,0.63134,0.73786,,,,29.566,,,
+bugeon,cluster,accumulated,full,10 min,8199,False,0,0.77656,0.70516,0.59177,,,,8.7129,,,
+bugeon,cluster,accumulated,full,30 min,8199,True,1,0.80059,0.75169,0.5191,,,,2.6354,,,
+bugeon,type,single window,,30 s,163980,,,0.46254,0.28193,1.3885,0.80615,0.16667,0.49751,,,,
+bugeon,type,single window,,3 min,163980,,,0.60053,0.34899,1.0966,0.80615,0.16667,3.0119,,,,
+bugeon,type,single window,,10 min,163980,,,0.64034,0.37009,1.0207,0.80615,0.16667,9.9999,,,,
+bugeon,type,single window,,30 min,163980,,,0.65757,0.38471,0.97453,0.80615,0.16667,30,,,,
+bugeon,type,accumulated,3 min,30 s,8199,False,0,0.58666,0.3115,1.227,,,,4.0774,,,
+bugeon,type,accumulated,3 min,3 min,8199,True,1,0.59788,0.32066,1.1192,,,,1,,,
+bugeon,type,accumulated,10 min,30 s,8199,False,0,0.62813,0.335,1.1958,,,,18,,,
+bugeon,type,accumulated,10 min,3 min,8199,False,0.25,0.63691,0.36085,1.0109,,,,2.8716,,,
+bugeon,type,accumulated,10 min,10 min,8199,True,0.75,0.62398,0.3648,1.0588,,,,1,,,
+bugeon,type,accumulated,30 min,30 s,8199,False,0,0.63776,0.35952,1.1952,,,,58.233,,,
+bugeon,type,accumulated,30 min,3 min,8199,False,0,0.65898,0.37049,0.96004,,,,8.8716,,,
+bugeon,type,accumulated,30 min,10 min,8199,False,0.5,0.65288,0.38604,0.97841,,,,2.2543,,,
+bugeon,type,accumulated,30 min,30 min,8199,False,0.5,0.64813,0.39425,0.99567,,,,1,,,
+bugeon,type,accumulated,full,30 s,8199,False,0,0.6413,0.36527,1.2033,,,,182.05,,,
+bugeon,type,accumulated,full,3 min,8199,False,0,0.67301,0.37805,0.93611,,,,29.566,,,
+bugeon,type,accumulated,full,10 min,8199,True,0.75,0.68142,0.39628,0.91859,,,,8.7129,,,
+bugeon,type,accumulated,full,30 min,8199,False,0.25,0.67301,0.40123,0.92583,,,,2.6354,,,
+bugeon,summary,single window,,30 s,163980,,,,,,,,,,0.10699,0.8735,
+bugeon,summary,single window,,3 min,163980,,,,,,,,,,0.55022,0.44032,
+bugeon,summary,single window,,10 min,163980,,,,,,,,,,0.70044,0.29472,
+bugeon,summary,single window,,30 min,163980,,,,,,,,,,0.78097,0.21723,
+bugeon,summary,accumulated,3 min,30 s,8199,True,1,,,,,,,,0.29043,0.69925,
+bugeon,summary,accumulated,3 min,3 min,8199,False,0,,,,,,,,0.13546,0.82542,
+bugeon,summary,accumulated,10 min,30 s,8199,False,0,,,,,,,,0.39407,0.60071,
+bugeon,summary,accumulated,10 min,3 min,8199,True,0.75,,,,,,,,0.5695,0.41934,
+bugeon,summary,accumulated,10 min,10 min,8199,False,0.25,,,,,,,,0.56043,0.42344,
+bugeon,summary,accumulated,30 min,30 s,8199,False,0,,,,,,,,0.3825,0.61304,
+bugeon,summary,accumulated,30 min,3 min,8199,False,0,,,,,,,,0.73064,0.26759,
+bugeon,summary,accumulated,30 min,10 min,8199,False,0,,,,,,,,0.71873,0.27249,
+bugeon,summary,accumulated,30 min,30 min,8199,True,1,,,,,,,,0.78067,0.21622,
+bugeon,summary,accumulated,full,30 s,8199,False,0,,,,,,,,0.35202,0.64333,
+bugeon,summary,accumulated,full,3 min,8199,False,0,,,,,,,,0.7582,0.24333,
+bugeon,summary,accumulated,full,10 min,8199,False,0,,,,,,,,0.81056,0.19082,
+bugeon,summary,accumulated,full,30 min,8199,True,1,,,,,,,,0.82811,0.17277,
+allen,cluster,naive short summary (nearest centroid),3 min,history,3296,,,0.26274,,,,,,,,,
+allen,cluster,naive short summary (nearest centroid),10 min,history,3296,,,0.35467,,,,,,,,,
+allen,cluster,naive short summary (nearest centroid),30 min,history,3296,,,0.7142,,,,,,,,,
+allen,cluster,single window,,30 s,65920,,,0.48278,0.35199,1.5434,0.15975,0.0625,0.49997,,,,
+allen,cluster,single window,,3 min,65920,,,0.56506,0.45932,1.258,0.15975,0.0625,3.0005,,,,
+allen,cluster,single window,,10 min,65920,,,0.64521,0.5771,1.025,0.15975,0.0625,10,,,,
+allen,cluster,single window,,30 min,65920,,,0.76493,0.7208,0.67078,0.15975,0.0625,30,,,,
+allen,cluster,accumulated,3 min,30 s,3296,True,1,0.54703,0.45756,1.2332,,,,5.3917,,,
+allen,cluster,accumulated,3 min,3 min,3296,False,0,0.53216,0.53014,1.3861,,,,1,,,
+allen,cluster,accumulated,10 min,30 s,3296,False,0,0.60255,0.48547,1.0858,,,,19.392,,,
+allen,cluster,accumulated,10 min,3 min,3296,True,1,0.66444,0.61188,0.89901,,,,3,,,
+allen,cluster,accumulated,10 min,10 min,3296,False,0,0.65959,0.6326,0.92341,,,,1,,,
+allen,cluster,accumulated,30 min,30 s,3296,False,0,0.57615,0.37695,1.1738,,,,59.392,,,
+allen,cluster,accumulated,30 min,3 min,3296,False,0,0.68356,0.56201,0.88363,,,,9.1408,,,
+allen,cluster,accumulated,30 min,10 min,3296,False,0,0.72633,0.65653,0.75585,,,,2.6104,,,
+allen,cluster,accumulated,30 min,30 min,3296,True,1,0.77761,0.73213,0.6233,,,,1,,,
+allen,cluster,accumulated,full,30 s,3296,False,0,0.58586,0.38332,1.178,,,,102,,,
+allen,cluster,accumulated,full,3 min,3296,False,0,0.69023,0.55559,0.87366,,,,17,,,
+allen,cluster,accumulated,full,10 min,3296,False,0,0.75364,0.68221,0.6881,,,,5,,,
+allen,cluster,accumulated,full,30 min,3296,True,1,0.77761,0.73213,0.6233,,,,1,,,
+allen,type,single window,,30 s,65920,,,0.73888,0.6141,0.83258,0.88044,0.25,0.49997,,,,
+allen,type,single window,,3 min,65920,,,0.827,0.73004,0.48248,0.88044,0.25,3.0005,,,,
+allen,type,single window,,10 min,65920,,,0.92523,0.84489,0.2084,0.88044,0.25,10,,,,
+allen,type,single window,,30 min,65920,,,0.96482,0.88158,0.10281,0.88044,0.25,30,,,,
+allen,type,accumulated,3 min,30 s,3296,True,0.6,0.76032,0.67323,0.80509,,,,5.3917,,,
+allen,type,accumulated,3 min,3 min,3296,False,0.4,0.74606,0.69398,0.76571,,,,1,,,
+allen,type,accumulated,10 min,30 s,3296,False,0,0.82282,0.70498,0.59525,,,,19.392,,,
+allen,type,accumulated,10 min,3 min,3296,False,0.4,0.85467,0.7968,0.39736,,,,3,,,
+allen,type,accumulated,10 min,10 min,3296,True,0.6,0.87682,0.81241,0.33783,,,,1,,,
+allen,type,accumulated,30 min,30 s,3296,False,0,0.85103,0.70696,0.49477,,,,59.392,,,
+allen,type,accumulated,30 min,3 min,3296,False,0,0.92294,0.83364,0.21233,,,,9.1408,,,
+allen,type,accumulated,30 min,10 min,3296,False,0.4,0.94751,0.86955,0.14384,,,,2.6104,,,
+allen,type,accumulated,30 min,30 min,3296,True,0.6,0.95237,0.86649,0.13728,,,,1,,,
+allen,type,accumulated,full,30 s,3296,False,0,0.85558,0.72126,0.50156,,,,102,,,
+allen,type,accumulated,full,3 min,3296,False,0,0.92992,0.84269,0.19798,,,,17,,,
+allen,type,accumulated,full,10 min,3296,True,0.6,0.96693,0.91744,0.10156,,,,5,,,
+allen,type,accumulated,full,30 min,3296,False,0.4,0.95237,0.86649,0.13728,,,,1,,,
+allen,summary,single window,,30 s,65920,,,,,,,,,,0.13642,0.8526,
+allen,summary,single window,,3 min,65920,,,,,,,,,,0.36511,0.62999,
+allen,summary,single window,,10 min,65920,,,,,,,,,,0.51952,0.47686,
+allen,summary,single window,,30 min,65920,,,,,,,,,,0.72382,0.27378,
+allen,summary,accumulated,3 min,30 s,3296,False,0,,,,,,,,0.29517,0.69238,
+allen,summary,accumulated,3 min,3 min,3296,True,1,,,,,,,,0.34861,0.64499,
+allen,summary,accumulated,10 min,30 s,3296,False,0,,,,,,,,0.46616,0.52795,
+allen,summary,accumulated,10 min,3 min,3296,False,0,,,,,,,,0.56009,0.43493,
+allen,summary,accumulated,10 min,10 min,3296,True,1,,,,,,,,0.57041,0.42532,
+allen,summary,accumulated,30 min,30 s,3296,False,0,,,,,,,,0.41071,0.58342,
+allen,summary,accumulated,30 min,3 min,3296,False,0,,,,,,,,0.54455,0.45119,
+allen,summary,accumulated,30 min,10 min,3296,False,0,,,,,,,,0.62964,0.36686,
+allen,summary,accumulated,30 min,30 min,3296,True,1,,,,,,,,0.73829,0.2586,
+allen,summary,accumulated,full,30 s,3296,False,0,,,,,,,,0.39731,0.59653,
+allen,summary,accumulated,full,3 min,3296,False,0,,,,,,,,0.54049,0.4555,
+allen,summary,accumulated,full,10 min,3296,False,0,,,,,,,,0.65045,0.34651,
+allen,summary,accumulated,full,30 min,3296,True,1,,,,,,,,0.73829,0.2586,
+bugeon,cluster,accumulated,3 min,selected per fold,8199,True,,0.52043,0.43348,1.4138,,,,1,,,3 min;3 min;3 min;3 min
+bugeon,cluster,accumulated,10 min,selected per fold,8199,True,,0.62971,0.53453,0.99895,,,,2.8716,,,3 min;3 min;3 min;3 min
+bugeon,cluster,accumulated,30 min,selected per fold,8199,True,,0.73241,0.68738,0.71512,,,,1,,,30 min;30 min;30 min;30 min
+bugeon,cluster,accumulated,full,selected per fold,8199,True,,0.80059,0.75169,0.5191,,,,2.6354,,,30 min;30 min;30 min;30 min
+bugeon,type,accumulated,3 min,selected per fold,8199,True,,0.59788,0.32066,1.1192,,,,1,,,3 min;3 min;3 min;3 min
+bugeon,type,accumulated,10 min,selected per fold,8199,True,,0.62203,0.35768,1.0749,,,,1.7098,,,10 min;10 min;3 min;10 min
+bugeon,type,accumulated,30 min,selected per fold,8199,True,,0.65032,0.38884,0.9841,,,,1.3742,,,30 min;10 min;30 min;10 min
+bugeon,type,accumulated,full,selected per fold,8199,True,,0.67484,0.39355,0.91784,,,,6.355,,,10 min;10 min;30 min;10 min
+bugeon,summary,accumulated,3 min,selected per fold,8199,True,,,,,,,,,0.29043,0.69925,30 s;30 s;30 s;30 s
+bugeon,summary,accumulated,10 min,selected per fold,8199,True,,,,,,,,,0.55338,0.43111,3 min;3 min;3 min;10 min
+bugeon,summary,accumulated,30 min,selected per fold,8199,True,,,,,,,,,0.78067,0.21622,30 min;30 min;30 min;30 min
+bugeon,summary,accumulated,full,selected per fold,8199,True,,,,,,,,,0.82811,0.17277,30 min;30 min;30 min;30 min
+allen,cluster,accumulated,3 min,selected per fold,3296,True,,0.54703,0.45756,1.2332,,,,5.3917,,,30 s;30 s;30 s;30 s;30 s
+allen,cluster,accumulated,10 min,selected per fold,3296,True,,0.66444,0.61188,0.89901,,,,3,,,3 min;3 min;3 min;3 min;3 min
+allen,cluster,accumulated,30 min,selected per fold,3296,True,,0.77761,0.73213,0.6233,,,,1,,,30 min;30 min;30 min;30 min;30 min
+allen,cluster,accumulated,full,selected per fold,3296,True,,0.77761,0.73213,0.6233,,,,1,,,30 min;30 min;30 min;30 min;30 min
+allen,type,accumulated,3 min,selected per fold,3296,True,,0.73786,0.69199,0.94698,,,,3.5316,,,30 s;30 s;3 min;30 s;3 min
+allen,type,accumulated,10 min,selected per fold,3296,True,,0.85407,0.79135,0.38509,,,,1.8623,,,3 min;10 min;10 min;10 min;3 min
+allen,type,accumulated,30 min,selected per fold,3296,True,,0.94903,0.85142,0.143,,,,1.5167,,,30 min;30 min;30 min;10 min;10 min
+allen,type,accumulated,full,selected per fold,3296,True,,0.96238,0.8863,0.11402,,,,3.409,,,10 min;30 min;30 min;10 min;10 min
+allen,summary,accumulated,3 min,selected per fold,3296,True,,,,,,,,,0.34861,0.64499,3 min;3 min;3 min;3 min;3 min
+allen,summary,accumulated,10 min,selected per fold,3296,True,,,,,,,,,0.57041,0.42532,10 min;10 min;10 min;10 min;10 min
+allen,summary,accumulated,30 min,selected per fold,3296,True,,,,,,,,,0.73829,0.2586,30 min;30 min;30 min;30 min;30 min
+allen,summary,accumulated,full,selected per fold,3296,True,,,,,,,,,0.73829,0.2586,30 min;30 min;30 min;30 min;30 min

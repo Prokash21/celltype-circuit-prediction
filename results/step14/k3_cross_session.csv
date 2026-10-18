@@ -1,0 +1,63 @@
+dataset,level,a,b,n_cells,n_unique_cells,n,a_beats_b,ties,median_diff,mean_diff,p,per_unit
+bugeon,session,r_cross,r_none,741,316,17,8,0,-0.00033613,-9.7606e-05,0.92651,
+bugeon,session,r_full,r_none,741,316,17,16,0,0.01069,0.0097683,0.00021362,
+bugeon,session,r_cross,r_full,741,316,17,0,0,-0.0083078,-0.0098659,1.5259e-05,
+bugeon,session,r_true,r_none,741,316,17,11,0,0.0032205,0.0021808,0.039536,
+bugeon,session,m_contcross,m_none,741,316,17,3,0,-0.0048806,-0.010943,0.030518,
+bugeon,session,m_contfull,m_none,741,316,17,17,0,0.0096531,0.014531,1.5259e-05,
+bugeon,session,m_contcross,m_contfull,741,316,17,0,0,-0.016319,-0.025474,1.5259e-05,
+bugeon,session,m_clcross,m_none,741,316,17,4,0,-0.0034442,-0.0027157,0.039536,
+bugeon,session,m_clcross,m_clfull,741,316,17,0,0,-0.0050236,-0.0062863,1.5259e-05,
+bugeon,session,m_true,m_none,741,316,17,14,0,0.0028507,0.0019846,0.0066528,
+bugeon,session,m_contcross,m_true,741,316,17,3,0,-0.0070238,-0.012927,0.0055695,
+bugeon,mouse,r_cross,r_none,741,316,4,1,0,-0.0014632,-0.0017261,0.625,SB025 -0.0000;SB026 -0.0091;SB028 +0.0051;SB030 -0.0029
+bugeon,mouse,r_full,r_none,741,316,4,3,0,0.0079934,0.0069539,0.25,SB025 +0.0115;SB026 -0.0008;SB028 +0.0126;SB030 +0.0045
+bugeon,mouse,r_cross,r_full,741,316,4,0,0,-0.0079033,-0.00868,0.125,SB025 -0.0115;SB026 -0.0083;SB028 -0.0075;SB030 -0.0074
+bugeon,mouse,r_true,r_none,741,316,4,4,0,0.0012126,0.00244,0.125,SB025 +0.0004;SB026 +0.0020;SB028 +0.0070;SB030 +0.0004
+bugeon,mouse,m_contcross,m_none,741,316,4,0,0,-0.0071162,-0.011185,0.125,SB025 -0.0249;SB026 -0.0083;SB028 -0.0059;SB030 -0.0056
+bugeon,mouse,m_contfull,m_none,741,316,4,4,0,0.0091915,0.011795,0.125,SB025 +0.0220;SB026 +0.0104;SB028 +0.0080;SB030 +0.0068
+bugeon,mouse,m_contcross,m_contfull,741,316,4,0,0,-0.016308,-0.02298,0.125,SB025 -0.0469;SB026 -0.0187;SB028 -0.0139;SB030 -0.0124
+bugeon,mouse,m_clcross,m_none,741,316,4,0,0,-0.002893,-0.0027477,0.125,SB025 -0.0012;SB026 -0.0040;SB028 -0.0035;SB030 -0.0023
+bugeon,mouse,m_clcross,m_clfull,741,316,4,0,0,-0.0051735,-0.0053599,0.125,SB025 -0.0069;SB026 -0.0060;SB028 -0.0044;SB030 -0.0041
+bugeon,mouse,m_true,m_none,741,316,4,3,0,0.001779,0.0016242,0.375,SB025 +0.0026;SB026 +0.0009;SB028 +0.0040;SB030 -0.0010
+bugeon,mouse,m_contcross,m_true,741,316,4,0,0,-0.0095608,-0.012809,0.125,SB025 -0.0275;SB026 -0.0092;SB028 -0.0099;SB030 -0.0046
+bugeon,summary distance (fold-0 z-scores),"same cell, other session","random same-type cell, other session",741,,,521,,5.0054,6.0096,,median distance same cell (median_diff) vs random cell (mean_diff); a_beats_b = cells closer to themselves
+bugeon,feature stability across sessions,skew,same cell,741,,,,,,0.30477,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,kurtosis,same cell,741,,,,,,0.093778,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,event rate (/min),same cell,741,,,,,,0.46662,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,time above z=2,same cell,741,,,,,,0.37103,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 0-0.3 s,same cell,741,,,,,,,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 0.3-1 s,same cell,741,,,,,,0.41836,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 1-3 s,same cell,741,,,,,,0.40345,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 3-10 s,same cell,741,,,,,,0.39198,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 10-30 s,same cell,741,,,,,,0.37226,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,IEI 30-inf s,same cell,741,,,,,,0.19111,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,autocorr 1 fr (0.23 s),same cell,741,,,,,,0.4045,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,autocorr 2 fr (0.47 s),same cell,741,,,,,,0.3316,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,autocorr 4 fr (0.93 s),same cell,741,,,,,,0.38418,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,autocorr 9 fr (2.1 s),same cell,741,,,,,,0.31497,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,autocorr 21 fr (4.9 s),same cell,741,,,,,,0.32276,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,power 0-0.1 Hz,same cell,741,,,,,,0.50932,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,power 0.1-0.5 Hz,same cell,741,,,,,,0.63278,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,power 0.5-1 Hz,same cell,741,,,,,,0.49309,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,power 1-2.2 Hz,same cell,741,,,,,,0.59241,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,mean z: gratings,same cell,741,,,,,,0.15128,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,mean z: natural scenes,same cell,741,,,,,,0.14606,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,mean z: blank,same cell,741,,,,,,0.19354,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,grating on - off,same cell,741,,,,,,0.69029,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,image on - off,same cell,741,,,,,,0.60849,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 0,same cell,741,,,,,,0.60194,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 30,same cell,741,,,,,,0.56358,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 60,same cell,741,,,,,,0.55464,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 90,same cell,741,,,,,,0.61277,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 120,same cell,741,,,,,,0.60903,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 150,same cell,741,,,,,,0.6091,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 180,same cell,741,,,,,,0.62031,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 210,same cell,741,,,,,,0.62202,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 240,same cell,741,,,,,,0.55957,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 270,same cell,741,,,,,,0.60088,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 300,same cell,741,,,,,,0.56233,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,dir 330,same cell,741,,,,,,0.53582,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,tuning peak,same cell,741,,,,,,0.65536,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,DSI,same cell,741,,,,,,0.27195,,Pearson r of the feature between two sessions of the same cell
+bugeon,feature stability across sessions,OSI,same cell,741,,,,,,0.26036,,Pearson r of the feature between two sessions of the same cell

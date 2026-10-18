@@ -1,0 +1,297 @@
+dataset,family,history,comparison,a,b,test,n,a_beats_b,ties,median_diff,mean_diff,p,mice_up,mice_n,per_mouse
+bugeon,ridge,3 min,true type vs none,r_true,r_none,sessions,17,9,0,0.0001122,0.001399,0.2633,2,4,SB025 +0.0069;SB026 +0.0025;SB028 -0.0012;SB030 -0.0050
+bugeon,ridge,3 min,naive short summary vs none,r_naive_h3,r_none,sessions,17,12,0,0.004434,0.004154,0.04477,3,4,SB025 +0.0121;SB026 +0.0017;SB028 +0.0028;SB030 -0.0055
+bugeon,ridge,3 min,per-neuron ridge vs none,r_pn_h3,r_none,sessions,17,3,0,-0.04693,-0.04691,0.0002136,0,4,SB025 -0.0054;SB026 -0.0411;SB028 -0.0633;SB030 -0.0898
+bugeon,ridge,3 min,E2 hard vs none,r_hard_h3,r_none,sessions,17,16,0,0.008902,0.009044,3.052e-05,4,4,SB025 +0.0166;SB026 +0.0065;SB028 +0.0071;SB030 +0.0019
+bugeon,ridge,3 min,E2 soft vs none,r_soft_h3,r_none,sessions,17,17,0,0.01323,0.01279,1.526e-05,4,4,SB025 +0.0195;SB026 +0.0104;SB028 +0.0117;SB030 +0.0047
+bugeon,ridge,3 min,full-history summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,3 min,E2 soft vs per-neuron ridge,r_soft_h3,r_pn_h3,sessions,17,17,0,0.05632,0.0597,1.526e-05,4,4,SB025 +0.0250;SB026 +0.0515;SB028 +0.0750;SB030 +0.0946
+bugeon,ridge,3 min,E2 soft vs naive short summary,r_soft_h3,r_naive_h3,sessions,17,17,0,0.008955,0.008633,1.526e-05,4,4,SB025 +0.0074;SB026 +0.0087;SB028 +0.0089;SB030 +0.0102
+bugeon,ridge,3 min,E2 soft vs true type,r_soft_h3,r_true,sessions,17,17,0,0.01046,0.01139,1.526e-05,4,4,SB025 +0.0127;SB026 +0.0079;SB028 +0.0130;SB030 +0.0098
+bugeon,ridge,3 min,E2 hard vs true type,r_hard_h3,r_true,sessions,17,17,0,0.007959,0.007646,1.526e-05,4,4,SB025 +0.0097;SB026 +0.0040;SB028 +0.0083;SB030 +0.0069
+bugeon,ridge,3 min,E2 soft vs E2 hard,r_soft_h3,r_hard_h3,sessions,17,17,0,0.003525,0.003742,1.526e-05,4,4,SB025 +0.0029;SB026 +0.0039;SB028 +0.0046;SB030 +0.0029
+bugeon,ridge,3 min,per-neuron ridge vs full-history summary,r_pn_h3,r_full,sessions,17,1,0,-0.05929,-0.06019,3.052e-05,0,4,SB025 -0.0251;SB026 -0.0525;SB028 -0.0747;SB030 -0.0972
+bugeon,ridge,3 min,E2 soft vs full-history summary,r_soft_h3,r_full,sessions,17,6,0,-0.0003459,-0.0004981,0.3778,1,4,SB025 -0.0002;SB026 -0.0010;SB028 +0.0003;SB030 -0.0027
+bugeon,ridge,3 min,per-neuron ridge vs true type,r_pn_h3,r_true,sessions,17,1,0,-0.04586,-0.04831,7.629e-05,0,4,SB025 -0.0123;SB026 -0.0436;SB028 -0.0621;SB030 -0.0848
+bugeon,ridge,10 min,true type vs none,r_true,r_none,sessions,17,9,0,0.0001122,0.001399,0.2633,2,4,SB025 +0.0069;SB026 +0.0025;SB028 -0.0012;SB030 -0.0050
+bugeon,ridge,10 min,naive short summary vs none,r_naive_h10,r_none,sessions,17,14,0,0.006836,0.00687,0.001678,3,4,SB025 +0.0139;SB026 +0.0058;SB028 +0.0053;SB030 -0.0021
+bugeon,ridge,10 min,per-neuron ridge vs none,r_pn_h10,r_none,sessions,17,7,0,-0.000532,-0.003965,0.4874,1,4,SB025 +0.0209;SB026 -0.0023;SB028 -0.0108;SB030 -0.0291
+bugeon,ridge,10 min,E2 hard vs none,r_hard_h10,r_none,sessions,17,17,0,0.01141,0.01221,1.526e-05,4,4,SB025 +0.0191;SB026 +0.0103;SB028 +0.0101;SB030 +0.0049
+bugeon,ridge,10 min,E2 soft vs none,r_soft_h10,r_none,sessions,17,17,0,0.0155,0.0152,1.526e-05,4,4,SB025 +0.0213;SB026 +0.0135;SB028 +0.0141;SB030 +0.0071
+bugeon,ridge,10 min,full-history summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,10 min,E2 soft vs per-neuron ridge,r_soft_h10,r_pn_h10,sessions,17,14,0,0.01796,0.01917,0.0005035,4,4,SB025 +0.0004;SB026 +0.0158;SB028 +0.0249;SB030 +0.0362
+bugeon,ridge,10 min,E2 soft vs naive short summary,r_soft_h10,r_naive_h10,sessions,17,17,0,0.008443,0.00833,1.526e-05,4,4,SB025 +0.0074;SB026 +0.0077;SB028 +0.0088;SB030 +0.0092
+bugeon,ridge,10 min,E2 soft vs true type,r_soft_h10,r_true,sessions,17,17,0,0.01396,0.0138,1.526e-05,4,4,SB025 +0.0144;SB026 +0.0110;SB028 +0.0154;SB030 +0.0122
+bugeon,ridge,10 min,E2 hard vs true type,r_hard_h10,r_true,sessions,17,17,0,0.01108,0.01082,1.526e-05,4,4,SB025 +0.0122;SB026 +0.0078;SB028 +0.0113;SB030 +0.0099
+bugeon,ridge,10 min,E2 soft vs E2 hard,r_soft_h10,r_hard_h10,sessions,17,17,0,0.002631,0.002987,1.526e-05,4,4,SB025 +0.0023;SB026 +0.0033;SB028 +0.0040;SB030 +0.0022
+bugeon,ridge,10 min,per-neuron ridge vs full-history summary,r_pn_h10,r_full,sessions,17,3,0,-0.01707,-0.01725,0.00209,1,4,SB025 +0.0012;SB026 -0.0136;SB028 -0.0222;SB030 -0.0365
+bugeon,ridge,10 min,E2 soft vs full-history summary,r_soft_h10,r_full,sessions,17,16,0,0.001969,0.001915,0.0002899,3,4,SB025 +0.0016;SB026 +0.0022;SB028 +0.0027;SB030 -0.0003
+bugeon,ridge,10 min,per-neuron ridge vs true type,r_pn_h10,r_true,sessions,17,6,0,-0.001195,-0.005363,0.3289,1,4,SB025 +0.0140;SB026 -0.0047;SB028 -0.0095;SB030 -0.0240
+bugeon,ridge,30 min,true type vs none,r_true,r_none,sessions,17,9,0,0.0001122,0.001399,0.2633,2,4,SB025 +0.0069;SB026 +0.0025;SB028 -0.0012;SB030 -0.0050
+bugeon,ridge,30 min,naive short summary vs none,r_naive_h30,r_none,sessions,17,17,0,0.009778,0.01017,1.526e-05,4,4,SB025 +0.0171;SB026 +0.0087;SB028 +0.0086;SB030 +0.0015
+bugeon,ridge,30 min,per-neuron ridge vs none,r_pn_h30,r_none,sessions,17,16,0,0.01437,0.01714,0.0001526,4,4,SB025 +0.0338;SB026 +0.0141;SB028 +0.0135;SB030 +0.0020
+bugeon,ridge,30 min,E2 hard vs none,r_hard_h30,r_none,sessions,17,17,0,0.01165,0.01247,1.526e-05,4,4,SB025 +0.0191;SB026 +0.0107;SB028 +0.0106;SB030 +0.0052
+bugeon,ridge,30 min,E2 soft vs none,r_soft_h30,r_none,sessions,17,17,0,0.01522,0.01488,1.526e-05,4,4,SB025 +0.0208;SB026 +0.0130;SB028 +0.0139;SB030 +0.0073
+bugeon,ridge,30 min,full-history summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,30 min,E2 soft vs per-neuron ridge,r_soft_h30,r_pn_h30,sessions,17,9,0,0.001011,-0.002252,0.6777,2,4,SB025 -0.0130;SB026 -0.0011;SB028 +0.0004;SB030 +0.0053
+bugeon,ridge,30 min,E2 soft vs naive short summary,r_soft_h30,r_naive_h30,sessions,17,17,0,0.004783,0.004716,1.526e-05,4,4,SB025 +0.0037;SB026 +0.0043;SB028 +0.0053;SB030 +0.0059
+bugeon,ridge,30 min,E2 soft vs true type,r_soft_h30,r_true,sessions,17,17,0,0.01314,0.01349,1.526e-05,4,4,SB025 +0.0139;SB026 +0.0105;SB028 +0.0152;SB030 +0.0124
+bugeon,ridge,30 min,E2 hard vs true type,r_hard_h30,r_true,sessions,17,17,0,0.01121,0.01107,1.526e-05,4,4,SB025 +0.0122;SB026 +0.0082;SB028 +0.0118;SB030 +0.0102
+bugeon,ridge,30 min,E2 soft vs E2 hard,r_soft_h30,r_hard_h30,sessions,17,17,0,0.002273,0.002412,1.526e-05,4,4,SB025 +0.0017;SB026 +0.0023;SB028 +0.0034;SB030 +0.0021
+bugeon,ridge,30 min,per-neuron ridge vs full-history summary,r_pn_h30,r_full,sessions,17,11,0,0.001631,0.003852,0.1594,3,4,SB025 +0.0141;SB026 +0.0027;SB028 +0.0021;SB030 -0.0054
+bugeon,ridge,30 min,E2 soft vs full-history summary,r_soft_h30,r_full,sessions,17,15,0,0.001562,0.001599,0.0002136,3,4,SB025 +0.0011;SB026 +0.0016;SB028 +0.0025;SB030 -0.0001
+bugeon,ridge,30 min,per-neuron ridge vs true type,r_pn_h30,r_true,sessions,17,16,0,0.01418,0.01574,3.052e-05,4,4,SB025 +0.0269;SB026 +0.0116;SB028 +0.0148;SB030 +0.0071
+bugeon,ridge,full,true type vs none,r_true,r_none,sessions,17,9,0,0.0001122,0.001399,0.2633,2,4,SB025 +0.0069;SB026 +0.0025;SB028 -0.0012;SB030 -0.0050
+bugeon,ridge,full,naive short summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,full,per-neuron ridge vs none,r_pn_full,r_none,sessions,17,17,0,0.02821,0.03064,1.526e-05,4,4,SB025 +0.0443;SB026 +0.0248;SB028 +0.0267;SB030 +0.0175
+bugeon,ridge,full,E2 hard vs none,r_hard_full,r_none,sessions,17,17,0,0.01252,0.01344,1.526e-05,4,4,SB025 +0.0198;SB026 +0.0115;SB028 +0.0115;SB030 +0.0079
+bugeon,ridge,full,E2 soft vs none,r_soft_full,r_none,sessions,17,17,0,0.01561,0.0159,1.526e-05,4,4,SB025 +0.0216;SB026 +0.0139;SB028 +0.0149;SB030 +0.0097
+bugeon,ridge,full,full-history summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,full,E2 soft vs per-neuron ridge,r_soft_full,r_pn_full,sessions,17,0,0,-0.01388,-0.01473,1.526e-05,0,4,SB025 -0.0227;SB026 -0.0109;SB028 -0.0118;SB030 -0.0078
+bugeon,ridge,full,E2 soft vs naive short summary,r_soft_full,r_full,sessions,17,17,0,0.002266,0.002618,1.526e-05,4,4,SB025 +0.0019;SB026 +0.0026;SB028 +0.0035;SB030 +0.0023
+bugeon,ridge,full,E2 soft vs true type,r_soft_full,r_true,sessions,17,17,0,0.01375,0.0145,1.526e-05,4,4,SB025 +0.0147;SB026 +0.0114;SB028 +0.0162;SB030 +0.0147
+bugeon,ridge,full,E2 hard vs true type,r_hard_full,r_true,sessions,17,17,0,0.01183,0.01204,1.526e-05,4,4,SB025 +0.0129;SB026 +0.0090;SB028 +0.0128;SB030 +0.0129
+bugeon,ridge,full,E2 soft vs E2 hard,r_soft_full,r_hard_full,sessions,17,17,0,0.002108,0.002467,1.526e-05,4,4,SB025 +0.0018;SB026 +0.0024;SB028 +0.0034;SB030 +0.0018
+bugeon,ridge,full,per-neuron ridge vs full-history summary,r_pn_full,r_full,sessions,17,17,0,0.01756,0.01735,1.526e-05,4,4,SB025 +0.0246;SB026 +0.0134;SB028 +0.0153;SB030 +0.0101
+bugeon,ridge,full,E2 soft vs full-history summary,r_soft_full,r_full,sessions,17,17,0,0.002266,0.002618,1.526e-05,4,4,SB025 +0.0019;SB026 +0.0026;SB028 +0.0035;SB030 +0.0023
+bugeon,ridge,full,per-neuron ridge vs true type,r_pn_full,r_true,sessions,17,17,0,0.02896,0.02924,1.526e-05,4,4,SB025 +0.0374;SB026 +0.0223;SB028 +0.0279;SB030 +0.0225
+bugeon,MLP,3 min,true type vs none,m_true,m_none,sessions,17,14,0,0.001775,0.001774,0.0002136,3,4,SB025 +0.0027;SB026 +0.0016;SB028 +0.0020;SB030 -0.0004
+bugeon,MLP,3 min,naive short summary vs none,m_contnaive_h3,m_none,sessions,17,1,0,-0.05818,-0.0898,4.578e-05,0,4,SB025 -0.0395;SB026 -0.0554;SB028 -0.1182;SB030 -0.1623
+bugeon,MLP,3 min,naive short cluster vs none,m_clnaive_h3,m_none,sessions,17,15,0,0.001967,0.002427,0.003159,3,4,SB025 +0.0044;SB026 +0.0013;SB028 +0.0032;SB030 -0.0014
+bugeon,MLP,3 min,per-neuron MLP fine-tune vs none,m_ft_h3,m_none,sessions,17,4,0,-0.004098,-0.003823,0.1324,1,4,SB025 +0.0100;SB026 -0.0083;SB028 -0.0047;SB030 -0.0175
+bugeon,MLP,3 min,E2 hard vs none,m_hard_h3,m_none,sessions,17,17,0,0.004279,0.004422,1.526e-05,4,4,SB025 +0.0070;SB026 +0.0030;SB028 +0.0045;SB030 +0.0008
+bugeon,MLP,3 min,E2 soft vs none,m_soft_h3,m_none,sessions,17,17,0,0.006113,0.006523,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0051;SB028 +0.0067;SB030 +0.0025
+bugeon,MLP,3 min,E2 continuous vs none,m_e2cont_h3,m_none,sessions,17,13,0,0.003543,0.004275,0.03052,3,4,SB025 +0.0104;SB026 +0.0020;SB028 +0.0041;SB030 -0.0051
+bugeon,MLP,3 min,full-history summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,3 min,full-history cluster vs none,m_clfull,m_none,sessions,17,17,0,0.007133,0.006578,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,MLP,3 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h3,m_ft_h3,sessions,17,14,0,0.01229,0.01035,0.001678,3,4,SB025 -0.0011;SB026 +0.0134;SB028 +0.0114;SB030 +0.0200
+bugeon,MLP,3 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h3,m_ft_h3,sessions,17,14,0,0.007357,0.008099,0.0003815,4,4,SB025 +0.0004;SB026 +0.0103;SB028 +0.0088;SB030 +0.0124
+bugeon,MLP,3 min,E2 soft vs naive short cluster,m_soft_h3,m_clnaive_h3,sessions,17,17,0,0.003729,0.004096,1.526e-05,4,4,SB025 +0.0045;SB026 +0.0038;SB028 +0.0035;SB030 +0.0039
+bugeon,MLP,3 min,E2 continuous vs naive short summary,m_e2cont_h3,m_contnaive_h3,sessions,17,17,0,0.05894,0.09407,1.526e-05,4,4,SB025 +0.0499;SB026 +0.0574;SB028 +0.1223;SB030 +0.1572
+bugeon,MLP,3 min,E2 soft vs true type,m_soft_h3,m_true,sessions,17,17,0,0.004258,0.004749,1.526e-05,4,4,SB025 +0.0062;SB026 +0.0035;SB028 +0.0047;SB030 +0.0029
+bugeon,MLP,3 min,E2 continuous vs true type,m_e2cont_h3,m_true,sessions,17,11,0,0.001771,0.002501,0.1324,3,4,SB025 +0.0077;SB026 +0.0004;SB028 +0.0022;SB030 -0.0047
+bugeon,MLP,3 min,E2 hard vs true type,m_hard_h3,m_true,sessions,17,17,0,0.002505,0.002648,1.526e-05,4,4,SB025 +0.0042;SB026 +0.0014;SB028 +0.0026;SB030 +0.0012
+bugeon,MLP,3 min,E2 continuous vs E2 soft,m_e2cont_h3,m_soft_h3,sessions,17,4,0,-0.002916,-0.002248,0.1089,1,4,SB025 +0.0016;SB026 -0.0031;SB028 -0.0026;SB030 -0.0075
+bugeon,MLP,3 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h3,m_contfull,sessions,17,0,0,-0.0209,-0.02125,1.526e-05,0,4,SB025 -0.0143;SB026 -0.0221;SB028 -0.0219;SB030 -0.0265
+bugeon,MLP,3 min,E2 continuous vs full-history summary,m_e2cont_h3,m_contfull,sessions,17,0,0,-0.01433,-0.01315,1.526e-05,0,4,SB025 -0.0138;SB026 -0.0118;SB028 -0.0131;SB030 -0.0141
+bugeon,MLP,3 min,per-neuron MLP fine-tune vs true type,m_ft_h3,m_true,sessions,17,4,0,-0.006111,-0.005598,0.07141,1,4,SB025 +0.0073;SB026 -0.0099;SB028 -0.0067;SB030 -0.0171
+bugeon,MLP,10 min,true type vs none,m_true,m_none,sessions,17,14,0,0.001775,0.001774,0.0002136,3,4,SB025 +0.0027;SB026 +0.0016;SB028 +0.0020;SB030 -0.0004
+bugeon,MLP,10 min,naive short summary vs none,m_contnaive_h10,m_none,sessions,17,5,0,-0.005932,-0.01259,0.03954,1,4,SB025 +0.0032;SB026 -0.0063;SB028 -0.0174;SB030 -0.0327
+bugeon,MLP,10 min,naive short cluster vs none,m_clnaive_h10,m_none,sessions,17,15,0,0.003136,0.003234,0.0002899,3,4,SB025 +0.0049;SB026 +0.0025;SB028 +0.0038;SB030 -0.0006
+bugeon,MLP,10 min,per-neuron MLP fine-tune vs none,m_ft_h10,m_none,sessions,17,13,0,0.006391,0.007696,0.02016,3,4,SB025 +0.0204;SB026 +0.0058;SB028 +0.0064;SB030 -0.0067
+bugeon,MLP,10 min,E2 hard vs none,m_hard_h10,m_none,sessions,17,17,0,0.006328,0.006257,1.526e-05,4,4,SB025 +0.0087;SB026 +0.0051;SB028 +0.0063;SB030 +0.0020
+bugeon,MLP,10 min,E2 soft vs none,m_soft_h10,m_none,sessions,17,17,0,0.007295,0.007715,1.526e-05,4,4,SB025 +0.0100;SB026 +0.0065;SB028 +0.0080;SB030 +0.0032
+bugeon,MLP,10 min,E2 continuous vs none,m_e2cont_h10,m_none,sessions,17,11,0,0.006,0.005811,0.02667,3,4,SB025 +0.0140;SB026 +0.0043;SB028 +0.0051;SB030 -0.0054
+bugeon,MLP,10 min,full-history summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,10 min,full-history cluster vs none,m_clfull,m_none,sessions,17,17,0,0.007133,0.006578,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,MLP,10 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h10,m_ft_h10,sessions,17,10,0,0.001286,1.927e-05,0.7119,3,4,SB025 -0.0104;SB026 +0.0007;SB028 +0.0016;SB030 +0.0099
+bugeon,MLP,10 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h10,m_ft_h10,sessions,17,7,0,-0.002189,-0.001885,0.1901,1,4,SB025 -0.0064;SB026 -0.0016;SB028 -0.0013;SB030 +0.0013
+bugeon,MLP,10 min,E2 soft vs naive short cluster,m_soft_h10,m_clnaive_h10,sessions,17,17,0,0.004332,0.004481,1.526e-05,4,4,SB025 +0.0051;SB026 +0.0041;SB028 +0.0042;SB030 +0.0038
+bugeon,MLP,10 min,E2 continuous vs naive short summary,m_e2cont_h10,m_contnaive_h10,sessions,17,17,0,0.01292,0.0184,1.526e-05,4,4,SB025 +0.0108;SB026 +0.0105;SB028 +0.0226;SB030 +0.0273
+bugeon,MLP,10 min,E2 soft vs true type,m_soft_h10,m_true,sessions,17,17,0,0.005334,0.005941,1.526e-05,4,4,SB025 +0.0073;SB026 +0.0049;SB028 +0.0060;SB030 +0.0036
+bugeon,MLP,10 min,E2 continuous vs true type,m_e2cont_h10,m_true,sessions,17,12,0,0.004187,0.004037,0.05688,3,4,SB025 +0.0113;SB026 +0.0027;SB028 +0.0032;SB030 -0.0050
+bugeon,MLP,10 min,E2 hard vs true type,m_hard_h10,m_true,sessions,17,17,0,0.004553,0.004482,1.526e-05,4,4,SB025 +0.0060;SB026 +0.0035;SB028 +0.0043;SB030 +0.0024
+bugeon,MLP,10 min,E2 continuous vs E2 soft,m_e2cont_h10,m_soft_h10,sessions,17,6,0,-0.002321,-0.001904,0.5791,1,4,SB025 +0.0040;SB026 -0.0023;SB028 -0.0028;SB030 -0.0086
+bugeon,MLP,10 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h10,m_contfull,sessions,17,1,0,-0.009426,-0.009729,3.052e-05,0,4,SB025 -0.0039;SB026 -0.0080;SB028 -0.0108;SB030 -0.0157
+bugeon,MLP,10 min,E2 continuous vs full-history summary,m_e2cont_h10,m_contfull,sessions,17,0,0,-0.01032,-0.01161,1.526e-05,0,4,SB025 -0.0103;SB026 -0.0095;SB028 -0.0121;SB030 -0.0144
+bugeon,MLP,10 min,per-neuron MLP fine-tune vs true type,m_ft_h10,m_true,sessions,17,12,0,0.004708,0.005922,0.03479,3,4,SB025 +0.0177;SB026 +0.0042;SB028 +0.0044;SB030 -0.0063
+bugeon,MLP,30 min,true type vs none,m_true,m_none,sessions,17,14,0,0.001775,0.001774,0.0002136,3,4,SB025 +0.0027;SB026 +0.0016;SB028 +0.0020;SB030 -0.0004
+bugeon,MLP,30 min,naive short summary vs none,m_contnaive_h30,m_none,sessions,17,16,0,0.01026,0.01022,0.0001526,4,4,SB025 +0.0187;SB026 +0.0087;SB028 +0.0094;SB030 +0.0008
+bugeon,MLP,30 min,naive short cluster vs none,m_clnaive_h30,m_none,sessions,17,16,0,0.005398,0.004966,3.052e-05,4,4,SB025 +0.0073;SB026 +0.0042;SB028 +0.0051;SB030 +0.0007
+bugeon,MLP,30 min,per-neuron MLP fine-tune vs none,m_ft_h30,m_none,sessions,17,16,0,0.01235,0.01488,3.052e-05,4,4,SB025 +0.0254;SB026 +0.0116;SB028 +0.0140;SB030 +0.0029
+bugeon,MLP,30 min,E2 hard vs none,m_hard_h30,m_none,sessions,17,17,0,0.007055,0.006239,1.526e-05,4,4,SB025 +0.0087;SB026 +0.0054;SB028 +0.0061;SB030 +0.0020
+bugeon,MLP,30 min,E2 soft vs none,m_soft_h30,m_none,sessions,17,17,0,0.008015,0.007516,1.526e-05,4,4,SB025 +0.0098;SB026 +0.0065;SB028 +0.0076;SB030 +0.0032
+bugeon,MLP,30 min,E2 continuous vs none,m_e2cont_h30,m_none,sessions,17,17,0,0.01315,0.013,1.526e-05,4,4,SB025 +0.0188;SB026 +0.0109;SB028 +0.0140;SB030 +0.0032
+bugeon,MLP,30 min,full-history summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,30 min,full-history cluster vs none,m_clfull,m_none,sessions,17,17,0,0.007133,0.006578,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,MLP,30 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h30,m_ft_h30,sessions,17,1,0,-0.005748,-0.007365,0.0001526,1,4,SB025 -0.0156;SB026 -0.0050;SB028 -0.0064;SB030 +0.0003
+bugeon,MLP,30 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h30,m_ft_h30,sessions,17,5,0,-0.0006672,-0.001883,0.1089,1,4,SB025 -0.0065;SB026 -0.0007;SB028 -0.0000;SB030 +0.0003
+bugeon,MLP,30 min,E2 soft vs naive short cluster,m_soft_h30,m_clnaive_h30,sessions,17,17,0,0.002382,0.00255,1.526e-05,4,4,SB025 +0.0025;SB026 +0.0023;SB028 +0.0025;SB030 +0.0025
+bugeon,MLP,30 min,E2 continuous vs naive short summary,m_e2cont_h30,m_contnaive_h30,sessions,17,13,0,0.001637,0.002775,0.005569,4,4,SB025 +0.0001;SB026 +0.0021;SB028 +0.0047;SB030 +0.0024
+bugeon,MLP,30 min,E2 soft vs true type,m_soft_h30,m_true,sessions,17,17,0,0.005564,0.005742,1.526e-05,4,4,SB025 +0.0071;SB026 +0.0049;SB028 +0.0056;SB030 +0.0036
+bugeon,MLP,30 min,E2 continuous vs true type,m_e2cont_h30,m_true,sessions,17,17,0,0.01132,0.01122,1.526e-05,4,4,SB025 +0.0161;SB026 +0.0093;SB028 +0.0120;SB030 +0.0036
+bugeon,MLP,30 min,E2 hard vs true type,m_hard_h30,m_true,sessions,17,17,0,0.004584,0.004465,1.526e-05,4,4,SB025 +0.0060;SB026 +0.0038;SB028 +0.0041;SB030 +0.0024
+bugeon,MLP,30 min,E2 continuous vs E2 soft,m_e2cont_h30,m_soft_h30,sessions,17,14,0,0.005126,0.005482,0.0002136,4,4,SB025 +0.0091;SB026 +0.0043;SB028 +0.0064;SB030 +0.0000
+bugeon,MLP,30 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h30,m_contfull,sessions,17,3,0,-0.002828,-0.002544,0.01743,1,4,SB025 +0.0011;SB026 -0.0022;SB028 -0.0032;SB030 -0.0061
+bugeon,MLP,30 min,E2 continuous vs full-history summary,m_e2cont_h30,m_contfull,sessions,17,0,0,-0.003978,-0.004427,1.526e-05,0,4,SB025 -0.0054;SB026 -0.0030;SB028 -0.0032;SB030 -0.0058
+bugeon,MLP,30 min,per-neuron MLP fine-tune vs true type,m_ft_h30,m_true,sessions,17,16,0,0.01057,0.01311,3.052e-05,4,4,SB025 +0.0227;SB026 +0.0100;SB028 +0.0121;SB030 +0.0033
+bugeon,MLP,full,true type vs none,m_true,m_none,sessions,17,14,0,0.001775,0.001774,0.0002136,3,4,SB025 +0.0027;SB026 +0.0016;SB028 +0.0020;SB030 -0.0004
+bugeon,MLP,full,naive short summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,full,naive short cluster vs none,m_clfull,m_none,sessions,17,17,0,0.007133,0.006578,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,MLP,full,per-neuron MLP fine-tune vs none,m_ft_full,m_none,sessions,17,17,0,0.02011,0.02104,1.526e-05,4,4,SB025 +0.0302;SB026 +0.0167;SB028 +0.0192;SB030 +0.0104
+bugeon,MLP,full,E2 hard vs none,m_hard_full,m_none,sessions,17,17,0,0.007259,0.006933,1.526e-05,4,4,SB025 +0.0093;SB026 +0.0059;SB028 +0.0066;SB030 +0.0035
+bugeon,MLP,full,E2 soft vs none,m_soft_full,m_none,sessions,17,17,0,0.008236,0.008135,1.526e-05,4,4,SB025 +0.0103;SB026 +0.0070;SB028 +0.0082;SB030 +0.0044
+bugeon,MLP,full,E2 continuous vs none,m_e2cont_full,m_none,sessions,17,17,0,0.01439,0.01602,1.526e-05,4,4,SB025 +0.0220;SB026 +0.0129;SB028 +0.0161;SB030 +0.0072
+bugeon,MLP,full,full-history summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,full,full-history cluster vs none,m_clfull,m_none,sessions,17,17,0,0.007133,0.006578,1.526e-05,4,4,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,MLP,full,E2 soft vs per-neuron MLP fine-tune,m_soft_full,m_ft_full,sessions,17,0,0,-0.01132,-0.0129,1.526e-05,0,4,SB025 -0.0199;SB026 -0.0097;SB028 -0.0110;SB030 -0.0060
+bugeon,MLP,full,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_full,m_ft_full,sessions,17,0,0,-0.004838,-0.00502,1.526e-05,0,4,SB025 -0.0082;SB026 -0.0037;SB028 -0.0031;SB030 -0.0031
+bugeon,MLP,full,E2 soft vs naive short cluster,m_soft_full,m_clfull,sessions,17,17,0,0.001458,0.001557,1.526e-05,4,4,SB025 +0.0014;SB026 +0.0013;SB028 +0.0019;SB030 +0.0012
+bugeon,MLP,full,E2 continuous vs naive short summary,m_e2cont_full,m_contfull,sessions,17,0,0,-0.001079,-0.001409,1.526e-05,0,4,SB025 -0.0023;SB026 -0.0009;SB028 -0.0010;SB030 -0.0018
+bugeon,MLP,full,E2 soft vs true type,m_soft_full,m_true,sessions,17,17,0,0.005877,0.006361,1.526e-05,4,4,SB025 +0.0076;SB026 +0.0054;SB028 +0.0062;SB030 +0.0048
+bugeon,MLP,full,E2 continuous vs true type,m_e2cont_full,m_true,sessions,17,17,0,0.01263,0.01424,1.526e-05,4,4,SB025 +0.0193;SB026 +0.0114;SB028 +0.0142;SB030 +0.0076
+bugeon,MLP,full,E2 hard vs true type,m_hard_full,m_true,sessions,17,17,0,0.004894,0.005159,1.526e-05,4,4,SB025 +0.0066;SB026 +0.0043;SB028 +0.0047;SB030 +0.0039
+bugeon,MLP,full,E2 continuous vs E2 soft,m_e2cont_full,m_soft_full,sessions,17,17,0,0.007205,0.00788,1.526e-05,4,4,SB025 +0.0117;SB026 +0.0060;SB028 +0.0079;SB030 +0.0028
+bugeon,MLP,full,per-neuron MLP fine-tune vs full-history summary,m_ft_full,m_contfull,sessions,17,16,0,0.003146,0.003611,3.052e-05,4,4,SB025 +0.0059;SB026 +0.0029;SB028 +0.0020;SB030 +0.0014
+bugeon,MLP,full,E2 continuous vs full-history summary,m_e2cont_full,m_contfull,sessions,17,0,0,-0.001079,-0.001409,1.526e-05,0,4,SB025 -0.0023;SB026 -0.0009;SB028 -0.0010;SB030 -0.0018
+bugeon,MLP,full,per-neuron MLP fine-tune vs true type,m_ft_full,m_true,sessions,17,17,0,0.01864,0.01926,1.526e-05,4,4,SB025 +0.0275;SB026 +0.0151;SB028 +0.0172;SB030 +0.0108
+bugeon,ridge,full,K4 full summary vs none,r_full,r_none,sessions,17,17,0,0.01237,0.01328,1.526e-05,4,4,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,ridge,full,K4 (a) centred within session vs none,r_ctr,r_none,sessions,17,17,0,0.01066,0.009925,1.526e-05,4,4,SB025 +0.0152;SB026 +0.0115;SB028 +0.0093;SB030 +0.0022
+bugeon,ridge,full,K4 (b) session mean only vs none,r_sess,r_none,sessions,17,12,0,0.0008277,0.004106,0.1594,3,4,SB025 +0.0107;SB026 +0.0001;SB028 +0.0013;SB030 -0.0015
+bugeon,ridge,full,K4 (a) centred vs full summary,r_ctr,r_full,sessions,17,3,0,-0.003371,-0.00336,0.0003815,1,4,SB025 -0.0045;SB026 +0.0002;SB028 -0.0021;SB030 -0.0053
+bugeon,ridge,full,K4 (b) session mean vs full summary,r_sess,r_full,sessions,17,3,0,-0.009692,-0.009179,0.0002136,0,4,SB025 -0.0090;SB026 -0.0113;SB028 -0.0101;SB030 -0.0089
+bugeon,ridge,full,K4 (a) centred vs (b) session mean,r_ctr,r_sess,sessions,17,14,0,0.006492,0.005819,0.03052,4,4,SB025 +0.0044;SB026 +0.0114;SB028 +0.0079;SB030 +0.0036
+bugeon,MLP,full,K4 full summary vs none,m_contfull,m_none,sessions,17,17,0,0.01632,0.01742,1.526e-05,4,4,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,MLP,full,K4 (a) centred within session vs none,m_ctr,m_none,sessions,17,17,0,0.007053,0.007364,1.526e-05,4,4,SB025 +0.0100;SB026 +0.0110;SB028 +0.0073;SB030 +0.0021
+bugeon,MLP,full,K4 (b) session mean only vs none,m_sess,m_none,sessions,17,10,0,0.001897,0.001859,0.07141,2,4,SB025 +0.0041;SB026 -0.0016;SB028 +0.0036;SB030 -0.0012
+bugeon,MLP,full,K4 (a) centred vs full summary,m_ctr,m_contfull,sessions,17,0,0,-0.008601,-0.01006,1.526e-05,0,4,SB025 -0.0142;SB026 -0.0028;SB028 -0.0099;SB030 -0.0070
+bugeon,MLP,full,K4 (b) session mean vs full summary,m_sess,m_contfull,sessions,17,0,0,-0.01577,-0.01557,1.526e-05,0,4,SB025 -0.0202;SB026 -0.0154;SB028 -0.0136;SB030 -0.0102
+bugeon,MLP,full,K4 (a) centred vs (b) session mean,m_ctr,m_sess,sessions,17,14,0,0.004621,0.005505,0.003159,4,4,SB025 +0.0060;SB026 +0.0127;SB028 +0.0037;SB030 +0.0032
+allen,ridge,3 min,true type vs none,r_true,r_none,mice,46,40,0,0.02052,0.02525,1.278e-07,,,
+allen,ridge,3 min,naive short summary vs none,r_naive_h3,r_none,mice,46,21,0,-0.002523,-0.03803,0.3564,,,
+allen,ridge,3 min,per-neuron ridge vs none,r_pn_h3,r_none,mice,46,5,0,-0.07146,-0.1222,1.451e-09,,,
+allen,ridge,3 min,E2 hard vs none,r_hard_h3,r_none,mice,46,42,0,0.03984,0.0418,6.75e-11,,,
+allen,ridge,3 min,E2 soft vs none,r_soft_h3,r_none,mice,46,45,0,0.0449,0.04988,8.527e-14,,,
+allen,ridge,3 min,full-history summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,3 min,E2 soft vs per-neuron ridge,r_soft_h3,r_pn_h3,mice,46,45,0,0.1204,0.1721,1.421e-13,,,
+allen,ridge,3 min,E2 soft vs naive short summary,r_soft_h3,r_naive_h3,mice,46,42,0,0.03852,0.08791,4.209e-10,,,
+allen,ridge,3 min,E2 soft vs true type,r_soft_h3,r_true,mice,46,39,0,0.02632,0.02463,3.046e-08,,,
+allen,ridge,3 min,E2 hard vs true type,r_hard_h3,r_true,mice,46,37,0,0.02118,0.01655,0.0001198,,,
+allen,ridge,3 min,E2 soft vs E2 hard,r_soft_h3,r_hard_h3,mice,46,39,0,0.006712,0.008074,1.392e-07,,,
+allen,ridge,3 min,per-neuron ridge vs full-history summary,r_pn_h3,r_full,mice,46,1,0,-0.1112,-0.1696,7.105e-13,,,
+allen,ridge,3 min,E2 soft vs full-history summary,r_soft_h3,r_full,mice,46,33,0,0.004022,0.002537,0.04485,,,
+allen,ridge,3 min,per-neuron ridge vs true type,r_pn_h3,r_true,mice,46,2,0,-0.09416,-0.1475,4.803e-12,,,
+allen,ridge,10 min,true type vs none,r_true,r_none,mice,46,40,0,0.02052,0.02525,1.278e-07,,,
+allen,ridge,10 min,naive short summary vs none,r_naive_h10,r_none,mice,46,28,0,0.009211,-0.01881,0.7867,,,
+allen,ridge,10 min,per-neuron ridge vs none,r_pn_h10,r_none,mice,46,20,0,-0.008798,-0.0407,0.2823,,,
+allen,ridge,10 min,E2 hard vs none,r_hard_h10,r_none,mice,46,43,0,0.04164,0.04494,3.894e-12,,,
+allen,ridge,10 min,E2 soft vs none,r_soft_h10,r_none,mice,46,46,0,0.04778,0.05302,2.842e-14,,,
+allen,ridge,10 min,full-history summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,10 min,E2 soft vs per-neuron ridge,r_soft_h10,r_pn_h10,mice,46,39,0,0.05476,0.09372,2.702e-07,,,
+allen,ridge,10 min,E2 soft vs naive short summary,r_soft_h10,r_naive_h10,mice,46,43,0,0.03117,0.07183,7.105e-13,,,
+allen,ridge,10 min,E2 soft vs true type,r_soft_h10,r_true,mice,46,43,0,0.02783,0.02777,5.557e-09,,,
+allen,ridge,10 min,E2 hard vs true type,r_hard_h10,r_true,mice,46,39,0,0.02084,0.01969,9.358e-07,,,
+allen,ridge,10 min,E2 soft vs E2 hard,r_soft_h10,r_hard_h10,mice,46,44,0,0.006401,0.008088,7.008e-10,,,
+allen,ridge,10 min,per-neuron ridge vs full-history summary,r_pn_h10,r_full,mice,46,11,0,-0.05093,-0.08804,3.146e-06,,,
+allen,ridge,10 min,E2 soft vs full-history summary,r_soft_h10,r_full,mice,46,36,0,0.0055,0.005683,0.0003408,,,
+allen,ridge,10 min,per-neuron ridge vs true type,r_pn_h10,r_true,mice,46,16,0,-0.0218,-0.06595,0.004121,,,
+allen,ridge,30 min,true type vs none,r_true,r_none,mice,46,40,0,0.02052,0.02525,1.278e-07,,,
+allen,ridge,30 min,naive short summary vs none,r_naive_h30,r_none,mice,46,43,0,0.03944,0.04031,1.014e-09,,,
+allen,ridge,30 min,per-neuron ridge vs none,r_pn_h30,r_none,mice,46,41,0,0.04213,0.04454,3.046e-08,,,
+allen,ridge,30 min,E2 hard vs none,r_hard_h30,r_none,mice,46,42,0,0.04264,0.04657,1.27e-11,,,
+allen,ridge,30 min,E2 soft vs none,r_soft_h30,r_none,mice,46,45,0,0.04546,0.05171,1.99e-13,,,
+allen,ridge,30 min,full-history summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,30 min,E2 soft vs per-neuron ridge,r_soft_h30,r_pn_h30,mice,46,27,0,0.005596,0.007171,0.3508,,,
+allen,ridge,30 min,E2 soft vs naive short summary,r_soft_h30,r_naive_h30,mice,46,36,0,0.005591,0.01141,2.4e-05,,,
+allen,ridge,30 min,E2 soft vs true type,r_soft_h30,r_true,mice,46,43,0,0.02707,0.02646,7.59e-08,,,
+allen,ridge,30 min,E2 hard vs true type,r_hard_h30,r_true,mice,46,41,0,0.0224,0.02133,1.801e-06,,,
+allen,ridge,30 min,E2 soft vs E2 hard,r_soft_h30,r_hard_h30,mice,46,41,0,0.003225,0.005136,2.305e-09,,,
+allen,ridge,30 min,per-neuron ridge vs full-history summary,r_pn_h30,r_full,mice,46,21,0,-0.005504,-0.002801,0.8118,,,
+allen,ridge,30 min,E2 soft vs full-history summary,r_soft_h30,r_full,mice,46,35,0,0.003597,0.00437,0.0006814,,,
+allen,ridge,30 min,per-neuron ridge vs true type,r_pn_h30,r_true,mice,46,33,0,0.02128,0.01929,0.000928,,,
+allen,ridge,full,true type vs none,r_true,r_none,mice,46,40,0,0.02052,0.02525,1.278e-07,,,
+allen,ridge,full,naive short summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,full,per-neuron ridge vs none,r_pn_full,r_none,mice,46,40,0,0.04377,0.05274,8.453e-09,,,
+allen,ridge,full,E2 hard vs none,r_hard_full,r_none,mice,46,42,0,0.04264,0.04657,1.27e-11,,,
+allen,ridge,full,E2 soft vs none,r_soft_full,r_none,mice,46,45,0,0.04546,0.05171,1.99e-13,,,
+allen,ridge,full,full-history summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,full,E2 soft vs per-neuron ridge,r_soft_full,r_pn_full,mice,46,20,0,-0.003272,-0.001025,0.7372,,,
+allen,ridge,full,E2 soft vs naive short summary,r_soft_full,r_full,mice,46,35,0,0.003597,0.00437,0.0006814,,,
+allen,ridge,full,E2 soft vs true type,r_soft_full,r_true,mice,46,43,0,0.02707,0.02646,7.59e-08,,,
+allen,ridge,full,E2 hard vs true type,r_hard_full,r_true,mice,46,41,0,0.0224,0.02133,1.801e-06,,,
+allen,ridge,full,E2 soft vs E2 hard,r_soft_full,r_hard_full,mice,46,41,0,0.003225,0.005136,2.305e-09,,,
+allen,ridge,full,per-neuron ridge vs full-history summary,r_pn_full,r_full,mice,46,27,0,0.006893,0.005395,0.1189,,,
+allen,ridge,full,E2 soft vs full-history summary,r_soft_full,r_full,mice,46,35,0,0.003597,0.00437,0.0006814,,,
+allen,ridge,full,per-neuron ridge vs true type,r_pn_full,r_true,mice,46,36,0,0.02548,0.02749,0.0001328,,,
+allen,MLP,3 min,true type vs none,m_true,m_none,mice,46,43,0,0.01477,0.02395,1.947e-07,,,
+allen,MLP,3 min,naive short summary vs none,m_contnaive_h3,m_none,mice,46,0,0,-0.2789,-0.8319,2.842e-14,,,
+allen,MLP,3 min,naive short cluster vs none,m_clnaive_h3,m_none,mice,46,16,0,-0.009748,-0.08129,0.001894,,,
+allen,MLP,3 min,per-neuron MLP fine-tune vs none,m_ft_h3,m_none,mice,46,42,0,0.01703,0.02843,1.403e-08,,,
+allen,MLP,3 min,E2 hard vs none,m_hard_h3,m_none,mice,46,42,0,0.01824,0.02856,3.228e-09,,,
+allen,MLP,3 min,E2 soft vs none,m_soft_h3,m_none,mice,46,45,0,0.02175,0.03387,9.379e-13,,,
+allen,MLP,3 min,E2 continuous vs none,m_e2cont_h3,m_none,mice,46,21,0,-0.004875,-0.06361,0.009645,,,
+allen,MLP,3 min,full-history summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,3 min,full-history cluster vs none,m_clfull,m_none,mice,46,43,0,0.01835,0.03023,9.369e-09,,,
+allen,MLP,3 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h3,m_ft_h3,mice,46,30,0,0.004786,0.005441,0.008137,,,
+allen,MLP,3 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h3,m_ft_h3,mice,46,14,0,-0.02555,-0.09205,1.16e-05,,,
+allen,MLP,3 min,E2 soft vs naive short cluster,m_soft_h3,m_clnaive_h3,mice,46,41,0,0.03047,0.1152,5.784e-11,,,
+allen,MLP,3 min,E2 continuous vs naive short summary,m_e2cont_h3,m_contnaive_h3,mice,46,45,0,0.2591,0.7683,1.421e-13,,,
+allen,MLP,3 min,E2 soft vs true type,m_soft_h3,m_true,mice,46,36,0,0.006999,0.009925,2.132e-05,,,
+allen,MLP,3 min,E2 continuous vs true type,m_e2cont_h3,m_true,mice,46,14,0,-0.01992,-0.08756,3.817e-05,,,
+allen,MLP,3 min,E2 hard vs true type,m_hard_h3,m_true,mice,46,29,0,0.003529,0.004614,0.1088,,,
+allen,MLP,3 min,E2 continuous vs E2 soft,m_e2cont_h3,m_soft_h3,mice,46,10,0,-0.04303,-0.09749,1.791e-07,,,
+allen,MLP,3 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h3,m_contfull,mice,46,6,0,-0.01494,-0.01519,2.386e-06,,,
+allen,MLP,3 min,E2 continuous vs full-history summary,m_e2cont_h3,m_contfull,mice,46,1,0,-0.05133,-0.1072,5.684e-14,,,
+allen,MLP,3 min,per-neuron MLP fine-tune vs true type,m_ft_h3,m_true,mice,46,29,0,0.003374,0.004484,0.1505,,,
+allen,MLP,10 min,true type vs none,m_true,m_none,mice,46,43,0,0.01477,0.02395,1.947e-07,,,
+allen,MLP,10 min,naive short summary vs none,m_contnaive_h10,m_none,mice,46,8,0,-0.05518,-0.2487,1.403e-08,,,
+allen,MLP,10 min,naive short cluster vs none,m_clnaive_h10,m_none,mice,46,21,0,-0.0006739,-0.1048,0.05977,,,
+allen,MLP,10 min,per-neuron MLP fine-tune vs none,m_ft_h10,m_none,mice,46,45,0,0.03023,0.04595,1.225e-10,,,
+allen,MLP,10 min,E2 hard vs none,m_hard_h10,m_none,mice,46,41,0,0.01737,0.02738,4.359e-07,,,
+allen,MLP,10 min,E2 soft vs none,m_soft_h10,m_none,mice,46,45,0,0.02145,0.03464,7.105e-13,,,
+allen,MLP,10 min,E2 continuous vs none,m_e2cont_h10,m_none,mice,46,30,0,0.009613,-0.03415,0.5017,,,
+allen,MLP,10 min,full-history summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,10 min,full-history cluster vs none,m_clfull,m_none,mice,46,43,0,0.01835,0.03023,9.369e-09,,,
+allen,MLP,10 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h10,m_ft_h10,mice,46,8,0,-0.007185,-0.01131,3.368e-06,,,
+allen,MLP,10 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h10,m_ft_h10,mice,46,8,0,-0.03166,-0.0801,5.557e-09,,,
+allen,MLP,10 min,E2 soft vs naive short cluster,m_soft_h10,m_clnaive_h10,mice,46,44,0,0.02301,0.1394,1.421e-13,,,
+allen,MLP,10 min,E2 continuous vs naive short summary,m_e2cont_h10,m_contnaive_h10,mice,46,44,0,0.06828,0.2146,1.27e-11,,,
+allen,MLP,10 min,E2 soft vs true type,m_soft_h10,m_true,mice,46,39,0,0.008531,0.0107,5.807e-08,,,
+allen,MLP,10 min,E2 continuous vs true type,m_e2cont_h10,m_true,mice,46,21,0,-0.003193,-0.05809,0.01429,,,
+allen,MLP,10 min,E2 hard vs true type,m_hard_h10,m_true,mice,46,31,0,0.002867,0.003428,0.07849,,,
+allen,MLP,10 min,E2 continuous vs E2 soft,m_e2cont_h10,m_soft_h10,mice,46,17,0,-0.01795,-0.06879,0.0004315,,,
+allen,MLP,10 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h10,m_contfull,mice,46,20,0,-0.00281,0.002332,0.2405,,,
+allen,MLP,10 min,E2 continuous vs full-history summary,m_e2cont_h10,m_contfull,mice,46,4,0,-0.03174,-0.07777,2.472e-10,,,
+allen,MLP,10 min,per-neuron MLP fine-tune vs true type,m_ft_h10,m_true,mice,46,43,0,0.01476,0.022,3.235e-10,,,
+allen,MLP,30 min,true type vs none,m_true,m_none,mice,46,43,0,0.01477,0.02395,1.947e-07,,,
+allen,MLP,30 min,naive short summary vs none,m_contnaive_h30,m_none,mice,46,44,0,0.02889,0.03404,3.046e-08,,,
+allen,MLP,30 min,naive short cluster vs none,m_clnaive_h30,m_none,mice,46,43,0,0.01698,0.027,1.631e-09,,,
+allen,MLP,30 min,per-neuron MLP fine-tune vs none,m_ft_h30,m_none,mice,46,45,0,0.03811,0.05238,1.222e-12,,,
+allen,MLP,30 min,E2 hard vs none,m_hard_h30,m_none,mice,46,42,0,0.01846,0.02984,2.888e-09,,,
+allen,MLP,30 min,E2 soft vs none,m_soft_h30,m_none,mice,46,45,0,0.0204,0.03346,3.894e-12,,,
+allen,MLP,30 min,E2 continuous vs none,m_e2cont_h30,m_none,mice,46,43,0,0.02671,0.03034,7.008e-10,,,
+allen,MLP,30 min,full-history summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,30 min,full-history cluster vs none,m_clfull,m_none,mice,46,43,0,0.01835,0.03023,9.369e-09,,,
+allen,MLP,30 min,E2 soft vs per-neuron MLP fine-tune,m_soft_h30,m_ft_h30,mice,46,2,0,-0.01315,-0.01892,3.894e-12,,,
+allen,MLP,30 min,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_h30,m_ft_h30,mice,46,8,0,-0.006688,-0.02204,2.52e-08,,,
+allen,MLP,30 min,E2 soft vs naive short cluster,m_soft_h30,m_clnaive_h30,mice,46,37,0,0.003687,0.006459,5.348e-05,,,
+allen,MLP,30 min,E2 continuous vs naive short summary,m_e2cont_h30,m_contnaive_h30,mice,46,24,0,0.001044,-0.003698,0.5441,,,
+allen,MLP,30 min,E2 soft vs true type,m_soft_h30,m_true,mice,46,40,0,0.006748,0.009514,3.604e-06,,,
+allen,MLP,30 min,E2 continuous vs true type,m_e2cont_h30,m_true,mice,46,39,0,0.01303,0.006397,0.0001198,,,
+allen,MLP,30 min,E2 hard vs true type,m_hard_h30,m_true,mice,46,31,0,0.004316,0.005897,0.009974,,,
+allen,MLP,30 min,E2 continuous vs E2 soft,m_e2cont_h30,m_soft_h30,mice,46,33,0,0.005617,-0.003117,0.09052,,,
+allen,MLP,30 min,per-neuron MLP fine-tune vs full-history summary,m_ft_h30,m_contfull,mice,46,33,0,0.003849,0.00876,0.0001198,,,
+allen,MLP,30 min,E2 continuous vs full-history summary,m_e2cont_h30,m_contfull,mice,46,11,0,-0.005184,-0.01328,1.234e-05,,,
+allen,MLP,30 min,per-neuron MLP fine-tune vs true type,m_ft_h30,m_true,mice,46,45,0,0.01974,0.02843,2.842e-13,,,
+allen,MLP,full,true type vs none,m_true,m_none,mice,46,43,0,0.01477,0.02395,1.947e-07,,,
+allen,MLP,full,naive short summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,full,naive short cluster vs none,m_clfull,m_none,mice,46,43,0,0.01835,0.03023,9.369e-09,,,
+allen,MLP,full,per-neuron MLP fine-tune vs none,m_ft_full,m_none,mice,46,45,0,0.03478,0.0513,1.819e-11,,,
+allen,MLP,full,E2 hard vs none,m_hard_full,m_none,mice,46,42,0,0.01846,0.02984,2.888e-09,,,
+allen,MLP,full,E2 soft vs none,m_soft_full,m_none,mice,46,45,0,0.0204,0.03346,3.894e-12,,,
+allen,MLP,full,E2 continuous vs none,m_e2cont_full,m_none,mice,46,43,0,0.02671,0.03034,7.008e-10,,,
+allen,MLP,full,full-history summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,full,full-history cluster vs none,m_clfull,m_none,mice,46,43,0,0.01835,0.03023,9.369e-09,,,
+allen,MLP,full,E2 soft vs per-neuron MLP fine-tune,m_soft_full,m_ft_full,mice,46,4,0,-0.01435,-0.01784,2.056e-09,,,
+allen,MLP,full,E2 continuous vs per-neuron MLP fine-tune,m_e2cont_full,m_ft_full,mice,46,14,0,-0.007533,-0.02096,2.132e-05,,,
+allen,MLP,full,E2 soft vs naive short cluster,m_soft_full,m_clfull,mice,46,36,0,0.002446,0.00323,0.000928,,,
+allen,MLP,full,E2 continuous vs naive short summary,m_e2cont_full,m_contfull,mice,46,11,0,-0.005184,-0.01328,1.234e-05,,,
+allen,MLP,full,E2 soft vs true type,m_soft_full,m_true,mice,46,40,0,0.006748,0.009514,3.604e-06,,,
+allen,MLP,full,E2 continuous vs true type,m_e2cont_full,m_true,mice,46,39,0,0.01303,0.006397,0.0001198,,,
+allen,MLP,full,E2 hard vs true type,m_hard_full,m_true,mice,46,31,0,0.004316,0.005897,0.009974,,,
+allen,MLP,full,E2 continuous vs E2 soft,m_e2cont_full,m_soft_full,mice,46,33,0,0.005617,-0.003117,0.09052,,,
+allen,MLP,full,per-neuron MLP fine-tune vs full-history summary,m_ft_full,m_contfull,mice,46,28,0,0.002935,0.007682,0.009974,,,
+allen,MLP,full,E2 continuous vs full-history summary,m_e2cont_full,m_contfull,mice,46,11,0,-0.005184,-0.01328,1.234e-05,,,
+allen,MLP,full,per-neuron MLP fine-tune vs true type,m_ft_full,m_true,mice,46,45,0,0.01953,0.02736,1.054e-11,,,
+allen,ridge,full,K4 full summary vs none,r_full,r_none,mice,46,43,0,0.04505,0.04734,1.563e-12,,,
+allen,ridge,full,K4 (a) centred within session vs none,r_ctr,r_none,mice,46,34,0,0.02894,-0.002045,0.06947,,,
+allen,ridge,full,K4 (b) session mean only vs none,r_sess,r_none,mice,46,38,0,0.01549,0.0246,2.558e-06,,,
+allen,ridge,full,K4 (a) centred vs full summary,r_ctr,r_full,mice,46,13,0,-0.01833,-0.04939,4.41e-06,,,
+allen,ridge,full,K4 (b) session mean vs full summary,r_sess,r_full,mice,46,7,0,-0.02163,-0.02274,1.008e-06,,,
+allen,ridge,full,K4 (a) centred vs (b) session mean,r_ctr,r_sess,mice,46,27,0,0.01204,-0.02665,0.9569,,,
+allen,MLP,full,K4 full summary vs none,m_contfull,m_none,mice,46,44,0,0.0352,0.04362,3.693e-10,,,
+allen,MLP,full,K4 (a) centred within session vs none,m_ctr,m_none,mice,46,38,0,0.01429,0.004165,0.002315,,,
+allen,MLP,full,K4 (b) session mean only vs none,m_sess,m_none,mice,46,41,0,0.01299,0.02376,9.049e-08,,,
+allen,MLP,full,K4 (a) centred vs full summary,m_ctr,m_contfull,mice,46,1,0,-0.01656,-0.03946,2.472e-10,,,
+allen,MLP,full,K4 (b) session mean vs full summary,m_sess,m_contfull,mice,46,4,0,-0.02083,-0.01986,8.057e-07,,,
+allen,MLP,full,K4 (a) centred vs (b) session mean,m_ctr,m_sess,mice,46,28,0,0.002971,-0.01959,0.7129,,,

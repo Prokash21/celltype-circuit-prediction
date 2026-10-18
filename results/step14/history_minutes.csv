@@ -1,0 +1,9 @@
+dataset,history,minutes_mean
+bugeon,3 min,3.011
+bugeon,10 min,10
+bugeon,30 min,30
+bugeon,full,91.53
+allen,3 min,3
+allen,10 min,10
+allen,30 min,30
+allen,full,51.2

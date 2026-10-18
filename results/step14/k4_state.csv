@@ -1,0 +1,33 @@
+dataset,family,state,summary,gain_mean,gain_sem,units_up,n_units,p_vs_none,windows
+bugeon,ridge,running,full summary,0.01736,0.0010636,17,17,1.5259e-05,11698
+bugeon,ridge,running,(a) centred,0.014278,0.0011951,17,17,1.5259e-05,11698
+bugeon,ridge,running,(b) session mean,0.0049379,0.0020072,13,17,0.023224,11698
+bugeon,ridge,running,true type,0.0031367,0.0011274,13,17,0.023224,11698
+bugeon,ridge,stationary,full summary,0.0059748,0.0017274,12,17,0.0066528,13085
+bugeon,ridge,stationary,(a) centred,0.0012167,0.0014697,10,17,0.40376,13085
+bugeon,ridge,stationary,(b) session mean,0.0017085,0.0033532,7,17,0.7119,13085
+bugeon,ridge,stationary,true type,-0.0033714,0.0018755,6,17,0.12021,13085
+bugeon,ridge,running - stationary (paired),full summary,0.011385,,16,17,3.0518e-05,
+bugeon,MLP,running,full summary,0.02022,0.0016287,17,17,1.5259e-05,11698
+bugeon,MLP,running,(a) centred,0.011887,0.0011537,17,17,1.5259e-05,11698
+bugeon,MLP,running,(b) session mean,0.0017719,0.00086403,11,17,0.10889,11698
+bugeon,MLP,stationary,full summary,0.011566,0.0018805,17,17,1.5259e-05,13085
+bugeon,MLP,stationary,(a) centred,-0.0019423,0.00271,11,17,0.81758,13085
+bugeon,MLP,stationary,(b) session mean,0.0028418,0.0015361,11,17,0.15938,13085
+bugeon,MLP,running - stationary (paired),full summary,0.0086539,,16,17,0.0016785,
+allen,ridge,running,full summary,0.047466,0.01018,39,45,1.3601e-06,11461
+allen,ridge,running,(a) centred,-0.032146,0.019886,30,45,0.5836,11461
+allen,ridge,running,(b) session mean,0.025669,0.01589,35,45,4.0667e-05,11461
+allen,ridge,running,true type,0.030628,0.0059463,39,45,1.9567e-07,11461
+allen,ridge,stationary,full summary,0.037491,0.0053519,37,43,3.7856e-07,23909
+allen,ridge,stationary,(a) centred,0.017419,0.0070345,35,43,0.0014147,23909
+allen,ridge,stationary,(b) session mean,0.013229,0.0061774,32,43,0.0065877,23909
+allen,ridge,stationary,true type,0.018459,0.0040488,32,43,5.2755e-05,23909
+allen,ridge,running - stationary (paired),full summary,0.010403,,19,45,0.72895,
+allen,MLP,running,full summary,0.034789,0.011877,41,45,4.6057e-09,11461
+allen,MLP,running,(a) centred,0.0047814,0.0071354,32,45,0.021574,11461
+allen,MLP,running,(b) session mean,0.022819,0.0081834,37,45,2.6757e-05,11461
+allen,MLP,stationary,full summary,0.043252,0.0076876,41,43,4.9431e-09,23909
+allen,MLP,stationary,(a) centred,-0.0039635,0.0099612,34,43,0.021761,23909
+allen,MLP,stationary,(b) session mean,0.020552,0.0082665,37,43,2.8792e-07,23909
+allen,MLP,running - stationary (paired),full summary,-0.0090062,,23,45,0.92116,

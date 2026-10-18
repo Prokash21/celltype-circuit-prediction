@@ -1,0 +1,121 @@
+dataset,family,method,history,minutes,variant,score_mean,gain_mean,gain_sem,units_up,n_units,p_vs_none
+bugeon,ridge,true type,3 min,3.01094,r_true,0.497365,0.00139856,0.00120357,9,17,0.263321
+bugeon,ridge,naive short summary,3 min,3.01094,r_naive_h3,0.500121,0.0041539,0.00185022,12,17,0.0447693
+bugeon,ridge,per-neuron ridge,3 min,3.01094,r_pn_h3,0.449057,-0.0469095,0.00958591,3,17,0.000213623
+bugeon,ridge,E2 hard,3 min,3.01094,r_hard_h3,0.505011,0.00904443,0.00152948,16,17,3.05176e-05
+bugeon,ridge,E2 soft,3 min,3.01094,r_soft_h3,0.508754,0.0127868,0.00142044,17,17,1.52588e-05
+bugeon,ridge,full-history summary,3 min,3.01094,r_full,0.509252,0.013285,0.00133213,17,17,1.52588e-05
+bugeon,ridge,true type,10 min,9.99982,r_true,0.497365,0.00139856,0.00120357,9,17,0.263321
+bugeon,ridge,naive short summary,10 min,9.99982,r_naive_h10,0.502837,0.00687037,0.00169164,14,17,0.00167847
+bugeon,ridge,per-neuron ridge,10 min,9.99982,r_pn_h10,0.492002,-0.00396488,0.00561135,7,17,0.487381
+bugeon,ridge,E2 hard,10 min,9.99982,r_hard_h10,0.50818,0.0122136,0.00149203,17,17,1.52588e-05
+bugeon,ridge,E2 soft,10 min,9.99982,r_soft_h10,0.511167,0.0152004,0.00137846,17,17,1.52588e-05
+bugeon,ridge,full-history summary,10 min,9.99982,r_full,0.509252,0.013285,0.00133213,17,17,1.52588e-05
+bugeon,ridge,true type,30 min,30.0004,r_true,0.497365,0.00139856,0.00120357,9,17,0.263321
+bugeon,ridge,naive short summary,30 min,30.0004,r_naive_h30,0.506135,0.0101679,0.00154858,17,17,1.52588e-05
+bugeon,ridge,per-neuron ridge,30 min,30.0004,r_pn_h30,0.513103,0.0171365,0.00338379,16,17,0.000152588
+bugeon,ridge,E2 hard,30 min,30.0004,r_hard_h30,0.508439,0.0124724,0.00145119,17,17,1.52588e-05
+bugeon,ridge,E2 soft,30 min,30.0004,r_soft_h30,0.510851,0.0148844,0.00135332,17,17,1.52588e-05
+bugeon,ridge,full-history summary,30 min,30.0004,r_full,0.509252,0.013285,0.00133213,17,17,1.52588e-05
+bugeon,ridge,true type,full,91.53,r_true,0.497365,0.00139856,0.00120357,9,17,0.263321
+bugeon,ridge,naive short summary,full,91.53,r_full,0.509252,0.013285,0.00133213,17,17,1.52588e-05
+bugeon,ridge,per-neuron ridge,full,91.53,r_pn_full,0.526603,0.0306367,0.00279173,17,17,1.52588e-05
+bugeon,ridge,E2 hard,full,91.53,r_hard_full,0.509403,0.0134366,0.00131713,17,17,1.52588e-05
+bugeon,ridge,E2 soft,full,91.53,r_soft_full,0.51187,0.0159031,0.00121854,17,17,1.52588e-05
+bugeon,ridge,full-history summary,full,91.53,r_full,0.509252,0.013285,0.00133213,17,17,1.52588e-05
+bugeon,MLP,true type,3 min,3.01094,m_true,0.510316,0.00177421,0.000298784,14,17,0.000213623
+bugeon,MLP,naive short summary,3 min,3.01094,m_contnaive_h3,0.418746,-0.0897952,0.0235231,1,17,4.57764e-05
+bugeon,MLP,naive short cluster,3 min,3.01094,m_clnaive_h3,0.510968,0.002427,0.000712772,15,17,0.00315857
+bugeon,MLP,per-neuron MLP fine-tune,3 min,3.01094,m_ft_h3,0.504718,-0.00382339,0.00304077,4,17,0.13237
+bugeon,MLP,E2 hard,3 min,3.01094,m_hard_h3,0.512963,0.004422,0.000667379,17,17,1.52588e-05
+bugeon,MLP,E2 soft,3 min,3.01094,m_soft_h3,0.515064,0.00652273,0.000691527,17,17,1.52588e-05
+bugeon,MLP,E2 continuous,3 min,3.01094,m_e2cont_h3,0.512816,0.00427513,0.00170941,13,17,0.0305176
+bugeon,MLP,full-history summary,3 min,3.01094,m_contfull,0.525966,0.0174247,0.00162531,17,17,1.52588e-05
+bugeon,MLP,full-history cluster,3 min,3.01094,m_clfull,0.51512,0.00657819,0.000567443,17,17,1.52588e-05
+bugeon,MLP,true type,10 min,9.99982,m_true,0.510316,0.00177421,0.000298784,14,17,0.000213623
+bugeon,MLP,naive short summary,10 min,9.99982,m_contnaive_h10,0.495951,-0.0125908,0.00508317,5,17,0.0395355
+bugeon,MLP,naive short cluster,10 min,9.99982,m_clnaive_h10,0.511775,0.00323399,0.000636326,15,17,0.000289917
+bugeon,MLP,per-neuron MLP fine-tune,10 min,9.99982,m_ft_h10,0.516237,0.007696,0.00279505,13,17,0.0201569
+bugeon,MLP,E2 hard,10 min,9.99982,m_hard_h10,0.514798,0.00625668,0.000668668,17,17,1.52588e-05
+bugeon,MLP,E2 soft,10 min,9.99982,m_soft_h10,0.516257,0.00771527,0.000696061,17,17,1.52588e-05
+bugeon,MLP,E2 continuous,10 min,9.99982,m_e2cont_h10,0.514353,0.0058113,0.00227599,11,17,0.0266724
+bugeon,MLP,full-history summary,10 min,9.99982,m_contfull,0.525966,0.0174247,0.00162531,17,17,1.52588e-05
+bugeon,MLP,full-history cluster,10 min,9.99982,m_clfull,0.51512,0.00657819,0.000567443,17,17,1.52588e-05
+bugeon,MLP,true type,30 min,30.0004,m_true,0.510316,0.00177421,0.000298784,14,17,0.000213623
+bugeon,MLP,naive short summary,30 min,30.0004,m_contnaive_h30,0.518765,0.0102233,0.00205727,16,17,0.000152588
+bugeon,MLP,naive short cluster,30 min,30.0004,m_clnaive_h30,0.513507,0.00496614,0.000665122,16,17,3.05176e-05
+bugeon,MLP,per-neuron MLP fine-tune,30 min,30.0004,m_ft_h30,0.523422,0.0148809,0.00231536,16,17,3.05176e-05
+bugeon,MLP,E2 hard,30 min,30.0004,m_hard_h30,0.51478,0.0062391,0.000645352,17,17,1.52588e-05
+bugeon,MLP,E2 soft,30 min,30.0004,m_soft_h30,0.516057,0.00751602,0.000660991,17,17,1.52588e-05
+bugeon,MLP,E2 continuous,30 min,30.0004,m_e2cont_h30,0.521539,0.0129979,0.00159589,17,17,1.52588e-05
+bugeon,MLP,full-history summary,30 min,30.0004,m_contfull,0.525966,0.0174247,0.00162531,17,17,1.52588e-05
+bugeon,MLP,full-history cluster,30 min,30.0004,m_clfull,0.51512,0.00657819,0.000567443,17,17,1.52588e-05
+bugeon,MLP,true type,full,91.53,m_true,0.510316,0.00177421,0.000298784,14,17,0.000213623
+bugeon,MLP,naive short summary,full,91.53,m_contfull,0.525966,0.0174247,0.00162531,17,17,1.52588e-05
+bugeon,MLP,naive short cluster,full,91.53,m_clfull,0.51512,0.00657819,0.000567443,17,17,1.52588e-05
+bugeon,MLP,per-neuron MLP fine-tune,full,91.53,m_ft_full,0.529577,0.0210354,0.00204699,17,17,1.52588e-05
+bugeon,MLP,E2 hard,full,91.53,m_hard_full,0.515474,0.00693306,0.000597766,17,17,1.52588e-05
+bugeon,MLP,E2 soft,full,91.53,m_soft_full,0.516677,0.00813543,0.000602559,17,17,1.52588e-05
+bugeon,MLP,E2 continuous,full,91.53,m_e2cont_full,0.524557,0.0160154,0.00153064,17,17,1.52588e-05
+bugeon,MLP,full-history summary,full,91.53,m_contfull,0.525966,0.0174247,0.00162531,17,17,1.52588e-05
+bugeon,MLP,full-history cluster,full,91.53,m_clfull,0.51512,0.00657819,0.000567443,17,17,1.52588e-05
+allen,ridge,true type,3 min,3.00038,r_true,0.324919,0.025249,0.00427737,40,46,1.2783e-07
+allen,ridge,naive short summary,3 min,3.00038,r_naive_h3,0.261639,-0.0380308,0.0198578,21,46,0.356447
+allen,ridge,per-neuron ridge,3 min,3.00038,r_pn_h3,0.177429,-0.122241,0.0254608,5,46,1.45062e-09
+allen,ridge,E2 hard,3 min,3.00038,r_hard_h3,0.341474,0.041804,0.00545509,42,46,6.75016e-11
+allen,ridge,E2 soft,3 min,3.00038,r_soft_h3,0.349548,0.0498782,0.00484036,45,46,8.52651e-14
+allen,ridge,full-history summary,3 min,3.00038,r_full,0.347011,0.047341,0.00532354,43,46,1.56319e-12
+allen,ridge,true type,10 min,10.0003,r_true,0.324919,0.025249,0.00427737,40,46,1.2783e-07
+allen,ridge,naive short summary,10 min,10.0003,r_naive_h10,0.28086,-0.0188104,0.0154766,28,46,0.786742
+allen,ridge,per-neuron ridge,10 min,10.0003,r_pn_h10,0.258971,-0.0406993,0.0200283,20,46,0.282328
+allen,ridge,E2 hard,10 min,10.0003,r_hard_h10,0.344606,0.0449357,0.0049768,43,46,3.89377e-12
+allen,ridge,E2 soft,10 min,10.0003,r_soft_h10,0.352694,0.0530235,0.00458956,46,46,2.84217e-14
+allen,ridge,full-history summary,10 min,10.0003,r_full,0.347011,0.047341,0.00532354,43,46,1.56319e-12
+allen,ridge,true type,30 min,30.0002,r_true,0.324919,0.025249,0.00427737,40,46,1.2783e-07
+allen,ridge,naive short summary,30 min,30.0002,r_naive_h30,0.339976,0.0403057,0.00578939,43,46,1.01358e-09
+allen,ridge,per-neuron ridge,30 min,30.0002,r_pn_h30,0.34421,0.0445402,0.00825694,41,46,3.0461e-08
+allen,ridge,E2 hard,30 min,30.0002,r_hard_h30,0.346245,0.0465749,0.00538127,42,46,1.27045e-11
+allen,ridge,E2 soft,30 min,30.0002,r_soft_h30,0.351381,0.0517109,0.00491407,45,46,1.98952e-13
+allen,ridge,full-history summary,30 min,30.0002,r_full,0.347011,0.047341,0.00532354,43,46,1.56319e-12
+allen,ridge,true type,full,51.2023,r_true,0.324919,0.025249,0.00427737,40,46,1.2783e-07
+allen,ridge,naive short summary,full,51.2023,r_full,0.347011,0.047341,0.00532354,43,46,1.56319e-12
+allen,ridge,per-neuron ridge,full,51.2023,r_pn_full,0.352406,0.0527355,0.00803077,40,46,8.45284e-09
+allen,ridge,E2 hard,full,51.2023,r_hard_full,0.346245,0.0465749,0.00538127,42,46,1.27045e-11
+allen,ridge,E2 soft,full,51.2023,r_soft_full,0.351381,0.0517109,0.00491407,45,46,1.98952e-13
+allen,ridge,full-history summary,full,51.2023,r_full,0.347011,0.047341,0.00532354,43,46,1.56319e-12
+allen,MLP,true type,3 min,3.00038,m_true,0.427874,0.023948,0.0059657,43,46,1.94656e-07
+allen,MLP,naive short summary,3 min,3.00038,m_contnaive_h3,-0.427949,-0.831874,0.270517,0,46,2.84217e-14
+allen,MLP,naive short cluster,3 min,3.00038,m_clnaive_h3,0.322639,-0.0812869,0.0257161,16,46,0.00189431
+allen,MLP,per-neuron MLP fine-tune,3 min,3.00038,m_ft_h3,0.432358,0.0284319,0.0071269,42,46,1.40344e-08
+allen,MLP,E2 hard,3 min,3.00038,m_hard_h3,0.432488,0.0285623,0.00702284,42,46,3.22797e-09
+allen,MLP,E2 soft,3 min,3.00038,m_soft_h3,0.437799,0.033873,0.00654965,45,46,9.37916e-13
+allen,MLP,E2 continuous,3 min,3.00038,m_e2cont_h3,0.340311,-0.0636148,0.0191745,21,46,0.00964484
+allen,MLP,full-history summary,3 min,3.00038,m_contfull,0.447547,0.0436211,0.00604374,44,46,3.69283e-10
+allen,MLP,full-history cluster,3 min,3.00038,m_clfull,0.434157,0.0302317,0.0071251,43,46,9.36888e-09
+allen,MLP,true type,10 min,10.0003,m_true,0.427874,0.023948,0.0059657,43,46,1.94656e-07
+allen,MLP,naive short summary,10 min,10.0003,m_contnaive_h10,0.155179,-0.248747,0.0596671,8,46,1.40344e-08
+allen,MLP,naive short cluster,10 min,10.0003,m_clnaive_h10,0.299173,-0.104753,0.0329724,21,46,0.0597654
+allen,MLP,per-neuron MLP fine-tune,10 min,10.0003,m_ft_h10,0.449878,0.0459527,0.00784902,45,46,1.22498e-10
+allen,MLP,E2 hard,10 min,10.0003,m_hard_h10,0.431302,0.027376,0.00720633,41,46,4.35934e-07
+allen,MLP,E2 soft,10 min,10.0003,m_soft_h10,0.438569,0.0346432,0.00672967,45,46,7.10543e-13
+allen,MLP,E2 continuous,10 min,10.0003,m_e2cont_h10,0.36978,-0.0341456,0.0136585,30,46,0.501734
+allen,MLP,full-history summary,10 min,10.0003,m_contfull,0.447547,0.0436211,0.00604374,44,46,3.69283e-10
+allen,MLP,full-history cluster,10 min,10.0003,m_clfull,0.434157,0.0302317,0.0071251,43,46,9.36888e-09
+allen,MLP,true type,30 min,30.0002,m_true,0.427874,0.023948,0.0059657,43,46,1.94656e-07
+allen,MLP,naive short summary,30 min,30.0002,m_contnaive_h30,0.437968,0.0340427,0.00599528,44,46,3.0461e-08
+allen,MLP,naive short cluster,30 min,30.0002,m_clnaive_h30,0.430928,0.0270023,0.00678573,43,46,1.63118e-09
+allen,MLP,per-neuron MLP fine-tune,30 min,30.0002,m_ft_h30,0.456307,0.0523813,0.00726428,45,46,1.22213e-12
+allen,MLP,E2 hard,30 min,30.0002,m_hard_h30,0.433771,0.0298449,0.00655707,42,46,2.88787e-09
+allen,MLP,E2 soft,30 min,30.0002,m_soft_h30,0.437387,0.0334618,0.00654126,45,46,3.89377e-12
+allen,MLP,E2 continuous,30 min,30.0002,m_e2cont_h30,0.43427,0.0303448,0.00479768,43,46,7.00823e-10
+allen,MLP,full-history summary,30 min,30.0002,m_contfull,0.447547,0.0436211,0.00604374,44,46,3.69283e-10
+allen,MLP,full-history cluster,30 min,30.0002,m_clfull,0.434157,0.0302317,0.0071251,43,46,9.36888e-09
+allen,MLP,true type,full,51.2023,m_true,0.427874,0.023948,0.0059657,43,46,1.94656e-07
+allen,MLP,naive short summary,full,51.2023,m_contfull,0.447547,0.0436211,0.00604374,44,46,3.69283e-10
+allen,MLP,naive short cluster,full,51.2023,m_clfull,0.434157,0.0302317,0.0071251,43,46,9.36888e-09
+allen,MLP,per-neuron MLP fine-tune,full,51.2023,m_ft_full,0.455229,0.0513033,0.00810258,45,46,1.81899e-11
+allen,MLP,E2 hard,full,51.2023,m_hard_full,0.433771,0.0298449,0.00655707,42,46,2.88787e-09
+allen,MLP,E2 soft,full,51.2023,m_soft_full,0.437387,0.0334618,0.00654126,45,46,3.89377e-12
+allen,MLP,E2 continuous,full,51.2023,m_e2cont_full,0.43427,0.0303448,0.00479768,43,46,7.00823e-10
+allen,MLP,full-history summary,full,51.2023,m_contfull,0.447547,0.0436211,0.00604374,44,46,3.69283e-10
+allen,MLP,full-history cluster,full,51.2023,m_clfull,0.434157,0.0302317,0.0071251,43,46,9.36888e-09

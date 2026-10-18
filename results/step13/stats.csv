@@ -1,0 +1,82 @@
+dataset,test,type,family,a,b,n,a_beats_b,ties,median_diff,mean_diff,p,per_mouse
+bugeon,sessions,all,ridge,r_sel,r_none,17,17,0,0.01237,0.01328,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_sel,r_none,4,4,0,0.01138,0.01247,0.125,SB025 +0.0197;SB026 +0.0114;SB028 +0.0114;SB030 +0.0074
+bugeon,sessions,all,ridge,r_sel,r_true,17,17,0,0.0115,0.01189,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_sel,r_true,4,4,0,0.01254,0.01169,0.125,SB025 +0.0128;SB026 +0.0089;SB028 +0.0126;SB030 +0.0124
+bugeon,sessions,all,ridge,r_sel,r_selshuf,17,17,0,0.0107,0.01207,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_sel,r_selshuf,4,4,0,0.01252,0.01212,0.125,SB025 +0.0128;SB026 +0.0101;SB028 +0.0133;SB030 +0.0122
+bugeon,sessions,all,ridge,r_true,r_none,17,9,0,0.0001122,0.001399,0.2633,
+bugeon,mice (signs only),all,ridge,r_true,r_none,4,2,0,0.000623,0.0007801,0.875,SB025 +0.0069;SB026 +0.0025;SB028 -0.0012;SB030 -0.0050
+bugeon,sessions,all,ridge,r_S,r_none,17,17,0,0.005102,0.006221,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_S,r_none,4,4,0,0.004655,0.005406,0.125,SB025 +0.0104;SB026 +0.0043;SB028 +0.0050;SB030 +0.0019
+bugeon,sessions,all,ridge,r_sel,r_S,17,17,0,0.007257,0.007064,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_sel,r_S,4,4,0,0.006724,0.007064,0.125,SB025 +0.0093;SB026 +0.0070;SB028 +0.0064;SB030 +0.0055
+bugeon,sessions,all,ridge,r_nt,r_none,17,16,0,0.01026,0.009575,3.052e-05,
+bugeon,mice (signs only),all,ridge,r_nt,r_none,4,4,0,0.008768,0.008409,0.125,SB025 +0.0144;SB026 +0.0077;SB028 +0.0098;SB030 +0.0017
+bugeon,sessions,all,ridge,r_nt,r_true,17,17,0,0.007425,0.008176,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_nt,r_true,4,4,0,0.007112,0.007628,0.125,SB025 +0.0075;SB026 +0.0052;SB028 +0.0111;SB030 +0.0068
+bugeon,sessions,all,ridge,r_k1,r_none,17,8,0,-0.0008345,0.001343,0.8176,
+bugeon,mice (signs only),all,ridge,r_k1,r_none,4,2,0,-0.000194,0.0004713,1,SB025 +0.0070;SB026 +0.0013;SB028 -0.0017;SB030 -0.0047
+bugeon,sessions,all,ridge,r_gmmsel,r_none,17,17,0,0.01217,0.01398,1.526e-05,
+bugeon,mice (signs only),all,ridge,r_gmmsel,r_none,4,4,0,0.01102,0.01294,0.125,SB025 +0.0216;SB026 +0.0107;SB028 +0.0114;SB030 +0.0081
+bugeon,sessions,all,ridge,r_selshuf,r_none,17,8,0,-0.001053,0.001212,0.89,
+bugeon,mice (signs only),all,ridge,r_selshuf,r_none,4,2,0,-0.0003402,0.000352,1,SB025 +0.0069;SB026 +0.0013;SB028 -0.0019;SB030 -0.0048
+bugeon,sessions,all,MLP,m_cl,m_none,17,17,0,0.007133,0.006578,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cl,m_none,4,4,0,0.00599,0.006013,0.125,SB025 +0.0089;SB026 +0.0056;SB028 +0.0063;SB030 +0.0032
+bugeon,sessions,all,MLP,m_cl,m_true,17,17,0,0.004622,0.004804,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cl,m_true,4,4,0,0.004208,0.004545,0.125,SB025 +0.0062;SB026 +0.0041;SB028 +0.0044;SB030 +0.0036
+bugeon,sessions,all,MLP,m_cl,m_clsh,17,17,0,0.007603,0.00691,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cl,m_clsh,4,4,0,0.00646,0.006406,0.125,SB025 +0.0095;SB026 +0.0066;SB028 +0.0063;SB030 +0.0032
+bugeon,sessions,all,MLP,m_clnt,m_none,17,17,0,0.004849,0.004823,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_clnt,m_none,4,4,0,0.004148,0.004405,0.125,SB025 +0.0050;SB026 +0.0033;SB028 +0.0062;SB030 +0.0032
+bugeon,sessions,all,MLP,m_clnt,m_true,17,15,0,0.003071,0.003049,7.629e-05,
+bugeon,mice (signs only),all,MLP,m_clnt,m_true,4,4,0,0.002914,0.002937,0.125,SB025 +0.0023;SB026 +0.0017;SB028 +0.0042;SB030 +0.0036
+bugeon,sessions,all,MLP,m_cont,m_none,17,17,0,0.01632,0.01742,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cont,m_none,4,4,0,0.0155,0.01607,0.125,SB025 +0.0243;SB026 +0.0138;SB028 +0.0172;SB030 +0.0090
+bugeon,sessions,all,MLP,m_cont,m_true,17,17,0,0.01451,0.01565,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cont,m_true,4,4,0,0.01372,0.0146,0.125,SB025 +0.0216;SB026 +0.0122;SB028 +0.0152;SB030 +0.0094
+bugeon,sessions,all,MLP,m_contT,m_cont,17,11,0,0.0001508,8.526e-05,0.306,
+bugeon,mice (signs only),all,MLP,m_contT,m_cont,4,2,0,-3.084e-05,1.745e-05,1,SB025 +0.0005;SB026 -0.0003;SB028 -0.0003;SB030 +0.0002
+bugeon,sessions,all,MLP,m_contT,m_true,17,17,0,0.01501,0.01574,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_contT,m_true,4,4,0,0.01341,0.01462,0.125,SB025 +0.0220;SB026 +0.0119;SB028 +0.0149;SB030 +0.0096
+bugeon,sessions,all,MLP,m_contT,m_none,17,17,0,0.01682,0.01751,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_contT,m_none,4,4,0,0.01519,0.01608,0.125,SB025 +0.0247;SB026 +0.0135;SB028 +0.0169;SB030 +0.0092
+bugeon,sessions,all,MLP,m_true,m_none,17,14,0,0.001775,0.001774,0.0002136,
+bugeon,mice (signs only),all,MLP,m_true,m_none,4,3,0,0.001782,0.001469,0.25,SB025 +0.0027;SB026 +0.0016;SB028 +0.0020;SB030 -0.0004
+bugeon,sessions,all,MLP,m_S,m_none,17,17,0,0.003077,0.002671,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_S,m_none,4,4,0,0.00272,0.002377,0.125,SB025 +0.0034;SB026 +0.0024;SB028 +0.0030;SB030 +0.0007
+bugeon,sessions,all,MLP,m_cont,m_cl,17,17,0,0.009363,0.01085,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cont,m_cl,4,4,0,0.009514,0.01005,0.125,SB025 +0.0153;SB026 +0.0082;SB028 +0.0109;SB030 +0.0058
+bugeon,sessions,all,MLP,m_clsh,m_none,17,3,0,-0.00027,-0.0003321,0.006653,
+bugeon,mice (signs only),all,MLP,m_clsh,m_none,4,0,0,-0.0003154,-0.0003925,0.125,SB025 -0.0006;SB026 -0.0009;SB028 -0.0000;SB030 -0.0001
+bugeon,sessions,all,MLP,m_cont,m_S,17,17,0,0.01345,0.01475,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cont,m_S,4,4,0,0.01278,0.01369,0.125,SB025 +0.0209;SB026 +0.0114;SB028 +0.0142;SB030 +0.0083
+bugeon,sessions,all,MLP,m_cl,m_S,17,17,0,0.003873,0.003908,1.526e-05,
+bugeon,mice (signs only),all,MLP,m_cl,m_S,4,4,0,0.00327,0.003636,0.125,SB025 +0.0055;SB026 +0.0032;SB028 +0.0033;SB030 +0.0025
+allen,mice,all,ridge,r_sel,r_none,46,43,0,0.04505,0.04734,1.563e-12,
+allen,mice,all,ridge,r_sel,r_true,46,39,0,0.02658,0.02209,4.359e-07,
+allen,mice,all,ridge,r_sel,r_selshuf,46,45,0,0.04242,0.06949,8.527e-14,
+allen,mice,all,ridge,r_true,r_none,46,40,0,0.02052,0.02525,1.278e-07,
+allen,mice,all,ridge,r_S,r_none,46,40,0,0.01879,0.02581,1.55e-08,
+allen,mice,all,ridge,r_sel,r_S,46,38,0,0.02609,0.02153,5.946e-07,
+allen,mice,all,ridge,r_nt,r_none,46,41,0,0.02332,0.02637,5.446e-10,
+allen,mice,all,ridge,r_nt,r_true,46,24,0,0.002875,0.001123,0.7867,
+allen,mice,all,ridge,r_k1,r_none,46,17,0,-0.008883,-0.02131,0.01341,
+allen,mice,all,ridge,r_gmmsel,r_none,46,43,0,0.03616,0.04331,3.126e-12,
+allen,mice,all,ridge,r_selshuf,r_none,46,17,0,-0.01216,-0.02214,0.007083,
+allen,mice,all,MLP,m_cl,m_none,46,43,0,0.01835,0.03023,9.369e-09,
+allen,mice,all,MLP,m_cl,m_true,46,32,0,0.003014,0.006284,0.002137,
+allen,mice,all,MLP,m_cl,m_clsh,46,43,0,0.01738,0.0273,3.605e-09,
+allen,mice,all,MLP,m_clnt,m_none,46,40,0,0.01713,0.02578,3.674e-08,
+allen,mice,all,MLP,m_clnt,m_true,46,25,0,0.002516,0.001832,0.3856,
+allen,mice,all,MLP,m_cont,m_none,46,44,0,0.0352,0.04362,3.693e-10,
+allen,mice,all,MLP,m_cont,m_true,46,42,0,0.01698,0.01967,4.42e-08,
+allen,mice,all,MLP,m_contT,m_cont,46,25,0,0.001554,0.003262,0.2775,
+allen,mice,all,MLP,m_contT,m_true,46,44,0,0.01832,0.02294,5.557e-09,
+allen,mice,all,MLP,m_contT,m_none,46,44,0,0.03288,0.04688,7.935e-10,
+allen,mice,all,MLP,m_true,m_none,46,43,0,0.01477,0.02395,1.947e-07,
+allen,mice,all,MLP,m_S,m_none,46,43,0,0.0151,0.02374,3.346e-08,
+allen,mice,all,MLP,m_cont,m_cl,46,41,0,0.01292,0.01339,2.4e-05,
+allen,mice,all,MLP,m_clsh,m_none,46,26,0,0.0004702,0.002936,0.2922,
+allen,mice,all,MLP,m_cont,m_S,46,43,0,0.01753,0.01988,3.346e-08,
+allen,mice,all,MLP,m_cl,m_S,46,33,0,0.003572,0.00649,0.002225,

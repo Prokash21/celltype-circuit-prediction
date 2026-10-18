@@ -1,0 +1,181 @@
+fold,method,k,val_score,in_grid,dataset
+0,b (none),1,0.499526,,bugeon
+0,"k=1 (one model, equal weights)",1,0.5008,,bugeon
+0,km,2,0.502729,True,bugeon
+0,km,3,0.506804,True,bugeon
+0,km,4,0.507991,True,bugeon
+0,km,6,0.509892,True,bugeon
+0,km,8,0.512202,True,bugeon
+0,km,12,0.512724,True,bugeon
+0,km,16,0.513782,True,bugeon
+0,km,24,0.514542,False,bugeon
+0,km,32,0.515339,False,bugeon
+0,gmm,2,0.502775,True,bugeon
+0,gmm,3,0.506354,True,bugeon
+0,gmm,4,0.507592,True,bugeon
+0,gmm,6,0.510376,True,bugeon
+0,gmm,8,0.510749,True,bugeon
+0,gmm,12,0.512021,True,bugeon
+0,gmm,16,0.512642,True,bugeon
+0,gmm,24,0.513969,False,bugeon
+0,gmm,32,0.514085,False,bugeon
+1,b (none),1,0.500176,,bugeon
+1,"k=1 (one model, equal weights)",1,0.501207,,bugeon
+1,km,2,0.503236,True,bugeon
+1,km,3,0.509519,True,bugeon
+1,km,4,0.508965,True,bugeon
+1,km,6,0.513904,True,bugeon
+1,km,8,0.515474,True,bugeon
+1,km,12,0.516743,True,bugeon
+1,km,16,0.517568,True,bugeon
+1,km,24,0.518662,False,bugeon
+1,km,32,0.519855,False,bugeon
+1,gmm,2,0.503884,True,bugeon
+1,gmm,3,0.509803,True,bugeon
+1,gmm,4,0.510795,True,bugeon
+1,gmm,6,0.51324,True,bugeon
+1,gmm,8,0.514996,True,bugeon
+1,gmm,12,0.516487,True,bugeon
+1,gmm,16,0.517305,True,bugeon
+1,gmm,24,0.51807,False,bugeon
+1,gmm,32,0.519204,False,bugeon
+2,b (none),1,0.506646,,bugeon
+2,"k=1 (one model, equal weights)",1,0.507127,,bugeon
+2,km,2,0.508736,True,bugeon
+2,km,3,0.516606,True,bugeon
+2,km,4,0.515683,True,bugeon
+2,km,6,0.519969,True,bugeon
+2,km,8,0.521136,True,bugeon
+2,km,12,0.521943,True,bugeon
+2,km,16,0.523032,True,bugeon
+2,km,24,0.524087,False,bugeon
+2,km,32,0.524967,False,bugeon
+2,gmm,2,0.509878,True,bugeon
+2,gmm,3,0.516559,True,bugeon
+2,gmm,4,0.517199,True,bugeon
+2,gmm,6,0.518932,True,bugeon
+2,gmm,8,0.520796,True,bugeon
+2,gmm,12,0.522476,True,bugeon
+2,gmm,16,0.522558,True,bugeon
+2,gmm,24,0.524047,False,bugeon
+2,gmm,32,0.524732,False,bugeon
+3,b (none),1,0.499688,,bugeon
+3,"k=1 (one model, equal weights)",1,0.500787,,bugeon
+3,km,2,0.502939,True,bugeon
+3,km,3,0.508739,True,bugeon
+3,km,4,0.508785,True,bugeon
+3,km,6,0.510428,True,bugeon
+3,km,8,0.515369,True,bugeon
+3,km,12,0.51564,True,bugeon
+3,km,16,0.516711,True,bugeon
+3,km,24,0.518723,False,bugeon
+3,km,32,0.519776,False,bugeon
+3,gmm,2,0.503475,True,bugeon
+3,gmm,3,0.509207,True,bugeon
+3,gmm,4,0.51081,True,bugeon
+3,gmm,6,0.51312,True,bugeon
+3,gmm,8,0.51444,True,bugeon
+3,gmm,12,0.5156,True,bugeon
+3,gmm,16,0.517257,True,bugeon
+3,gmm,24,0.51797,False,bugeon
+3,gmm,32,0.518687,False,bugeon
+0,b (none),1,0.278203,,allen
+0,"k=1 (one model, equal weights)",1,0.271439,,allen
+0,km,2,0.312364,True,allen
+0,km,3,0.320938,True,allen
+0,km,4,0.317792,True,allen
+0,km,6,0.320077,True,allen
+0,km,8,0.324071,True,allen
+0,km,12,0.327265,True,allen
+0,km,16,0.327688,True,allen
+0,km,24,0.331523,False,allen
+0,km,32,0.328227,False,allen
+0,gmm,2,0.287517,True,allen
+0,gmm,3,0.295012,True,allen
+0,gmm,4,0.300784,True,allen
+0,gmm,6,0.304456,True,allen
+0,gmm,8,0.307236,True,allen
+0,gmm,12,0.312027,True,allen
+0,gmm,16,0.311538,True,allen
+0,gmm,24,0.32303,False,allen
+0,gmm,32,0.326939,False,allen
+1,b (none),1,0.29001,,allen
+1,"k=1 (one model, equal weights)",1,0.284335,,allen
+1,km,2,0.321969,True,allen
+1,km,3,0.328904,True,allen
+1,km,4,0.326712,True,allen
+1,km,6,0.329147,True,allen
+1,km,8,0.33177,True,allen
+1,km,12,0.335336,True,allen
+1,km,16,0.336877,True,allen
+1,km,24,0.338742,False,allen
+1,km,32,0.340697,False,allen
+1,gmm,2,0.298491,True,allen
+1,gmm,3,0.308252,True,allen
+1,gmm,4,0.314449,True,allen
+1,gmm,6,0.314568,True,allen
+1,gmm,8,0.318691,True,allen
+1,gmm,12,0.320249,True,allen
+1,gmm,16,0.330356,True,allen
+1,gmm,24,0.331091,False,allen
+1,gmm,32,0.334994,False,allen
+2,b (none),1,0.282438,,allen
+2,"k=1 (one model, equal weights)",1,0.271329,,allen
+2,km,2,0.313695,True,allen
+2,km,3,0.32215,True,allen
+2,km,4,0.319507,True,allen
+2,km,6,0.322842,True,allen
+2,km,8,0.326855,True,allen
+2,km,12,0.327844,True,allen
+2,km,16,0.3287,True,allen
+2,km,24,0.334194,False,allen
+2,km,32,0.334132,False,allen
+2,gmm,2,0.291449,True,allen
+2,gmm,3,0.304627,True,allen
+2,gmm,4,0.309411,True,allen
+2,gmm,6,0.310837,True,allen
+2,gmm,8,0.315083,True,allen
+2,gmm,12,0.313593,True,allen
+2,gmm,16,0.316182,True,allen
+2,gmm,24,0.327454,False,allen
+2,gmm,32,0.331313,False,allen
+3,b (none),1,0.278794,,allen
+3,"k=1 (one model, equal weights)",1,0.263663,,allen
+3,km,2,0.309445,True,allen
+3,km,3,0.318955,True,allen
+3,km,4,0.316464,True,allen
+3,km,6,0.320809,True,allen
+3,km,8,0.323707,True,allen
+3,km,12,0.324574,True,allen
+3,km,16,0.32605,True,allen
+3,km,24,0.331282,False,allen
+3,km,32,0.331129,False,allen
+3,gmm,2,0.284783,True,allen
+3,gmm,3,0.300807,True,allen
+3,gmm,4,0.305506,True,allen
+3,gmm,6,0.308386,True,allen
+3,gmm,8,0.308643,True,allen
+3,gmm,12,0.31918,True,allen
+3,gmm,16,0.32452,True,allen
+3,gmm,24,0.323524,False,allen
+3,gmm,32,0.324299,False,allen
+4,b (none),1,0.276286,,allen
+4,"k=1 (one model, equal weights)",1,0.26371,,allen
+4,km,2,0.308181,True,allen
+4,km,3,0.315305,True,allen
+4,km,4,0.315434,True,allen
+4,km,6,0.319808,True,allen
+4,km,8,0.323129,True,allen
+4,km,12,0.323538,True,allen
+4,km,16,0.326498,True,allen
+4,km,24,0.327062,False,allen
+4,km,32,0.328933,False,allen
+4,gmm,2,0.286041,True,allen
+4,gmm,3,0.300362,True,allen
+4,gmm,4,0.304976,True,allen
+4,gmm,6,0.308427,True,allen
+4,gmm,8,0.304749,True,allen
+4,gmm,12,0.31465,True,allen
+4,gmm,16,0.32103,True,allen
+4,gmm,24,0.322086,False,allen
+4,gmm,32,0.327379,False,allen

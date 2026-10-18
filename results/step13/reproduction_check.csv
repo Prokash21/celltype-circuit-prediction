@@ -1,0 +1,11 @@
+dataset,model,folds,max_abs_unit_score_diff,max_rel_neuron_sse_diff,mean_score_new,mean_score_ref
+bugeon,r_none,all,1.24385e-08,4.86846e-07,0.495967,0.495967
+bugeon,r_true,all,9.3655e-09,4.86668e-07,0.497365,0.497365
+bugeon,m_none_rerun,0,4.47348e-09,4.20185e-07,0.506922,0.506922
+bugeon,m_true_rerun,0,6.97606e-09,4.55199e-07,0.509706,0.509706
+bugeon,copy-last,all,0,8.60046e-08,,
+allen,r_none,all,1.01619e-07,4.89798e-07,0.29967,0.29967
+allen,r_true,all,1.36511e-07,4.72488e-07,0.324919,0.324919
+allen,m_none_rerun,0,6.13033e-08,4.89346e-07,0.417564,0.417564
+allen,m_true_rerun,0,4.27437e-08,4.55525e-07,0.438301,0.438301
+allen,copy-last,all,0,7.30307e-08,,

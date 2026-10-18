@@ -1,0 +1,41 @@
+ds,dataset,unit,gain,family,a,b,score_b,score_a,gain_mean,gain_sem,gain_rel,units_up,n_units,p
+dff,Allen dF/F,mouse,label,ridge,r_true,r_none,0.29967,0.32492,0.025249,0.0042774,0.033415,40,46,1.2783e-07
+dff,Allen dF/F,mouse,label,MLP,m_true,m_none,0.40393,0.42787,0.023948,0.0059657,0.032997,43,46,1.9466e-07
+dff,Allen dF/F,mouse,summary,ridge,r_km16,r_none,0.29967,0.34701,0.047341,0.0053235,0.064727,43,46,1.5632e-12
+dff,Allen dF/F,mouse,summary,MLP,m_cont,m_none,0.40393,0.44755,0.043621,0.0060437,0.06784,44,46,3.6928e-10
+dff,Allen dF/F,mouse,shuffled label,ridge,r_e,r_none,0.29967,0.29379,-0.005884,0.0008363,-0.0085135,7,46,2.5195e-08
+dff,Allen dF/F,mouse,shuffled label,MLP,m_m3,m_none,0.40393,0.40614,0.0022163,0.0017491,0.0023173,20,46,0.75363
+dff,Allen dF/F,mouse,summary - label,ridge,r_km16,r_true,0.32492,0.34701,0.022092,0.0033649,0.032085,39,46,4.3593e-07
+dff,Allen dF/F,mouse,summary - label,MLP,m_cont,m_true,0.42787,0.44755,0.019673,0.003508,0.035241,42,46,4.4196e-08
+dff,Allen dF/F,mouse,k1 (equal weights),ridge,r_k1,r_none,0.29967,0.27836,-0.021307,0.0067941,-0.024903,17,46,0.013406
+A,Allen deconvolved A (10 Hz),mouse,label,ridge,r_true,r_none,0.43612,0.44314,0.0070167,0.0012289,0.012011,39,46,3.4387e-07
+A,Allen deconvolved A (10 Hz),mouse,label,MLP,m_true,m_none,0.44409,0.44694,0.0028544,0.0010912,0.0048841,39,46,0.00010235
+A,Allen deconvolved A (10 Hz),mouse,summary,ridge,r_km16,r_none,0.43612,0.44428,0.0081634,0.0013004,0.013955,40,46,1.6476e-07
+A,Allen deconvolved A (10 Hz),mouse,summary,MLP,m_cont,m_none,0.44409,0.4559,0.011819,0.0011254,0.021087,44,46,3.1264e-12
+A,Allen deconvolved A (10 Hz),mouse,shuffled label,ridge,r_e,r_none,0.43612,0.4349,-0.001214,0.00018237,-0.0021324,7,46,4.4196e-08
+A,Allen deconvolved A (10 Hz),mouse,shuffled label,MLP,m_m3,m_none,0.44409,0.44349,-0.00059357,0.00033089,-0.0010712,18,46,0.082348
+A,Allen deconvolved A (10 Hz),mouse,summary - label,ridge,r_km16,r_true,0.44314,0.44428,0.0011467,0.0010487,0.0018839,33,46,0.017815
+A,Allen deconvolved A (10 Hz),mouse,summary - label,MLP,m_cont,m_true,0.44694,0.4559,0.0089641,0.0012634,0.016171,43,46,1.9895e-12
+A,Allen deconvolved A (10 Hz),mouse,k1 (equal weights),ridge,r_k1,r_none,0.43612,0.43103,-0.0050836,0.0011896,-0.0086995,16,46,0.00016301
+B,Allen deconvolved B (4.3 Hz),mouse,label,ridge,r_true,r_none,0.40439,0.41561,0.011225,0.0016539,0.018138,40,46,8.4528e-09
+B,Allen deconvolved B (4.3 Hz),mouse,label,MLP,m_true,m_none,0.41965,0.42735,0.0076991,0.0013957,0.013021,41,46,4.3593e-07
+B,Allen deconvolved B (4.3 Hz),mouse,summary,ridge,r_km16,r_none,0.40439,0.41508,0.010694,0.0021859,0.017178,35,46,6.1329e-06
+B,Allen deconvolved B (4.3 Hz),mouse,summary,MLP,m_cont,m_none,0.41965,0.43964,0.01999,0.0019564,0.03388,44,46,7.8586e-11
+B,Allen deconvolved B (4.3 Hz),mouse,shuffled label,ridge,r_e,r_none,0.40439,0.40243,-0.0019571,0.00033478,-0.0032697,8,46,3.7233e-07
+B,Allen deconvolved B (4.3 Hz),mouse,shuffled label,MLP,m_m3,m_none,0.41965,0.41629,-0.0033628,0.00079348,-0.0054988,13,46,2.4004e-05
+B,Allen deconvolved B (4.3 Hz),mouse,summary - label,ridge,r_km16,r_true,0.41561,0.41508,-0.00053072,0.0014999,-0.0010193,22,46,0.77014
+B,Allen deconvolved B (4.3 Hz),mouse,summary - label,MLP,m_cont,m_true,0.42735,0.43964,0.012291,0.0019002,0.020997,42,46,1.4506e-09
+B,Allen deconvolved B (4.3 Hz),mouse,k1 (equal weights),ridge,r_k1,r_none,0.40439,0.39498,-0.0094073,0.002195,-0.014284,14,46,8.2743e-05
+A_bfree,"Allen deconvolved A, free baseline (sensitivity)",mouse,label,ridge,r_true,r_none,0.45343,0.45946,0.0060333,0.00089891,0.010932,40,46,1.8861e-08
+A_bfree,"Allen deconvolved A, free baseline (sensitivity)",mouse,summary,ridge,r_km16,r_none,0.45343,0.45898,0.0055567,0.000865,0.010154,40,46,6.9456e-08
+A_bfree,"Allen deconvolved A, free baseline (sensitivity)",mouse,shuffled label,ridge,r_e,r_none,0.45343,0.45232,-0.001107,0.00017568,-0.0020275,6,46,1.8861e-08
+A_bfree,"Allen deconvolved A, free baseline (sensitivity)",mouse,summary - label,ridge,r_km16,r_true,0.45946,0.45898,-0.0004766,0.00064422,-0.00082628,26,46,0.78674
+A_bfree,"Allen deconvolved A, free baseline (sensitivity)",mouse,k1 (equal weights),ridge,r_k1,r_none,0.45343,0.44993,-0.0035016,0.00085054,-0.0063407,17,46,0.00056887
+bugeon,Bugeon (steps 12-13),session,label,ridge,r_true,r_none,0.49597,0.49737,0.0013985,0.0012036,0.0027572,9,17,0.26332
+bugeon,Bugeon (steps 12-13),session,label,MLP,m_true,m_none,0.50854,0.51032,0.0017741,0.00029876,0.0035899,14,17,0.00021362
+bugeon,Bugeon (steps 12-13),session,summary,ridge,r_km16,r_none,0.49597,0.50925,0.013285,0.0013321,0.026317,17,17,1.5259e-05
+bugeon,Bugeon (steps 12-13),session,summary,MLP,m_cont,m_none,0.50854,0.52597,0.017425,0.0016253,0.035354,17,17,1.5259e-05
+bugeon,Bugeon (steps 12-13),session,shuffled label,ridge,r_e,r_none,0.49597,0.49585,-0.00012135,3.2035e-05,-0.00024025,3,17,0.00065613
+bugeon,Bugeon (steps 12-13),session,shuffled label,MLP,m_m3,m_none,0.50854,0.50857,2.9294e-05,0.00013214,6.1622e-05,10,17,0.74666
+bugeon,Bugeon (steps 12-13),session,summary - label,ridge,r_km16,r_true,0.49737,0.50925,0.011886,0.00070645,0.023622,17,17,1.5259e-05
+bugeon,Bugeon (steps 12-13),session,summary - label,MLP,m_cont,m_true,0.51032,0.52597,0.015651,0.0013771,0.0319,17,17,1.5259e-05

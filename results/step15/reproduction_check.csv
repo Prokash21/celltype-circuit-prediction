@@ -1,0 +1,10 @@
+model,reference,folds,n_mice,max_abs_mouse_score_diff,max_rel_neuron_sse_diff,mean_score_here,mean_score_reference
+r_none,step 11 sse_b,all,46,1.01619e-07,4.89798e-07,0.29967,0.29967
+r_true,step 11 sse_d,all,46,1.36511e-07,4.72488e-07,0.324919,0.324919
+r_e,step 11 sse_e,all,46,6.15493e-08,4.89928e-07,0.293786,0.293786
+r_k1,step 13 sse_k1,all,46,8.70279e-08,4.77169e-07,0.278363,0.278363
+r_km16,step 13 sse_km16,all,46,1.84345e-07,4.7872e-07,0.347011,0.347011
+copy,step 11 sse_copy,all,46,1.23601e-07,4.89492e-07,0,-5.53713e-10
+m_none_rerun,sse_m_none,0,11,6.13033e-08,4.89346e-07,0.417564,0.417564
+m_true_rerun,sse_m_true,0,11,4.27437e-08,4.55525e-07,0.438301,0.438301
+m_cont_rerun,sse_m_cont,0,11,5.11721e-08,4.50308e-07,0.458361,0.458361

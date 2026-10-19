@@ -1,0 +1,9 @@
+scope,line,sessions,units,tagged,tagged_pct,tagged_tutorial_only,tagged_p01,sessions_with_tagged,tagged_per_session_median,tagged_fs_pct,untagged_fs_pct,tagged_waveform_ms_median,tagged_latency_ms_median,tagged_ratio_median,fs_pct
+VISp,Pvalb,8,425,23,5.412,57,29,4,1,100,17.41,0.2335,4.527,5.772,21.88
+VISp,Sst,12,823,20,2.43,129,24,8,1,60,17.06,0.3777,5.224,16.16,18.1
+VISp,Vip,7,561,2,0.3565,55,2,2,0,0,15.92,1.058,6.105,15,15.86
+VISp,wt,29,2055,1,0.04866,259,13,1,0,0,19.67,0.6181,3.053,5.455,19.66
+VIS,Pvalb,8,2200,133,6.045,353,159,6,13,91.73,11.95,0.2747,4.318,8.125,16.77
+VIS,Sst,12,3623,72,1.987,525,98,12,2,45.83,14.93,0.4258,5.502,18.91,15.54
+VIS,Vip,8,2579,14,0.5428,249,24,6,1,21.43,14.97,0.5494,3.274,14.8,15.01
+VIS,wt,30,8414,4,0.04754,1107,30,2,0,0,16.54,0.6662,1.937,34.44,16.53

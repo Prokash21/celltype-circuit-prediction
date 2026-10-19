@@ -1,0 +1,8 @@
+variant,max_abs_session_score_diff,max_rel_unit_sse_diff,config,check
+r_none,4.6e-08,2.1e-06,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_true,1.78e-07,1.61e-05,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_e,3.58e-07,8.8e-05,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_e_eq,3.53e-07,8.86e-05,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_k1,1.6e-07,8.03e-06,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_km16,1.11e-07,7.02e-05,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)
+r_kmsel,2.82e-07,7.02e-05,spk VISp tag,float32 per-unit statistics (VIS configurations and calcium) vs float64 (spikes VISp)

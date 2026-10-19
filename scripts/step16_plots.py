@@ -26,7 +26,18 @@ CAL = ["spk", "c6f", "c6s", "callen", "callen_slow"]
 
 def read(name):
     p = R / name
-    return pd.read_csv(p) if p.exists() else None
+    try:
+        return pd.read_csv(p) if p.exists() else None
+    except pd.errors.EmptyDataError:
+        return None
+
+
+FAMS = [  # family, none, label, summary, shuffled
+    ("ridge (balanced b)", "r_none", "r_true", "r_kmsel", "r_e"),
+    ("ridge (equal weights, k1)", "r_k1", "r_true", "r_kmsel", "r_e_eq"),
+    ("MLP (balanced batches)", "m_none", "m_true", "m_cont", "m_m3"),
+    ("MLP (uniform sampling)", "m_none_u", "m_true_u", "m_cont_u", "m_m3_u"),
+]
 
 
 def overview():
@@ -57,21 +68,32 @@ def overview():
         sel = comp[~comp.dataset.str.startswith("synthetic")]
         lbl = [f"{d}\n{s} {l}" if not d.startswith(("Allen", "Bugeon")) else d for d, s, l in zip(sel.dataset, sel.scope, sel.labelset)]
         x = np.arange(len(sel))
-        w = 0.2
-        for j, (col, nm, c) in enumerate([("label_ridge", "label, ridge", "tab:blue"), ("summary_ridge", "summary, ridge", "tab:cyan"),
-                                          ("label_MLP", "label, MLP", "tab:green"), ("summary_MLP", "summary, MLP", "tab:olive")]):
-            a.bar(x + (j - 1.5) * w, sel[col], w, color=c, label=nm)
+        w = 0.1
+        specs = [("label_ridge", "label, ridge", "tab:blue", None), ("summary_ridge", "summary, ridge", "tab:cyan", None),
+                 ("label_MLP", "label, MLP", "tab:green", None), ("summary_MLP", "summary, MLP", "tab:olive", None),
+                 ("label_ridge (equal weights)", "label, ridge equal weights", "tab:blue", "//"),
+                 ("summary_ridge (equal weights)", "summary, ridge equal weights", "tab:cyan", "//"),
+                 ("label_MLP (uniform)", "label, MLP uniform", "tab:green", "//"),
+                 ("summary_MLP (uniform)", "summary, MLP uniform", "tab:olive", "//")]
+        for j, (col, nm, c, h) in enumerate(specs):
+            if col in sel:
+                a.bar(x + (j - 3.5) * w, sel[col], w, color=c, hatch=h, edgecolor="k" if h else None, lw=0.3, label=nm)
         a.axhline(0, color="k", lw=0.5)
         a.set_xticks(x, lbl, fontsize=7, rotation=45, ha="right")
-        a.set_ylabel("gain over no label (score)"); a.legend(fontsize=8)
-        a.set_title("(b) label gain vs activity-summary gain")
+        a.set_yscale("symlog", linthresh=1e-3)
+        a.set_ylabel("gain over no label (score, symlog)"); a.legend(fontsize=6, ncol=2)
+        a.set_title("(b) label gain vs activity-summary gain (hatched: equal-weight / uniform designs)")
     # (c) ratio
     a = ax[1, 0]
     if comp is not None:
         x = np.arange(len(comp))
-        for j, (fam, c) in enumerate([("ridge", "tab:blue"), ("MLP", "tab:green")]):
+        for j, (fam, c, mk) in enumerate([("ridge", "tab:blue", "o"), ("MLP", "tab:green", "o"),
+                                          ("ridge (equal weights)", "tab:blue", "s"), ("MLP (uniform)", "tab:green", "s")]):
+            if f"ratio_{fam}" not in comp:
+                continue
             v, lo, hi = comp[f"ratio_{fam}"], comp[f"ratio_{fam}_lo"], comp[f"ratio_{fam}_hi"]
-            a.errorbar(x + (j - 0.5) * 0.25, v, yerr=[v - lo, hi - v], fmt="o", color=c, label=fam, capsize=2)
+            a.errorbar(x + (j - 1.5) * 0.15, v, yerr=[(v - lo).clip(0), (hi - v).clip(0)], fmt=mk, color=c, label=fam, capsize=2,
+                       mfc="none" if j > 1 else c)
         a.axhline(0, color="k", lw=0.5); a.axhline(1, color="k", lw=0.5, ls=":")
         lbl = [f"{d}\n{s} {l}" if not d.startswith(("Allen", "Bugeon")) else d for d, s, l in zip(comp.dataset, comp.scope, comp.labelset)]
         a.set_xticks(x, lbl, fontsize=6, rotation=55, ha="right")
@@ -145,15 +167,12 @@ def gains():
         return
     s = sc[(sc.ds == "spk") & (sc.subset == "all units")]
     combos = [(sc_, ls) for sc_ in ["VISp", "VIS"] for ls in ["tag", "fs"]]
-    fig, ax = plt.subplots(2, 4, figsize=(19, 9))
+    fig, ax = plt.subplots(4, 4, figsize=(19, 17))
     for j, (scope, ls) in enumerate(combos):
         g = s[(s.scope == scope) & (s.labelset == ls)]
-        if g.empty:
-            continue
-        for i, (fam, none, lab_, summ, shuf) in enumerate([("ridge", "r_none", "r_true", "r_kmsel", "r_e"),
-                                                          ("MLP", "m_none", "m_true", "m_cont", "m_m3")]):
+        for i, (fam, none, lab_, summ, shuf) in enumerate(FAMS):
             a = ax[i, j]
-            if g[summ].isna().any() if summ in g else True:
+            if g.empty or any(c not in g or g[c].isna().any() for c in [none, lab_, summ, shuf]):
                 a.set_visible(False)
                 continue
             for k_, (col, nm) in enumerate([(lab_, "label"), (summ, "summary"), (shuf, "shuffled")]):
@@ -161,14 +180,17 @@ def gains():
                 jit = np.random.default_rng(k_).uniform(-0.15, 0.15, len(d))
                 a.scatter(k_ + jit, d, s=12, c=[LC.get(l, "k") for l in g.line])
                 a.errorbar(k_ + 0.3, d.mean(), yerr=d.std(ddof=1) / np.sqrt(len(d)), fmt="k_", capsize=4)
+                a.plot(k_ + 0.3, d.median(), "kx")
             a.axhline(0, color="k", lw=0.5)
+            a.set_yscale("symlog", linthresh=1e-3)
             a.set_xticks([0, 1, 2], ["label", "summary", "shuffled"])
-            a.set_title(f"{fam}: {scope}, {'opto-tag (i)' if ls == 'tag' else 'FS/RS (ii)'} ({len(g)} sessions)", fontsize=9)
-            a.set_ylabel("gain over none (per session)")
+            a.set_title(f"{fam}\n{scope}, {'opto-tag (i)' if ls == 'tag' else 'FS/RS (ii)'} ({len(g)} sessions)", fontsize=9)
+            a.set_ylabel("gain over none per session (symlog)")
     h = [plt.Line2D([], [], marker="o", ls="", color=c, label=l) for l, c in LC.items() if l != "untagged"]
+    h += [plt.Line2D([], [], marker="_", ls="", color="k", label="mean ± sem"), plt.Line2D([], [], marker="x", ls="", color="k", label="median")]
     ax[0, 0].legend(handles=h, fontsize=7, title="session genotype")
     fig.tight_layout()
-    fig.savefig(PL / "step16_gains.png", dpi=130)
+    fig.savefig(PL / "step16_gains.png", dpi=110)
     plt.close(fig)
 
 

@@ -1,0 +1,9 @@
+dataset,scope,labelset,units,label_ridge,summary_ridge,ratio_ridge,ratio_ridge_lo,ratio_ridge_hi,label_MLP,summary_MLP,ratio_MLP,ratio_MLP_lo,ratio_MLP_hi,label_ridge_p,summary_ridge_p,label_MLP_p,summary_MLP_p,label_ridge (equal weights),label_ridge (equal weights)_p,summary_ridge (equal weights),summary_ridge (equal weights)_p,ratio_ridge (equal weights),ratio_ridge (equal weights)_lo,ratio_ridge (equal weights)_hi,label_MLP (uniform),label_MLP (uniform)_p,summary_MLP (uniform),summary_MLP (uniform)_p,ratio_MLP (uniform),ratio_MLP (uniform)_lo,ratio_MLP (uniform)_hi
+Allen dF/F (10 Hz),VISp,Cre line,46 mouses,0.025249,0.047341,0.53334,0.41059,0.6457,0.023948,0.043621,0.549,0.36993,0.70013,,,,,,,,,,,,,,,,,,
+Allen deconvolved A (10 Hz),VISp,Cre line,46 mouses,0.0070167,0.0081634,0.85953,0.65537,1.146,0.0028544,0.011819,0.24152,0.058483,0.38768,,,,,,,,,,,,,,,,,,
+Allen deconvolved B (4.3 Hz),VISp,Cre line,46 mouses,0.011225,0.010694,1.0496,0.81879,1.477,0.0076991,0.01999,0.38514,0.2527,0.51353,,,,,,,,,,,,,,,,,,
+"Bugeon (deconvolved, 4.3 Hz)",VISp,t-type,17 sessions,0.0013985,0.013285,0.10527,-0.07349,0.24435,0.0017741,0.017425,0.10181,0.078612,0.11807,,,,,,,,,,,,,,,,,,
+Neuropixels spikes,VISp,opto-tag (i),27 sessions,0.0021463,0.0045982,0.46677,0.37044,0.5665,,,,,,4.9174e-07,2.9802e-08,,,-9.0481e-05,0.20214,0.0023614,2.8312e-07,-0.038316,-0.092044,0.016878,,,,,,,
+Neuropixels spikes,VISp,FS / RS (ii),56 sessions,0.00070257,0.00020337,3.4546,-4.4566,4.9818,,,,,,0.0002128,6.4971e-07,,,0.00099017,2.6452e-07,0.00049097,1.8644e-07,2.0168,-10.407,6.3618,,,,,,,
+Neuropixels spikes,VIS,opto-tag (i),28 sessions,0.00063141,0.0011207,0.56343,-4.4978,4.1213,,,,,,4.7684e-06,0.015633,,,-7.6063e-05,0.062814,0.00041318,0.033681,-0.18409,-1.0422,0.95202,,,,,,,
+Neuropixels spikes,VIS,FS / RS (ii),58 sessions,0.00031856,0.0007474,0.42622,-3.4694,3.5875,,,,,,0.0016922,0.00024637,,,0.00070768,4.9352e-09,0.0011365,3.1615e-05,0.62267,0.1544,3.4658,,,,,,,

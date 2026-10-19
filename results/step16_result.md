@@ -62,7 +62,56 @@ Tagged units per area (all Cre sessions): VISp 23 / 20 / 2 (Pvalb / Sst / Vip), 
 - **No one-type-per-recording confound:** in every Cre session the tagged units are recorded together with ~95% untagged units, so the recording does not reveal the label of a unit
 
 ### Task 2: main comparison at 1 s
-*Running.*
+**Setup:**
+- **Data:** spike counts in 100 ms bins, z-scored per unit with the train-part mean / sd
+- **Windows:** past 30 → next 10 bins (3 s → 1 s). Train windows stride 1; test windows stride 10, in the last 20% (chronological). Val = last 10% of the train part
+- **Stimulus inputs** (590 inputs per unit; *state exactly*):
+  - 13 stimulus-type rows over the past 30 and next 10 bins. Each row is the fraction of the bin inside a block of that type: drifting_gratings, drifting_gratings_75_repeats, drifting_gratings_contrast, dot_motion, flashes, gabors, natural_movie_one, natural_movie_one_more_repeats, natural_movie_one_shuffled, natural_movie_three, natural_scenes, spontaneous, static_gratings. A block is the type's presentations with gaps ≤ 2 s merged
+  - running speed (cm/s ÷ 10, mean over the bin) over the 40 bins before the forecast start. No future running is used
+  - total: own past 30 + 13 × 40 + 40
+- **Score:** 1 − SSE / SSE_copylast, summed over the units of a session. Unit of every test = session
+- **Settings as steps 11–15:** 5 leave-sessions-out folds (fold = rank of the session id within its genotype, mod 5), ridge alpha grid 1e-1…1e7 chosen on val then refit on train + val, k-means k = 16 (n_init 10, seed = fold, PCA 95%) on the training sessions' units only
+- **k on val:** the val choice (step 13 procedure, k ∈ {2, 3, 4, 6, 8, 12, 16}) was 16 in 18 of 20 configuration-folds and 12 in 2 (`val_k.csv`). "Summary" = the val-chosen k (`r_kmsel`); k = 16 is also reported (`r_km16`) and is nearly identical
+- **S features** (31): step 11's single-unit statistics computed on the z-scored counts:
+  - z std (1 by construction), skew, kurtosis, event rate and time above z = 2, six IEI bins, autocorrelation at 0.1–5 s, relative power in five bands
+  - Neuropixels stimulus features: mean z in spontaneous / gabors / flashes / drifting gratings / natural movie one (the types common to both session types), grating on − off, flash on − off, tuning peak and OSI over the drifting-grating directions present
+  - 0.2% of units lack a flash feature, which is set to the training mean, as in step 13
+- **Equal-weight references (added; see below):** k1 (one model, equal row weights, steps 13 / 15) and e_eq (shuffled labels, one model per fake group with equal row weights)
+
+#### Ridge (`results/step16/gains.csv`, `session_scores.csv`, `neuron_scores.csv`, `label_vs_summary.csv`, `val_k.csv`, `ridge_alphas.csv`; plot `step16_gains.png`)
+Score with no label: 0.435 (VISp) and 0.429–0.431 (all VIS). Gains over no label are the mean over sessions; "up" = sessions where the variant beats the reference; p = Wilcoxon over sessions.
+
+| Scope, label set | Sessions | Label (d − b) | Summary (km − b) | Shuffled (e − b) | Summary − label | k1 − b | **Label (d − k1), equal weights** | **Summary (km − k1)** | Shuffled (e_eq − k1) |
+|---|---|---|---|---|---|---|---|---|---|
+| VISp, opto-tag (i) | 27 | +0.0021 (24, 5e-7) | +0.0046 (26, 3e-8) | +0.0000 (16, 0.18) | +0.0025 (25, 6e-7) | **+0.0022** (25, 5e-7) | **−0.0001** (9, 0.20) | **+0.0024** (25, 3e-7) | −0.0001 (12, 0.02) |
+| VISp, FS / RS (ii) | 56 | +0.0007 (44, 2e-4) | +0.0002, median +0.0024 (47, 6e-7) | −0.0000 (19) | −0.0005, median +0.0022 (47, 9e-7) | −0.0003 (30, 0.73) | **+0.0010** (48, 3e-7) | **+0.0005**, median +0.0024 (50, 2e-7) | −0.0000 (21, 0.08) |
+| all VIS, opto-tag (i) | 28 | +0.0006 (23, 5e-6) | +0.0011, median +0.0027 (23, 0.016) | +0.0000 (17) | +0.0005, median +0.0021 (22, 0.03) | **+0.0007** (25, 1e-6) | **−0.0001** (10, 0.06) | **+0.0004**, median +0.0020 (22, 0.03) | −0.0000 (11) |
+| all VIS, FS / RS (ii) | 58 | +0.0003 (43, 0.002) | +0.0007, median +0.0021 (49, 2e-4) | −0.0000 (21) | +0.0004, median +0.0019 (49, 0.001) | −0.0004 (27, 0.02) | **+0.0007** (51, 5e-9) | **+0.0011**, median +0.0021 (51, 3e-5) | −0.0000 (21) |
+
+- **The opto-tag "label gain" over b is a reweighting effect, not label information:**
+  - With label set (i), the tagged groups are ~3% of the units. The label-balanced no-label model b (step 12 design: each group gets equal total weight) is therefore trained mostly on the few tagged units, and it predicts the untagged 97% worse
+  - An unlabelled model with equal row weights (k1) gains exactly as much as the label: +0.0022 vs +0.0021 in VISp
+  - Against k1, the opto-tag label gives −0.0001 (9/27 sessions up, p 0.20) in VISp and −0.0001 (10/28, p 0.06) over all areas. The shuffled label shows the same picture (e_eq − k1 ≈ 0, d − e_eq −0.00002, p 0.66)
+  - So **the genetic opto-tag label carries no forecasting information beyond an unlabelled shared model**
+- **The label-free activity summary does help:** +0.0024 over k1 in VISp (25/27 sessions, p 3e-7), +0.0046 over b. Summary − label +0.0025 (25/27, p 6e-7), consistent over Pvalb (7/8), Sst (12/12) and Vip (6/7) sessions
+- **Waveform class (FS / RS) carries a little information:**
+  - +0.0010 over k1 in VISp (48/56, p 3e-7), +0.0007 over all areas (51/58, p 5e-9). Every line is positive (VISp: Pvalb 8/8, Sst 10/12, Vip 6/7, wild type 24/29)
+  - The gain comes from the FS units: +0.0043 on FS units (40/56), against −0.0002 on RS units
+- **Summary vs waveform label:**
+  - More sessions favour the summary: VISp 47/56 (p 9e-7), all VIS 49/58 (p 0.001)
+  - The VISp mean favours the label (−0.0005), because the per-cluster ridge fails badly for a few units in a few sessions. Two wild-type sessions (744228101, 771990200) lose 0.08 and 0.04: some held-out units fall into small clusters whose model fits them poorly
+  - On RS units the summary wins in 52/56 sessions (+0.0025); on FS units the label wins (summary − label −0.0077, median −0.0011, 22/56 sessions favour the summary, p 0.31)
+- **Tagged units only (VISp, 14 sessions with tags):**
+  - The per-group label model is worse than k1 for the tagged units themselves (−0.0063, 4/14 sessions up, p 0.017). It is trained on only 23 + 20 + 2 tagged VISp units (and on the tagged units of training folds only)
+  - The summary is +0.0011 (8/14, p 0.63) on them, and summary − label is +0.0074 (11/14, p 0.04)
+- **Shuffled labels** (permuted within each session) are ≤ 0 in every configuration
+- **Label ÷ summary ratio** (bootstrap over sessions, `label_vs_summary.csv`):
+  - opto-tag VISp: **0.47 [0.37, 0.57]** with the balanced b, but **−0.04 [−0.09, 0.02]** with equal weights (all VIS: −0.18 [−1.04, 0.95])
+  - FS / RS: unstable, because the mean ridge summary gain is near zero (outliers above): VISp 3.5 [−4.5, 5.0], equal weights 2.0 [−10, 6.4]; all VIS, equal weights 0.62 [0.15, 3.5]
+- **Precision check (`ridge_precision_check.csv`):** the all-area configurations store the per-unit ridge statistics in float32 (memory), with float64 sums. Rerunning spikes VISp opto-tag this way changes session scores by ≤ 4e-7 and leaves every alpha and k unchanged
+
+#### MLP
+*Running* (balanced batches, then the uniform-sampling variants).
 
 ### Task 3: synthetic calcium from the same spikes (K5, C1)
 *Running.*

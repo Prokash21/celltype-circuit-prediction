@@ -1,0 +1,811 @@
+ds,dataset,scope,labelset,subset,line,gain,family,a,b,n_sessions,score_b,score_a,gain_mean,gain_sem,gain_median,sessions_up,p
+spk,Neuropixels spikes,VISp,tag,all units,all,label,ridge,r_true,r_none,27,0.43502,0.43716,0.0021463,0.00030982,0.0020669,24,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,summary,ridge,r_kmsel,r_none,27,0.43502,0.43962,0.0045982,0.00049318,0.0045052,26,2.9802e-08
+spk,Neuropixels spikes,VISp,tag,all units,all,summary (k=16),ridge,r_km16,r_none,27,0.43502,0.43952,0.0044984,0.00049222,0.0044709,26,4.4703e-08
+spk,Neuropixels spikes,VISp,tag,all units,all,shuffled label,ridge,r_e,r_none,27,0.43502,0.43503,9.1099e-06,2.5886e-05,3.4064e-05,16,0.17752
+spk,Neuropixels spikes,VISp,tag,all units,all,label - shuffled,ridge,r_true,r_e,27,0.43503,0.43716,0.0021372,0.00030265,0.0021594,25,2.8312e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,summary - label,ridge,r_kmsel,r_true,27,0.43716,0.43962,0.0024519,0.00036119,0.0022491,25,6.4075e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,summary (k=16) - label,ridge,r_km16,r_true,27,0.43716,0.43952,0.0023521,0.00037422,0.0020008,25,1.6391e-06
+spk,Neuropixels spikes,VISp,tag,all units,all,k1 (equal weights) - none,ridge,r_k1,r_none,27,0.43502,0.43726,0.0022368,0.00032478,0.0021723,25,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,label - k1,ridge,r_true,r_k1,27,0.43726,0.43716,-9.0481e-05,7.0772e-05,-3.2232e-05,9,0.20214
+spk,Neuropixels spikes,VISp,tag,all units,all,summary - k1,ridge,r_kmsel,r_k1,27,0.43726,0.43962,0.0023614,0.00032526,0.0020695,25,2.8312e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,label,ridge (equal weights),r_true,r_k1,27,0.43726,0.43716,-9.0481e-05,7.0772e-05,-3.2232e-05,9,0.20214
+spk,Neuropixels spikes,VISp,tag,all units,all,summary,ridge (equal weights),r_kmsel,r_k1,27,0.43726,0.43962,0.0023614,0.00032526,0.0020695,25,2.8312e-07
+spk,Neuropixels spikes,VISp,tag,all units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,27,0.43726,0.43719,-6.8133e-05,2.232e-05,-1.5796e-05,12,0.021429
+spk,Neuropixels spikes,VISp,tag,all units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,27,0.43719,0.43716,-2.2348e-05,6.2888e-05,1.7511e-05,14,0.66168
+spk,Neuropixels spikes,VISp,tag,all units,all,summary - label,ridge (equal weights),r_kmsel,r_true,27,0.43716,0.43962,0.0024519,0.00036119,0.0022491,25,6.4075e-07
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,label,ridge,r_true,r_none,8,0.42797,0.42965,0.0016864,0.00054294,0.0017365,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42797,0.43204,0.0040743,0.00064777,0.0044881,8,0.0078125
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42797,0.43189,0.0039234,0.00069126,0.0044011,8,0.0078125
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42797,0.428,3.3315e-05,3.0026e-05,1.319e-05,5,0.46094
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.428,0.42965,0.0016531,0.00053195,0.0016332,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.42965,0.43204,0.0023879,0.00073196,0.0025743,7,0.023438
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.42965,0.43189,0.0022371,0.00074671,0.0023245,7,0.039062
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42797,0.42966,0.0016921,0.00052256,0.0018267,7,0.023438
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42966,0.42965,-5.6752e-06,0.00013997,-3.0224e-05,2,0.54688
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42966,0.43204,0.0023822,0.0006578,0.0022246,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42966,0.42965,-5.6752e-06,0.00013997,-3.0224e-05,2,0.54688
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42966,0.43204,0.0023822,0.0006578,0.0022246,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42966,0.42961,-5.0143e-05,3.0462e-05,-1.6746e-05,3,0.19531
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42961,0.42965,4.4468e-05,0.00012532,-2.7856e-05,2,0.64062
+spk,Neuropixels spikes,VISp,tag,all units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.42965,0.43204,0.0023879,0.00073196,0.0025743,7,0.023438
+spk,Neuropixels spikes,VISp,tag,all units,Sst,label,ridge,r_true,r_none,12,0.43597,0.43842,0.0024501,0.00047727,0.0029218,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary,ridge,r_kmsel,r_none,12,0.43597,0.44151,0.0055367,0.00081587,0.0052092,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43597,0.44142,0.0054465,0.00081276,0.0049058,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,shuffled label,ridge,r_e,r_none,12,0.43597,0.43602,4.9399e-05,2.4714e-05,6.0119e-05,8,0.077148
+spk,Neuropixels spikes,VISp,tag,all units,Sst,label - shuffled,ridge,r_true,r_e,12,0.43602,0.43842,0.0024007,0.00047135,0.0027895,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43842,0.44151,0.0030866,0.00055378,0.0026777,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43842,0.44142,0.0029964,0.00059311,0.0026777,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43597,0.43861,0.0026442,0.00053903,0.0029499,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,all units,Sst,label - k1,ridge,r_true,r_k1,12,0.43861,0.43842,-0.00019408,0.00012538,-4.9899e-05,2,0.10986
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43861,0.44151,0.0028925,0.00047528,0.0026981,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43861,0.43842,-0.00019408,0.00012538,-4.9899e-05,2,0.10986
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43861,0.44151,0.0028925,0.00047528,0.0026981,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43861,0.43856,-5.5087e-05,2.4359e-05,-3.3295e-05,6,0.17627
+spk,Neuropixels spikes,VISp,tag,all units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43856,0.43842,-0.00013899,0.00010779,-1.6836e-05,5,0.46973
+spk,Neuropixels spikes,VISp,tag,all units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43842,0.44151,0.0030866,0.00055378,0.0026777,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,all units,Vip,label,ridge,r_true,r_none,7,0.44145,0.4436,0.0021511,0.00065483,0.0020669,6,0.03125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary,ridge,r_kmsel,r_none,7,0.44145,0.44503,0.0035882,0.00096953,0.0032211,6,0.03125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary (k=16),ridge,r_km16,r_none,7,0.44145,0.44498,0.0035302,0.00092751,0.0032738,6,0.03125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,shuffled label,ridge,r_e,r_none,7,0.44145,0.44136,-8.762e-05,7.7097e-05,-1.1658e-05,3,0.8125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,label - shuffled,ridge,r_true,r_e,7,0.44136,0.4436,0.0022387,0.00062389,0.0024618,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary - label,ridge,r_kmsel,r_true,7,0.4436,0.44503,0.0014371,0.0004635,0.0016626,6,0.03125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary (k=16) - label,ridge,r_km16,r_true,7,0.4436,0.44498,0.0013792,0.00046125,0.0012961,6,0.03125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,7,0.44145,0.44361,0.0021609,0.00061719,0.0021723,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Vip,label - k1,ridge,r_true,r_k1,7,0.44361,0.4436,-9.8032e-06,5.1619e-05,3.4369e-05,5,0.8125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary - k1,ridge,r_kmsel,r_k1,7,0.44361,0.44503,0.0014273,0.00050529,0.0017101,6,0.046875
+spk,Neuropixels spikes,VISp,tag,all units,Vip,label,ridge (equal weights),r_true,r_k1,7,0.44361,0.4436,-9.8032e-06,5.1619e-05,3.4369e-05,5,0.8125
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,7,0.44361,0.44503,0.0014273,0.00050529,0.0017101,6,0.046875
+spk,Neuropixels spikes,VISp,tag,all units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,7,0.44361,0.4435,-0.00011106,6.9335e-05,-1.2537e-05,3,0.29688
+spk,Neuropixels spikes,VISp,tag,all units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,7,0.4435,0.4436,0.00010125,3.6903e-05,7.1561e-05,7,0.015625
+spk,Neuropixels spikes,VISp,tag,all units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,7,0.4436,0.44503,0.0014371,0.0004635,0.0016626,6,0.03125
+spk,Neuropixels spikes,VISp,tag,tagged units,all,label,ridge,r_true,r_none,14,0.43377,0.42912,-0.0046512,0.0022917,-0.0039929,5,0.090576
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary,ridge,r_kmsel,r_none,14,0.43377,0.43648,0.0027111,0.0016035,0.0026162,10,0.1189
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary (k=16),ridge,r_km16,r_none,14,0.43377,0.43637,0.0025983,0.0016104,0.0022809,10,0.1189
+spk,Neuropixels spikes,VISp,tag,tagged units,all,shuffled label,ridge,r_e,r_none,14,0.43377,0.43368,-8.4864e-05,0.00022661,9.2285e-05,10,0.54163
+spk,Neuropixels spikes,VISp,tag,tagged units,all,label - shuffled,ridge,r_true,r_e,14,0.43368,0.42912,-0.0045664,0.0021705,-0.0040698,5,0.078491
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary - label,ridge,r_kmsel,r_true,14,0.42912,0.43648,0.0073624,0.0033788,0.0040983,11,0.04187
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary (k=16) - label,ridge,r_km16,r_true,14,0.42912,0.43637,0.0072496,0.0033896,0.0040983,11,0.049438
+spk,Neuropixels spikes,VISp,tag,tagged units,all,k1 (equal weights) - none,ridge,r_k1,r_none,14,0.43377,0.43537,0.0015971,0.00089597,0.0021388,10,0.17261
+spk,Neuropixels spikes,VISp,tag,tagged units,all,label - k1,ridge,r_true,r_k1,14,0.43537,0.42912,-0.0062483,0.0022599,-0.0045326,4,0.016602
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary - k1,ridge,r_kmsel,r_k1,14,0.43537,0.43648,0.001114,0.001751,0.00027415,8,0.62573
+spk,Neuropixels spikes,VISp,tag,tagged units,all,label,ridge (equal weights),r_true,r_k1,14,0.43537,0.42912,-0.0062483,0.0022599,-0.0045326,4,0.016602
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary,ridge (equal weights),r_kmsel,r_k1,14,0.43537,0.43648,0.001114,0.001751,0.00027415,8,0.62573
+spk,Neuropixels spikes,VISp,tag,tagged units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,14,0.43537,0.43522,-0.00014239,0.00019721,-4.5e-06,7,0.80774
+spk,Neuropixels spikes,VISp,tag,tagged units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,14,0.43522,0.42912,-0.006106,0.0021447,-0.0042218,4,0.016602
+spk,Neuropixels spikes,VISp,tag,tagged units,all,summary - label,ridge (equal weights),r_kmsel,r_true,14,0.42912,0.43648,0.0073624,0.0033788,0.0040983,11,0.04187
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,label,ridge,r_true,r_none,4,0.43144,0.43297,0.0015291,0.0014076,0.0015437,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary,ridge,r_kmsel,r_none,4,0.43144,0.43315,0.0017137,0.0032413,0.0026162,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary (k=16),ridge,r_km16,r_none,4,0.43144,0.43276,0.001319,0.0032466,0.0018268,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,shuffled label,ridge,r_e,r_none,4,0.43144,0.43154,0.0001078,8.8833e-05,0.00013598,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,label - shuffled,ridge,r_true,r_e,4,0.43154,0.43297,0.0014213,0.0013203,0.0014078,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary - label,ridge,r_kmsel,r_true,4,0.43297,0.43315,0.00018454,0.0033392,0.0033171,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,4,0.43297,0.43276,-0.00021013,0.0032149,0.0025277,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,4,0.43144,0.43211,0.00067621,0.0016851,0.0019383,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,label - k1,ridge,r_true,r_k1,4,0.43211,0.43297,0.00085293,0.0026952,0.00057582,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,4,0.43211,0.43315,0.0010375,0.002228,-0.00025141,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,label,ridge (equal weights),r_true,r_k1,4,0.43211,0.43297,0.00085293,0.0026952,0.00057582,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,4,0.43211,0.43315,0.0010375,0.002228,-0.00025141,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,4,0.43211,0.43219,7.66e-05,0.00033323,-2.0826e-05,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,4,0.43219,0.43297,0.00077633,0.0023954,0.00059665,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,4,0.43297,0.43315,0.00018454,0.0033392,0.0033171,3,
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,label,ridge,r_true,r_none,8,0.43171,0.4256,-0.0061127,0.0032897,-0.0068669,2,0.10938
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary,ridge,r_kmsel,r_none,8,0.43171,0.43374,0.0020282,0.0022701,0.0012489,5,0.46094
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary (k=16),ridge,r_km16,r_none,8,0.43171,0.43374,0.0020282,0.0022701,0.0012489,5,0.46094
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,shuffled label,ridge,r_e,r_none,8,0.43171,0.43153,-0.00017973,0.00039967,8.8595e-05,6,0.64062
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,label - shuffled,ridge,r_true,r_e,8,0.43153,0.4256,-0.005933,0.0030679,-0.0067751,2,0.10938
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary - label,ridge,r_kmsel,r_true,8,0.4256,0.43374,0.0081409,0.0049853,0.0057941,6,0.14844
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary (k=16) - label,ridge,r_km16,r_true,8,0.4256,0.43374,0.0081409,0.0049853,0.0057941,6,0.14844
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43171,0.43394,0.0022327,0.0011635,0.0021388,6,0.14844
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,label - k1,ridge,r_true,r_k1,8,0.43394,0.4256,-0.0083454,0.0030713,-0.0063245,2,0.039062
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary - k1,ridge,r_kmsel,r_k1,8,0.43394,0.43374,-0.00020447,0.0026245,-0.00068877,4,0.84375
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,label,ridge (equal weights),r_true,r_k1,8,0.43394,0.4256,-0.0083454,0.0030713,-0.0063245,2,0.039062
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43394,0.43374,-0.00020447,0.0026245,-0.00068877,4,0.84375
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43394,0.43366,-0.00028021,0.00030969,-4.5e-06,4,1
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43366,0.4256,-0.0080652,0.0028932,-0.00632,2,0.039062
+spk,Neuropixels spikes,VISp,tag,tagged units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.4256,0.43374,0.0081409,0.0049853,0.0057941,6,0.14844
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,label,ridge,r_true,r_none,2,0.44667,0.4355,-0.011166,0.0059685,-0.011166,0,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary,ridge,r_kmsel,r_none,2,0.44667,0.45411,0.0074377,0.00068322,0.0074377,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary (k=16),ridge,r_km16,r_none,2,0.44667,0.45411,0.0074377,0.00068322,0.0074377,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,shuffled label,ridge,r_e,r_none,2,0.44667,0.44658,-9.0717e-05,0.0002071,-9.0717e-05,1,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,label - shuffled,ridge,r_true,r_e,2,0.44658,0.4355,-0.011075,0.0057614,-0.011075,0,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary - label,ridge,r_kmsel,r_true,2,0.4355,0.45411,0.018604,0.0066517,0.018604,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary (k=16) - label,ridge,r_km16,r_true,2,0.4355,0.45411,0.018604,0.0066517,0.018604,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,2,0.44667,0.44756,0.00089671,0.003783,0.00089671,1,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,label - k1,ridge,r_true,r_k1,2,0.44756,0.4355,-0.012063,0.0021855,-0.012063,0,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary - k1,ridge,r_kmsel,r_k1,2,0.44756,0.45411,0.006541,0.0044662,0.006541,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,label,ridge (equal weights),r_true,r_k1,2,0.44756,0.4355,-0.012063,0.0021855,-0.012063,0,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,2,0.44756,0.45411,0.006541,0.0044662,0.006541,2,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,2,0.44756,0.44754,-2.9122e-05,5.2129e-05,-2.9122e-05,1,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,2,0.44754,0.4355,-0.012034,0.0021334,-0.012034,0,
+spk,Neuropixels spikes,VISp,tag,tagged units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,2,0.4355,0.45411,0.018604,0.0066517,0.018604,2,
+spk,Neuropixels spikes,VISp,tag,untagged units,all,label,ridge,r_true,r_none,27,0.43506,0.43737,0.0023021,0.00034709,0.002292,24,8.1956e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary,ridge,r_kmsel,r_none,27,0.43506,0.4397,0.0046401,0.00050505,0.0046201,26,4.4703e-08
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary (k=16),ridge,r_km16,r_none,27,0.43506,0.43961,0.004548,0.00050394,0.0046269,26,7.4506e-08
+spk,Neuropixels spikes,VISp,tag,untagged units,all,shuffled label,ridge,r_e,r_none,27,0.43506,0.43508,1.5401e-05,2.8602e-05,3.3949e-05,15,0.21983
+spk,Neuropixels spikes,VISp,tag,untagged units,all,label - shuffled,ridge,r_true,r_e,27,0.43508,0.43737,0.0022867,0.00033684,0.0024811,24,3.7253e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary - label,ridge,r_kmsel,r_true,27,0.43737,0.4397,0.002338,0.00032274,0.0022363,25,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary (k=16) - label,ridge,r_km16,r_true,27,0.43737,0.43961,0.0022459,0.00033616,0.0019441,25,1.0431e-06
+spk,Neuropixels spikes,VISp,tag,untagged units,all,k1 (equal weights) - none,ridge,r_k1,r_none,27,0.43506,0.43734,0.0022757,0.00033684,0.002237,24,6.4075e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,label - k1,ridge,r_true,r_k1,27,0.43734,0.43737,2.6347e-05,1.1679e-05,2.6729e-05,16,0.046263
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary - k1,ridge,r_kmsel,r_k1,27,0.43734,0.4397,0.0023644,0.00032389,0.002294,25,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,label,ridge (equal weights),r_true,r_k1,27,0.43734,0.43737,2.6347e-05,1.1679e-05,2.6729e-05,16,0.046263
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary,ridge (equal weights),r_kmsel,r_k1,27,0.43734,0.4397,0.0023644,0.00032389,0.002294,25,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,27,0.43734,0.43728,-6.3834e-05,2.174e-05,-1.5796e-05,12,0.021429
+spk,Neuropixels spikes,VISp,tag,untagged units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,27,0.43728,0.43737,9.0181e-05,2.4817e-05,6.0054e-05,19,0.0018586
+spk,Neuropixels spikes,VISp,tag,untagged units,all,summary - label,ridge (equal weights),r_kmsel,r_true,27,0.43737,0.4397,0.002338,0.00032274,0.0022363,25,4.9174e-07
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,label,ridge,r_true,r_none,8,0.42775,0.4295,0.0017497,0.00060764,0.0017933,6,0.039062
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42775,0.4319,0.0041543,0.00071884,0.0045489,8,0.0078125
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42775,0.43178,0.0040293,0.00075907,0.0045489,8,0.0078125
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42775,0.42778,3.3453e-05,3.7115e-05,4.318e-06,4,0.54688
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42778,0.4295,0.0017162,0.00059111,0.0016892,6,0.039062
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.4295,0.4319,0.0024046,0.00067903,0.0024423,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.4295,0.43178,0.0022797,0.00069653,0.0022962,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42775,0.4295,0.0017569,0.00059046,0.0017904,6,0.039062
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.4295,0.4295,-7.1717e-06,2.067e-05,-2.3008e-05,3,0.84375
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.4295,0.4319,0.0023974,0.00066695,0.0024607,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.4295,0.4295,-7.1717e-06,2.067e-05,-2.3008e-05,3,0.84375
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.4295,0.4319,0.0023974,0.00066695,0.0024607,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.4295,0.42945,-5.25e-05,2.9212e-05,-1.6746e-05,3,0.19531
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42945,0.4295,4.5329e-05,4.8916e-05,-2.1438e-05,3,0.74219
+spk,Neuropixels spikes,VISp,tag,untagged units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.4295,0.4319,0.0024046,0.00067903,0.0024423,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,label,ridge,r_true,r_none,12,0.43622,0.43895,0.002728,0.0005677,0.0029768,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary,ridge,r_kmsel,r_none,12,0.43622,0.44182,0.005594,0.00081681,0.0052129,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43622,0.44173,0.0055038,0.00081428,0.0049058,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,shuffled label,ridge,r_e,r_none,12,0.43622,0.43629,6.396e-05,3.227e-05,5.9562e-05,8,0.077148
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,label - shuffled,ridge,r_true,r_e,12,0.43629,0.43895,0.002664,0.00055434,0.0028573,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43895,0.44182,0.002866,0.00044129,0.0026945,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43895,0.44173,0.0027759,0.00048605,0.0026945,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43622,0.43891,0.0026863,0.00055102,0.0029467,11,0.0014648
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,label - k1,ridge,r_true,r_k1,12,0.43891,0.43895,4.1638e-05,1.7872e-05,5.8069e-05,8,0.052246
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43891,0.44182,0.0029077,0.00044967,0.002709,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43891,0.43895,4.1638e-05,1.7872e-05,5.8069e-05,8,0.052246
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43891,0.44182,0.0029077,0.00044967,0.002709,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43891,0.43887,-4.3116e-05,2.0381e-05,-2.6178e-05,6,0.17627
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43887,0.43895,8.4753e-05,3.0183e-05,6.6175e-05,9,0.016113
+spk,Neuropixels spikes,VISp,tag,untagged units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43895,0.44182,0.002866,0.00044129,0.0026945,12,0.00048828
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,label,ridge,r_true,r_none,7,0.44144,0.44364,0.0022033,0.00062991,0.0021359,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary,ridge,r_kmsel,r_none,7,0.44144,0.445,0.00356,0.00098907,0.0031876,6,0.03125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary (k=16),ridge,r_km16,r_none,7,0.44144,0.44494,0.0035021,0.00094763,0.0032738,6,0.03125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,shuffled label,ridge,r_e,r_none,7,0.44144,0.44135,-8.8474e-05,7.7653e-05,-1.1658e-05,3,0.8125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,label - shuffled,ridge,r_true,r_e,7,0.44135,0.44364,0.0022918,0.00060171,0.002518,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary - label,ridge,r_kmsel,r_true,7,0.44364,0.445,0.0013568,0.00052262,0.0016626,6,0.078125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary (k=16) - label,ridge,r_km16,r_true,7,0.44364,0.44494,0.0012988,0.00051913,0.0012961,6,0.10938
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,7,0.44144,0.4436,0.0021648,0.00061303,0.0021485,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,label - k1,ridge,r_true,r_k1,7,0.4436,0.44364,3.844e-05,2.0031e-05,3.4369e-05,5,0.10938
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary - k1,ridge,r_kmsel,r_k1,7,0.4436,0.445,0.0013952,0.00053268,0.0017101,6,0.078125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,label,ridge (equal weights),r_true,r_k1,7,0.4436,0.44364,3.844e-05,2.0031e-05,3.4369e-05,5,0.10938
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,7,0.4436,0.445,0.0013952,0.00053268,0.0017101,6,0.078125
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,7,0.4436,0.44349,-0.0001123,7.0128e-05,-1.2537e-05,3,0.29688
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,7,0.44349,0.44364,0.00015074,5.6901e-05,8.4946e-05,7,0.015625
+spk,Neuropixels spikes,VISp,tag,untagged units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,7,0.44364,0.445,0.0013568,0.00052262,0.0016626,6,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,all,label,ridge,r_true,r_none,56,0.43523,0.43593,0.00070257,0.00021967,0.0007451,44,0.0002128
+spk,Neuropixels spikes,VISp,fs,all units,all,summary,ridge,r_kmsel,r_none,56,0.43523,0.43543,0.00020337,0.0018789,0.0023751,47,6.4971e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,summary (k=16),ridge,r_km16,r_none,56,0.43523,0.43533,0.00010087,0.0018765,0.0023751,47,9.8681e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,shuffled label,ridge,r_e,r_none,56,0.43523,0.43521,-1.7502e-05,5.0198e-06,-1.3617e-05,19,0.0010115
+spk,Neuropixels spikes,VISp,fs,all units,all,label - shuffled,ridge,r_true,r_e,56,0.43521,0.43593,0.00072007,0.00022152,0.00079717,44,0.00015378
+spk,Neuropixels spikes,VISp,fs,all units,all,summary - label,ridge,r_kmsel,r_true,56,0.43593,0.43543,-0.0004992,0.0020186,0.0021465,47,9.0814e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,summary (k=16) - label,ridge,r_km16,r_true,56,0.43593,0.43533,-0.0006017,0.0020161,0.0021076,46,1.6828e-06
+spk,Neuropixels spikes,VISp,fs,all units,all,k1 (equal weights) - none,ridge,r_k1,r_none,56,0.43523,0.43494,-0.0002876,0.00024841,0.00016112,30,0.72577
+spk,Neuropixels spikes,VISp,fs,all units,all,label - k1,ridge,r_true,r_k1,56,0.43494,0.43593,0.00099017,0.00038214,0.00039968,48,2.6452e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,summary - k1,ridge,r_kmsel,r_k1,56,0.43494,0.43543,0.00049097,0.0016726,0.0024287,50,1.8644e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,label,ridge (equal weights),r_true,r_k1,56,0.43494,0.43593,0.00099017,0.00038214,0.00039968,48,2.6452e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,summary,ridge (equal weights),r_kmsel,r_k1,56,0.43494,0.43543,0.00049097,0.0016726,0.0024287,50,1.8644e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,56,0.43494,0.43493,-3.9202e-06,6.456e-06,-7.5845e-06,21,0.083755
+spk,Neuropixels spikes,VISp,fs,all units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,56,0.43493,0.43593,0.00099409,0.00038277,0.000418,47,2.6452e-07
+spk,Neuropixels spikes,VISp,fs,all units,all,summary - label,ridge (equal weights),r_kmsel,r_true,56,0.43593,0.43543,-0.0004992,0.0020186,0.0021465,47,9.0814e-07
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,label,ridge,r_true,r_none,8,0.42998,0.43016,0.00018166,0.00024374,0.00032655,5,0.46094
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42998,0.43167,0.0016922,0.00083638,0.0022344,6,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42998,0.43139,0.0014138,0.00071048,0.0022344,6,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42998,0.42994,-3.6835e-05,1.5062e-05,-2.0897e-05,0,0.0078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42994,0.43016,0.00021849,0.00024514,0.00034971,5,0.38281
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.43016,0.43167,0.0015106,0.00082515,0.0013892,6,0.10938
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.43016,0.43139,0.0012322,0.00071899,0.0013892,6,0.14844
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42998,0.42964,-0.00033608,0.00024326,-0.00021613,3,0.25
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42964,0.43016,0.00051774,0.00013443,0.00048591,8,0.0078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42964,0.43167,0.0020283,0.00083087,0.0020399,7,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42964,0.43016,0.00051774,0.00013443,0.00048591,8,0.0078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42964,0.43167,0.0020283,0.00083087,0.0020399,7,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42964,0.42963,-1.1181e-05,9.9496e-06,-1.3583e-05,2,0.3125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42963,0.43016,0.00052892,0.00013144,0.0004768,8,0.0078125
+spk,Neuropixels spikes,VISp,fs,all units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43016,0.43167,0.0015106,0.00082515,0.0013892,6,0.10938
+spk,Neuropixels spikes,VISp,fs,all units,Sst,label,ridge,r_true,r_none,12,0.43852,0.43907,0.00054964,0.00024307,0.00085113,9,0.063965
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary,ridge,r_kmsel,r_none,12,0.43852,0.44161,0.0030887,0.00062203,0.0028025,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43852,0.44137,0.0028522,0.00062849,0.0028025,11,0.0024414
+spk,Neuropixels spikes,VISp,fs,all units,Sst,shuffled label,ridge,r_e,r_none,12,0.43852,0.4385,-1.5954e-05,9.4399e-06,-1.6143e-05,4,0.12939
+spk,Neuropixels spikes,VISp,fs,all units,Sst,label - shuffled,ridge,r_true,r_e,12,0.4385,0.43907,0.00056559,0.00024455,0.00085056,9,0.052246
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43907,0.44161,0.002539,0.00050926,0.0029031,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43907,0.44137,0.0023025,0.00050811,0.0028488,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,all units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43852,0.43868,0.00016464,0.00028091,0.00049283,7,0.62207
+spk,Neuropixels spikes,VISp,fs,all units,Sst,label - k1,ridge,r_true,r_k1,12,0.43868,0.43907,0.000385,0.00016593,0.00029374,10,0.03418
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43868,0.44161,0.0029241,0.00045056,0.0030396,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,all units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43868,0.43907,0.000385,0.00016593,0.00029374,10,0.03418
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43868,0.44161,0.0029241,0.00045056,0.0030396,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,all units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43868,0.43867,-1.2626e-05,5.8753e-06,-1.2718e-05,4,0.092285
+spk,Neuropixels spikes,VISp,fs,all units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43867,0.43907,0.00039763,0.00016882,0.0003074,10,0.03418
+spk,Neuropixels spikes,VISp,fs,all units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43907,0.44161,0.002539,0.00050926,0.0029031,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,all units,Vip,label,ridge,r_true,r_none,7,0.44342,0.4439,0.00048208,0.00026256,0.00045868,6,0.10938
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary,ridge,r_kmsel,r_none,7,0.44342,0.44583,0.0024054,0.0010341,0.0023736,6,0.078125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary (k=16),ridge,r_km16,r_none,7,0.44342,0.44575,0.002333,0.0010893,0.0023736,6,0.15625
+spk,Neuropixels spikes,VISp,fs,all units,Vip,shuffled label,ridge,r_e,r_none,7,0.44342,0.44341,-8.1251e-06,9.1352e-06,-6.7825e-06,2,0.21875
+spk,Neuropixels spikes,VISp,fs,all units,Vip,label - shuffled,ridge,r_true,r_e,7,0.44341,0.4439,0.00049021,0.00025934,0.00046546,6,0.10938
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary - label,ridge,r_kmsel,r_true,7,0.4439,0.44583,0.0019233,0.00082056,0.0015912,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary (k=16) - label,ridge,r_km16,r_true,7,0.4439,0.44575,0.0018509,0.00087162,0.0015912,6,0.15625
+spk,Neuropixels spikes,VISp,fs,all units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,7,0.44342,0.44356,0.00013816,0.0002735,0.00030059,5,0.46875
+spk,Neuropixels spikes,VISp,fs,all units,Vip,label - k1,ridge,r_true,r_k1,7,0.44356,0.4439,0.00034393,0.0001028,0.00035136,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary - k1,ridge,r_kmsel,r_k1,7,0.44356,0.44583,0.0022672,0.00080294,0.0020465,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,label,ridge (equal weights),r_true,r_k1,7,0.44356,0.4439,0.00034393,0.0001028,0.00035136,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,7,0.44356,0.44583,0.0022672,0.00080294,0.0020465,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,7,0.44356,0.44355,-8.9254e-06,1.0651e-05,-9.1052e-06,3,0.57812
+spk,Neuropixels spikes,VISp,fs,all units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,7,0.44355,0.4439,0.00035285,0.00010908,0.00036047,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,7,0.4439,0.44583,0.0019233,0.00082056,0.0015912,6,0.03125
+spk,Neuropixels spikes,VISp,fs,all units,wt,label,ridge,r_true,r_none,29,0.43333,0.4343,0.00096278,0.0003999,0.00097263,24,0.0080077
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary,ridge,r_kmsel,r_none,29,0.43333,0.4314,-0.0019328,0.003588,0.0029276,24,0.00088842
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary (k=16),ridge,r_km16,r_none,29,0.43333,0.4314,-0.0019386,0.0035883,0.0029276,24,0.00088842
+spk,Neuropixels spikes,VISp,fs,all units,wt,shuffled label,ridge,r_e,r_none,29,0.43333,0.43332,-1.5074e-05,7.513e-06,-8.3014e-06,13,0.10556
+spk,Neuropixels spikes,VISp,fs,all units,wt,label - shuffled,ridge,r_true,r_e,29,0.43332,0.4343,0.00097785,0.00040389,0.00096141,24,0.0074565
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary - label,ridge,r_kmsel,r_true,29,0.4343,0.4314,-0.0028956,0.00386,0.002204,24,0.0013987
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary (k=16) - label,ridge,r_km16,r_true,29,0.4343,0.4314,-0.0029014,0.0038603,0.002204,23,0.0016663
+spk,Neuropixels spikes,VISp,fs,all units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,29,0.43333,0.43277,-0.00056413,0.00045382,0.00026892,15,0.44202
+spk,Neuropixels spikes,VISp,fs,all units,wt,label - k1,ridge,r_true,r_k1,29,0.43277,0.4343,0.0015269,0.00072535,0.00056123,24,0.00012407
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary - k1,ridge,r_kmsel,r_k1,29,0.43277,0.4314,-0.0013687,0.0031995,0.0024998,25,0.00055058
+spk,Neuropixels spikes,VISp,fs,all units,wt,label,ridge (equal weights),r_true,r_k1,29,0.43277,0.4343,0.0015269,0.00072535,0.00056123,24,0.00012407
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary,ridge (equal weights),r_kmsel,r_k1,29,0.43277,0.4314,-0.0013687,0.0031995,0.0024998,25,0.00055058
+spk,Neuropixels spikes,VISp,fs,all units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,29,0.43277,0.43277,2.8933e-06,1.1674e-05,-2.4949e-06,12,0.66995
+spk,Neuropixels spikes,VISp,fs,all units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,29,0.43277,0.4343,0.001524,0.00072687,0.00053263,23,0.00015583
+spk,Neuropixels spikes,VISp,fs,all units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,29,0.4343,0.4314,-0.0028956,0.00386,0.002204,24,0.0013987
+spk,Neuropixels spikes,VISp,fs,FS units,all,label,ridge,r_true,r_none,56,0.4242,0.42595,0.0017567,0.00057744,0.0010706,37,0.0045303
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary,ridge,r_kmsel,r_none,56,0.4242,0.41825,-0.0059511,0.0047957,-0.00019028,27,0.77526
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary (k=16),ridge,r_km16,r_none,56,0.4242,0.41828,-0.0059171,0.0047964,-0.00019028,27,0.75039
+spk,Neuropixels spikes,VISp,fs,FS units,all,shuffled label,ridge,r_e,r_none,56,0.4242,0.42416,-3.4212e-05,1.3391e-05,-1.0626e-05,22,0.036779
+spk,Neuropixels spikes,VISp,fs,FS units,all,label - shuffled,ridge,r_true,r_e,56,0.42416,0.42595,0.0017909,0.0005846,0.0010839,37,0.004304
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary - label,ridge,r_kmsel,r_true,56,0.42595,0.41825,-0.0077078,0.0052201,-0.0011448,22,0.31179
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary (k=16) - label,ridge,r_km16,r_true,56,0.42595,0.41828,-0.0076738,0.0052191,-0.0014146,22,0.33578
+spk,Neuropixels spikes,VISp,fs,FS units,all,k1 (equal weights) - none,ridge,r_k1,r_none,56,0.4242,0.42168,-0.0025185,0.00052472,-0.0019072,11,1.3086e-07
+spk,Neuropixels spikes,VISp,fs,FS units,all,label - k1,ridge,r_true,r_k1,56,0.42168,0.42595,0.0042752,0.0010993,0.0026582,40,3.1809e-05
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary - k1,ridge,r_kmsel,r_k1,56,0.42168,0.41825,-0.0034326,0.0044021,0.0017713,38,0.015065
+spk,Neuropixels spikes,VISp,fs,FS units,all,label,ridge (equal weights),r_true,r_k1,56,0.42168,0.42595,0.0042752,0.0010993,0.0026582,40,3.1809e-05
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary,ridge (equal weights),r_kmsel,r_k1,56,0.42168,0.41825,-0.0034326,0.0044021,0.0017713,38,0.015065
+spk,Neuropixels spikes,VISp,fs,FS units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,56,0.42168,0.42167,-9.2742e-06,3.1556e-05,-1.7477e-05,23,0.13338
+spk,Neuropixels spikes,VISp,fs,FS units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,56,0.42167,0.42595,0.0042845,0.0010915,0.0027525,40,2.8569e-05
+spk,Neuropixels spikes,VISp,fs,FS units,all,summary - label,ridge (equal weights),r_kmsel,r_true,56,0.42595,0.41825,-0.0077078,0.0052201,-0.0011448,22,0.31179
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,label,ridge,r_true,r_none,8,0.42466,0.42595,0.0012831,0.00048447,0.00076099,7,0.023438
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42466,0.42604,0.0013802,0.0012734,0.0010671,4,0.3125
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42466,0.42612,0.0014593,0.0013152,0.0010671,4,0.3125
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42466,0.42463,-3.7738e-05,3.2117e-05,-2.298e-05,3,0.38281
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42463,0.42595,0.0013208,0.00048441,0.00074873,7,0.023438
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.42595,0.42604,9.7071e-05,0.0010818,-0.00094875,3,0.74219
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.42595,0.42612,0.00017615,0.001132,-0.00094875,3,0.74219
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42466,0.42256,-0.0021031,0.00039922,-0.0020337,0,0.0078125
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42256,0.42595,0.0033862,0.00086646,0.0026003,7,0.015625
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42256,0.42604,0.0034833,0.0015124,0.0033301,6,0.10938
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42256,0.42595,0.0033862,0.00086646,0.0026003,7,0.015625
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42256,0.42604,0.0034833,0.0015124,0.0033301,6,0.10938
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42256,0.42252,-3.6986e-05,3.9444e-05,-3.5473e-05,3,0.46094
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42252,0.42595,0.0034232,0.00085367,0.002709,7,0.015625
+spk,Neuropixels spikes,VISp,fs,FS units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.42595,0.42604,9.7071e-05,0.0010818,-0.00094875,3,0.74219
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,label,ridge,r_true,r_none,12,0.42648,0.42678,0.00029557,0.00060645,0.00017051,7,0.51855
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary,ridge,r_kmsel,r_none,12,0.42648,0.42571,-0.00077047,0.00098656,-0.0012345,5,0.67725
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.42648,0.42535,-0.001133,0.00096102,-0.0012345,4,0.38037
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,shuffled label,ridge,r_e,r_none,12,0.42648,0.42644,-3.9629e-05,2.6131e-05,-3.8544e-05,4,0.15137
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,label - shuffled,ridge,r_true,r_e,12,0.42644,0.42678,0.00033519,0.00060641,0.0002851,7,0.56934
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.42678,0.42571,-0.001066,0.0012013,-0.0023531,4,0.46973
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.42678,0.42535,-0.0014286,0.0011075,-0.0027943,4,0.2334
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.42648,0.42516,-0.0013222,0.00045511,-0.0017234,4,0.026855
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,label - k1,ridge,r_true,r_k1,12,0.42516,0.42678,0.0016178,0.001057,0.0018939,8,0.17627
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.42516,0.42571,0.00055178,0.00099991,0.0014107,9,0.51855
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.42516,0.42678,0.0016178,0.001057,0.0018939,8,0.17627
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.42516,0.42571,0.00055178,0.00099991,0.0014107,9,0.51855
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.42516,0.42511,-4.6299e-05,3.6064e-05,-2.2986e-05,5,0.30127
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.42511,0.42678,0.0016641,0.0010571,0.0021276,8,0.17627
+spk,Neuropixels spikes,VISp,fs,FS units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.42678,0.42571,-0.001066,0.0012013,-0.0023531,4,0.46973
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,label,ridge,r_true,r_none,7,0.43032,0.43176,0.0014405,0.0010902,0.00050546,5,0.21875
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary,ridge,r_kmsel,r_none,7,0.43032,0.42869,-0.0016341,0.0023207,-0.00030988,3,0.6875
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary (k=16),ridge,r_km16,r_none,7,0.43032,0.42918,-0.0011437,0.0023647,0.00035104,4,0.9375
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,shuffled label,ridge,r_e,r_none,7,0.43032,0.4303,-2.1141e-05,2.8427e-05,-1.709e-06,3,0.57812
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,label - shuffled,ridge,r_true,r_e,7,0.4303,0.43176,0.0014616,0.0011063,0.00041486,5,0.29688
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary - label,ridge,r_kmsel,r_true,7,0.43176,0.42869,-0.0030745,0.0026448,-0.0020523,2,0.21875
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary (k=16) - label,ridge,r_km16,r_true,7,0.43176,0.42918,-0.0025842,0.0024882,-0.0020523,2,0.29688
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,7,0.43032,0.42825,-0.0020698,0.00080913,-0.0018863,0,0.015625
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,label - k1,ridge,r_true,r_k1,7,0.42825,0.43176,0.0035103,0.0018925,0.0026221,5,0.078125
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary - k1,ridge,r_kmsel,r_k1,7,0.42825,0.42869,0.00043579,0.0023273,0.0020848,5,0.8125
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,label,ridge (equal weights),r_true,r_k1,7,0.42825,0.43176,0.0035103,0.0018925,0.0026221,5,0.078125
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,7,0.42825,0.42869,0.00043579,0.0023273,0.0020848,5,0.8125
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,7,0.42825,0.42821,-4.4599e-05,3.6818e-05,-1.0069e-05,3,0.46875
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,7,0.42821,0.43176,0.0035549,0.0019155,0.0025578,5,0.078125
+spk,Neuropixels spikes,VISp,fs,FS units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,7,0.43176,0.42869,-0.0030745,0.0026448,-0.0020523,2,0.21875
+spk,Neuropixels spikes,VISp,fs,FS units,wt,label,ridge,r_true,r_none,29,0.42164,0.42421,0.0025683,0.001034,0.0015851,18,0.029064
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary,ridge,r_kmsel,r_none,29,0.42164,0.41048,-0.011159,0.0091996,0.00034238,15,0.63912
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary (k=16),ridge,r_km16,r_none,29,0.42164,0.41056,-0.011084,0.0092021,0.00034238,15,0.56473
+spk,Neuropixels spikes,VISp,fs,FS units,wt,shuffled label,ridge,r_e,r_none,29,0.42164,0.42161,-3.4153e-05,2.1313e-05,-1.2202e-05,12,0.29412
+spk,Neuropixels spikes,VISp,fs,FS units,wt,label - shuffled,ridge,r_true,r_e,29,0.42161,0.42421,0.0026024,0.0010484,0.0016892,18,0.029064
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary - label,ridge,r_kmsel,r_true,29,0.42421,0.41048,-0.013728,0.0099975,-0.00045071,13,0.78186
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary (k=16) - label,ridge,r_km16,r_true,29,0.42421,0.41056,-0.013652,0.010001,-0.00045071,13,0.91522
+spk,Neuropixels spikes,VISp,fs,FS units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,29,0.42164,0.41841,-0.0032364,0.00096064,-0.0020515,7,0.00021718
+spk,Neuropixels spikes,VISp,fs,FS units,wt,label - k1,ridge,r_true,r_k1,29,0.41841,0.42421,0.0058047,0.001991,0.0036366,20,0.0029923
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary - k1,ridge,r_kmsel,r_k1,29,0.41841,0.41048,-0.0079228,0.0084469,0.0014149,18,0.14937
+spk,Neuropixels spikes,VISp,fs,FS units,wt,label,ridge (equal weights),r_true,r_k1,29,0.41841,0.42421,0.0058047,0.001991,0.0036366,20,0.0029923
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary,ridge (equal weights),r_kmsel,r_k1,29,0.41841,0.41048,-0.0079228,0.0084469,0.0014149,18,0.14937
+spk,Neuropixels spikes,VISp,fs,FS units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,29,0.41841,0.41843,2.2218e-05,5.7569e-05,-1.6997e-05,12,0.55035
+spk,Neuropixels spikes,VISp,fs,FS units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,29,0.41843,0.42421,0.0057825,0.0019759,0.0037614,20,0.0029923
+spk,Neuropixels spikes,VISp,fs,FS units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,29,0.42421,0.41048,-0.013728,0.0099975,-0.00045071,13,0.78186
+spk,Neuropixels spikes,VISp,fs,RS units,all,label,ridge,r_true,r_none,56,0.43848,0.43869,0.00020898,0.00021907,0.00070746,37,0.17833
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary,ridge,r_kmsel,r_none,56,0.43848,0.44118,0.0026976,0.00040698,0.0027666,48,6.9743e-08
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary (k=16),ridge,r_km16,r_none,56,0.43848,0.44104,0.0025564,0.00041026,0.0026614,48,2.0355e-07
+spk,Neuropixels spikes,VISp,fs,RS units,all,shuffled label,ridge,r_e,r_none,56,0.43848,0.43846,-1.5499e-05,5.985e-06,-6.9544e-06,22,0.015757
+spk,Neuropixels spikes,VISp,fs,RS units,all,label - shuffled,ridge,r_true,r_e,56,0.43846,0.43869,0.00022448,0.00021919,0.0008072,38,0.15344
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary - label,ridge,r_kmsel,r_true,56,0.43869,0.44118,0.0024886,0.0003142,0.0028747,52,7.3218e-09
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary (k=16) - label,ridge,r_km16,r_true,56,0.43869,0.44104,0.0023474,0.00031661,0.0027148,52,1.5048e-08
+spk,Neuropixels spikes,VISp,fs,RS units,all,k1 (equal weights) - none,ridge,r_k1,r_none,56,0.43848,0.43886,0.00037961,0.00011999,0.00064732,40,0.0024099
+spk,Neuropixels spikes,VISp,fs,RS units,all,label - k1,ridge,r_true,r_k1,56,0.43886,0.43869,-0.00017063,0.00010011,5.0219e-05,30,0.34404
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary - k1,ridge,r_kmsel,r_k1,56,0.43886,0.44118,0.002318,0.00034295,0.0025762,51,4.2159e-08
+spk,Neuropixels spikes,VISp,fs,RS units,all,label,ridge (equal weights),r_true,r_k1,56,0.43886,0.43869,-0.00017063,0.00010011,5.0219e-05,30,0.34404
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary,ridge (equal weights),r_kmsel,r_k1,56,0.43886,0.44118,0.002318,0.00034295,0.0025762,51,4.2159e-08
+spk,Neuropixels spikes,VISp,fs,RS units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,56,0.43886,0.43885,-5.4822e-06,6.4113e-06,-5.5266e-06,23,0.16803
+spk,Neuropixels spikes,VISp,fs,RS units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,56,0.43885,0.43869,-0.00016515,0.00010085,9.9176e-05,30,0.38277
+spk,Neuropixels spikes,VISp,fs,RS units,all,summary - label,ridge (equal weights),r_kmsel,r_true,56,0.43869,0.44118,0.0024886,0.0003142,0.0028747,52,7.3218e-09
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,label,ridge,r_true,r_none,8,0.43182,0.43171,-0.00011531,0.00040966,0.00031687,5,0.84375
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.43182,0.43373,0.0019072,0.00096524,0.002924,5,0.14844
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.43182,0.43325,0.001426,0.00084151,0.0019548,5,0.19531
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.43182,0.43178,-4.6864e-05,2.4997e-05,-3.3303e-05,2,0.078125
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.43178,0.43171,-6.8445e-05,0.00041409,0.00032918,5,0.84375
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.43171,0.43373,0.0020225,0.00086392,0.0028102,7,0.054688
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.43171,0.43325,0.0015413,0.00077863,0.0016013,7,0.078125
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43182,0.43202,0.00020263,0.00023561,0.00043529,5,0.46094
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.43202,0.43171,-0.00031794,0.00017588,-0.00014457,2,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.43202,0.43373,0.0017046,0.0008937,0.0027952,6,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.43202,0.43171,-0.00031794,0.00017588,-0.00014457,2,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43202,0.43373,0.0017046,0.0008937,0.0027952,6,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43202,0.43201,-1.3098e-05,1.1552e-05,-2.2259e-06,4,0.54688
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43201,0.43171,-0.00030484,0.00017506,-0.00015877,2,0.14844
+spk,Neuropixels spikes,VISp,fs,RS units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43171,0.43373,0.0020225,0.00086392,0.0028102,7,0.054688
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,label,ridge,r_true,r_none,12,0.44011,0.44054,0.00042958,0.00040153,0.0009039,8,0.26611
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary,ridge,r_kmsel,r_none,12,0.44011,0.44388,0.003776,0.00068204,0.0037127,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.44011,0.44367,0.0035637,0.00070555,0.0037127,11,0.00097656
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,shuffled label,ridge,r_e,r_none,12,0.44011,0.44009,-1.5389e-05,1.1903e-05,-1.3183e-05,5,0.30127
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,label - shuffled,ridge,r_true,r_e,12,0.44009,0.44054,0.00044497,0.00040015,0.00089381,8,0.2334
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.44054,0.44388,0.0033464,0.00048836,0.0033386,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.44054,0.44367,0.0031341,0.00050281,0.0033386,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.44011,0.44061,0.00050229,0.00022071,0.00069346,9,0.052246
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,label - k1,ridge,r_true,r_k1,12,0.44061,0.44054,-7.2714e-05,0.00018401,0.00021044,7,0.79102
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.44061,0.44388,0.0032737,0.00054587,0.0032669,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.44061,0.44054,-7.2714e-05,0.00018401,0.00021044,7,0.79102
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.44061,0.44388,0.0032737,0.00054587,0.0032669,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.44061,0.4406,-1.2489e-05,7.3154e-06,-5.4523e-06,4,0.12939
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.4406,0.44054,-6.0226e-05,0.00018194,0.00020726,7,0.8501
+spk,Neuropixels spikes,VISp,fs,RS units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.44054,0.44388,0.0033464,0.00048836,0.0033386,12,0.00048828
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,label,ridge,r_true,r_none,7,0.44547,0.44585,0.00037682,0.00040255,0.00049403,6,0.29688
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary,ridge,r_kmsel,r_none,7,0.44547,0.44842,0.0029534,0.0010455,0.0031538,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary (k=16),ridge,r_km16,r_none,7,0.44547,0.44829,0.00282,0.0011591,0.0031538,6,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,shuffled label,ridge,r_e,r_none,7,0.44547,0.44546,-6.0601e-06,6.8385e-06,-9.3701e-06,1,0.21875
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,label - shuffled,ridge,r_true,r_e,7,0.44546,0.44585,0.00038288,0.00039968,0.00050456,6,0.29688
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary - label,ridge,r_kmsel,r_true,7,0.44585,0.44842,0.0025766,0.0006896,0.0024779,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary (k=16) - label,ridge,r_km16,r_true,7,0.44585,0.44829,0.0024432,0.00079581,0.0024779,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,7,0.44547,0.44593,0.00045777,0.0002222,0.00055168,6,0.10938
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,label - k1,ridge,r_true,r_k1,7,0.44593,0.44585,-8.0949e-05,0.00018895,3.7812e-05,4,0.9375
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary - k1,ridge,r_kmsel,r_k1,7,0.44593,0.44842,0.0024956,0.00083625,0.0026021,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,label,ridge (equal weights),r_true,r_k1,7,0.44593,0.44585,-8.0949e-05,0.00018895,3.7812e-05,4,0.9375
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,7,0.44593,0.44842,0.0024956,0.00083625,0.0026021,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,7,0.44593,0.44592,-4.0047e-06,9.5921e-06,-3.6171e-06,3,0.9375
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,7,0.44592,0.44585,-7.6944e-05,0.0001851,5.2567e-05,4,0.9375
+spk,Neuropixels spikes,VISp,fs,RS units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,7,0.44585,0.44842,0.0025766,0.0006896,0.0024779,6,0.03125
+spk,Neuropixels spikes,VISp,fs,RS units,wt,label,ridge,r_true,r_none,29,0.43796,0.43812,0.00016665,0.00036581,0.000997,18,0.53615
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary,ridge,r_kmsel,r_none,29,0.43796,0.44036,0.0024077,0.00063636,0.0024346,26,7.7311e-05
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary (k=16),ridge,r_km16,r_none,29,0.43796,0.44034,0.0023878,0.0006403,0.0025475,26,7.7311e-05
+spk,Neuropixels spikes,VISp,fs,RS units,wt,shuffled label,ridge,r_e,r_none,29,0.43796,0.43795,-9.1703e-06,7.4456e-06,-2.5668e-06,14,0.34668
+spk,Neuropixels spikes,VISp,fs,RS units,wt,label - shuffled,ridge,r_true,r_e,29,0.43795,0.43812,0.00017582,0.00036642,0.0010236,19,0.4812
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary - label,ridge,r_kmsel,r_true,29,0.43812,0.44036,0.002241,0.00049432,0.0026914,27,8.8364e-06
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary (k=16) - label,ridge,r_km16,r_true,29,0.43812,0.44034,0.0022211,0.00049835,0.0026914,27,1.0278e-05
+spk,Neuropixels spikes,VISp,fs,RS units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,29,0.43796,0.43831,0.00035881,0.00019928,0.00082028,20,0.075989
+spk,Neuropixels spikes,VISp,fs,RS units,wt,label - k1,ridge,r_true,r_k1,29,0.43831,0.43812,-0.00019216,0.00016761,0.00020287,17,0.62393
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary - k1,ridge,r_kmsel,r_k1,29,0.43831,0.44036,0.0020489,0.00053512,0.0019946,27,4.7006e-05
+spk,Neuropixels spikes,VISp,fs,RS units,wt,label,ridge (equal weights),r_true,r_k1,29,0.43831,0.43812,-0.00019216,0.00016761,0.00020287,17,0.62393
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary,ridge (equal weights),r_kmsel,r_k1,29,0.43831,0.44036,0.0020489,0.00053512,0.0019946,27,4.7006e-05
+spk,Neuropixels spikes,VISp,fs,RS units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,29,0.43831,0.43831,-8.3884e-07,1.1453e-05,-6.2507e-06,12,0.594
+spk,Neuropixels spikes,VISp,fs,RS units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,29,0.43831,0.43812,-0.00019132,0.0001699,0.00020912,17,0.70133
+spk,Neuropixels spikes,VISp,fs,RS units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,29,0.43812,0.44036,0.002241,0.00049432,0.0026914,27,8.8364e-06
+spk,Neuropixels spikes,VIS,tag,all units,all,label,ridge,r_true,r_none,28,0.42944,0.43007,0.00063141,0.00010052,0.00067466,23,4.7684e-06
+spk,Neuropixels spikes,VIS,tag,all units,all,summary,ridge,r_kmsel,r_none,28,0.42944,0.43056,0.0011207,0.00093351,0.0026743,23,0.015633
+spk,Neuropixels spikes,VIS,tag,all units,all,summary (k=16),ridge,r_km16,r_none,28,0.42944,0.43056,0.0011207,0.00093351,0.0026743,23,0.015633
+spk,Neuropixels spikes,VIS,tag,all units,all,shuffled label,ridge,r_e,r_none,28,0.42944,0.42945,1.4004e-05,1.7617e-05,1.324e-05,17,0.46518
+spk,Neuropixels spikes,VIS,tag,all units,all,label - shuffled,ridge,r_true,r_e,28,0.42945,0.43007,0.00061741,9.5651e-05,0.00064042,22,5.6773e-06
+spk,Neuropixels spikes,VIS,tag,all units,all,summary - label,ridge,r_kmsel,r_true,28,0.43007,0.43056,0.00048924,0.00089178,0.0020983,22,0.029833
+spk,Neuropixels spikes,VIS,tag,all units,all,summary (k=16) - label,ridge,r_km16,r_true,28,0.43007,0.43056,0.00048924,0.00089178,0.0020983,22,0.029833
+spk,Neuropixels spikes,VIS,tag,all units,all,k1 (equal weights) - none,ridge,r_k1,r_none,28,0.42944,0.43014,0.00070748,9.6218e-05,0.00071365,25,1.0207e-06
+spk,Neuropixels spikes,VIS,tag,all units,all,label - k1,ridge,r_true,r_k1,28,0.43014,0.43007,-7.6063e-05,3.737e-05,-1.1345e-05,10,0.062814
+spk,Neuropixels spikes,VIS,tag,all units,all,summary - k1,ridge,r_kmsel,r_k1,28,0.43014,0.43056,0.00041318,0.00089236,0.0020124,22,0.033681
+spk,Neuropixels spikes,VIS,tag,all units,all,label,ridge (equal weights),r_true,r_k1,28,0.43014,0.43007,-7.6063e-05,3.737e-05,-1.1345e-05,10,0.062814
+spk,Neuropixels spikes,VIS,tag,all units,all,summary,ridge (equal weights),r_kmsel,r_k1,28,0.43014,0.43056,0.00041318,0.00089236,0.0020124,22,0.033681
+spk,Neuropixels spikes,VIS,tag,all units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,28,0.43014,0.43014,-5.3402e-06,1.0783e-05,-9.693e-06,11,0.18578
+spk,Neuropixels spikes,VIS,tag,all units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,28,0.43014,0.43007,-7.0723e-05,3.101e-05,-1.5819e-05,9,0.042608
+spk,Neuropixels spikes,VIS,tag,all units,all,summary - label,ridge (equal weights),r_kmsel,r_true,28,0.43007,0.43056,0.00048924,0.00089178,0.0020983,22,0.029833
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,label,ridge,r_true,r_none,8,0.42868,0.42957,0.00088328,0.00015124,0.00088442,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42868,0.43102,0.0023362,0.00032436,0.0024839,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42868,0.43102,0.0023362,0.00032436,0.0024839,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42868,0.42875,7.1066e-05,3.7523e-05,5.4371e-05,6,0.14844
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42875,0.42957,0.00081221,0.00012736,0.00090552,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.42957,0.43102,0.0014529,0.00033633,0.0015807,7,0.015625
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.42957,0.43102,0.0014529,0.00033633,0.0015807,7,0.015625
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42868,0.42956,0.00088015,0.00013996,0.00097157,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42956,0.42957,3.1305e-06,5.3202e-05,9.4322e-07,4,0.84375
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42956,0.43102,0.001456,0.00031397,0.0016781,7,0.015625
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42956,0.42957,3.1305e-06,5.3202e-05,9.4322e-07,4,0.84375
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42956,0.43102,0.001456,0.00031397,0.0016781,7,0.015625
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42956,0.4296,3.2707e-05,2.8993e-05,9.302e-06,5,0.46094
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.4296,0.42957,-2.9576e-05,3.3294e-05,-1.5859e-05,3,0.54688
+spk,Neuropixels spikes,VIS,tag,all units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.42957,0.43102,0.0014529,0.00033633,0.0015807,7,0.015625
+spk,Neuropixels spikes,VIS,tag,all units,Sst,label,ridge,r_true,r_none,12,0.42925,0.42979,0.00054122,0.00011577,0.00067257,10,0.0048828
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary,ridge,r_kmsel,r_none,12,0.42925,0.42931,6.6098e-05,0.002075,0.002986,9,0.42383
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.42925,0.42931,6.6098e-05,0.002075,0.002986,9,0.42383
+spk,Neuropixels spikes,VIS,tag,all units,Sst,shuffled label,ridge,r_e,r_none,12,0.42925,0.42922,-2.358e-05,2.5937e-05,-3.6684e-05,5,0.46973
+spk,Neuropixels spikes,VIS,tag,all units,Sst,label - shuffled,ridge,r_true,r_e,12,0.42922,0.42979,0.0005648,0.00012578,0.00064005,9,0.0068359
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.42979,0.42931,-0.00047512,0.0020214,0.0026085,9,0.56934
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.42979,0.42931,-0.00047512,0.0020214,0.0026085,9,0.56934
+spk,Neuropixels spikes,VIS,tag,all units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.42925,0.4299,0.00065123,0.00013373,0.00071365,11,0.0024414
+spk,Neuropixels spikes,VIS,tag,all units,Sst,label - k1,ridge,r_true,r_k1,12,0.4299,0.42979,-0.00011002,4.2211e-05,-3.0943e-05,2,0.0092773
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.4299,0.42931,-0.00058514,0.002021,0.002517,9,0.62207
+spk,Neuropixels spikes,VIS,tag,all units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.4299,0.42979,-0.00011002,4.2211e-05,-3.0943e-05,2,0.0092773
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.4299,0.42931,-0.00058514,0.002021,0.002517,9,0.62207
+spk,Neuropixels spikes,VIS,tag,all units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.4299,0.42988,-1.4695e-05,7.037e-06,-1.9267e-05,3,0.052246
+spk,Neuropixels spikes,VIS,tag,all units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.42988,0.42979,-9.5322e-05,4.0419e-05,-2.7668e-05,2,0.016113
+spk,Neuropixels spikes,VIS,tag,all units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.42979,0.42931,-0.00047512,0.0020214,0.0026085,9,0.56934
+spk,Neuropixels spikes,VIS,tag,all units,Vip,label,ridge,r_true,r_none,8,0.43047,0.43099,0.00051484,0.00026303,0.00061621,5,0.10938
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary,ridge,r_kmsel,r_none,8,0.43047,0.43196,0.001487,0.0010208,0.0023503,6,0.25
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary (k=16),ridge,r_km16,r_none,8,0.43047,0.43196,0.001487,0.0010208,0.0023503,6,0.25
+spk,Neuropixels spikes,VIS,tag,all units,Vip,shuffled label,ridge,r_e,r_none,8,0.43047,0.43049,1.3318e-05,2.0697e-05,2.2121e-05,6,0.38281
+spk,Neuropixels spikes,VIS,tag,all units,Vip,label - shuffled,ridge,r_true,r_e,8,0.43049,0.43099,0.00050153,0.00024913,0.00059409,5,0.10938
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary - label,ridge,r_kmsel,r_true,8,0.43099,0.43196,0.00097214,0.00079158,0.0019513,6,0.3125
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary (k=16) - label,ridge,r_km16,r_true,8,0.43099,0.43196,0.00097214,0.00079158,0.0019513,6,0.3125
+spk,Neuropixels spikes,VIS,tag,all units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43047,0.43109,0.00061917,0.00023914,0.00066803,6,0.039062
+spk,Neuropixels spikes,VIS,tag,all units,Vip,label - k1,ridge,r_true,r_k1,8,0.43109,0.43099,-0.00010433,0.00010279,-4.9713e-07,4,0.54688
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary - k1,ridge,r_kmsel,r_k1,8,0.43109,0.43196,0.00086781,0.00079059,0.0015491,6,0.38281
+spk,Neuropixels spikes,VIS,tag,all units,Vip,label,ridge (equal weights),r_true,r_k1,8,0.43109,0.43099,-0.00010433,0.00010279,-4.9713e-07,4,0.54688
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43109,0.43196,0.00086781,0.00079059,0.0015491,6,0.38281
+spk,Neuropixels spikes,VIS,tag,all units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43109,0.43106,-2.9355e-05,1.745e-05,-1.5108e-05,3,0.14844
+spk,Neuropixels spikes,VIS,tag,all units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43106,0.43099,-7.4972e-05,8.7456e-05,3.9603e-06,4,0.94531
+spk,Neuropixels spikes,VIS,tag,all units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43099,0.43196,0.00097214,0.00079158,0.0019513,6,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,all,label,ridge,r_true,r_none,24,0.43185,0.42895,-0.0028931,0.002809,0.00069144,13,0.70476
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary,ridge,r_kmsel,r_none,24,0.43185,0.43377,0.0019217,0.0013126,0.0021015,18,0.089373
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary (k=16),ridge,r_km16,r_none,24,0.43185,0.43377,0.0019217,0.0013126,0.0021015,18,0.089373
+spk,Neuropixels spikes,VIS,tag,tagged units,all,shuffled label,ridge,r_e,r_none,24,0.43185,0.43182,-3.1502e-05,6.2455e-05,4.1266e-05,15,0.54567
+spk,Neuropixels spikes,VIS,tag,tagged units,all,label - shuffled,ridge,r_true,r_e,24,0.43182,0.42895,-0.0028616,0.0027929,0.00064866,14,0.68399
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary - label,ridge,r_kmsel,r_true,24,0.42895,0.43377,0.0048148,0.0029664,0.0020913,16,0.08392
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary (k=16) - label,ridge,r_km16,r_true,24,0.42895,0.43377,0.0048148,0.0029664,0.0020913,16,0.08392
+spk,Neuropixels spikes,VIS,tag,tagged units,all,k1 (equal weights) - none,ridge,r_k1,r_none,24,0.43185,0.43274,0.00089454,0.00021929,0.00094522,22,0.00037277
+spk,Neuropixels spikes,VIS,tag,tagged units,all,label - k1,ridge,r_true,r_k1,24,0.43274,0.42895,-0.0037877,0.0028964,-5.3545e-05,11,0.25225
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary - k1,ridge,r_kmsel,r_k1,24,0.43274,0.43377,0.0010272,0.0013868,0.0010994,16,0.27682
+spk,Neuropixels spikes,VIS,tag,tagged units,all,label,ridge (equal weights),r_true,r_k1,24,0.43274,0.42895,-0.0037877,0.0028964,-5.3545e-05,11,0.25225
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary,ridge (equal weights),r_kmsel,r_k1,24,0.43274,0.43377,0.0010272,0.0013868,0.0010994,16,0.27682
+spk,Neuropixels spikes,VIS,tag,tagged units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,24,0.43274,0.43273,-1.615e-05,3.4308e-05,4.7509e-07,12,0.66344
+spk,Neuropixels spikes,VIS,tag,tagged units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,24,0.43273,0.42895,-0.0037715,0.0028811,-9.9237e-05,10,0.22919
+spk,Neuropixels spikes,VIS,tag,tagged units,all,summary - label,ridge (equal weights),r_kmsel,r_true,24,0.42895,0.43377,0.0048148,0.0029664,0.0020913,16,0.08392
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,label,ridge,r_true,r_none,6,0.41871,0.42063,0.0019233,0.001283,0.0018796,5,0.21875
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary,ridge,r_kmsel,r_none,6,0.41871,0.42238,0.0036758,0.0032464,0.0012817,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary (k=16),ridge,r_km16,r_none,6,0.41871,0.42238,0.0036758,0.0032464,0.0012817,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,shuffled label,ridge,r_e,r_none,6,0.41871,0.41881,0.00010596,9.7235e-05,9.845e-05,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,label - shuffled,ridge,r_true,r_e,6,0.41881,0.42063,0.0018174,0.0012792,0.0015388,5,0.21875
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary - label,ridge,r_kmsel,r_true,6,0.42063,0.42238,0.0017525,0.0023849,-0.00030325,3,0.84375
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,6,0.42063,0.42238,0.0017525,0.0023849,-0.00030325,3,0.84375
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,6,0.41871,0.41942,0.00071747,0.00022196,0.00055965,6,0.03125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,label - k1,ridge,r_true,r_k1,6,0.41942,0.42063,0.0012059,0.0014204,0.001598,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,6,0.41942,0.42238,0.0029584,0.0032558,0.00034878,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,label,ridge (equal weights),r_true,r_k1,6,0.41942,0.42063,0.0012059,0.0014204,0.001598,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,6,0.41942,0.42238,0.0029584,0.0032558,0.00034878,5,0.3125
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,6,0.41942,0.41948,5.4311e-05,0.00011921,5.55e-05,4,0.6875
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,6,0.41948,0.42063,0.0011515,0.0014216,0.0012562,4,0.4375
+spk,Neuropixels spikes,VIS,tag,tagged units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,6,0.42063,0.42238,0.0017525,0.0023849,-0.00030325,3,0.84375
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,label,ridge,r_true,r_none,12,0.43752,0.43554,-0.0019839,0.0011001,-0.0018497,4,0.10986
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary,ridge,r_kmsel,r_none,12,0.43752,0.43703,-0.00049405,0.0017703,0.0010819,7,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43752,0.43703,-0.00049405,0.0017703,0.0010819,7,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,shuffled label,ridge,r_e,r_none,12,0.43752,0.43738,-0.00014011,0.00010314,-1.6287e-05,6,0.46973
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,label - shuffled,ridge,r_true,r_e,12,0.43738,0.43554,-0.0018438,0.001081,-0.0019457,5,0.12939
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43554,0.43703,0.0014899,0.0023249,0.0016412,7,0.67725
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43554,0.43703,0.0014899,0.0023249,0.0016412,7,0.67725
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43752,0.43861,0.0010908,0.00025033,0.0010599,11,0.0024414
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,label - k1,ridge,r_true,r_k1,12,0.43861,0.43554,-0.0030748,0.0012242,-0.0028914,2,0.020996
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43861,0.43703,-0.0015849,0.0018733,-9.9613e-06,6,0.67725
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43861,0.43554,-0.0030748,0.0012242,-0.0028914,2,0.020996
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43861,0.43703,-0.0015849,0.0018733,-9.9613e-06,6,0.67725
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43861,0.43859,-2.9497e-05,2.2682e-05,-1.6281e-05,5,0.33936
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43859,0.43554,-0.0030453,0.0012227,-0.002879,2,0.020996
+spk,Neuropixels spikes,VIS,tag,tagged units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43554,0.43703,0.0014899,0.0023249,0.0016412,7,0.67725
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,label,ridge,r_true,r_none,6,0.43364,0.42411,-0.0095279,0.011155,0.0017732,4,0.84375
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary,ridge,r_kmsel,r_none,6,0.43364,0.43864,0.0049991,0.00159,0.0035346,6,0.03125
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary (k=16),ridge,r_km16,r_none,6,0.43364,0.43864,0.0049991,0.00159,0.0035346,6,0.03125
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,shuffled label,ridge,r_e,r_none,6,0.43364,0.43369,4.8239e-05,7.5744e-05,0.00010762,4,0.5625
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,label - shuffled,ridge,r_true,r_e,6,0.43369,0.42411,-0.0095761,0.011088,0.0016213,4,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary - label,ridge,r_kmsel,r_true,6,0.42411,0.43864,0.014527,0.010357,0.0048306,6,0.03125
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary (k=16) - label,ridge,r_km16,r_true,6,0.42411,0.43864,0.014527,0.010357,0.0048306,6,0.03125
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,6,0.43364,0.43432,0.00067899,0.00072719,0.00098895,5,0.4375
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,label - k1,ridge,r_true,r_k1,6,0.43432,0.42411,-0.010207,0.011503,0.00043557,4,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary - k1,ridge,r_kmsel,r_k1,6,0.43432,0.43864,0.0043201,0.0019245,0.0027073,5,0.0625
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,label,ridge (equal weights),r_true,r_k1,6,0.43432,0.42411,-0.010207,0.011503,0.00043557,4,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,6,0.43432,0.43864,0.0043201,0.0019245,0.0027073,5,0.0625
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,6,0.43432,0.43426,-5.9918e-05,6.1109e-05,2.0185e-06,3,0.84375
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,6,0.43426,0.42411,-0.010147,0.011443,0.00040748,4,1
+spk,Neuropixels spikes,VIS,tag,tagged units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,6,0.42411,0.43864,0.014527,0.010357,0.0048306,6,0.03125
+spk,Neuropixels spikes,VIS,tag,untagged units,all,label,ridge,r_true,r_none,28,0.42961,0.43031,0.00070386,0.00010251,0.00070847,24,1.885e-06
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary,ridge,r_kmsel,r_none,28,0.42961,0.43078,0.0011729,0.00094038,0.0028256,23,0.013624
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary (k=16),ridge,r_km16,r_none,28,0.42961,0.43078,0.0011729,0.00094038,0.0028256,23,0.013624
+spk,Neuropixels spikes,VIS,tag,untagged units,all,shuffled label,ridge,r_e,r_none,28,0.42961,0.42962,1.3677e-05,1.6966e-05,1.4461e-05,17,0.46518
+spk,Neuropixels spikes,VIS,tag,untagged units,all,label - shuffled,ridge,r_true,r_e,28,0.42962,0.43031,0.00069018,0.00010152,0.00075549,23,2.7642e-06
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary - label,ridge,r_kmsel,r_true,28,0.43031,0.43078,0.00046904,0.00089403,0.0020466,22,0.029833
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary (k=16) - label,ridge,r_km16,r_true,28,0.43031,0.43078,0.00046904,0.00089403,0.0020466,22,0.029833
+spk,Neuropixels spikes,VIS,tag,untagged units,all,k1 (equal weights) - none,ridge,r_k1,r_none,28,0.42961,0.43032,0.00071154,9.7839e-05,0.00071176,25,1.0207e-06
+spk,Neuropixels spikes,VIS,tag,untagged units,all,label - k1,ridge,r_true,r_k1,28,0.43032,0.43031,-7.6774e-06,5.9456e-06,-1.7204e-06,13,0.438
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary - k1,ridge,r_kmsel,r_k1,28,0.43032,0.43078,0.00046136,0.00089777,0.002049,22,0.029833
+spk,Neuropixels spikes,VIS,tag,untagged units,all,label,ridge (equal weights),r_true,r_k1,28,0.43032,0.43031,-7.6774e-06,5.9456e-06,-1.7204e-06,13,0.438
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary,ridge (equal weights),r_kmsel,r_k1,28,0.43032,0.43078,0.00046136,0.00089777,0.002049,22,0.029833
+spk,Neuropixels spikes,VIS,tag,untagged units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,28,0.43032,0.43031,-6.068e-06,1.0064e-05,-7.7493e-06,11,0.2098
+spk,Neuropixels spikes,VIS,tag,untagged units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,28,0.43031,0.43031,-1.6093e-06,1.0814e-05,-5.8092e-06,11,0.59792
+spk,Neuropixels spikes,VIS,tag,untagged units,all,summary - label,ridge (equal weights),r_kmsel,r_true,28,0.43031,0.43078,0.00046904,0.00089403,0.0020466,22,0.029833
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,label,ridge,r_true,r_none,8,0.4291,0.43001,0.00090185,0.0001559,0.00099219,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.4291,0.43161,0.0025103,0.00033581,0.0028079,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.4291,0.43161,0.0025103,0.00033581,0.0028079,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.4291,0.42917,6.7251e-05,3.583e-05,5.7295e-05,6,0.14844
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42917,0.43001,0.0008346,0.00014181,0.00094025,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.43001,0.43161,0.0016084,0.00032429,0.0018962,7,0.015625
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.43001,0.43161,0.0016084,0.00032429,0.0018962,7,0.015625
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.4291,0.43001,0.00090413,0.00014984,0.0010029,8,0.0078125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.43001,0.43001,-2.2866e-06,6.9418e-06,-1.0498e-05,3,0.94531
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.43001,0.43161,0.0016061,0.00032251,0.0018857,7,0.015625
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.43001,0.43001,-2.2866e-06,6.9418e-06,-1.0498e-05,3,0.94531
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43001,0.43161,0.0016061,0.00032251,0.0018857,7,0.015625
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43001,0.43004,2.9287e-05,2.6199e-05,9.2955e-06,5,0.3125
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43004,0.43001,-3.1574e-05,2.5095e-05,-2.0394e-05,1,0.14844
+spk,Neuropixels spikes,VIS,tag,untagged units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43001,0.43161,0.0016084,0.00032429,0.0018962,7,0.015625
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,label,ridge,r_true,r_none,12,0.42935,0.42998,0.00063239,0.00014094,0.00070847,10,0.0048828
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary,ridge,r_kmsel,r_none,12,0.42935,0.42943,8.1469e-05,0.0020849,0.0030245,9,0.38037
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.42935,0.42943,8.1469e-05,0.0020849,0.0030245,9,0.38037
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,shuffled label,ridge,r_e,r_none,12,0.42935,0.42933,-2.1756e-05,2.5269e-05,-3.7995e-05,5,0.46973
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,label - shuffled,ridge,r_true,r_e,12,0.42933,0.42998,0.00065414,0.00015333,0.00068438,9,0.0068359
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.42998,0.42943,-0.00055092,0.002022,0.002601,9,0.56934
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.42998,0.42943,-0.00055092,0.002022,0.002601,9,0.56934
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.42935,0.43,0.0006465,0.00013392,0.00071176,11,0.0024414
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,label - k1,ridge,r_true,r_k1,12,0.43,0.42998,-1.4113e-05,1.0452e-05,-4.3739e-06,4,0.30127
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43,0.42943,-0.00056503,0.0020291,0.0026016,9,0.56934
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43,0.42998,-1.4113e-05,1.0452e-05,-4.3739e-06,4,0.30127
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43,0.42943,-0.00056503,0.0020291,0.0026016,9,0.56934
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43,0.42998,-1.4289e-05,7.0587e-06,-1.9427e-05,3,0.052246
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.42998,0.42998,1.7556e-07,1.0646e-05,-2.0964e-06,5,0.90967
+spk,Neuropixels spikes,VIS,tag,untagged units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.42998,0.42943,-0.00055092,0.002022,0.002601,9,0.56934
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,label,ridge,r_true,r_none,8,0.43049,0.4311,0.00061309,0.00025073,0.00066329,6,0.039062
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary,ridge,r_kmsel,r_none,8,0.43049,0.43196,0.0014727,0.0010277,0.0023542,6,0.25
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary (k=16),ridge,r_km16,r_none,8,0.43049,0.43196,0.0014727,0.0010277,0.0023542,6,0.25
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,shuffled label,ridge,r_e,r_none,8,0.43049,0.4305,1.3253e-05,2.0446e-05,2.2032e-05,6,0.38281
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,label - shuffled,ridge,r_true,r_e,8,0.4305,0.4311,0.00059983,0.00024325,0.0007113,6,0.054688
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary - label,ridge,r_kmsel,r_true,8,0.4311,0.43196,0.0008596,0.00078642,0.0015413,6,0.38281
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary (k=16) - label,ridge,r_km16,r_true,8,0.4311,0.43196,0.0008596,0.00078642,0.0015413,6,0.38281
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43049,0.43111,0.0006165,0.00023875,0.00065851,6,0.039062
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,label - k1,ridge,r_true,r_k1,8,0.43111,0.4311,-3.4147e-06,1.2486e-05,7.9668e-06,6,0.74219
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary - k1,ridge,r_kmsel,r_k1,8,0.43111,0.43196,0.00085619,0.00079809,0.0015513,6,0.38281
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,label,ridge (equal weights),r_true,r_k1,8,0.43111,0.4311,-3.4147e-06,1.2486e-05,7.9668e-06,6,0.74219
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43111,0.43196,0.00085619,0.00079809,0.0015513,6,0.38281
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43111,0.43108,-2.9093e-05,1.7165e-05,-1.5149e-05,3,0.14844
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43108,0.4311,2.5678e-05,2.113e-05,1.222e-05,5,0.3125
+spk,Neuropixels spikes,VIS,tag,untagged units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.4311,0.43196,0.0008596,0.00078642,0.0015413,6,0.38281
+spk,Neuropixels spikes,VIS,fs,all units,all,label,ridge,r_true,r_none,58,0.43142,0.43174,0.00031856,0.00010334,0.0003815,43,0.0016922
+spk,Neuropixels spikes,VIS,fs,all units,all,summary,ridge,r_kmsel,r_none,58,0.43142,0.43217,0.0007474,0.00059123,0.0020979,49,0.00024637
+spk,Neuropixels spikes,VIS,fs,all units,all,summary (k=16),ridge,r_km16,r_none,58,0.43142,0.43217,0.0007474,0.00059123,0.0020979,49,0.00024637
+spk,Neuropixels spikes,VIS,fs,all units,all,shuffled label,ridge,r_e,r_none,58,0.43142,0.43142,-3.344e-06,2.3345e-06,-3.9307e-06,21,0.052446
+spk,Neuropixels spikes,VIS,fs,all units,all,label - shuffled,ridge,r_true,r_e,58,0.43142,0.43174,0.0003219,0.00010276,0.00038959,43,0.0014427
+spk,Neuropixels spikes,VIS,fs,all units,all,summary - label,ridge,r_kmsel,r_true,58,0.43174,0.43217,0.00042884,0.00062313,0.0018811,49,0.001014
+spk,Neuropixels spikes,VIS,fs,all units,all,summary (k=16) - label,ridge,r_km16,r_true,58,0.43174,0.43217,0.00042884,0.00062313,0.0018811,49,0.001014
+spk,Neuropixels spikes,VIS,fs,all units,all,k1 (equal weights) - none,ridge,r_k1,r_none,58,0.43142,0.43103,-0.00038912,0.00012975,-9.4183e-05,27,0.020404
+spk,Neuropixels spikes,VIS,fs,all units,all,label - k1,ridge,r_true,r_k1,58,0.43103,0.43174,0.00070768,0.0001598,0.00037192,51,4.9352e-09
+spk,Neuropixels spikes,VIS,fs,all units,all,summary - k1,ridge,r_kmsel,r_k1,58,0.43103,0.43217,0.0011365,0.00052339,0.0021441,51,3.1615e-05
+spk,Neuropixels spikes,VIS,fs,all units,all,label,ridge (equal weights),r_true,r_k1,58,0.43103,0.43174,0.00070768,0.0001598,0.00037192,51,4.9352e-09
+spk,Neuropixels spikes,VIS,fs,all units,all,summary,ridge (equal weights),r_kmsel,r_k1,58,0.43103,0.43217,0.0011365,0.00052339,0.0021441,51,3.1615e-05
+spk,Neuropixels spikes,VIS,fs,all units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,58,0.43103,0.43103,-3.5134e-06,2.5259e-06,-2.8722e-06,21,0.064812
+spk,Neuropixels spikes,VIS,fs,all units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,58,0.43103,0.43174,0.00071119,0.00016032,0.00037148,52,4.2909e-09
+spk,Neuropixels spikes,VIS,fs,all units,all,summary - label,ridge (equal weights),r_kmsel,r_true,58,0.43174,0.43217,0.00042884,0.00062313,0.0018811,49,0.001014
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,label,ridge,r_true,r_none,8,0.43008,0.43015,6.1693e-05,0.00015754,3.8818e-05,5,0.74219
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.43008,0.43122,0.0011314,0.00027808,0.0010787,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.43008,0.43122,0.0011314,0.00027808,0.0010787,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.43008,0.43009,1.2981e-06,3.1631e-06,8.4017e-08,4,0.74219
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.43009,0.43015,6.0394e-05,0.00015912,2.9858e-05,5,0.74219
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.43015,0.43122,0.0010697,0.00023927,0.00067151,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.43015,0.43122,0.0010697,0.00023927,0.00067151,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43008,0.42973,-0.00035717,0.00022989,-0.00024073,4,0.3125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42973,0.43015,0.00041887,0.00012121,0.00040693,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42973,0.43122,0.0014885,0.00022989,0.0015351,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42973,0.43015,0.00041887,0.00012121,0.00040693,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42973,0.43122,0.0014885,0.00022989,0.0015351,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42973,0.42973,2.2375e-06,4.3653e-06,2.0634e-06,5,0.64062
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42973,0.43015,0.00041663,0.00011912,0.00041488,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43015,0.43122,0.0010697,0.00023927,0.00067151,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Sst,label,ridge,r_true,r_none,12,0.43044,0.43088,0.00043874,0.00025512,0.00035642,9,0.10986
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary,ridge,r_kmsel,r_none,12,0.43044,0.42988,-0.00056071,0.0019571,0.0021866,9,0.33936
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43044,0.42988,-0.00056071,0.0019571,0.0021866,9,0.33936
+spk,Neuropixels spikes,VIS,fs,all units,Sst,shuffled label,ridge,r_e,r_none,12,0.43044,0.43043,-7.6294e-06,4.9699e-06,-5.4543e-06,5,0.17627
+spk,Neuropixels spikes,VIS,fs,all units,Sst,label - shuffled,ridge,r_true,r_e,12,0.43043,0.43088,0.00044637,0.00025646,0.00036846,9,0.10986
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43088,0.42988,-0.00099944,0.0021276,0.0018943,9,0.51855
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43088,0.42988,-0.00099944,0.0021276,0.0018943,9,0.51855
+spk,Neuropixels spikes,VIS,fs,all units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43044,0.43006,-0.00038006,0.00024745,-0.0003287,4,0.20361
+spk,Neuropixels spikes,VIS,fs,all units,Sst,label - k1,ridge,r_true,r_k1,12,0.43006,0.43088,0.0008188,0.00036419,0.0001869,11,0.0048828
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43006,0.42988,-0.00018065,0.0018439,0.0020111,9,0.26611
+spk,Neuropixels spikes,VIS,fs,all units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43006,0.43088,0.0008188,0.00036419,0.0001869,11,0.0048828
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43006,0.42988,-0.00018065,0.0018439,0.0020111,9,0.26611
+spk,Neuropixels spikes,VIS,fs,all units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43006,0.43005,-1.0088e-05,5.4159e-06,-5.2055e-06,3,0.12939
+spk,Neuropixels spikes,VIS,fs,all units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43005,0.43088,0.00082889,0.00036852,0.00018435,11,0.0048828
+spk,Neuropixels spikes,VIS,fs,all units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43088,0.42988,-0.00099944,0.0021276,0.0018943,9,0.51855
+spk,Neuropixels spikes,VIS,fs,all units,Vip,label,ridge,r_true,r_none,8,0.43129,0.43166,0.00037344,0.00012507,0.00040553,7,0.039062
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary,ridge,r_kmsel,r_none,8,0.43129,0.43238,0.0010906,0.00093782,0.001914,6,0.25
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary (k=16),ridge,r_km16,r_none,8,0.43129,0.43238,0.0010906,0.00093782,0.001914,6,0.25
+spk,Neuropixels spikes,VIS,fs,all units,Vip,shuffled label,ridge,r_e,r_none,8,0.43129,0.43128,-3.34e-06,3.6405e-06,-5.5844e-06,2,0.38281
+spk,Neuropixels spikes,VIS,fs,all units,Vip,label - shuffled,ridge,r_true,r_e,8,0.43128,0.43166,0.00037678,0.00012221,0.00040981,7,0.023438
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary - label,ridge,r_kmsel,r_true,8,0.43166,0.43238,0.00071721,0.00083586,0.0016096,6,0.25
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary (k=16) - label,ridge,r_km16,r_true,8,0.43166,0.43238,0.00071721,0.00083586,0.0016096,6,0.25
+spk,Neuropixels spikes,VIS,fs,all units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43129,0.43113,-0.00016079,0.00029051,0.00016508,5,0.84375
+spk,Neuropixels spikes,VIS,fs,all units,Vip,label - k1,ridge,r_true,r_k1,8,0.43113,0.43166,0.00053422,0.00019415,0.000309,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary - k1,ridge,r_kmsel,r_k1,8,0.43113,0.43238,0.0012514,0.00065969,0.0018373,7,0.14844
+spk,Neuropixels spikes,VIS,fs,all units,Vip,label,ridge (equal weights),r_true,r_k1,8,0.43113,0.43166,0.00053422,0.00019415,0.000309,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43113,0.43238,0.0012514,0.00065969,0.0018373,7,0.14844
+spk,Neuropixels spikes,VIS,fs,all units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43113,0.43112,-3.4764e-06,2.4768e-06,-3.1328e-06,2,0.19531
+spk,Neuropixels spikes,VIS,fs,all units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43112,0.43166,0.0005377,0.00019377,0.00030593,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,all units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43166,0.43238,0.00071721,0.00083586,0.0016096,6,0.25
+spk,Neuropixels spikes,VIS,fs,all units,wt,label,ridge,r_true,r_none,30,0.43221,0.43253,0.00032435,0.00016512,0.00046934,22,0.044907
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary,ridge,r_kmsel,r_none,30,0.43221,0.43328,0.0010767,0.00080979,0.0025266,26,0.0040318
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary (k=16),ridge,r_km16,r_none,30,0.43221,0.43328,0.0010767,0.00080979,0.0025266,26,0.0040318
+spk,Neuropixels spikes,VIS,fs,all units,wt,shuffled label,ridge,r_e,r_none,30,0.43221,0.4322,-2.8688e-06,3.8737e-06,-4.5176e-06,10,0.15189
+spk,Neuropixels spikes,VIS,fs,all units,wt,label - shuffled,ridge,r_true,r_e,30,0.4322,0.43253,0.00032722,0.00016336,0.00047665,22,0.036435
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary - label,ridge,r_kmsel,r_true,30,0.43253,0.43328,0.00075236,0.0008389,0.0022683,26,0.011303
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary (k=16) - label,ridge,r_km16,r_true,30,0.43253,0.43328,0.00075236,0.0008389,0.0022683,26,0.011303
+spk,Neuropixels spikes,VIS,fs,all units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,30,0.43221,0.43175,-0.00046215,0.00021255,-0.00021989,14,0.11418
+spk,Neuropixels spikes,VIS,fs,all units,wt,label - k1,ridge,r_true,r_k1,30,0.43175,0.43253,0.0007865,0.00026853,0.00037192,24,2.6885e-05
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary - k1,ridge,r_kmsel,r_k1,30,0.43175,0.43328,0.0015389,0.00068038,0.0024387,27,0.0015833
+spk,Neuropixels spikes,VIS,fs,all units,wt,label,ridge (equal weights),r_true,r_k1,30,0.43175,0.43253,0.0007865,0.00026853,0.00037192,24,2.6885e-05
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary,ridge (equal weights),r_kmsel,r_k1,30,0.43175,0.43328,0.0015389,0.00068038,0.0024387,27,0.0015833
+spk,Neuropixels spikes,VIS,fs,all units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,30,0.43175,0.43174,-2.427e-06,4.1512e-06,-2.0665e-06,11,0.22855
+spk,Neuropixels spikes,VIS,fs,all units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,30,0.43174,0.43253,0.00078892,0.00026882,0.00037905,25,3.0495e-05
+spk,Neuropixels spikes,VIS,fs,all units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,30,0.43253,0.43328,0.00075236,0.0008389,0.0022683,26,0.011303
+spk,Neuropixels spikes,VIS,fs,FS units,all,label,ridge,r_true,r_none,58,0.41905,0.42098,0.0019288,0.00037715,0.0012936,43,1.3836e-06
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary,ridge,r_kmsel,r_none,58,0.41905,0.41429,-0.0047554,0.0023848,0.00060306,36,0.6506
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary (k=16),ridge,r_km16,r_none,58,0.41905,0.41429,-0.0047554,0.0023848,0.00060306,36,0.6506
+spk,Neuropixels spikes,VIS,fs,FS units,all,shuffled label,ridge,r_e,r_none,58,0.41905,0.41904,-5.2777e-06,7.0777e-06,-1.1157e-05,23,0.18681
+spk,Neuropixels spikes,VIS,fs,FS units,all,label - shuffled,ridge,r_true,r_e,58,0.41904,0.42098,0.0019341,0.00037817,0.0013181,43,1.4384e-06
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary - label,ridge,r_kmsel,r_true,58,0.42098,0.41429,-0.0066842,0.0025943,-0.00097119,23,0.068254
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary (k=16) - label,ridge,r_km16,r_true,58,0.42098,0.41429,-0.0066842,0.0025943,-0.00097119,23,0.068254
+spk,Neuropixels spikes,VIS,fs,FS units,all,k1 (equal weights) - none,ridge,r_k1,r_none,58,0.41905,0.4167,-0.00235,0.00035159,-0.0017113,6,4.0537e-10
+spk,Neuropixels spikes,VIS,fs,FS units,all,label - k1,ridge,r_true,r_k1,58,0.4167,0.42098,0.0042788,0.00072771,0.0028983,48,1.4174e-08
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary - k1,ridge,r_kmsel,r_k1,58,0.4167,0.41429,-0.0024054,0.0022118,0.0013739,42,0.055336
+spk,Neuropixels spikes,VIS,fs,FS units,all,label,ridge (equal weights),r_true,r_k1,58,0.4167,0.42098,0.0042788,0.00072771,0.0028983,48,1.4174e-08
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary,ridge (equal weights),r_kmsel,r_k1,58,0.4167,0.41429,-0.0024054,0.0022118,0.0013739,42,0.055336
+spk,Neuropixels spikes,VIS,fs,FS units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,58,0.4167,0.41669,-1.116e-05,9.0153e-06,-7.3571e-06,25,0.25025
+spk,Neuropixels spikes,VIS,fs,FS units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,58,0.41669,0.42098,0.00429,0.00073157,0.0029194,49,1.3547e-08
+spk,Neuropixels spikes,VIS,fs,FS units,all,summary - label,ridge (equal weights),r_kmsel,r_true,58,0.42098,0.41429,-0.0066842,0.0025943,-0.00097119,23,0.068254
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,label,ridge,r_true,r_none,8,0.42376,0.42534,0.0015775,0.00056683,0.0014471,7,0.023438
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.42376,0.42397,0.00021137,0.00087118,0.00078523,5,0.74219
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.42376,0.42397,0.00021137,0.00087118,0.00078523,5,0.74219
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.42376,0.42377,9.3109e-06,9.7873e-06,6.6849e-06,5,0.54688
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.42377,0.42534,0.0015682,0.00056387,0.0014509,7,0.039062
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.42534,0.42397,-0.0013661,0.00073309,-0.0016024,2,0.078125
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.42534,0.42397,-0.0013661,0.00073309,-0.0016024,2,0.078125
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.42376,0.42177,-0.0019913,0.00043859,-0.0019718,0,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.42177,0.42534,0.0035689,0.0010027,0.0034648,7,0.015625
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.42177,0.42397,0.0022027,0.0011595,0.0024932,7,0.10938
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.42177,0.42534,0.0035689,0.0010027,0.0034648,7,0.015625
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.42177,0.42397,0.0022027,0.0011595,0.0024932,7,0.10938
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.42177,0.42178,6.8237e-06,1.0367e-05,9.5908e-08,4,0.84375
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.42178,0.42534,0.003562,0.00099853,0.0034788,7,0.015625
+spk,Neuropixels spikes,VIS,fs,FS units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.42534,0.42397,-0.0013661,0.00073309,-0.0016024,2,0.078125
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,label,ridge,r_true,r_none,12,0.41564,0.41761,0.0019756,0.00074605,0.0018153,8,0.026855
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary,ridge,r_kmsel,r_none,12,0.41564,0.40356,-0.01208,0.0086306,0.00049615,8,0.7334
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.41564,0.40356,-0.01208,0.0086306,0.00049615,8,0.7334
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,shuffled label,ridge,r_e,r_none,12,0.41564,0.41562,-1.5633e-05,1.5433e-05,-1.8097e-05,5,0.42383
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,label - shuffled,ridge,r_true,r_e,12,0.41562,0.41761,0.0019912,0.00075451,0.0018158,8,0.026855
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.41761,0.40356,-0.014056,0.0090917,-0.0012097,4,0.30127
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.41761,0.40356,-0.014056,0.0090917,-0.0012097,4,0.30127
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.41564,0.41319,-0.0024452,0.0007102,-0.0020261,1,0.00097656
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,label - k1,ridge,r_true,r_k1,12,0.41319,0.41761,0.0044208,0.0014535,0.0038414,10,0.0048828
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.41319,0.40356,-0.009635,0.0081954,0.001694,9,0.67725
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.41319,0.41761,0.0044208,0.0014535,0.0038414,10,0.0048828
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.41319,0.40356,-0.009635,0.0081954,0.001694,9,0.67725
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.41319,0.41316,-2.8946e-05,2.1316e-05,-7.3571e-06,5,0.38037
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.41316,0.41761,0.0044498,0.0014691,0.0038402,11,0.003418
+spk,Neuropixels spikes,VIS,fs,FS units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.41761,0.40356,-0.014056,0.0090917,-0.0012097,4,0.30127
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,label,ridge,r_true,r_none,8,0.41896,0.42046,0.0014965,0.000741,0.00072478,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary,ridge,r_kmsel,r_none,8,0.41896,0.41441,-0.0045543,0.0021614,-0.0026166,2,0.078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary (k=16),ridge,r_km16,r_none,8,0.41896,0.41441,-0.0045543,0.0021614,-0.0026166,2,0.078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,shuffled label,ridge,r_e,r_none,8,0.41896,0.41895,-1.2802e-05,1.1144e-05,-1.9894e-05,2,0.19531
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,label - shuffled,ridge,r_true,r_e,8,0.41895,0.42046,0.0015093,0.00074794,0.00074468,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary - label,ridge,r_kmsel,r_true,8,0.42046,0.41441,-0.0060508,0.0027867,-0.0029191,1,0.039062
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary (k=16) - label,ridge,r_km16,r_true,8,0.42046,0.41441,-0.0060508,0.0027867,-0.0029191,1,0.039062
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.41896,0.41702,-0.0019462,0.00066987,-0.0011825,0,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,label - k1,ridge,r_true,r_k1,8,0.41702,0.42046,0.0034427,0.0014095,0.0019943,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary - k1,ridge,r_kmsel,r_k1,8,0.41702,0.41441,-0.0026081,0.0016593,-0.0017283,3,0.19531
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,label,ridge (equal weights),r_true,r_k1,8,0.41702,0.42046,0.0034427,0.0014095,0.0019943,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,8,0.41702,0.41441,-0.0026081,0.0016593,-0.0017283,3,0.19531
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.41702,0.417,-1.1796e-05,6.1216e-06,-1.229e-05,1,0.14844
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.417,0.42046,0.0034545,0.0014106,0.0020156,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,FS units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.42046,0.41441,-0.0060508,0.0027867,-0.0029191,1,0.039062
+spk,Neuropixels spikes,VIS,fs,FS units,wt,label,ridge,r_true,r_none,30,0.41918,0.4213,0.002119,0.00062922,0.0014651,20,0.00060841
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary,ridge,r_kmsel,r_none,30,0.41918,0.41598,-0.0032036,0.0029849,0.00093444,21,0.146
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary (k=16),ridge,r_km16,r_none,30,0.41918,0.41598,-0.0032036,0.0029849,0.00093444,21,0.146
+spk,Neuropixels spikes,VIS,fs,FS units,wt,shuffled label,ridge,r_e,r_none,30,0.41918,0.41918,-3.0192e-06,1.1659e-05,-7.7655e-06,11,0.3184
+spk,Neuropixels spikes,VIS,fs,FS units,wt,label - shuffled,ridge,r_true,r_e,30,0.41918,0.4213,0.002122,0.00062964,0.0014998,20,0.00055483
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary - label,ridge,r_kmsel,r_true,30,0.4213,0.41598,-0.0053226,0.0033797,0.00011378,16,0.87121
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary (k=16) - label,ridge,r_km16,r_true,30,0.4213,0.41598,-0.0053226,0.0033797,0.00011378,16,0.87121
+spk,Neuropixels spikes,VIS,fs,FS units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,30,0.41918,0.41666,-0.0025153,0.00059009,-0.0017675,5,3.2391e-06
+spk,Neuropixels spikes,VIS,fs,FS units,wt,label - k1,ridge,r_true,r_k1,30,0.41666,0.4213,0.0046343,0.001218,0.003277,23,6.2866e-05
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary - k1,ridge,r_kmsel,r_k1,30,0.41666,0.41598,-0.0006883,0.0026679,0.0015395,23,0.026229
+spk,Neuropixels spikes,VIS,fs,FS units,wt,label,ridge (equal weights),r_true,r_k1,30,0.41666,0.4213,0.0046343,0.001218,0.003277,23,6.2866e-05
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary,ridge (equal weights),r_kmsel,r_k1,30,0.41666,0.41598,-0.0006883,0.0026679,0.0015395,23,0.026229
+spk,Neuropixels spikes,VIS,fs,FS units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,30,0.41666,0.41666,-8.6726e-06,1.4934e-05,-1.0064e-06,15,0.77657
+spk,Neuropixels spikes,VIS,fs,FS units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,30,0.41666,0.4213,0.004643,0.001224,0.0032913,23,6.2866e-05
+spk,Neuropixels spikes,VIS,fs,FS units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,30,0.4213,0.41598,-0.0053226,0.0033797,0.00011378,16,0.87121
+spk,Neuropixels spikes,VIS,fs,RS units,all,label,ridge,r_true,r_none,58,0.4342,0.4341,-9.4465e-05,0.00012877,0.00012953,33,0.83744
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary,ridge,r_kmsel,r_none,58,0.4342,0.43642,0.0022188,0.00022079,0.0024825,54,5.9423e-09
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary (k=16),ridge,r_km16,r_none,58,0.4342,0.43642,0.0022188,0.00022079,0.0024825,54,5.9423e-09
+spk,Neuropixels spikes,VIS,fs,RS units,all,shuffled label,ridge,r_e,r_none,58,0.4342,0.43419,-3.1646e-06,1.5133e-06,-4.0061e-06,23,0.059395
+spk,Neuropixels spikes,VIS,fs,RS units,all,label - shuffled,ridge,r_true,r_e,58,0.43419,0.4341,-9.1301e-05,0.00012838,0.00013557,33,0.86779
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary - label,ridge,r_kmsel,r_true,58,0.4341,0.43642,0.0023133,0.00016584,0.0022917,55,8.048e-11
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary (k=16) - label,ridge,r_km16,r_true,58,0.4341,0.43642,0.0023133,0.00016584,0.0022917,55,8.048e-11
+spk,Neuropixels spikes,VIS,fs,RS units,all,k1 (equal weights) - none,ridge,r_k1,r_none,58,0.4342,0.43426,6.4772e-05,8.1419e-05,0.00022007,35,0.22268
+spk,Neuropixels spikes,VIS,fs,RS units,all,label - k1,ridge,r_true,r_k1,58,0.43426,0.4341,-0.00015924,4.7461e-05,-6.9023e-05,23,0.0078258
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary - k1,ridge,r_kmsel,r_k1,58,0.43426,0.43642,0.002154,0.00017806,0.002385,55,7.3188e-10
+spk,Neuropixels spikes,VIS,fs,RS units,all,label,ridge (equal weights),r_true,r_k1,58,0.43426,0.4341,-0.00015924,4.7461e-05,-6.9023e-05,23,0.0078258
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary,ridge (equal weights),r_kmsel,r_k1,58,0.43426,0.43642,0.002154,0.00017806,0.002385,55,7.3188e-10
+spk,Neuropixels spikes,VIS,fs,RS units,all,shuffled label,ridge (equal weights),r_e_eq,r_k1,58,0.43426,0.43426,-1.3567e-06,1.4532e-06,-1.3324e-06,26,0.1554
+spk,Neuropixels spikes,VIS,fs,RS units,all,label - shuffled,ridge (equal weights),r_true,r_e_eq,58,0.43426,0.4341,-0.00015788,4.7375e-05,-6.7106e-05,23,0.0098209
+spk,Neuropixels spikes,VIS,fs,RS units,all,summary - label,ridge (equal weights),r_kmsel,r_true,58,0.4341,0.43642,0.0023133,0.00016584,0.0022917,55,8.048e-11
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,label,ridge,r_true,r_none,8,0.43138,0.43113,-0.00024908,0.00029594,-0.00020601,4,0.54688
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary,ridge,r_kmsel,r_none,8,0.43138,0.43273,0.0013418,0.00040066,0.00169,7,0.023438
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary (k=16),ridge,r_km16,r_none,8,0.43138,0.43273,0.0013418,0.00040066,0.00169,7,0.023438
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,shuffled label,ridge,r_e,r_none,8,0.43138,0.43138,-1.0358e-06,3.5082e-06,-1.3009e-06,4,0.74219
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,label - shuffled,ridge,r_true,r_e,8,0.43138,0.43113,-0.00024805,0.00029823,-0.00020163,4,0.54688
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary - label,ridge,r_kmsel,r_true,8,0.43113,0.43273,0.0015909,0.00025629,0.0014721,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary (k=16) - label,ridge,r_km16,r_true,8,0.43113,0.43273,0.0015909,0.00025629,0.0014721,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43138,0.43136,-2.1589e-05,0.00019133,2.2608e-05,4,1
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,label - k1,ridge,r_true,r_k1,8,0.43136,0.43113,-0.00022749,0.00010476,-0.00022861,2,0.10938
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary - k1,ridge,r_kmsel,r_k1,8,0.43136,0.43273,0.0013634,0.00028201,0.001476,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,label,ridge (equal weights),r_true,r_k1,8,0.43136,0.43113,-0.00022749,0.00010476,-0.00022861,2,0.10938
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43136,0.43273,0.0013634,0.00028201,0.001476,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43136,0.43136,8.554e-07,3.8944e-06,1.5955e-06,4,0.84375
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43136,0.43113,-0.00022835,0.00010686,-0.00022558,2,0.10938
+spk,Neuropixels spikes,VIS,fs,RS units,Pvalb,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43113,0.43273,0.0015909,0.00025629,0.0014721,8,0.0078125
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,label,ridge,r_true,r_none,12,0.43355,0.43356,1.1828e-05,0.00026136,0.00014916,7,0.90967
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary,ridge,r_kmsel,r_none,12,0.43355,0.43627,0.0027155,0.00044291,0.0026094,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary (k=16),ridge,r_km16,r_none,12,0.43355,0.43627,0.0027155,0.00044291,0.0026094,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,shuffled label,ridge,r_e,r_none,12,0.43355,0.43355,-4.2042e-06,3.2394e-06,-6.7913e-06,5,0.20361
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,label - shuffled,ridge,r_true,r_e,12,0.43355,0.43356,1.6033e-05,0.00026055,0.00015346,7,0.90967
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary - label,ridge,r_kmsel,r_true,12,0.43356,0.43627,0.0027037,0.00029615,0.0024496,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary (k=16) - label,ridge,r_km16,r_true,12,0.43356,0.43627,0.0027037,0.00029615,0.0024496,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,k1 (equal weights) - none,ridge,r_k1,r_none,12,0.43355,0.43368,0.00013001,0.00016605,0.00021365,7,0.46973
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,label - k1,ridge,r_true,r_k1,12,0.43368,0.43356,-0.00011818,9.5655e-05,-6.4493e-05,5,0.30127
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary - k1,ridge,r_kmsel,r_k1,12,0.43368,0.43627,0.0025855,0.00033481,0.0023636,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,label,ridge (equal weights),r_true,r_k1,12,0.43368,0.43356,-0.00011818,9.5655e-05,-6.4493e-05,5,0.30127
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary,ridge (equal weights),r_kmsel,r_k1,12,0.43368,0.43627,0.0025855,0.00033481,0.0023636,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,shuffled label,ridge (equal weights),r_e_eq,r_k1,12,0.43368,0.43368,-3.196e-06,2.3144e-06,-2.5324e-06,4,0.2334
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,label - shuffled,ridge (equal weights),r_true,r_e_eq,12,0.43368,0.43356,-0.00011498,9.4962e-05,-5.8956e-05,5,0.33936
+spk,Neuropixels spikes,VIS,fs,RS units,Sst,summary - label,ridge (equal weights),r_kmsel,r_true,12,0.43356,0.43627,0.0027037,0.00029615,0.0024496,12,0.00048828
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,label,ridge,r_true,r_none,8,0.43397,0.43408,0.00011324,0.0003078,0.00039366,5,0.54688
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary,ridge,r_kmsel,r_none,8,0.43397,0.43626,0.0022939,0.0007651,0.0026292,7,0.054688
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary (k=16),ridge,r_km16,r_none,8,0.43397,0.43626,0.0022939,0.0007651,0.0026292,7,0.054688
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,shuffled label,ridge,r_e,r_none,8,0.43397,0.43396,-1.7616e-06,2.9989e-06,-2.5718e-06,3,0.64062
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,label - shuffled,ridge,r_true,r_e,8,0.43396,0.43408,0.00011501,0.00030687,0.00039488,5,0.54688
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary - label,ridge,r_kmsel,r_true,8,0.43408,0.43626,0.0021806,0.00052314,0.0023244,7,0.015625
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary (k=16) - label,ridge,r_km16,r_true,8,0.43408,0.43626,0.0021806,0.00052314,0.0023244,7,0.015625
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,k1 (equal weights) - none,ridge,r_k1,r_none,8,0.43397,0.43416,0.00019285,0.00019472,0.00037309,6,0.3125
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,label - k1,ridge,r_true,r_k1,8,0.43416,0.43408,-7.9604e-05,0.00011335,2.057e-05,5,1
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary - k1,ridge,r_kmsel,r_k1,8,0.43416,0.43626,0.002101,0.00060453,0.0022803,7,0.015625
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,label,ridge (equal weights),r_true,r_k1,8,0.43416,0.43408,-7.9604e-05,0.00011335,2.057e-05,5,1
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary,ridge (equal weights),r_kmsel,r_k1,8,0.43416,0.43626,0.002101,0.00060453,0.0022803,7,0.015625
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,shuffled label,ridge (equal weights),r_e_eq,r_k1,8,0.43416,0.43416,-1.8543e-06,1.973e-06,-1.5329e-06,4,0.54688
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,label - shuffled,ridge (equal weights),r_true,r_e_eq,8,0.43416,0.43408,-7.775e-05,0.00011335,2.2103e-05,5,1
+spk,Neuropixels spikes,VIS,fs,RS units,Vip,summary - label,ridge (equal weights),r_kmsel,r_true,8,0.43408,0.43626,0.0021806,0.00052314,0.0023244,7,0.015625
+spk,Neuropixels spikes,VIS,fs,RS units,wt,label,ridge,r_true,r_none,30,0.43527,0.43512,-0.00015114,0.00020008,0.00013059,17,0.77657
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary,ridge,r_kmsel,r_none,30,0.43527,0.4375,0.002234,0.00031133,0.002657,28,1.061e-05
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary (k=16),ridge,r_km16,r_none,30,0.43527,0.4375,0.002234,0.00031133,0.002657,28,1.061e-05
+spk,Neuropixels spikes,VIS,fs,RS units,wt,shuffled label,ridge,r_e,r_none,30,0.43527,0.43526,-3.6905e-06,2.3781e-06,-4.0061e-06,11,0.12935
+spk,Neuropixels spikes,VIS,fs,RS units,wt,label - shuffled,ridge,r_true,r_e,30,0.43526,0.43512,-0.00014745,0.00019913,0.00013557,17,0.76107
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary - label,ridge,r_kmsel,r_true,30,0.43512,0.4375,0.0023851,0.00024923,0.0026218,28,2.6077e-08
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary (k=16) - label,ridge,r_km16,r_true,30,0.43512,0.4375,0.0023851,0.00024923,0.0026218,28,2.6077e-08
+spk,Neuropixels spikes,VIS,fs,RS units,wt,k1 (equal weights) - none,ridge,r_k1,r_none,30,0.43527,0.4353,2.7554e-05,0.00012603,0.00021447,18,0.59781
+spk,Neuropixels spikes,VIS,fs,RS units,wt,label - k1,ridge,r_true,r_k1,30,0.4353,0.43512,-0.00017869,7.4165e-05,-8.2766e-05,11,0.057688
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary - k1,ridge,r_kmsel,r_k1,30,0.4353,0.4375,0.0022065,0.00025767,0.0025801,28,4.7125e-07
+spk,Neuropixels spikes,VIS,fs,RS units,wt,label,ridge (equal weights),r_true,r_k1,30,0.4353,0.43512,-0.00017869,7.4165e-05,-8.2766e-05,11,0.057688
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary,ridge (equal weights),r_kmsel,r_k1,30,0.4353,0.4375,0.0022065,0.00025767,0.0025801,28,4.7125e-07
+spk,Neuropixels spikes,VIS,fs,RS units,wt,shuffled label,ridge (equal weights),r_e_eq,r_k1,30,0.4353,0.43529,-1.0782e-06,2.4266e-06,-1.015e-06,14,0.32847
+spk,Neuropixels spikes,VIS,fs,RS units,wt,label - shuffled,ridge (equal weights),r_true,r_e_eq,30,0.43529,0.43512,-0.00017762,7.3858e-05,-7.7489e-05,11,0.057688
+spk,Neuropixels spikes,VIS,fs,RS units,wt,summary - label,ridge (equal weights),r_kmsel,r_true,30,0.43512,0.4375,0.0023851,0.00024923,0.0026218,28,2.6077e-08

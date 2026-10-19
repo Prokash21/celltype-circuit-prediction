@@ -24,9 +24,12 @@ OUT = m.OUT
 WORK = m.WORK
 DS_NAME = {"spk": "Neuropixels spikes", "c6f": "synthetic GCaMP6f", "c6s": "synthetic GCaMP6s",
            "callen": "synthetic Allen-like (Pvalb 6s, others 6f)", "callen_slow": "synthetic Allen-like, 6s decay 1.5 s"}
-RIDGE = ["r_none", "r_true", "r_e", "r_k1", "r_km16", "r_kmsel"]
+RIDGE = ["r_none", "r_true", "r_e", "r_e_eq", "r_k1", "r_km16", "r_kmsel"]
 MLPV = ["m_none", "m_true", "m_m3", "m_cont"]
-KIND = {"m1": "m_none", "m2": "m_true", "m3": "m_m3", "cont": "m_cont"}
+MLPU = ["m_none_u", "m_true_u", "m_m3_u", "m_cont_u"]
+KIND = {"m1": "m_none", "m2": "m_true", "m3": "m_m3", "cont": "m_cont",
+        "m1u": "m_none_u", "m2u": "m_true_u", "m3u": "m_m3_u", "contu": "m_cont_u"}
+SETS = {"balanced": ["m1", "m2", "m3", "cont"], "uniform": ["m1u", "m2u", "m3u", "contu"]}
 GAINS = [  # (gain, family, a, b)
     ("label", "ridge", "r_true", "r_none"), ("label", "MLP", "m_true", "m_none"),
     ("summary", "ridge", "r_kmsel", "r_none"), ("summary", "MLP", "m_cont", "m_none"),
@@ -37,6 +40,14 @@ GAINS = [  # (gain, family, a, b)
     ("summary (k=16) - label", "ridge", "r_km16", "r_true"),
     ("k1 (equal weights) - none", "ridge", "r_k1", "r_none"),
     ("label - k1", "ridge", "r_true", "r_k1"), ("summary - k1", "ridge", "r_kmsel", "r_k1"),
+    # equal-weight / uniform-sampling design: references without label-balanced training
+    ("label", "ridge (equal weights)", "r_true", "r_k1"), ("summary", "ridge (equal weights)", "r_kmsel", "r_k1"),
+    ("shuffled label", "ridge (equal weights)", "r_e_eq", "r_k1"), ("label - shuffled", "ridge (equal weights)", "r_true", "r_e_eq"),
+    ("summary - label", "ridge (equal weights)", "r_kmsel", "r_true"),
+    ("label", "MLP (uniform)", "m_true_u", "m_none_u"), ("summary", "MLP (uniform)", "m_cont_u", "m_none_u"),
+    ("shuffled label", "MLP (uniform)", "m_m3_u", "m_none_u"), ("label - shuffled", "MLP (uniform)", "m_true_u", "m_m3_u"),
+    ("summary - label", "MLP (uniform)", "m_cont_u", "m_true_u"),
+    ("uniform - balanced, no label", "MLP", "m_none_u", "m_none"),
 ]
 
 
@@ -58,22 +69,24 @@ def neuron_table(ds, scope, ls):
     ns = neu[["session", "unit_id", "probe", "area", "line", "fold", "label", "tagged", "fs", "waveform_duration"]] \
         .merge(r.drop(columns="session"), on="unit_id", how="left", validate="1:1")
     assert ns.sse_copy.notna().all()
-    has_mlp = (d / "mlp_fits.csv").exists()
-    if has_mlp:
+    has_mlp = []
+    if (d / "mlp_fits.csv").exists():
         fits = pd.read_csv(d / "mlp_fits.csv")
-        complete = all(len(fits[(fits.kind == k) & (fits.fold == f)].seed.unique()) == m.N_SEEDS[k]
-                       for k in m.N_SEEDS for f in range(m.N_FOLDS))
-        if complete:
-            for kind, name in KIND.items():
+        for set_, kinds in SETS.items():
+            complete = all(len(fits[(fits.kind == k) & (fits.fold == f)].seed.unique()) == m.N_SEEDS[k]
+                           for k in kinds for f in range(m.N_FOLDS))
+            if not complete:
+                continue
+            has_mlp.append(set_)
+            for kind in kinds:
+                name = KIND[kind]
                 s = pd.read_csv(d / f"mlp_sse_{kind}.csv").drop_duplicates(["fold", "seed", "unit_id"])
                 assert (s.groupby("unit_id").seed.nunique() == m.N_SEEDS[kind]).all()
                 g = s.groupby("unit_id").mean(numeric_only=True)
                 ns[f"sse_{name}"] = ns.unit_id.map(g.sse)
-                if kind == "m2":
+                if kind in ("m2", "m2u"):
                     for c, lab in enumerate(m.LABELSETS[ls]):
-                        ns[f"sse_m2_as_{lab}"] = ns.unit_id.map(g[f"sse_as_{c}"])
-        else:
-            has_mlp = False
+                        ns[f"sse_{kind}_as_{lab}"] = ns.unit_id.map(g[f"sse_as_{c}"])
     ns.insert(0, "labelset", ls)
     ns.insert(0, "scope", scope)
     ns.insert(0, "ds", ds)
@@ -115,8 +128,7 @@ def gain_rows(sc, keys):
 
 def ratio_rows(sc, keys, rng_seed=0):
     rows = []
-    for fam, (lab, summ, none) in {"ridge": ("r_true", "r_kmsel", "r_none"), "MLP": ("m_true", "m_cont", "m_none"),
-                                   "ridge (k=16)": ("r_true", "r_km16", "r_none")}.items():
+    for fam, (lab, summ, none) in RATIO_FAMS.items():
         if summ not in sc or sc[summ].isna().any() or len(sc) < 3:
             continue
         gl, gs = (sc[lab] - sc[none]).to_numpy(), (sc[summ] - sc[none]).to_numpy()
@@ -128,6 +140,11 @@ def ratio_rows(sc, keys, rng_seed=0):
         rows.append(dict(**keys, family=fam, n_sessions=len(gl), gain_label=gl.mean(), gain_summary=gs.mean(),
                          label_over_summary=gl.mean() / gs.mean(), ci_lo=np.percentile(bs, 2.5), ci_hi=np.percentile(bs, 97.5)))
     return rows
+
+
+RATIO_FAMS = {"ridge": ("r_true", "r_kmsel", "r_none"), "MLP": ("m_true", "m_cont", "m_none"),
+              "ridge (k=16)": ("r_true", "r_km16", "r_none"), "ridge (equal weights)": ("r_true", "r_kmsel", "r_k1"),
+              "MLP (uniform)": ("m_true_u", "m_cont_u", "m_none_u")}
 
 
 def subsets(ls):
@@ -153,8 +170,8 @@ def calcium_vs_spikes(sc_all):
             c = g[g.ds == ds].set_index("session")
             if c.empty:
                 continue
-            for fam, (lab, summ, none) in {"ridge": ("r_true", "r_kmsel", "r_none"), "MLP": ("m_true", "m_cont", "m_none")}.items():
-                if c[summ].isna().any() or base[summ].isna().any():
+            for fam, (lab, summ, none) in RATIO_FAMS.items():
+                if summ not in c or summ not in base or c[summ].isna().any() or base[summ].isna().any():
                     continue
                 s_ = base.index.intersection(c.index)
                 gl_s, gs_s = (base[lab] - base[none])[s_].to_numpy(), (base[summ] - base[none])[s_].to_numpy()
@@ -286,7 +303,7 @@ def main():
     for ds, scope, ls in configs():
         ns, has_mlp = neuron_table(ds, scope, ls)
         d = WORK / ds / f"{scope}_{ls}"
-        variants = RIDGE + (MLPV if has_mlp else [])
+        variants = RIDGE + (MLPV if "balanced" in has_mlp else []) + (MLPU if "uniform" in has_mlp else [])
         for c in [c for c in ns.columns if c.startswith("sse_") and c != "sse_copy"]:
             ns[c.replace("sse_", "score_")] = 1 - ns[c] / ns.sse_copy
         nst.append(ns)
@@ -339,7 +356,7 @@ def main():
     for (ds, scope, ls), g in G[(G.subset == "all units") & (G.line == "all")].groupby(["ds", "scope", "labelset"], sort=False):
         r = dict(dataset=DS_NAME[ds], scope=scope, labelset={"tag": "opto-tag (i)", "fs": "FS / RS (ii)"}[ls],
                  units=f"{int(g.n_sessions.iloc[0])} sessions")
-        for fam in ["ridge", "MLP"]:
+        for fam in ["ridge", "MLP", "ridge (equal weights)", "MLP (uniform)"]:
             for gain in ["label", "summary"]:
                 x = g[(g.family == fam) & (g.gain == gain)]
                 r[f"{gain}_{fam}"] = x.gain_mean.iloc[0] if len(x) else np.nan

@@ -1,0 +1,181 @@
+fold,k,val_score,chosen,ds,scope,labelset
+0,b (none),0.450857,False,spk,VISp,tag
+0,"1 (one model, equal weights)",0.451475,False,spk,VISp,tag
+0,2,0.453246,False,spk,VISp,tag
+0,3,0.453364,False,spk,VISp,tag
+0,4,0.454368,False,spk,VISp,tag
+0,6,0.454674,False,spk,VISp,tag
+0,8,0.455302,False,spk,VISp,tag
+0,12,0.455949,False,spk,VISp,tag
+0,16,0.456396,True,spk,VISp,tag
+1,b (none),0.453865,False,spk,VISp,tag
+1,"1 (one model, equal weights)",0.454216,False,spk,VISp,tag
+1,2,0.455629,False,spk,VISp,tag
+1,3,0.455663,False,spk,VISp,tag
+1,4,0.456535,False,spk,VISp,tag
+1,6,0.45666,False,spk,VISp,tag
+1,8,0.457163,False,spk,VISp,tag
+1,12,0.457545,False,spk,VISp,tag
+1,16,0.457824,True,spk,VISp,tag
+2,b (none),0.451666,False,spk,VISp,tag
+2,"1 (one model, equal weights)",0.451835,False,spk,VISp,tag
+2,2,0.453223,False,spk,VISp,tag
+2,3,0.453546,False,spk,VISp,tag
+2,4,0.454818,False,spk,VISp,tag
+2,6,0.455014,False,spk,VISp,tag
+2,8,0.455587,False,spk,VISp,tag
+2,12,0.456284,True,spk,VISp,tag
+2,16,0.456127,False,spk,VISp,tag
+3,b (none),0.449165,False,spk,VISp,tag
+3,"1 (one model, equal weights)",0.450603,False,spk,VISp,tag
+3,2,0.452198,False,spk,VISp,tag
+3,3,0.452446,False,spk,VISp,tag
+3,4,0.453666,False,spk,VISp,tag
+3,6,0.453845,False,spk,VISp,tag
+3,8,0.454316,False,spk,VISp,tag
+3,12,0.454752,False,spk,VISp,tag
+3,16,0.455047,True,spk,VISp,tag
+4,b (none),0.448975,False,spk,VISp,tag
+4,"1 (one model, equal weights)",0.450354,False,spk,VISp,tag
+4,2,0.451825,False,spk,VISp,tag
+4,3,0.451879,False,spk,VISp,tag
+4,4,0.453271,False,spk,VISp,tag
+4,6,0.453238,False,spk,VISp,tag
+4,8,0.45385,False,spk,VISp,tag
+4,12,0.454399,False,spk,VISp,tag
+4,16,0.454449,True,spk,VISp,tag
+0,b (none),0.454705,False,spk,VISp,fs
+0,"1 (one model, equal weights)",0.454395,False,spk,VISp,fs
+0,2,0.456002,False,spk,VISp,fs
+0,3,0.45608,False,spk,VISp,fs
+0,4,0.456898,False,spk,VISp,fs
+0,6,0.457468,False,spk,VISp,fs
+0,8,0.457902,False,spk,VISp,fs
+0,12,0.458482,False,spk,VISp,fs
+0,16,0.458611,True,spk,VISp,fs
+1,b (none),0.455413,False,spk,VISp,fs
+1,"1 (one model, equal weights)",0.455212,False,spk,VISp,fs
+1,2,0.456647,False,spk,VISp,fs
+1,3,0.456712,False,spk,VISp,fs
+1,4,0.457561,False,spk,VISp,fs
+1,6,0.457853,False,spk,VISp,fs
+1,8,0.458173,False,spk,VISp,fs
+1,12,0.458854,True,spk,VISp,fs
+1,16,0.458831,False,spk,VISp,fs
+2,b (none),0.454152,False,spk,VISp,fs
+2,"1 (one model, equal weights)",0.453947,False,spk,VISp,fs
+2,2,0.455439,False,spk,VISp,fs
+2,3,0.455647,False,spk,VISp,fs
+2,4,0.456633,False,spk,VISp,fs
+2,6,0.456969,False,spk,VISp,fs
+2,8,0.457622,False,spk,VISp,fs
+2,12,0.457964,False,spk,VISp,fs
+2,16,0.458051,True,spk,VISp,fs
+3,b (none),0.453345,False,spk,VISp,fs
+3,"1 (one model, equal weights)",0.453063,False,spk,VISp,fs
+3,2,0.454671,False,spk,VISp,fs
+3,3,0.454839,False,spk,VISp,fs
+3,4,0.455882,False,spk,VISp,fs
+3,6,0.456309,False,spk,VISp,fs
+3,8,0.456906,False,spk,VISp,fs
+3,12,0.457025,False,spk,VISp,fs
+3,16,0.457048,True,spk,VISp,fs
+4,b (none),0.453083,False,spk,VISp,fs
+4,"1 (one model, equal weights)",0.452933,False,spk,VISp,fs
+4,2,0.454413,False,spk,VISp,fs
+4,3,0.454566,False,spk,VISp,fs
+4,4,0.455604,False,spk,VISp,fs
+4,6,0.455845,False,spk,VISp,fs
+4,8,0.456568,False,spk,VISp,fs
+4,12,0.456696,False,spk,VISp,fs
+4,16,0.456847,True,spk,VISp,fs
+0,b (none),0.44268,False,spk,VIS,tag
+0,"1 (one model, equal weights)",0.4435,False,spk,VIS,tag
+0,2,0.445011,False,spk,VIS,tag
+0,3,0.445204,False,spk,VIS,tag
+0,4,0.446009,False,spk,VIS,tag
+0,6,0.446243,False,spk,VIS,tag
+0,8,0.44658,False,spk,VIS,tag
+0,12,0.447459,False,spk,VIS,tag
+0,16,0.447733,True,spk,VIS,tag
+1,b (none),0.446391,False,spk,VIS,tag
+1,"1 (one model, equal weights)",0.446611,False,spk,VIS,tag
+1,2,0.447917,False,spk,VIS,tag
+1,3,0.447972,False,spk,VIS,tag
+1,4,0.448702,False,spk,VIS,tag
+1,6,0.448815,False,spk,VIS,tag
+1,8,0.449126,False,spk,VIS,tag
+1,12,0.449902,False,spk,VIS,tag
+1,16,0.450024,True,spk,VIS,tag
+2,b (none),0.443221,False,spk,VIS,tag
+2,"1 (one model, equal weights)",0.443845,False,spk,VIS,tag
+2,2,0.445304,False,spk,VIS,tag
+2,3,0.445549,False,spk,VIS,tag
+2,4,0.446423,False,spk,VIS,tag
+2,6,0.44661,False,spk,VIS,tag
+2,8,0.447026,False,spk,VIS,tag
+2,12,0.44766,False,spk,VIS,tag
+2,16,0.447739,True,spk,VIS,tag
+3,b (none),0.442601,False,spk,VIS,tag
+3,"1 (one model, equal weights)",0.443426,False,spk,VIS,tag
+3,2,0.444902,False,spk,VIS,tag
+3,3,0.445144,False,spk,VIS,tag
+3,4,0.446044,False,spk,VIS,tag
+3,6,0.446217,False,spk,VIS,tag
+3,8,0.446491,False,spk,VIS,tag
+3,12,0.447274,False,spk,VIS,tag
+3,16,0.447521,True,spk,VIS,tag
+4,b (none),0.442363,False,spk,VIS,tag
+4,"1 (one model, equal weights)",0.44341,False,spk,VIS,tag
+4,2,0.444809,False,spk,VIS,tag
+4,3,0.445045,False,spk,VIS,tag
+4,4,0.445895,False,spk,VIS,tag
+4,6,0.446114,False,spk,VIS,tag
+4,8,0.446373,False,spk,VIS,tag
+4,12,0.447253,False,spk,VIS,tag
+4,16,0.447266,True,spk,VIS,tag
+0,b (none),0.445635,False,spk,VIS,fs
+0,"1 (one model, equal weights)",0.445341,False,spk,VIS,fs
+0,2,0.446907,False,spk,VIS,fs
+0,3,0.447081,False,spk,VIS,fs
+0,4,0.447909,False,spk,VIS,fs
+0,6,0.448168,False,spk,VIS,fs
+0,8,0.448393,False,spk,VIS,fs
+0,12,0.449272,False,spk,VIS,fs
+0,16,0.449336,True,spk,VIS,fs
+1,b (none),0.446717,False,spk,VIS,fs
+1,"1 (one model, equal weights)",0.446462,False,spk,VIS,fs
+1,2,0.447999,False,spk,VIS,fs
+1,3,0.4481,False,spk,VIS,fs
+1,4,0.448912,False,spk,VIS,fs
+1,6,0.449099,False,spk,VIS,fs
+1,8,0.449152,False,spk,VIS,fs
+1,12,0.450188,False,spk,VIS,fs
+1,16,0.450222,True,spk,VIS,fs
+2,b (none),0.446161,False,spk,VIS,fs
+2,"1 (one model, equal weights)",0.445888,False,spk,VIS,fs
+2,2,0.447416,False,spk,VIS,fs
+2,3,0.447642,False,spk,VIS,fs
+2,4,0.448507,False,spk,VIS,fs
+2,6,0.448694,False,spk,VIS,fs
+2,8,0.448914,False,spk,VIS,fs
+2,12,0.449606,False,spk,VIS,fs
+2,16,0.449828,True,spk,VIS,fs
+3,b (none),0.445011,False,spk,VIS,fs
+3,"1 (one model, equal weights)",0.4447,False,spk,VIS,fs
+3,2,0.446216,False,spk,VIS,fs
+3,3,0.446406,False,spk,VIS,fs
+3,4,0.447359,False,spk,VIS,fs
+3,6,0.44758,False,spk,VIS,fs
+3,8,0.447783,False,spk,VIS,fs
+3,12,0.44855,False,spk,VIS,fs
+3,16,0.44867,True,spk,VIS,fs
+4,b (none),0.445303,False,spk,VIS,fs
+4,"1 (one model, equal weights)",0.445052,False,spk,VIS,fs
+4,2,0.446612,False,spk,VIS,fs
+4,3,0.446763,False,spk,VIS,fs
+4,4,0.447715,False,spk,VIS,fs
+4,6,0.447954,False,spk,VIS,fs
+4,8,0.448515,False,spk,VIS,fs
+4,12,0.448968,False,spk,VIS,fs
+4,16,0.449125,True,spk,VIS,fs

@@ -61,6 +61,13 @@ early stopping patience 5 on 20,000 val rows per group): m1 none, m2 label FiLM,
 m3 shuffled-label FiLM (5 seeds), cont continuous-summary FiLM (step 13); 3 seeds
 (m2's seeds for cont). 5 leave-sessions-out folds (fold = rank of the session id
 within its genotype, mod 5).
+
+Equal-weight references (added here): the tagged groups are ~3% of the units, so the
+label-balanced no-label models (b, m1) are themselves strongly reweighted towards the
+tagged units. Ridge k1 (one model, equal row weights) and e_eq (shuffled labels,
+equal row weights within each fake group) and the MLP variants m1u / m2u / m3u / contu
+(`mlp <ds> <scope> <ls> uniform`: rows sampled uniformly over all units' windows, val
+loss uniform over rows) give the same comparisons without label-balanced training.
 """
 import json
 import os
@@ -110,8 +117,14 @@ RUN_SCALE = 10.0                    # running speed input = cm/s / 10
 KS = [2, 3, 4, 6, 8, 12, 16]
 K_MAIN = 16
 N_E = 5
-N_SEEDS = {"m1": 3, "m2": 3, "m3": 5, "cont": 3}
-SEED_OFF = {"m1": 0, "m2": 1, "m3": 2, "cont": 1}   # step 9 / 12 formula; cont uses m2's seeds (step 13)
+N_SEEDS = {"m1": 3, "m2": 3, "m3": 5, "cont": 3, "m1u": 3, "m2u": 3, "m3u": 5, "contu": 3}
+SEED_OFF = {"m1": 0, "m2": 1, "m3": 2, "cont": 1,   # step 9 / 12 formula; cont uses m2's seeds (step 13)
+            "m1u": 3, "m2u": 4, "m3u": 5, "contu": 4}
+# "u" variants: the same models trained with uniform row sampling over all units (equal row weights, as
+# ridge k1 / d) instead of label-balanced batches; added because the tagged groups are ~3% of the units,
+# so label-balanced training of the no-label model is itself a large reweighting (see the result file)
+BALANCED_KINDS = ["m1", "m2", "cont", "m3"]
+UNIFORM_KINDS = ["m1u", "m2u", "contu", "m3u"]
 N_BOOT = 2000
 # Opto-tagging (AllenSDK optotagging example / Siegle et al. 2021)
 PULSE = (0.009, 0.02)               # 10 ms square pulses
@@ -701,7 +714,7 @@ def load_grams(ds, neu):
             if key.split("_", 1)[1] in ["SS", "sS", "n"]:
                 per.setdefault(key, []).append(z[k])
             else:
-                G.setdefault(key, []).append(z[k][pos])
+                G.setdefault(key, []).append(z[k][pos].astype(np.float32))  # per-unit statistics in float32
     G = {k: np.concatenate(v) for k, v in G.items()}
     for k, v in per.items():
         G[k] = np.stack(v)
@@ -747,10 +760,69 @@ def cluster(ds, scope, ls):
 
 
 # ---------------------------------------------------------------- ridge (task 2)
+PER_UNIT = ["xx", "xS", "xy", "Sy", "yy", "sx", "sy"]
+
+
+def assemble_chunked(G, si, w, part):
+    """step12_bugeon.assemble with per-unit statistics stored in float32 and the
+    weighted sums accumulated in float64 over chunks of units (memory: the all-area
+    configurations hold ~17k units)."""
+    p = lambda k: G[f"{part}_{k}"]
+    ws = np.bincount(si, w, minlength=len(p("n")))
+    nz = np.where(w != 0)[0]
+    acc = {k: 0.0 for k in PER_UNIT}
+    for a in range(0, len(nz), 2048):
+        ii = nz[a:a + 2048]
+        for k in PER_UNIT:
+            acc[k] = acc[k] + np.tensordot(w[ii], p(k)[ii].astype(np.float64), 1)
+    xS = acc["xS"]
+    XX = np.block([[acc["xx"], xS], [xS.T, np.tensordot(ws, p("SS"), 1)]])
+    XY = np.vstack([acc["xy"], acc["Sy"]])
+    sx = np.concatenate([acc["sx"], ws @ p("sS")])
+    return s12.Gram(ws @ p("n"), sx, acc["sy"], XX, XY), acc["yy"]
+
+
+def val_sse_chunked(G, si, idx, W, b):
+    """step13 val_sse (same formula, per unit, so chunking over units is exact) on
+    float64 copies of the float32 statistics."""
+    out = []
+    for a in range(0, len(idx), 2048):
+        ii = idx[a:a + 2048]
+        sub = {k: (v[ii].astype(np.float64) if k[2:] in PER_UNIT else v) for k, v in G.items() if k.startswith("v_")}
+        out.append(_val_sse_sub(sub, si[ii], W, b))
+    return np.concatenate(out)
+
+
+def _val_sse_sub(v_, s, W, b):
+    v = lambda k: v_[f"v_{k}"]
+    Wx, Ws = W[:P], W[P:]
+    out = (np.einsum("npq,pf,qf->n", v("xx"), Wx, Wx, optimize=True)
+           + 2 * np.einsum("npf,pf->n", v("xS") @ Ws, Wx, optimize=True)
+           + 2 * (v("sx") @ Wx @ b) - 2 * np.einsum("npf,pf->n", v("xy"), Wx, optimize=True)
+           - 2 * np.einsum("nsf,sf->n", v("Sy"), Ws, optimize=True) - 2 * (v("sy") @ b)
+           + np.trace(v("yy"), axis1=1, axis2=2))
+    per_sess = np.array([np.einsum("sf,st,tf->", Ws, SS, Ws) + 2 * sS @ Ws @ b + n * b @ b
+                         for SS, sS, n in zip(v("SS"), v("sS"), v("n"))])
+    return out + per_sess[s]
+
+
+def val_copy_sse_chunked(G, idx):
+    out = []
+    for a in range(0, len(idx), 2048):
+        ii = idx[a:a + 2048]
+        v = lambda k: G[f"v_{k}"][ii].astype(np.float64)
+        out.append(np.trace(v("yy"), axis1=1, axis2=2) - 2 * v("xy")[:, P - 1, :].sum(1) + F * v("xx")[:, P - 1, P - 1])
+    return np.concatenate(out)
+
+
 def ridge(ds, scope, ls):
     neu = neurons(scope, ls)
     d = cdir(ds, scope, ls)
     G = load_grams(ds, neu)
+    for k in list(G):
+        if k[2:] in PER_UNIT:
+            G[k] = G[k].astype(np.float32)
+    s12.assemble, s13.val_sse, s13.val_copy_sse = assemble_chunked, val_sse_chunked, val_copy_sse_chunked
     si = neu.si.to_numpy()
     neu["rows"] = G["f_n"][si] + G["v_n"][si]
     t_arr = neu.t.to_numpy()
@@ -767,6 +839,9 @@ def ridge(ds, scope, ls):
         dm = {c: s12.fit_weighted(G, si, (tr & (t_arr == c)).astype(float)) for c in groups if (tr & (t_arr == c)).any()}
         e = [(fk, {g: s12.fit_weighted(G, si, s12.balanced_weights(neu, tr & (fk == g))) for g in groups
                    if (tr & (fk == g)).any()}) for fk in fakes]
+        # equal-weight shuffled control (one model per fake group, equal row weights, as d / k1)
+        e_eq = [(fk, {g: s12.fit_weighted(G, si, (tr & (fk == g)).astype(float)) for g in groups
+                      if (tr & (fk == g)).any()}) for fk in fakes]
         one = s13.fit_group(G, si, tr.astype(float))
         # k on val (step 13): fit-part cluster models, val score of the training sessions
         itr = np.where(tr)[0]
@@ -804,6 +879,11 @@ def ridge(ds, scope, ls):
                 Pg = {g: err(s12.predict(m[0], m[1], X, S)) for g, m in ms.items()}
                 se.append(np.choose(fk[rr], [Pg.get(g, r["r_none"]) for g in range(len(LABELSETS[ls]))]))
             r["r_e"] = np.mean(se, axis=0)
+            se = []
+            for fk, ms in e_eq:
+                Pg = {g: err(s12.predict(m[0], m[1], X, S)) for g, m in ms.items()}
+                se.append(np.choose(fk[rr], [Pg.get(g, r["r_none"]) for g in range(len(LABELSETS[ls]))]))
+            r["r_e_eq"] = np.mean(se, axis=0)
             r["r_k1"] = err(s12.predict(one["W"], one["b"], X, S))
             for name, kk in [("r_km16", K_MAIN), ("r_kmsel", k_sel)]:
                 lab = CL[k]["lab"][kk][rr]
@@ -866,14 +946,15 @@ def gather(gi, neur, t):
 
 class Sampler:
     """step 12 Sampler: every batch has the same number of rows of each label group;
-    within a group rows are uniform over (unit, window) of the given units."""
+    within a group rows are uniform over (unit, window) of the given units. With
+    uniform=True there is one group (rows uniform over all units' windows)."""
 
-    def __init__(self, rows, part, rng):
+    def __init__(self, rows, part, rng, uniform=False):
         self.rng, self.part = rng, part
         sub = NEU.iloc[rows]
         self.by_type = {}
-        for t in sorted(sub.t.unique()):
-            r = sub[sub.t == t]
+        for t in ([None] if uniform else sorted(sub.t.unique())):
+            r = sub if t is None else sub[sub.t == t]
             w = np.array([len(GRP[gi][part]) for gi in r.gi], float)
             self.by_type[t] = (r.gi.to_numpy(), r.neuron.to_numpy(), r.index.to_numpy(), w / w.sum())
 
@@ -923,24 +1004,27 @@ def run_job(job):
     torch.manual_seed(int(rng.integers(2 ** 31)))
     T = NEU.t.to_numpy()
     nl = int(T.max()) + 1
+    base = kind.rstrip("u")
+    uni = kind.endswith("u")
     lab, cont, n_lab = {"m1": (None, None, 0), "m2": (T, None, nl),
-                        "m3": (fake_labels(NEU, seed) if kind == "m3" else None, None, nl),
-                        "cont": (None, COND[fold], 0)}[kind]
+                        "m3": (fake_labels(NEU, seed) if base == "m3" else None, None, nl),
+                        "cont": (None, COND[fold], 0)}[base]
     model = MLP16(n_lab) if cont is None else Cond16(n_lab, cont.shape[1])
     opt = torch.optim.Adam(model.parameters(), lr=s9.LR)
     tr = np.where(NEU.fold.to_numpy() != fold)[0]
-    smp = Sampler(tr, "fit", rng)
+    smp = Sampler(tr, "fit", rng, uni)
     n_t = len(smp.by_type)
-    xv, yv, rv = Sampler(tr, "val", np.random.default_rng(fold)).draw(s9.N_VAL)
+    # val rows: label-balanced (as step 12) or, for the uniform variants, uniform (same total size)
+    xv, yv, rv = Sampler(tr, "val", np.random.default_rng(fold), uni).draw(s9.N_VAL * (nl if uni else 1))
     xv, yv = torch.from_numpy(xv), torch.from_numpy(yv)
-    v_type = T[rv]
+    v_type = T[rv] if not uni else np.zeros(len(rv), int)
 
     def val_loss():
         model.eval()
         with torch.no_grad():
             err = ((call(model, xv, lab, cont, rv) - yv) ** 2).mean(1).numpy()
         model.train()
-        return float(np.mean([err[v_type == t].mean() for t in smp.by_type]))
+        return float(np.mean([err[v_type == t].mean() for t in np.unique(v_type)]))
 
     best, best_state, bad, hist = val_loss(), None, 0, []
     for ep in range(s9.MAX_EPOCHS):
@@ -963,7 +1047,7 @@ def run_job(job):
     for gi in sorted(NEU[NEU.fold == fold].gi.unique()):
         rows = np.where(NEU.gi.to_numpy() == gi)[0]
         r = dict(unit_id=NEU.unit_id.to_numpy()[rows], sse=forecast(model, gi, lab, cont))
-        if kind == "m2":
+        if base == "m2":
             for c in range(nl):
                 r[f"sse_as_{c}"] = forecast(model, gi, np.full(len(NEU), c), None)
         out.append(pd.DataFrame(r))
@@ -973,15 +1057,16 @@ def run_job(job):
     return dict(job=job, out=out, epochs=len(hist), best_val=best, hist=hist, secs=time.time() - t0)
 
 
-def mlp(ds, scope, ls):
+def mlp(ds, scope, ls, which="balanced"):
     d = cdir(ds, scope, ls)
+    kinds = BALANCED_KINDS if which == "balanced" else UNIFORM_KINDS
     load_mlp(ds, scope, ls)
     fits = d / "mlp_fits.csv"
     have = set()
     if fits.exists():
         fd = pd.read_csv(fits)
         have = set(zip(fd.fold, fd.kind, fd.seed))
-    jobs = [dict(fold=k, kind=kind, seed=seed) for k in range(N_FOLDS) for kind in ["m1", "m2", "cont", "m3"]
+    jobs = [dict(fold=k, kind=kind, seed=seed) for k in range(N_FOLDS) for kind in kinds
             for seed in range(N_SEEDS[kind]) if (k, kind, seed) not in have]
     print(f"{ds} {scope} {ls}: {len(jobs)} MLP fits to run ({len(have)} done), {len(NEU)} units, {N_IN} inputs,"
           f" groups {NEU.label.value_counts().to_dict()}", flush=True)
@@ -1009,8 +1094,10 @@ def main():
         gram(a[1])
     elif ph == "features":
         features(a[1])
-    elif ph in ("cluster", "ridge", "mlp"):
-        {"cluster": cluster, "ridge": ridge, "mlp": mlp}[ph](a[1], a[2], a[3])
+    elif ph in ("cluster", "ridge"):
+        {"cluster": cluster, "ridge": ridge}[ph](a[1], a[2], a[3])
+    elif ph == "mlp":
+        mlp(a[1], a[2], a[3], a[4] if len(a) > 4 else "balanced")
     elif ph == "analyse":
         import step16_analyse
         step16_analyse.main()

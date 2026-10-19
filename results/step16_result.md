@@ -146,7 +146,50 @@ Entries: mean gain (sessions up, Wilcoxon p).
 - **Label ÷ summary ratio (MLP, balanced):** VISp opto-tag 0.53 [0.02, 1.00]. In the other configurations the mean summary gain is ≤ 0, so the ratio is undefined (−0.6 to −2.4, CIs spanning ±5 to ±27; `label_vs_summary.csv`)
 
 #### MLP, uniform row sampling (m1u, m2u, m3u, contu)
-*Running.*
+**Setup:** the same networks, optimiser, epochs, early stopping and seeds (offsets 3 / 4 / 5, contu uses m2u's). Batches are drawn uniformly over all units' windows, and the val loss is uniform over 20,000 × (number of groups) val rows. 4 of 280 fits reached the 40-epoch cap.
+
+| Scope, label set | m1u − m1 (no label: uniform vs balanced) | Label (m2u − m1u) | Summary (contu − m1u) | Shuffled (m3u − m1u) | Label − shuffled | Summary − label |
+|---|---|---|---|---|---|---|
+| VISp, opto-tag (i), 27 | **+0.0040** (25, 7e-8) | +0.0002 (16, 0.29) | +0.0001, median +0.0010 (17, 0.61) | +0.0003 (17, 0.23) | −0.0001 (14, 0.64) | −0.0001, median +0.0006 (14, 0.77) |
+| VISp, FS / RS (ii), 56 | −0.0005 (22, 0.006) | +0.0003 (38, 0.006) | −0.0018, median +0.0007 (31, 0.37) | +0.0004 (35, 0.004) | −0.0001 (33, 0.28) | −0.0021, median +0.0004 (32, 0.64) |
+| all VIS, opto-tag (i), 28 | **+0.0030** (28, 7e-9) | +0.0001 (13, 0.83) | −0.0006, median +0.0002 (14, 0.71) | +0.0003 (19, 0.09) | −0.0002 (11, 0.08) | −0.0007 (14, 0.70) |
+| all VIS, FS / RS (ii), 58 | −0.0002 (27, 0.66) | +0.0005 (41, 0.005) | −0.0019, median −0.0002 (28, 0.36) | +0.0002 (30, 0.23) | +0.0003 (35, 0.07) | −0.0025 (28, 0.09) |
+
+- **Balanced batches were the largest effect in the opto-tag MLPs:** sampling uniformly raises the no-label MLP by +0.004 (VISp) and +0.003 (all VIS) in all but 2 of 55 sessions. That is more than any label or summary gain. Uniform m1u (0.441 in VISp) is the best spike model of this step
+- **Opto-tag label:** with uniform sampling it adds nothing: +0.0002 (p 0.29) in VISp and +0.0001 (p 0.83) over all areas. Label − shuffled ≤ 0. For the tagged units themselves it is −0.0040 (3/14 sessions up). This matches the equal-weight ridge
+- **Waveform label:** +0.0003 / +0.0005 (38/56, 41/58 sessions, p ≈ 0.005), concentrated in FS units (+0.0022, 45/56, p 2e-4). It is not clearly above the shuffled FiLM: label − shuffled −0.0001 (p 0.28) in VISp and +0.0003 (p 0.07) over all areas
+- **Continuous summary:** not significant in any configuration. Medians +0.0007 to +0.0010 in VISp; means negative from the same non-stationary units as above. The summary is useful for ridge (+0.0024 over k1 in VISp opto-tag) but adds nothing reliable to a uniformly trained MLP, which already exceeds the best ridge
+- **Label ÷ summary (MLP, uniform):** undefined (summary gain ≈ 0 or < 0): 3.1 [−5.3, 6.7], −0.2 [−4.3, 5.0], −0.2 [−3.8, 3.2], −0.3 [−1.4, −0.05]
+
+#### Task 2 in one paragraph
+On Neuropixels spikes, with types mixed in every recording:
+- **The genetic opto-tag label carries no forecasting information** once the training weights are equal: ridge −0.0001 (9/27 sessions), MLP +0.0002 (p 0.29). The apparent gains with the step 12 label-balanced design (ridge +0.0021, MLP +0.0013) come from reweighting the ~3% tagged units, and a no-label model with equal weights obtains them too
+- **The waveform class (FS / RS) carries a small, reliable amount** for ridge (+0.0010, 48/56) and a marginal amount for the MLP, almost all for FS units
+- **The label-free activity summary beats the opto-tag label for ridge** (summary − label +0.0025, 25/27, p 6e-7), but not for an MLP trained without label balancing, where neither helps
+
+Absolute gains are an order of magnitude smaller than for Allen dF/F, and similar to or smaller than Bugeon's. See the comparison table below.
+
+#### Comparison with Allen and Bugeon (`results/step16/comparison.csv`)
+Mean gain over no label; ratio = label gain ÷ summary gain with 95% bootstrap CI over units (mice / sessions). Allen and Bugeon rows are from step 15 (balanced design: b, m1).
+
+| Dataset | Scope, label | Units | Label, ridge | Summary, ridge | Ratio, ridge | Label, MLP | Summary, MLP | Ratio, MLP |
+|---|---|---|---|---|---|---|---|---|
+| Allen dF/F (10 Hz) | VISp, Cre line | 46 mice | +0.0252 | +0.0473 | 0.53 [0.41, 0.65] | +0.0239 | +0.0436 | 0.55 [0.37, 0.70] |
+| Allen deconvolved A (10 Hz) | VISp, Cre line | 46 mice | +0.0070 | +0.0082 | 0.86 [0.66, 1.15] | +0.0029 | +0.0118 | 0.24 [0.06, 0.39] |
+| Allen deconvolved B (4.3 Hz) | VISp, Cre line | 46 mice | +0.0112 | +0.0107 | 1.05 [0.82, 1.48] | +0.0077 | +0.0200 | 0.39 [0.25, 0.51] |
+| Bugeon (deconvolved, 4.3 Hz) | t-type | 17 sessions | +0.0014 | +0.0133 | 0.11 [−0.07, 0.24] | +0.0018 | +0.0174 | 0.10 [0.08, 0.12] |
+| **Neuropixels spikes**, balanced | VISp, opto-tag | 27 sessions | +0.0021 | +0.0046 | 0.47 [0.37, 0.57] | +0.0013 | +0.0026 | 0.53 [0.02, 1.00] |
+| **Neuropixels spikes**, equal weights / uniform | VISp, opto-tag | 27 sessions | −0.0001 | +0.0024 | **−0.04 [−0.09, 0.02]** | +0.0002 | +0.0001 | undefined (3.1 [−5.3, 6.7]) |
+| Neuropixels spikes, balanced | VISp, FS / RS | 56 sessions | +0.0007 | +0.0002 | undefined (3.5 [−4.5, 5.0]) | +0.0009 | −0.0014 | undefined |
+| Neuropixels spikes, equal weights / uniform | VISp, FS / RS | 56 sessions | +0.0010 | +0.0005 | 2.0 [−10, 6.4] | +0.0003 | −0.0018 | undefined |
+| Neuropixels spikes, balanced | all VIS, opto-tag | 28 sessions | +0.0006 | +0.0011 | 0.56 [−4.5, 4.1] | +0.0022 | −0.0009 | undefined |
+| Neuropixels spikes, equal weights / uniform | all VIS, opto-tag | 28 sessions | −0.0001 | +0.0004 | −0.18 [−1.0, 0.95] | +0.0001 | −0.0006 | undefined |
+| Neuropixels spikes, balanced | all VIS, FS / RS | 58 sessions | +0.0003 | +0.0007 | 0.43 [−3.5, 3.6] | +0.0010 | −0.0007 | undefined |
+| Neuropixels spikes, equal weights / uniform | all VIS, FS / RS | 58 sessions | +0.0007 | +0.0011 | 0.62 [0.15, 3.5] | +0.0005 | −0.0019 | undefined |
+
+- **With the same balanced design as Allen / Bugeon,** the VISp opto-tag ratio (0.47 ridge, 0.53 MLP) looks Allen-like. But here that design produces a label gain that an unlabelled equal-weight model matches. With equal weights the ratio is −0.04 [−0.09, 0.02], at or below Bugeon's 0.10–0.11
+- **The Allen result does not have this problem:** in Allen dF/F the equal-weight k1 scored *below* the balanced b (0.278 vs 0.300, step 15 reproduction table), even though Cux2 holds 88% of the neurons. So reweighting cannot explain the Allen label gain over b. The Allen and Bugeon MLP rows have no uniform-sampling counterpart (see Problems)
+- "undefined": the mean summary gain is ≤ 0 or near 0, so the ratio and its CI are not interpretable
 
 ### Task 3: synthetic calcium from the same spikes (K5, C1)
 *Running.*

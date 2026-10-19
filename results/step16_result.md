@@ -110,8 +110,43 @@ Score with no label: 0.435 (VISp) and 0.429–0.431 (all VIS). Gains over no lab
   - FS / RS: unstable, because the mean ridge summary gain is near zero (outliers above): VISp 3.5 [−4.5, 5.0], equal weights 2.0 [−10, 6.4]; all VIS, equal weights 0.62 [0.15, 3.5]
 - **Precision check (`ridge_precision_check.csv`):** the all-area configurations store the per-unit ridge statistics in float32 (memory), with float64 sums. Rerunning spikes VISp opto-tag this way changes session scores by ≤ 4e-7 and leaves every alpha and k unchanged
 
-#### MLP
-*Running* (balanced batches, then the uniform-sampling variants).
+#### MLP, label-balanced batches (the step 9 / 12 / 13 design; `gains.csv`, `mlp_fits.csv`)
+**Models:**
+- m1: no label
+- m2: label FiLM
+- m3: shuffled-label FiLM, 5 seeds
+- cont: continuous-summary FiLM, using the standardised S vector of the fold
+
+**Settings:** step 9's network (590 → 256 → 256 → 10), Adam 1e-3, batch 1024 with equal rows per label group, 400 batches / epoch, ≤ 40 epochs, patience 5, 20,000 val rows per group, 3 seeds (5 for m3), seeding formula of steps 9 / 12 (cont uses m2's seeds). Epochs: median 11–26 per kind; 2 of 280 fits reached the 40-epoch cap. Score with no label (m1): 0.437 (VISp opto-tag).
+
+| Scope, label set | Label (m2 − m1) | Summary (cont − m1) | Shuffled (m3 − m1) | Label − shuffled | Summary − label |
+|---|---|---|---|---|---|
+| VISp, opto-tag (i), 27 | +0.0013 (20, p 0.07) | **+0.0026** (22, p 7e-4) | +0.0001 (10, 0.90) | +0.0013 (17, 0.07) | +0.0012 (18, 0.07) |
+| VISp, FS / RS (ii), 56 | **+0.0009** (41, 5e-5) | −0.0014, median +0.0011 (36, 0.15) | +0.0004 (30, 0.54) | +0.0005 (41, 4e-4) | −0.0023, median +0.0001 (32, 0.53) |
+| all VIS, opto-tag (i), 28 | +0.0022 (27, 3e-6) | −0.0009, median +0.0007 (16, 0.81) | **+0.0011** (24, 2e-5) | +0.0012 (25, 6e-4) | −0.0032 (9, 0.008) |
+| all VIS, FS / RS (ii), 58 | **+0.0010** (40, 4e-5) | −0.0007, median +0.0009 (36, 0.34) | −0.0001 (25, 0.43) | +0.0011 (50, 9e-8) | −0.0017, median +0.0004 (30, 0.89) |
+
+Entries: mean gain (sessions up, Wilcoxon p).
+
+- **With balanced batches the opto-tag label does not separate cleanly from its shuffled control:**
+  - Over all areas, even the *shuffled* label FiLM beats m1 by +0.0011 (24/28 sessions, p 2e-5)
+  - The no-label m1 is fragile in this design. Its batches and its early-stopping val loss weight each group equally, so 14 Vip, 72 Sst and 133 Pvalb units count as much as 8,000 untagged ones
+  - The equal-weight ridge showed no label information at all. The uniform-sampling MLPs (m1u…contu, running) test this directly
+- **Waveform class gives a small, consistent gain:** +0.0009 / +0.0010 (41/56, 40/58 sessions); label − shuffled +0.0005 / +0.0011. FS units gain most (+0.0019, 47/56 in VISp)
+- **The continuous summary is not robust on held-out sessions:**
+  - Typically it helps: median +0.0007 to +0.0016; +0.0026 in 22/27 VISp opto-tag sessions; RS units +0.0004 to +0.0007
+  - Its validation loss on the training sessions is the lowest of all four models (all-VIS FS/RS: 1.148 vs 1.166 for m1)
+  - But it amplifies the errors of a few non-stationary held-out units, units whose own copy-last score is already very negative (e.g. one VISpm unit goes from −4.3 to −11.6). Those units dominate a few sessions' SSE sums: the worst session loses 0.04–0.10, and the means turn negative in 3 of 4 configurations
+  - So summary − label is positive only for VISp opto-tag (+0.0012, 18/27, p 0.07). For FS / RS the medians are ≈ 0 (+0.0001 / +0.0004) and the means negative
+- **Tagged units only:**
+  - The label FiLM: −0.0060 (5/14 sessions) in VISp; −0.0020 (15/24) over all areas
+  - The summary: +0.0040 (8/14) and −0.0001 (13/24)
+  - Neither is significant, with only 14 / 24 sessions that have tagged units
+- **Per line (VISp opto-tag):** label +0.0022 / +0.0008 / +0.0012 and summary +0.0032 / +0.0024 / +0.0022 for Pvalb / Sst / Vip sessions (no line significant for the label)
+- **Label ÷ summary ratio (MLP, balanced):** VISp opto-tag 0.53 [0.02, 1.00]. In the other configurations the mean summary gain is ≤ 0, so the ratio is undefined (−0.6 to −2.4, CIs spanning ±5 to ±27; `label_vs_summary.csv`)
+
+#### MLP, uniform row sampling (m1u, m2u, m3u, contu)
+*Running.*
 
 ### Task 3: synthetic calcium from the same spikes (K5, C1)
 *Running.*

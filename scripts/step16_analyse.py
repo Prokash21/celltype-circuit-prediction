@@ -149,6 +149,8 @@ RATIO_FAMS = {"ridge": ("r_true", "r_kmsel", "r_none"), "MLP": ("m_true", "m_con
 
 def subsets(ls):
     s = {"all units": None}
+    if ls == "geno":
+        return s
     if ls == "tag":
         s["tagged units"] = lambda d: d.tagged.astype(bool)
         s["untagged units"] = lambda d: ~d.tagged.astype(bool)
@@ -354,7 +356,7 @@ def main():
             r[f"ratio_{fam}"], r[f"ratio_{fam}_lo"], r[f"ratio_{fam}_hi"] = (x.label_over_summary.iloc[0], x.ci_lo.iloc[0], x.ci_hi.iloc[0]) if len(x) else (np.nan,) * 3
         rows.append(r)
     for (ds, scope, ls), g in G[(G.subset == "all units") & (G.line == "all")].groupby(["ds", "scope", "labelset"], sort=False):
-        r = dict(dataset=DS_NAME[ds], scope=scope, labelset={"tag": "opto-tag (i)", "fs": "FS / RS (ii)"}[ls],
+        r = dict(dataset=DS_NAME[ds], scope=scope, labelset={"tag": "opto-tag (i)", "fs": "FS / RS (ii)", "geno": "mouse genotype (recording-level)"}[ls],
                  units=f"{int(g.n_sessions.iloc[0])} sessions")
         for fam in ["ridge", "MLP", "ridge (equal weights)", "MLP (uniform)"]:
             for gain in ["label", "summary"]:

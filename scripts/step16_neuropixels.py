@@ -109,7 +109,11 @@ GENOS = LINES + ["wt"]
 N_FOLDS = 5
 AREAS = ["VISp", "VISl", "VISal", "VISrl", "VISam", "VISpm"]
 SCOPES = {"VISp": ["VISp"], "VIS": AREAS}
-LABELSETS = {"tag": ["Pvalb", "Sst", "Vip", "untagged"], "fs": ["FS", "RS"]}
+LABELSETS = {"tag": ["Pvalb", "Sst", "Vip", "untagged"], "fs": ["FS", "RS"],
+             # added check (task 3, ridge, VISp): a recording-level label like Allen's Cre line, i.e. the
+             # genotype of the mouse, the same for every unit of a session
+             "geno": ["Pvalb mouse", "Sst mouse", "Vip mouse", "wt mouse"]}
+GRAM_DIR = os.environ.get("STEP16_GRAM_DIR", "gram")
 FS_MS = 0.4
 MAX_INVALID = 0.2
 MAX_GAP = 2.0                       # s; gaps between presentations up to this belong to the same block
@@ -526,18 +530,25 @@ def neuron_stats(Z, S_all, starts, idx, chunk=16):
 
 
 def gram_session(args):
-    ds, sid = args
-    out = WORK / ds / "gram" / f"{sid}.npz"
+    ds, sid = args[:2]
+    areas = args[2] if len(args) > 2 else None   # None: every kept unit; else only units in these areas
+    out = WORK / ds / GRAM_DIR / f"{sid}.npz"
     if out.exists():
         return
     b, Ztr, _ = session_arrays(ds, sid)
+    keep = np.ones(len(b["unit_id"]), bool)
+    if areas is not None:
+        lab = pd.read_csv(WORK / "labels.csv", usecols=["unit_id", "area"]).set_index("unit_id").area
+        keep = lab.reindex(b["unit_id"]).isin(areas).to_numpy()
     S = b["Str"].astype(np.float64)
     Z = Ztr.astype(np.float64)
     g = {}
     for p in b["probes"]:
-        idx = np.where(b["unit_probe"] == p)[0]
+        idx = np.where((b["unit_probe"] == p) & keep)[0]
         if not len(idx):
             continue
+        if areas is not None:
+            g[f"{p}|unit_ids"] = b["unit_id"][idx]
         for part, st in [("f", b[f"fit_{p}"]), ("v", b[f"val_{p}"])]:
             for k, v in neuron_stats(Z, S, st, idx).items():
                 g[f"{p}|{part}_{k}"] = v
@@ -546,17 +557,17 @@ def gram_session(args):
                 for k, v in ref.items():
                     new = g[f"{p}|v_{k}"] if np.ndim(v) == 0 or k in ("SS", "sS") else g[f"{p}|v_{k}"][:4]
                     assert np.allclose(new, v, rtol=1e-9, atol=1e-6), (sid, k)
-    (WORK / ds / "gram").mkdir(parents=True, exist_ok=True)
+    (WORK / ds / GRAM_DIR).mkdir(parents=True, exist_ok=True)
     tmp = out.with_suffix(".tmp.npz")
     np.savez(tmp, **g)
     tmp.rename(out)
     print(f"{ds} {sid}: gram", flush=True)
 
 
-def gram(ds):
+def gram(ds, scope=None):
     ids = sessions().query("extracted").id.tolist()
     with Pool(N_WORKERS) as pool:
-        pool.map(gram_session, [(ds, i) for i in ids], chunksize=1)
+        pool.map(gram_session, [(ds, i) + ((SCOPES[scope],) if scope else ()) for i in ids], chunksize=1)
 
 
 # ---------------------------------------------------------------- S summary (step 11 features, Neuropixels stimuli)
@@ -674,6 +685,7 @@ def neurons(scope, ls):
         lab[["unit_id", "area", "line", "fold", "tagged", "fs", "label_tag", "label_fs", "waveform_duration",
              "ratio", "p_wilcoxon", "probe_vertical_position"]], on="unit_id", how="left", validate="1:1")
     neu = neu[neu.area.isin(SCOPES[scope])].reset_index(drop=True)
+    neu["label_geno"] = neu.line + " mouse"
     neu["label"] = neu[f"label_{ls}"]
     neu["t"] = neu.label.map({l: k for k, l in enumerate(LABELSETS[ls])})
     assert neu.t.notna().all()
@@ -691,9 +703,15 @@ def cdir(ds, scope, ls):
 
 
 def fake_labels(neu, seed):
-    """Shuffled-label control: true labels permuted within each session (same counts)."""
+    """Shuffled-label control: true labels permuted within each session (same counts).
+    A recording-level label (the same for every unit of a session, label set "geno")
+    is instead permuted across sessions (same number of sessions per label, as step 8)."""
     rng = np.random.default_rng(seed)
     lab = neu.t.to_numpy().copy()
+    if neu.groupby("session").t.nunique().max() == 1:
+        ses = neu.session.unique()
+        per = dict(zip(ses, rng.permutation(neu.groupby("session", sort=False).t.first().loc[ses].to_numpy())))
+        return neu.session.map(per).to_numpy()
     for s in neu.session.unique():
         m = (neu.session == s).to_numpy()
         lab[m] = rng.permutation(lab[m])
@@ -703,13 +721,14 @@ def fake_labels(neu, seed):
 def load_grams(ds, neu):
     G, per = {}, {}
     for (sid, p), g in neu.groupby(["session", "probe"], sort=False):
-        z = np.load(WORK / ds / "gram" / f"{sid}.npz")
+        z = np.load(WORK / ds / GRAM_DIR / f"{sid}.npz")
         b = np.load(WORK / "spk" / f"{sid}.npz")
         idx_p = np.where(b["unit_probe"] == p)[0]
-        pos = pd.Series(np.arange(len(idx_p)), index=b["unit_id"][idx_p]).loc[g.unit_id].to_numpy()
+        ids_p = z[f"{p}|unit_ids"] if f"{p}|unit_ids" in z.files else b["unit_id"][idx_p]
+        pos = pd.Series(np.arange(len(ids_p)), index=ids_p).loc[g.unit_id].to_numpy()
         for k in z.files:
             pp, key = k.split("|")
-            if pp != p:
+            if pp != p or key == "unit_ids":
                 continue
             if key.split("_", 1)[1] in ["SS", "sS", "n"]:
                 per.setdefault(key, []).append(z[k])
@@ -1091,7 +1110,7 @@ def main():
     elif ph == "bin":
         binning()
     elif ph == "gram":
-        gram(a[1])
+        gram(a[1], a[2] if len(a) > 2 else None)
     elif ph == "features":
         features(a[1])
     elif ph in ("cluster", "ridge"):

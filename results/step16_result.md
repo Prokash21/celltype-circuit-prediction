@@ -192,6 +192,55 @@ Mean gain over no label; ratio = label gain ÷ summary gain with 95% bootstrap C
 - "undefined": the mean summary gain is ≤ 0 or near 0, so the ratio and its CI are not interpretable
 
 ### Task 3: synthetic calcium from the same spikes (K5, C1)
+**Simulation** (`calcium_arrays` in `step16_neuropixels.py`; deterministic, regenerated on demand; not stored):
+- **Clean trace:** each unit's spike train at its native spike times, convolved with a double-exponential kernel exp(−t/τ_decay) − exp(−t/τ_rise), normalised to peak 1 per spike. It is evaluated exactly at 30 Hz frame times (3 frames per 100 ms bin, frame centres), as sums over the spikes, so no binning happens before the kernel. The model is linear: no indicator saturation or supralinearity
+- **Kinetics:**
+
+  | Indicator | τ_rise | τ_decay | Source |
+  |---|---|---|---|
+  | GCaMP6f | 0.050 s | **0.427 s** | decay: median OASIS decay of the step 15 GCaMP6f neurons (Cux2 / Sst / Vip, 3,180) in `results/step15/oasis_params.csv`; rise: approximate value from Chen et al. 2013 |
+  | GCaMP6s | 0.150 s | **0.832 s** | decay: median OASIS decay of the step 15 GCaMP6s (Pvalb, Ai162) neurons, 116; rise: approximate, Chen et al. 2013 |
+  | GCaMP6s, slow (sensitivity) | 0.150 s | 1.5 s | |
+
+- **Noise matched to the Allen 2P SNR:**
+  - Per Allen neuron, SNR = (train-part dF/F variance − sn²) / sn². sn is the OASIS noise estimate at 30 Hz from step 15; the dF/F std is step 10's, both from the train part. Medians: 6f lines 1.80 [IQR 0.66, 5.6], 6s line 1.41 [0.36, 4.7] (`allen_snr.csv`)
+  - Each synthetic unit draws one SNR from the distribution of its indicator, at a quantile fixed by its unit id, so the same quantile is used in every version. White Gaussian noise of variance var(clean train trace) / SNR is added at 30 Hz, with the same noise realisation per unit in every version
+- **Pipeline as Allen (step 5 `load_session`):** z-score at 30 Hz with the train-part mean / std, then 3-frame means → the same 10 Hz bins, windows, splits, stimulus inputs, folds and models as the spikes. The S summary is recomputed from each signal's own train part
+- **Versions:**
+  - `c6f`: all units GCaMP6f
+  - `c6s`: all units GCaMP6s
+  - `callen` (Allen-like): units of Pvalb mice get GCaMP6s, all others GCaMP6f, which mimics the Allen indicator confound (Pvalb = Ai162 / 6s)
+  - `callen_slow`: as callen with the 1.5 s 6s decay
+- **Models:** ridge (b, d, e, e_eq, k1, km) on VISp and all VIS, both label sets. MLP (balanced and uniform designs) on VISp, both label sets
+- **Added check (ridge, VISp):** a recording-level label, the genotype of the mouse (Pvalb / Sst / Vip / wild-type mouse; one label per session, like Allen's Cre line). Its shuffled control permutes the genotypes across sessions (step 8 style). This tests directly whether the simulated indicator recreates a label gain when the label marks the recording
+
+#### Ridge (`gains.csv`, `calcium_vs_spikes.csv`, `label_vs_summary.csv`; plot `step16_calcium.png`)
+Score with no label (b): spikes 0.435, 6f 0.25–0.26, 6s 0.20–0.22, Allen-like 0.24, Allen-like slow 0.23–0.24 (VISp). Copy-last is a stronger baseline on the smooth calcium signals, so all scores are lower, as for Allen dF/F (0.30). Equal-weight design (gains over k1):
+
+| Signal (VISp) | Opto-tag label | Summary | Ratio [95% CI] | FS / RS label | FS / RS summary | FS / RS ratio |
+|---|---|---|---|---|---|---|
+| spikes | −0.0001 (9/27) | +0.0024 (25/27) | −0.04 [−0.09, 0.02] | +0.0010 (48/56) | +0.0005 (50/56) | 2.0 [−10, 6.4] |
+| GCaMP6f | −0.0003 (9/27) | +0.0139 (26/27) | −0.02 | +0.0051 (46/56) | +0.0046 (54/56) | 1.1 |
+| GCaMP6s | −0.0002 (8/27) | +0.0350 (27/27) | −0.01 | +0.0061 (47/56) | +0.0334 (54/56) | 0.18 |
+| Allen-like | +0.0002 (14/27) | +0.0280 (27/27) | +0.01 | +0.0052 (45/56) | +0.0136 (53/56) | 0.38 |
+| Allen-like, 6s 1.5 s | +0.0008 | +0.0434 | +0.02 | +0.0050 | +0.0204 | 0.25 |
+
+All VIS: the opto-tag label stays within −0.0002…+0.0008 and the summary is +0.011 to +0.034. FS / RS label +0.0024…+0.0031, summary +0.008…+0.033.
+
+- **Change from spikes to calcium on the same units** (`calcium_vs_spikes.csv`, paired bootstrap over sessions):
+  - The opto-tag label gain does not change (VISp: 6f −0.0002 [−0.0005, 0.0001]; Allen-like +0.0003 [−0.0003, 0.0009], p 0.47)
+  - Its ratio to the summary stays ≈ 0 (Allen-like +0.007, CI of the change [−0.001, 0.095])
+  - The FS / RS label gain grows ~5× (+0.004 to +0.005, CIs above 0, p ≤ 0.004)
+- **The summary gain grows the most:**
+  - 6f: 6×; 6s: 15×; Allen-like: 12×; slow: 18×
+  - Over b it approaches Allen dF/F's size (+0.047 in step 15): +0.037 with GCaMP6s, +0.046 with the slow Allen-like version
+  - In the Allen-like versions it is largest in the Pvalb mice (+0.061 / +0.11, vs +0.015 / +0.012 in Sst / Vip mice)
+- **So a slow indicator mostly makes per-unit conditioning in general more useful.** The summary captures the per-unit decay (here set by the indicator), not the genetic label
+- **Per line (Allen-like):** the opto-tag label is +0.0012 in Pvalb mice (+0.0031 with the 1.5 s decay) and ≈ 0 in Sst / Vip mice. Tagged and untagged units in a Pvalb mouse share 6s, but the "untagged" model is trained mostly on 6f units of other mice; the tagged-Pvalb model is a 6s model. This is the only place where the per-unit label picks up some indicator, and it is small because tagged units are few
+
+**Recording-level genotype label (added check):** *running.*
+
+#### MLP on synthetic calcium (VISp)
 *Running.*
 
 ## Plots

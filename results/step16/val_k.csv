@@ -179,3 +179,723 @@ fold,k,val_score,chosen,ds,scope,labelset
 4,8,0.448515,False,spk,VIS,fs
 4,12,0.448968,False,spk,VIS,fs
 4,16,0.449125,True,spk,VIS,fs
+0,b (none),0.275857,False,c6f,VISp,tag
+0,"1 (one model, equal weights)",0.277743,False,c6f,VISp,tag
+0,2,0.286959,False,c6f,VISp,tag
+0,3,0.290704,False,c6f,VISp,tag
+0,4,0.292323,False,c6f,VISp,tag
+0,6,0.293808,False,c6f,VISp,tag
+0,8,0.295005,False,c6f,VISp,tag
+0,12,0.297137,False,c6f,VISp,tag
+0,16,0.29802,True,c6f,VISp,tag
+1,b (none),0.272989,False,c6f,VISp,tag
+1,"1 (one model, equal weights)",0.277088,False,c6f,VISp,tag
+1,2,0.285846,False,c6f,VISp,tag
+1,3,0.289511,False,c6f,VISp,tag
+1,4,0.290162,False,c6f,VISp,tag
+1,6,0.292771,False,c6f,VISp,tag
+1,8,0.293794,False,c6f,VISp,tag
+1,12,0.295286,False,c6f,VISp,tag
+1,16,0.295438,True,c6f,VISp,tag
+2,b (none),0.274826,False,c6f,VISp,tag
+2,"1 (one model, equal weights)",0.276635,False,c6f,VISp,tag
+2,2,0.28596,False,c6f,VISp,tag
+2,3,0.289312,False,c6f,VISp,tag
+2,4,0.290661,False,c6f,VISp,tag
+2,6,0.292711,False,c6f,VISp,tag
+2,8,0.294043,False,c6f,VISp,tag
+2,12,0.295481,False,c6f,VISp,tag
+2,16,0.296378,True,c6f,VISp,tag
+3,b (none),0.271726,False,c6f,VISp,tag
+3,"1 (one model, equal weights)",0.275088,False,c6f,VISp,tag
+3,2,0.284576,False,c6f,VISp,tag
+3,3,0.28841,False,c6f,VISp,tag
+3,4,0.290354,False,c6f,VISp,tag
+3,6,0.292399,False,c6f,VISp,tag
+3,8,0.293322,False,c6f,VISp,tag
+3,12,0.295195,False,c6f,VISp,tag
+3,16,0.296354,True,c6f,VISp,tag
+4,b (none),0.271856,False,c6f,VISp,tag
+4,"1 (one model, equal weights)",0.275583,False,c6f,VISp,tag
+4,2,0.285016,False,c6f,VISp,tag
+4,3,0.288053,False,c6f,VISp,tag
+4,4,0.290074,False,c6f,VISp,tag
+4,6,0.292192,False,c6f,VISp,tag
+4,8,0.293251,False,c6f,VISp,tag
+4,12,0.294649,False,c6f,VISp,tag
+4,16,0.296788,True,c6f,VISp,tag
+0,b (none),0.280057,False,c6f,VISp,fs
+0,"1 (one model, equal weights)",0.27892,False,c6f,VISp,fs
+0,2,0.28731,False,c6f,VISp,fs
+0,3,0.290847,False,c6f,VISp,fs
+0,4,0.292682,False,c6f,VISp,fs
+0,6,0.294083,False,c6f,VISp,fs
+0,8,0.294706,False,c6f,VISp,fs
+0,12,0.296176,False,c6f,VISp,fs
+0,16,0.297469,True,c6f,VISp,fs
+1,b (none),0.279286,False,c6f,VISp,fs
+1,"1 (one model, equal weights)",0.278346,False,c6f,VISp,fs
+1,2,0.286704,False,c6f,VISp,fs
+1,3,0.290053,False,c6f,VISp,fs
+1,4,0.291793,False,c6f,VISp,fs
+1,6,0.293191,False,c6f,VISp,fs
+1,8,0.293784,False,c6f,VISp,fs
+1,12,0.295052,False,c6f,VISp,fs
+1,16,0.295631,True,c6f,VISp,fs
+2,b (none),0.279542,False,c6f,VISp,fs
+2,"1 (one model, equal weights)",0.278733,False,c6f,VISp,fs
+2,2,0.287331,False,c6f,VISp,fs
+2,3,0.290578,False,c6f,VISp,fs
+2,4,0.29233,False,c6f,VISp,fs
+2,6,0.294097,False,c6f,VISp,fs
+2,8,0.294664,False,c6f,VISp,fs
+2,12,0.295509,False,c6f,VISp,fs
+2,16,0.297345,True,c6f,VISp,fs
+3,b (none),0.277597,False,c6f,VISp,fs
+3,"1 (one model, equal weights)",0.276474,False,c6f,VISp,fs
+3,2,0.285125,False,c6f,VISp,fs
+3,3,0.288949,False,c6f,VISp,fs
+3,4,0.290097,False,c6f,VISp,fs
+3,6,0.292719,False,c6f,VISp,fs
+3,8,0.293554,False,c6f,VISp,fs
+3,12,0.29472,False,c6f,VISp,fs
+3,16,0.295669,True,c6f,VISp,fs
+4,b (none),0.279031,False,c6f,VISp,fs
+4,"1 (one model, equal weights)",0.278219,False,c6f,VISp,fs
+4,2,0.28689,False,c6f,VISp,fs
+4,3,0.290147,False,c6f,VISp,fs
+4,4,0.291883,False,c6f,VISp,fs
+4,6,0.293672,False,c6f,VISp,fs
+4,8,0.294239,False,c6f,VISp,fs
+4,12,0.296013,False,c6f,VISp,fs
+4,16,0.296777,True,c6f,VISp,fs
+0,b (none),0.26423,False,c6f,VIS,tag
+0,"1 (one model, equal weights)",0.265344,False,c6f,VIS,tag
+0,2,0.274727,False,c6f,VIS,tag
+0,3,0.278496,False,c6f,VIS,tag
+0,4,0.280271,False,c6f,VIS,tag
+0,6,0.281906,False,c6f,VIS,tag
+0,8,0.283133,False,c6f,VIS,tag
+0,12,0.284349,False,c6f,VIS,tag
+0,16,0.285091,True,c6f,VIS,tag
+1,b (none),0.268809,False,c6f,VIS,tag
+1,"1 (one model, equal weights)",0.269347,False,c6f,VIS,tag
+1,2,0.278347,False,c6f,VIS,tag
+1,3,0.281847,False,c6f,VIS,tag
+1,4,0.283347,False,c6f,VIS,tag
+1,6,0.283596,False,c6f,VIS,tag
+1,8,0.285401,False,c6f,VIS,tag
+1,12,0.286877,False,c6f,VIS,tag
+1,16,0.287416,True,c6f,VIS,tag
+2,b (none),0.266238,False,c6f,VIS,tag
+2,"1 (one model, equal weights)",0.266847,False,c6f,VIS,tag
+2,2,0.276186,False,c6f,VIS,tag
+2,3,0.279614,False,c6f,VIS,tag
+2,4,0.281625,False,c6f,VIS,tag
+2,6,0.283054,False,c6f,VIS,tag
+2,8,0.283911,False,c6f,VIS,tag
+2,12,0.285228,False,c6f,VIS,tag
+2,16,0.285592,True,c6f,VIS,tag
+3,b (none),0.265484,False,c6f,VIS,tag
+3,"1 (one model, equal weights)",0.266268,False,c6f,VIS,tag
+3,2,0.275675,False,c6f,VIS,tag
+3,3,0.279367,False,c6f,VIS,tag
+3,4,0.281235,False,c6f,VIS,tag
+3,6,0.282682,False,c6f,VIS,tag
+3,8,0.283806,False,c6f,VIS,tag
+3,12,0.284949,False,c6f,VIS,tag
+3,16,0.28611,True,c6f,VIS,tag
+4,b (none),0.264506,False,c6f,VIS,tag
+4,"1 (one model, equal weights)",0.266099,False,c6f,VIS,tag
+4,2,0.275581,False,c6f,VIS,tag
+4,3,0.278984,False,c6f,VIS,tag
+4,4,0.280862,False,c6f,VIS,tag
+4,6,0.282499,False,c6f,VIS,tag
+4,8,0.283372,False,c6f,VIS,tag
+4,12,0.284825,False,c6f,VIS,tag
+4,16,0.285775,True,c6f,VIS,tag
+0,b (none),0.267581,False,c6f,VIS,fs
+0,"1 (one model, equal weights)",0.266769,False,c6f,VIS,fs
+0,2,0.27568,False,c6f,VIS,fs
+0,3,0.279413,False,c6f,VIS,fs
+0,4,0.281289,False,c6f,VIS,fs
+0,6,0.282952,False,c6f,VIS,fs
+0,8,0.284072,False,c6f,VIS,fs
+0,12,0.285557,False,c6f,VIS,fs
+0,16,0.285884,True,c6f,VIS,fs
+1,b (none),0.269569,False,c6f,VIS,fs
+1,"1 (one model, equal weights)",0.268881,False,c6f,VIS,fs
+1,2,0.277666,False,c6f,VIS,fs
+1,3,0.281343,False,c6f,VIS,fs
+1,4,0.283371,False,c6f,VIS,fs
+1,6,0.284878,False,c6f,VIS,fs
+1,8,0.285711,False,c6f,VIS,fs
+1,12,0.287054,False,c6f,VIS,fs
+1,16,0.287843,True,c6f,VIS,fs
+2,b (none),0.269841,False,c6f,VIS,fs
+2,"1 (one model, equal weights)",0.269188,False,c6f,VIS,fs
+2,2,0.277996,False,c6f,VIS,fs
+2,3,0.281589,False,c6f,VIS,fs
+2,4,0.283664,False,c6f,VIS,fs
+2,6,0.285083,False,c6f,VIS,fs
+2,8,0.28599,False,c6f,VIS,fs
+2,12,0.287272,False,c6f,VIS,fs
+2,16,0.287887,True,c6f,VIS,fs
+3,b (none),0.267176,False,c6f,VIS,fs
+3,"1 (one model, equal weights)",0.266316,False,c6f,VIS,fs
+3,2,0.275269,False,c6f,VIS,fs
+3,3,0.279018,False,c6f,VIS,fs
+3,4,0.280922,False,c6f,VIS,fs
+3,6,0.282557,False,c6f,VIS,fs
+3,8,0.283636,False,c6f,VIS,fs
+3,12,0.285092,False,c6f,VIS,fs
+3,16,0.28573,True,c6f,VIS,fs
+4,b (none),0.268816,False,c6f,VIS,fs
+4,"1 (one model, equal weights)",0.268131,False,c6f,VIS,fs
+4,2,0.27716,False,c6f,VIS,fs
+4,3,0.280876,False,c6f,VIS,fs
+4,4,0.282909,False,c6f,VIS,fs
+4,6,0.284563,False,c6f,VIS,fs
+4,8,0.285446,False,c6f,VIS,fs
+4,12,0.286819,False,c6f,VIS,fs
+4,16,0.287361,True,c6f,VIS,fs
+0,b (none),0.245316,False,c6s,VISp,tag
+0,"1 (one model, equal weights)",0.246458,False,c6s,VISp,tag
+0,2,0.268259,False,c6s,VISp,tag
+0,3,0.275291,False,c6s,VISp,tag
+0,4,0.276417,False,c6s,VISp,tag
+0,6,0.277686,False,c6s,VISp,tag
+0,8,0.279802,False,c6s,VISp,tag
+0,12,0.280792,False,c6s,VISp,tag
+0,16,0.282604,True,c6s,VISp,tag
+1,b (none),0.240054,False,c6s,VISp,tag
+1,"1 (one model, equal weights)",0.244142,False,c6s,VISp,tag
+1,2,0.265352,False,c6s,VISp,tag
+1,3,0.273007,False,c6s,VISp,tag
+1,4,0.273825,False,c6s,VISp,tag
+1,6,0.275132,False,c6s,VISp,tag
+1,8,0.277376,False,c6s,VISp,tag
+1,12,0.278921,False,c6s,VISp,tag
+1,16,0.279134,True,c6s,VISp,tag
+2,b (none),0.244015,False,c6s,VISp,tag
+2,"1 (one model, equal weights)",0.245196,False,c6s,VISp,tag
+2,2,0.267233,False,c6s,VISp,tag
+2,3,0.273887,False,c6s,VISp,tag
+2,4,0.274927,False,c6s,VISp,tag
+2,6,0.277006,False,c6s,VISp,tag
+2,8,0.279094,False,c6s,VISp,tag
+2,12,0.280914,True,c6s,VISp,tag
+2,16,0.280879,False,c6s,VISp,tag
+3,b (none),0.241552,False,c6s,VISp,tag
+3,"1 (one model, equal weights)",0.243865,False,c6s,VISp,tag
+3,2,0.265966,False,c6s,VISp,tag
+3,3,0.273136,False,c6s,VISp,tag
+3,4,0.274134,False,c6s,VISp,tag
+3,6,0.276242,False,c6s,VISp,tag
+3,8,0.277267,False,c6s,VISp,tag
+3,12,0.280511,False,c6s,VISp,tag
+3,16,0.280779,True,c6s,VISp,tag
+4,b (none),0.245631,False,c6s,VISp,tag
+4,"1 (one model, equal weights)",0.248086,False,c6s,VISp,tag
+4,2,0.270144,False,c6s,VISp,tag
+4,3,0.277186,False,c6s,VISp,tag
+4,4,0.27795,False,c6s,VISp,tag
+4,6,0.279648,False,c6s,VISp,tag
+4,8,0.2805,False,c6s,VISp,tag
+4,12,0.282286,False,c6s,VISp,tag
+4,16,0.283205,True,c6s,VISp,tag
+0,b (none),0.24939,False,c6s,VISp,fs
+0,"1 (one model, equal weights)",0.248286,False,c6s,VISp,fs
+0,2,0.268987,False,c6s,VISp,fs
+0,3,0.275544,False,c6s,VISp,fs
+0,4,0.276592,False,c6s,VISp,fs
+0,6,0.277683,False,c6s,VISp,fs
+0,8,0.280311,False,c6s,VISp,fs
+0,12,0.281604,False,c6s,VISp,fs
+0,16,0.282315,True,c6s,VISp,fs
+1,b (none),0.247665,False,c6s,VISp,fs
+1,"1 (one model, equal weights)",0.246681,False,c6s,VISp,fs
+1,2,0.267458,False,c6s,VISp,fs
+1,3,0.274283,False,c6s,VISp,fs
+1,4,0.275044,False,c6s,VISp,fs
+1,6,0.276488,False,c6s,VISp,fs
+1,8,0.278268,False,c6s,VISp,fs
+1,12,0.280584,False,c6s,VISp,fs
+1,16,0.280911,True,c6s,VISp,fs
+2,b (none),0.247999,False,c6s,VISp,fs
+2,"1 (one model, equal weights)",0.247143,False,c6s,VISp,fs
+2,2,0.268176,False,c6s,VISp,fs
+2,3,0.274578,False,c6s,VISp,fs
+2,4,0.275685,False,c6s,VISp,fs
+2,6,0.276981,False,c6s,VISp,fs
+2,8,0.279663,False,c6s,VISp,fs
+2,12,0.281239,False,c6s,VISp,fs
+2,16,0.281813,True,c6s,VISp,fs
+3,b (none),0.246372,False,c6s,VISp,fs
+3,"1 (one model, equal weights)",0.245273,False,c6s,VISp,fs
+3,2,0.266262,False,c6s,VISp,fs
+3,3,0.273064,False,c6s,VISp,fs
+3,4,0.274267,False,c6s,VISp,fs
+3,6,0.27553,False,c6s,VISp,fs
+3,8,0.278396,False,c6s,VISp,fs
+3,12,0.279535,False,c6s,VISp,fs
+3,16,0.279806,True,c6s,VISp,fs
+4,b (none),0.250535,False,c6s,VISp,fs
+4,"1 (one model, equal weights)",0.249648,False,c6s,VISp,fs
+4,2,0.270542,False,c6s,VISp,fs
+4,3,0.277366,False,c6s,VISp,fs
+4,4,0.278295,False,c6s,VISp,fs
+4,6,0.279462,False,c6s,VISp,fs
+4,8,0.280995,False,c6s,VISp,fs
+4,12,0.28366,False,c6s,VISp,fs
+4,16,0.283777,True,c6s,VISp,fs
+0,b (none),0.241165,False,c6s,VIS,tag
+0,"1 (one model, equal weights)",0.24204,False,c6s,VIS,tag
+0,2,0.263651,False,c6s,VIS,tag
+0,3,0.270987,False,c6s,VIS,tag
+0,4,0.272272,False,c6s,VIS,tag
+0,6,0.273736,False,c6s,VIS,tag
+0,8,0.276243,False,c6s,VIS,tag
+0,12,0.277234,False,c6s,VIS,tag
+0,16,0.277438,True,c6s,VIS,tag
+1,b (none),0.243253,False,c6s,VIS,tag
+1,"1 (one model, equal weights)",0.243768,False,c6s,VIS,tag
+1,2,0.265074,False,c6s,VIS,tag
+1,3,0.27219,False,c6s,VIS,tag
+1,4,0.273563,False,c6s,VIS,tag
+1,6,0.274528,False,c6s,VIS,tag
+1,8,0.274844,False,c6s,VIS,tag
+1,12,0.277699,False,c6s,VIS,tag
+1,16,0.278165,True,c6s,VIS,tag
+2,b (none),0.242036,False,c6s,VIS,tag
+2,"1 (one model, equal weights)",0.242338,False,c6s,VIS,tag
+2,2,0.264129,False,c6s,VIS,tag
+2,3,0.270956,False,c6s,VIS,tag
+2,4,0.272399,False,c6s,VIS,tag
+2,6,0.273991,False,c6s,VIS,tag
+2,8,0.27466,False,c6s,VIS,tag
+2,12,0.277338,False,c6s,VIS,tag
+2,16,0.278129,True,c6s,VIS,tag
+3,b (none),0.240638,False,c6s,VIS,tag
+3,"1 (one model, equal weights)",0.241238,False,c6s,VIS,tag
+3,2,0.263131,False,c6s,VIS,tag
+3,3,0.270276,False,c6s,VIS,tag
+3,4,0.271651,False,c6s,VIS,tag
+3,6,0.273211,False,c6s,VIS,tag
+3,8,0.273293,False,c6s,VIS,tag
+3,12,0.276846,False,c6s,VIS,tag
+3,16,0.277185,True,c6s,VIS,tag
+4,b (none),0.241926,False,c6s,VIS,tag
+4,"1 (one model, equal weights)",0.243627,False,c6s,VIS,tag
+4,2,0.265664,False,c6s,VIS,tag
+4,3,0.272797,False,c6s,VIS,tag
+4,4,0.274023,False,c6s,VIS,tag
+4,6,0.275484,False,c6s,VIS,tag
+4,8,0.275787,False,c6s,VIS,tag
+4,12,0.278757,False,c6s,VIS,tag
+4,16,0.278994,True,c6s,VIS,tag
+0,b (none),0.243822,False,c6s,VIS,fs
+0,"1 (one model, equal weights)",0.243183,False,c6s,VIS,fs
+0,2,0.264026,False,c6s,VIS,fs
+0,3,0.271041,False,c6s,VIS,fs
+0,4,0.272596,False,c6s,VIS,fs
+0,6,0.274197,False,c6s,VIS,fs
+0,8,0.276613,False,c6s,VIS,fs
+0,12,0.277407,False,c6s,VIS,fs
+0,16,0.278575,True,c6s,VIS,fs
+1,b (none),0.245333,False,c6s,VIS,fs
+1,"1 (one model, equal weights)",0.244829,False,c6s,VIS,fs
+1,2,0.265694,False,c6s,VIS,fs
+1,3,0.272664,False,c6s,VIS,fs
+1,4,0.274151,False,c6s,VIS,fs
+1,6,0.275731,False,c6s,VIS,fs
+1,8,0.278109,False,c6s,VIS,fs
+1,12,0.278968,False,c6s,VIS,fs
+1,16,0.27926,True,c6s,VIS,fs
+2,b (none),0.246086,False,c6s,VIS,fs
+2,"1 (one model, equal weights)",0.245626,False,c6s,VIS,fs
+2,2,0.266421,False,c6s,VIS,fs
+2,3,0.273197,False,c6s,VIS,fs
+2,4,0.274588,False,c6s,VIS,fs
+2,6,0.276129,False,c6s,VIS,fs
+2,8,0.278313,False,c6s,VIS,fs
+2,12,0.279547,False,c6s,VIS,fs
+2,16,0.279829,True,c6s,VIS,fs
+3,b (none),0.24306,False,c6s,VIS,fs
+3,"1 (one model, equal weights)",0.242462,False,c6s,VIS,fs
+3,2,0.263472,False,c6s,VIS,fs
+3,3,0.270572,False,c6s,VIS,fs
+3,4,0.272091,False,c6s,VIS,fs
+3,6,0.273653,False,c6s,VIS,fs
+3,8,0.275789,False,c6s,VIS,fs
+3,12,0.276911,False,c6s,VIS,fs
+3,16,0.277468,True,c6s,VIS,fs
+4,b (none),0.245617,False,c6s,VIS,fs
+4,"1 (one model, equal weights)",0.245134,False,c6s,VIS,fs
+4,2,0.266354,False,c6s,VIS,fs
+4,3,0.273335,False,c6s,VIS,fs
+4,4,0.274754,False,c6s,VIS,fs
+4,6,0.276376,False,c6s,VIS,fs
+4,8,0.2785,False,c6s,VIS,fs
+4,12,0.279582,False,c6s,VIS,fs
+4,16,0.280182,True,c6s,VIS,fs
+0,b (none),0.263839,False,callen,VISp,tag
+0,"1 (one model, equal weights)",0.265202,False,callen,VISp,tag
+0,2,0.277323,False,callen,VISp,tag
+0,3,0.283127,False,callen,VISp,tag
+0,4,0.286601,False,callen,VISp,tag
+0,6,0.289133,False,callen,VISp,tag
+0,8,0.290791,False,callen,VISp,tag
+0,12,0.292861,False,callen,VISp,tag
+0,16,0.294459,True,callen,VISp,tag
+1,b (none),0.258497,False,callen,VISp,tag
+1,"1 (one model, equal weights)",0.26255,False,callen,VISp,tag
+1,2,0.273701,False,callen,VISp,tag
+1,3,0.280166,False,callen,VISp,tag
+1,4,0.283608,False,callen,VISp,tag
+1,6,0.284712,False,callen,VISp,tag
+1,8,0.28668,False,callen,VISp,tag
+1,12,0.288732,False,callen,VISp,tag
+1,16,0.290761,True,callen,VISp,tag
+2,b (none),0.264185,False,callen,VISp,tag
+2,"1 (one model, equal weights)",0.265785,False,callen,VISp,tag
+2,2,0.277619,False,callen,VISp,tag
+2,3,0.282894,False,callen,VISp,tag
+2,4,0.285816,False,callen,VISp,tag
+2,6,0.288758,False,callen,VISp,tag
+2,8,0.289841,False,callen,VISp,tag
+2,12,0.292293,False,callen,VISp,tag
+2,16,0.293466,True,callen,VISp,tag
+3,b (none),0.259722,False,callen,VISp,tag
+3,"1 (one model, equal weights)",0.261765,False,callen,VISp,tag
+3,2,0.274195,False,callen,VISp,tag
+3,3,0.280872,False,callen,VISp,tag
+3,4,0.284219,False,callen,VISp,tag
+3,6,0.28803,False,callen,VISp,tag
+3,8,0.289449,False,callen,VISp,tag
+3,12,0.291022,False,callen,VISp,tag
+3,16,0.292655,True,callen,VISp,tag
+4,b (none),0.261215,False,callen,VISp,tag
+4,"1 (one model, equal weights)",0.264717,False,callen,VISp,tag
+4,2,0.277097,False,callen,VISp,tag
+4,3,0.282887,False,callen,VISp,tag
+4,4,0.286105,False,callen,VISp,tag
+4,6,0.288124,False,callen,VISp,tag
+4,8,0.289934,False,callen,VISp,tag
+4,12,0.292343,False,callen,VISp,tag
+4,16,0.292676,True,callen,VISp,tag
+0,b (none),0.274093,False,callen,VISp,fs
+0,"1 (one model, equal weights)",0.272617,False,callen,VISp,fs
+0,2,0.282429,False,callen,VISp,fs
+0,3,0.286913,False,callen,VISp,fs
+0,4,0.289228,False,callen,VISp,fs
+0,6,0.289896,False,callen,VISp,fs
+0,8,0.291156,False,callen,VISp,fs
+0,12,0.293946,False,callen,VISp,fs
+0,16,0.294683,True,callen,VISp,fs
+1,b (none),0.272286,False,callen,VISp,fs
+1,"1 (one model, equal weights)",0.270929,False,callen,VISp,fs
+1,2,0.280551,False,callen,VISp,fs
+1,3,0.284917,False,callen,VISp,fs
+1,4,0.287976,False,callen,VISp,fs
+1,6,0.288833,False,callen,VISp,fs
+1,8,0.289538,False,callen,VISp,fs
+1,12,0.291943,False,callen,VISp,fs
+1,16,0.292618,True,callen,VISp,fs
+2,b (none),0.27424,False,callen,VISp,fs
+2,"1 (one model, equal weights)",0.273142,False,callen,VISp,fs
+2,2,0.28297,False,callen,VISp,fs
+2,3,0.287194,False,callen,VISp,fs
+2,4,0.289575,False,callen,VISp,fs
+2,6,0.290395,False,callen,VISp,fs
+2,8,0.29232,False,callen,VISp,fs
+2,12,0.293752,False,callen,VISp,fs
+2,16,0.294462,True,callen,VISp,fs
+3,b (none),0.270846,False,callen,VISp,fs
+3,"1 (one model, equal weights)",0.269324,False,callen,VISp,fs
+3,2,0.279422,False,callen,VISp,fs
+3,3,0.28439,False,callen,VISp,fs
+3,4,0.286695,False,callen,VISp,fs
+3,6,0.288621,False,callen,VISp,fs
+3,8,0.290361,False,callen,VISp,fs
+3,12,0.292292,False,callen,VISp,fs
+3,16,0.293952,True,callen,VISp,fs
+4,b (none),0.273252,False,callen,VISp,fs
+4,"1 (one model, equal weights)",0.271981,False,callen,VISp,fs
+4,2,0.28216,False,callen,VISp,fs
+4,3,0.286759,False,callen,VISp,fs
+4,4,0.28916,False,callen,VISp,fs
+4,6,0.290801,False,callen,VISp,fs
+4,8,0.292117,False,callen,VISp,fs
+4,12,0.294862,False,callen,VISp,fs
+4,16,0.295203,True,callen,VISp,fs
+0,b (none),0.252506,False,callen,VIS,tag
+0,"1 (one model, equal weights)",0.2531,False,callen,VIS,tag
+0,2,0.265295,False,callen,VIS,tag
+0,3,0.271468,False,callen,VIS,tag
+0,4,0.275107,False,callen,VIS,tag
+0,6,0.276996,False,callen,VIS,tag
+0,8,0.278554,False,callen,VIS,tag
+0,12,0.281103,False,callen,VIS,tag
+0,16,0.282284,True,callen,VIS,tag
+1,b (none),0.255688,False,callen,VIS,tag
+1,"1 (one model, equal weights)",0.256068,False,callen,VIS,tag
+1,2,0.267934,False,callen,VIS,tag
+1,3,0.274009,False,callen,VIS,tag
+1,4,0.277307,False,callen,VIS,tag
+1,6,0.279013,False,callen,VIS,tag
+1,8,0.280338,False,callen,VIS,tag
+1,12,0.283092,False,callen,VIS,tag
+1,16,0.283627,True,callen,VIS,tag
+2,b (none),0.255046,False,callen,VIS,tag
+2,"1 (one model, equal weights)",0.255249,False,callen,VIS,tag
+2,2,0.267219,False,callen,VIS,tag
+2,3,0.27282,False,callen,VIS,tag
+2,4,0.276427,False,callen,VIS,tag
+2,6,0.27862,False,callen,VIS,tag
+2,8,0.279584,False,callen,VIS,tag
+2,12,0.282088,False,callen,VIS,tag
+2,16,0.282624,True,callen,VIS,tag
+3,b (none),0.253179,False,callen,VIS,tag
+3,"1 (one model, equal weights)",0.253337,False,callen,VIS,tag
+3,2,0.265644,False,callen,VIS,tag
+3,3,0.27207,False,callen,VIS,tag
+3,4,0.276053,False,callen,VIS,tag
+3,6,0.27853,False,callen,VIS,tag
+3,8,0.279273,False,callen,VIS,tag
+3,12,0.282019,False,callen,VIS,tag
+3,16,0.282707,True,callen,VIS,tag
+4,b (none),0.252868,False,callen,VIS,tag
+4,"1 (one model, equal weights)",0.25439,False,callen,VIS,tag
+4,2,0.266784,False,callen,VIS,tag
+4,3,0.272234,False,callen,VIS,tag
+4,4,0.275828,False,callen,VIS,tag
+4,6,0.278095,False,callen,VIS,tag
+4,8,0.27896,False,callen,VIS,tag
+4,12,0.281689,False,callen,VIS,tag
+4,16,0.282584,True,callen,VIS,tag
+0,b (none),0.261496,False,callen,VIS,fs
+0,"1 (one model, equal weights)",0.260515,False,callen,VIS,fs
+0,2,0.270666,False,callen,VIS,fs
+0,3,0.275504,False,callen,VIS,fs
+0,4,0.278129,False,callen,VIS,fs
+0,6,0.27994,False,callen,VIS,fs
+0,8,0.280819,False,callen,VIS,fs
+0,12,0.2832,False,callen,VIS,fs
+0,16,0.284256,True,callen,VIS,fs
+1,b (none),0.263136,False,callen,VIS,fs
+1,"1 (one model, equal weights)",0.262257,False,callen,VIS,fs
+1,2,0.272358,False,callen,VIS,fs
+1,3,0.277114,False,callen,VIS,fs
+1,4,0.27994,False,callen,VIS,fs
+1,6,0.281439,False,callen,VIS,fs
+1,8,0.28204,False,callen,VIS,fs
+1,12,0.284843,False,callen,VIS,fs
+1,16,0.285499,True,callen,VIS,fs
+2,b (none),0.263946,False,callen,VIS,fs
+2,"1 (one model, equal weights)",0.26315,False,callen,VIS,fs
+2,2,0.27316,False,callen,VIS,fs
+2,3,0.277712,False,callen,VIS,fs
+2,4,0.280397,False,callen,VIS,fs
+2,6,0.281803,False,callen,VIS,fs
+2,8,0.282445,False,callen,VIS,fs
+2,12,0.2853,False,callen,VIS,fs
+2,16,0.286329,True,callen,VIS,fs
+3,b (none),0.26052,False,callen,VIS,fs
+3,"1 (one model, equal weights)",0.25947,False,callen,VIS,fs
+3,2,0.269837,False,callen,VIS,fs
+3,3,0.274786,False,callen,VIS,fs
+3,4,0.277549,False,callen,VIS,fs
+3,6,0.279221,False,callen,VIS,fs
+3,8,0.280637,False,callen,VIS,fs
+3,12,0.282891,False,callen,VIS,fs
+3,16,0.283606,True,callen,VIS,fs
+4,b (none),0.262433,False,callen,VIS,fs
+4,"1 (one model, equal weights)",0.261543,False,callen,VIS,fs
+4,2,0.272025,False,callen,VIS,fs
+4,3,0.27682,False,callen,VIS,fs
+4,4,0.279658,False,callen,VIS,fs
+4,6,0.281263,False,callen,VIS,fs
+4,8,0.281957,False,callen,VIS,fs
+4,12,0.284821,False,callen,VIS,fs
+4,16,0.285766,True,callen,VIS,fs
+0,b (none),0.261084,False,callen_slow,VISp,tag
+0,"1 (one model, equal weights)",0.26143,False,callen_slow,VISp,tag
+0,2,0.274175,False,callen_slow,VISp,tag
+0,3,0.285991,False,callen_slow,VISp,tag
+0,4,0.288077,False,callen_slow,VISp,tag
+0,6,0.292223,False,callen_slow,VISp,tag
+0,8,0.295091,False,callen_slow,VISp,tag
+0,12,0.298355,False,callen_slow,VISp,tag
+0,16,0.299773,True,callen_slow,VISp,tag
+1,b (none),0.253462,False,callen_slow,VISp,tag
+1,"1 (one model, equal weights)",0.257505,False,callen_slow,VISp,tag
+1,2,0.269213,False,callen_slow,VISp,tag
+1,3,0.28255,False,callen_slow,VISp,tag
+1,4,0.28463,False,callen_slow,VISp,tag
+1,6,0.289772,False,callen_slow,VISp,tag
+1,8,0.292394,False,callen_slow,VISp,tag
+1,12,0.29494,False,callen_slow,VISp,tag
+1,16,0.295507,True,callen_slow,VISp,tag
+2,b (none),0.262111,False,callen_slow,VISp,tag
+2,"1 (one model, equal weights)",0.262557,False,callen_slow,VISp,tag
+2,2,0.274909,False,callen_slow,VISp,tag
+2,3,0.284754,False,callen_slow,VISp,tag
+2,4,0.287485,False,callen_slow,VISp,tag
+2,6,0.29324,False,callen_slow,VISp,tag
+2,8,0.295578,False,callen_slow,VISp,tag
+2,12,0.298379,False,callen_slow,VISp,tag
+2,16,0.298749,True,callen_slow,VISp,tag
+3,b (none),0.257723,False,callen_slow,VISp,tag
+3,"1 (one model, equal weights)",0.25729,False,callen_slow,VISp,tag
+3,2,0.270467,False,callen_slow,VISp,tag
+3,3,0.283631,False,callen_slow,VISp,tag
+3,4,0.286521,False,callen_slow,VISp,tag
+3,6,0.291947,False,callen_slow,VISp,tag
+3,8,0.295623,False,callen_slow,VISp,tag
+3,12,0.297886,False,callen_slow,VISp,tag
+3,16,0.29804,True,callen_slow,VISp,tag
+4,b (none),0.259102,False,callen_slow,VISp,tag
+4,"1 (one model, equal weights)",0.261831,False,callen_slow,VISp,tag
+4,2,0.275049,False,callen_slow,VISp,tag
+4,3,0.286116,False,callen_slow,VISp,tag
+4,4,0.288602,False,callen_slow,VISp,tag
+4,6,0.293316,False,callen_slow,VISp,tag
+4,8,0.296392,False,callen_slow,VISp,tag
+4,12,0.298961,False,callen_slow,VISp,tag
+4,16,0.299692,True,callen_slow,VISp,tag
+0,b (none),0.272027,False,callen_slow,VISp,fs
+0,"1 (one model, equal weights)",0.270015,False,callen_slow,VISp,fs
+0,2,0.280065,False,callen_slow,VISp,fs
+0,3,0.28692,False,callen_slow,VISp,fs
+0,4,0.288513,False,callen_slow,VISp,fs
+0,6,0.292492,False,callen_slow,VISp,fs
+0,8,0.29407,False,callen_slow,VISp,fs
+0,12,0.29595,False,callen_slow,VISp,fs
+0,16,0.29683,True,callen_slow,VISp,fs
+1,b (none),0.269526,False,callen_slow,VISp,fs
+1,"1 (one model, equal weights)",0.26758,False,callen_slow,VISp,fs
+1,2,0.277474,False,callen_slow,VISp,fs
+1,3,0.284675,False,callen_slow,VISp,fs
+1,4,0.286847,False,callen_slow,VISp,fs
+1,6,0.289162,False,callen_slow,VISp,fs
+1,8,0.292481,False,callen_slow,VISp,fs
+1,12,0.293333,False,callen_slow,VISp,fs
+1,16,0.294917,True,callen_slow,VISp,fs
+2,b (none),0.272276,False,callen_slow,VISp,fs
+2,"1 (one model, equal weights)",0.270754,False,callen_slow,VISp,fs
+2,2,0.280808,False,callen_slow,VISp,fs
+2,3,0.287145,False,callen_slow,VISp,fs
+2,4,0.289035,False,callen_slow,VISp,fs
+2,6,0.292878,False,callen_slow,VISp,fs
+2,8,0.295086,False,callen_slow,VISp,fs
+2,12,0.295717,False,callen_slow,VISp,fs
+2,16,0.296731,True,callen_slow,VISp,fs
+3,b (none),0.268332,False,callen_slow,VISp,fs
+3,"1 (one model, equal weights)",0.266215,False,callen_slow,VISp,fs
+3,2,0.27661,False,callen_slow,VISp,fs
+3,3,0.284251,False,callen_slow,VISp,fs
+3,4,0.286212,False,callen_slow,VISp,fs
+3,6,0.291446,False,callen_slow,VISp,fs
+3,8,0.293392,False,callen_slow,VISp,fs
+3,12,0.294194,False,callen_slow,VISp,fs
+3,16,0.295616,True,callen_slow,VISp,fs
+4,b (none),0.271211,False,callen_slow,VISp,fs
+4,"1 (one model, equal weights)",0.269356,False,callen_slow,VISp,fs
+4,2,0.279767,False,callen_slow,VISp,fs
+4,3,0.287028,False,callen_slow,VISp,fs
+4,4,0.288813,False,callen_slow,VISp,fs
+4,6,0.293358,False,callen_slow,VISp,fs
+4,8,0.295389,False,callen_slow,VISp,fs
+4,12,0.296966,False,callen_slow,VISp,fs
+4,16,0.298074,True,callen_slow,VISp,fs
+0,b (none),0.250322,False,callen_slow,VIS,tag
+0,"1 (one model, equal weights)",0.24998,False,callen_slow,VIS,tag
+0,2,0.262626,False,callen_slow,VIS,tag
+0,3,0.275643,False,callen_slow,VIS,tag
+0,4,0.277967,False,callen_slow,VIS,tag
+0,6,0.281972,False,callen_slow,VIS,tag
+0,8,0.285421,False,callen_slow,VIS,tag
+0,12,0.287342,False,callen_slow,VIS,tag
+0,16,0.28842,True,callen_slow,VIS,tag
+1,b (none),0.252802,False,callen_slow,VIS,tag
+1,"1 (one model, equal weights)",0.25258,False,callen_slow,VIS,tag
+1,2,0.264858,False,callen_slow,VIS,tag
+1,3,0.278217,False,callen_slow,VIS,tag
+1,4,0.281376,False,callen_slow,VIS,tag
+1,6,0.284301,False,callen_slow,VIS,tag
+1,8,0.287498,False,callen_slow,VIS,tag
+1,12,0.289094,False,callen_slow,VIS,tag
+1,16,0.289709,True,callen_slow,VIS,tag
+2,b (none),0.252642,False,callen_slow,VIS,tag
+2,"1 (one model, equal weights)",0.251969,False,callen_slow,VIS,tag
+2,2,0.26436,False,callen_slow,VIS,tag
+2,3,0.276494,False,callen_slow,VIS,tag
+2,4,0.279221,False,callen_slow,VIS,tag
+2,6,0.282898,False,callen_slow,VIS,tag
+2,8,0.285327,False,callen_slow,VIS,tag
+2,12,0.287924,False,callen_slow,VIS,tag
+2,16,0.289222,True,callen_slow,VIS,tag
+3,b (none),0.250538,False,callen_slow,VIS,tag
+3,"1 (one model, equal weights)",0.249601,False,callen_slow,VIS,tag
+3,2,0.262251,False,callen_slow,VIS,tag
+3,3,0.27633,False,callen_slow,VIS,tag
+3,4,0.279512,False,callen_slow,VIS,tag
+3,6,0.283261,False,callen_slow,VIS,tag
+3,8,0.285594,False,callen_slow,VIS,tag
+3,12,0.288475,False,callen_slow,VIS,tag
+3,16,0.289645,True,callen_slow,VIS,tag
+4,b (none),0.250791,False,callen_slow,VIS,tag
+4,"1 (one model, equal weights)",0.251919,False,callen_slow,VIS,tag
+4,2,0.264721,False,callen_slow,VIS,tag
+4,3,0.277173,False,callen_slow,VIS,tag
+4,4,0.279572,False,callen_slow,VIS,tag
+4,6,0.283272,False,callen_slow,VIS,tag
+4,8,0.286795,False,callen_slow,VIS,tag
+4,12,0.288213,False,callen_slow,VIS,tag
+4,16,0.288676,True,callen_slow,VIS,tag
+0,b (none),0.259538,False,callen_slow,VIS,fs
+0,"1 (one model, equal weights)",0.258235,False,callen_slow,VIS,fs
+0,2,0.268627,False,callen_slow,VIS,fs
+0,3,0.276066,False,callen_slow,VIS,fs
+0,4,0.278146,False,callen_slow,VIS,fs
+0,6,0.282599,False,callen_slow,VIS,fs
+0,8,0.284474,False,callen_slow,VIS,fs
+0,12,0.285631,False,callen_slow,VIS,fs
+0,16,0.287426,True,callen_slow,VIS,fs
+1,b (none),0.26093,False,callen_slow,VIS,fs
+1,"1 (one model, equal weights)",0.25972,False,callen_slow,VIS,fs
+1,2,0.270039,False,callen_slow,VIS,fs
+1,3,0.277601,False,callen_slow,VIS,fs
+1,4,0.279644,False,callen_slow,VIS,fs
+1,6,0.283906,False,callen_slow,VIS,fs
+1,8,0.285957,False,callen_slow,VIS,fs
+1,12,0.286922,False,callen_slow,VIS,fs
+1,16,0.28729,True,callen_slow,VIS,fs
+2,b (none),0.261879,False,callen_slow,VIS,fs
+2,"1 (one model, equal weights)",0.260813,False,callen_slow,VIS,fs
+2,2,0.271056,False,callen_slow,VIS,fs
+2,3,0.278133,False,callen_slow,VIS,fs
+2,4,0.280099,False,callen_slow,VIS,fs
+2,6,0.28465,False,callen_slow,VIS,fs
+2,8,0.285505,False,callen_slow,VIS,fs
+2,12,0.287747,False,callen_slow,VIS,fs
+2,16,0.288858,True,callen_slow,VIS,fs
+3,b (none),0.258271,False,callen_slow,VIS,fs
+3,"1 (one model, equal weights)",0.256871,False,callen_slow,VIS,fs
+3,2,0.26749,False,callen_slow,VIS,fs
+3,3,0.275315,False,callen_slow,VIS,fs
+3,4,0.277699,False,callen_slow,VIS,fs
+3,6,0.282201,False,callen_slow,VIS,fs
+3,8,0.283416,False,callen_slow,VIS,fs
+3,12,0.28565,False,callen_slow,VIS,fs
+3,16,0.286661,True,callen_slow,VIS,fs
+4,b (none),0.260445,False,callen_slow,VIS,fs
+4,"1 (one model, equal weights)",0.259203,False,callen_slow,VIS,fs
+4,2,0.269939,False,callen_slow,VIS,fs
+4,3,0.277769,False,callen_slow,VIS,fs
+4,4,0.279657,False,callen_slow,VIS,fs
+4,6,0.284315,False,callen_slow,VIS,fs
+4,8,0.286331,False,callen_slow,VIS,fs
+4,12,0.287751,False,callen_slow,VIS,fs
+4,16,0.288619,True,callen_slow,VIS,fs

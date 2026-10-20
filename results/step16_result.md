@@ -262,3 +262,67 @@ All VIS: the opto-tag label stays within −0.0002…+0.0008 and the summary is 
 ## References
 - Siegle, J.H. et al. (2021). Survey of spiking in the mouse visual system reveals functional hierarchy. Nature 592, 86–92
 - AllenSDK optotagging example (ecephys_optotagging notebook): the 10 ms pulse, the [1, 9) ms / [−10, −2) ms windows and the ratio > 2 criterion
+- Chen, T.-W. et al. (2013). Ultrasensitive fluorescent proteins for imaging neuronal activity. Nature 499, 295–300. Source of the approximate rise times (~50 ms GCaMP6f, ~150 ms GCaMP6s). The values were taken as stated in the step brief; the paper could not be opened from this environment (blocked network)
+- Dana, H. et al. (2016). Sensitive red protein calcium indicators for imaging neural activity. eLife 5, e12727. Named in the step brief as a kinetics reference. **Not used here:** the decay constants come from the step 15 OASIS fits to the Allen data instead (see Task 3)
+- Step 15 of this repo (`results/step15/oasis_params.csv`, `results/step15_result.md`): the GCaMP6f / 6s decay constants (median OASIS τ 0.427 / 0.832 s) and the noise estimates sn; step 10 (`results/step10/neuron_features.csv`): dF/F std for the SNR
+- Steps 9, 11, 12, 13 of this repo: MLP / FiLM, S features, the ridge from summed per-unit statistics, k-means summary, continuous-summary FiLM, k chosen on val
+- de Vries, S.E.J. et al. (2020). A large-scale standardized physiological survey reveals functional organization of the mouse visual cortex. Nat Neurosci 23, 138–151 (Allen 2P reporters per line: Pvalb = Ai162 / GCaMP6s)
+- Bugeon, S. et al. (2022). A transcriptomic axis predicts state modulation of cortical interneurons. Nature 607, 330–338 (the Bugeon rows, via steps 12–15)
+
+## Part 2 notes
+**Re-extracting the data (nothing under `data/` is committed):**
+```
+uv venv -p python3.11 .venv && source .venv/bin/activate
+uv pip install "setuptools<70" allensdk==2.16.2 statsmodels==0.13.5 scikit-learn==1.7.2 torch==2.14.1 h5py threadpoolctl matplotlib
+mkdir -p data/step16/meta && cd data/step16/meta
+for f in manifest.json sessions.csv units.csv probes.csv channels.csv; do
+  curl -sSO https://allen-brain-observatory.s3.amazonaws.com/visual-coding-neuropixels/ecephys-cache/$f; done
+cd ../../..
+python scripts/step16_extract.py                 # ~2.5 h; resumable; data/step16/manifest.csv; ≤ 2 NWB on disk
+python scripts/step16_neuropixels.py labels      # task 1 -> data/step16/labels.csv, psth.pkl
+python scripts/step16_neuropixels.py bin         # 10 Hz counts, stimulus inputs, windows -> data/step16/spk/<id>.npz
+```
+
+**Part 1 phases** (`<ds>` = spk, c6f, c6s, callen, callen_slow; `<scope>` = VISp, VIS; `<ls>` = tag, fs; each phase is resumable):
+```
+python scripts/step16_neuropixels.py gram <ds>                          # per-unit ridge statistics (~6 GB per dataset; delete after ridge)
+python scripts/step16_neuropixels.py features <ds>
+python scripts/step16_neuropixels.py cluster <ds> <scope> <ls>
+python scripts/step16_neuropixels.py ridge <ds> <scope> <ls>
+python scripts/step16_neuropixels.py mlp <ds> <scope> <ls> [uniform]   # balanced (default) or uniform sampling
+STEP16_GRAM_DIR=gram_visp python scripts/step16_neuropixels.py gram <ds> VISp     # genotype check: VISp-only statistics
+cp data/step16/<ds>/VISp_fs/clusters.pkl data/step16/<ds>/VISp_geno/
+STEP16_GRAM_DIR=gram_visp python scripts/step16_neuropixels.py ridge <ds> VISp geno
+python scripts/step16_neuropixels.py analyse && python scripts/step16_plots.py
+```
+
+**What is on disk for Part 2:**
+- `data/step16/sessions/<id>.npz` (3.5 GB, 58 files), per session:
+  - `spikes` (uint32, 30 kHz ticks) with `spike_offsets` and `tick`
+  - `units`: unit id, area, probe, channel, probe vertical / horizontal position, surface channel, quality, waveform duration / half-width, firing rate, SNR, QC metrics
+  - `stim`: every stimulus presentation with name, start, stop, orientation, contrast, TF, SF, frame
+  - `run_t` / `run_speed`: running speed in cm/s at the native rate
+  - `opto`: optogenetic epochs
+  - `invalid_start` / `invalid_stop` / `invalid_tags`
+  - `genotype`, `session_type`, `line`
+- `data/step16/spk/<id>.npz` (2.3 GB):
+  - kept units' 10 Hz counts `Ctr` / `Cte` with train-part `mean_count` / `sd_count`
+  - stimulus inputs `Str` / `Ste`; `run` (binned running speed)
+  - per-probe `fit_` / `val_` / `te_` window starts and `valid_` bin masks
+  - `trial_rows` (grating / flash trials for the S features), `t0`, `t1`, `n_tr`, `n_fit`
+- Synthetic calcium is regenerated on demand (`session_arrays(ds, sid)`, deterministic, ~4 s per session) and is not stored
+- **Part 2 needs:** history length / atlas from the same windows; identity vs state (running speed is in both files; stimulus epochs in `stim`); horizons (re-bin from `spikes`); typing from `labels.csv` / `unit_labels.csv`
+
+**Where each Part 1 result is:**
+- **Task 1:** `results/step16/unit_labels.csv` (per unit: labels, tagging statistics, waveform), `label_counts.csv` (session × area × label), `optotag_summary.csv`, `optotag_psth*.csv`, `manifest_summary.csv`; plot `plots/step16_optotag.png`
+- **Task 2:**
+  - `gains.csv`: every gain, per dataset × scope × label set × unit subset × line × family, with mean, median, sem, sessions up, Wilcoxon p
+  - `session_scores.csv`, `neuron_scores.csv` (per-unit scores of every variant), `label_vs_summary.csv` (ratios with bootstrap CI), `comparison.csv` (with the step 15 Allen / Bugeon rows)
+  - `val_k.csv`, `ridge_alphas.csv`, `mlp_fits.csv`, `ridge_precision_check.csv`
+  - plots `plots/step16_gains.png`, `plots/step16_neuropixels.png`
+- **Task 3:** the same files with ds = c6f / c6s / callen / callen_slow, plus `calcium_vs_spikes.csv` (change of label gain and ratio vs spikes, paired bootstrap), `allen_snr.csv`, `example_traces.csv`; plot `plots/step16_calcium.png`
+
+**Lessons for Part 2:**
+- **Report the equal-weight / uniform designs alongside the label-balanced ones:** with a 3% tagged minority, label-balanced training creates an artificial label gain
+- The 10 ms-pulse tag criterion needs the p < 0.001 threshold (wild-type false-positive rate)
+- The per-cluster ridge summary has a few large failures (small clusters); use medians and session counts next to means

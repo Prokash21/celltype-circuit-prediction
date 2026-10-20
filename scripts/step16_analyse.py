@@ -324,9 +324,12 @@ def main():
         if has_mlp:
             fits.append(pd.read_csv(d / "mlp_fits.csv").drop(columns="hist").assign(ds=ds, scope=scope, labelset=ls))
     ns = pd.concat(nst, ignore_index=True)
-    keep = ["ds", "scope", "labelset", "session", "unit_id", "area", "line", "fold", "label", "tagged", "fs", "n_el", "sse_copy"] + \
-        [c for c in ns.columns if c.startswith("score_")]
-    ns[keep].to_csv(OUT / "neuron_scores.csv", index=False, float_format="%.5g")
+    # per-unit scores (size budget): spikes, every configuration; synthetic calcium, VISp only (its all-VIS
+    # configurations are in session_scores.csv); main variants only (unit metadata are in unit_labels.csv)
+    main = ["score_" + v for v in RIDGE if v != "r_km16"] + ["score_" + v for v in MLPV + MLPU]
+    keep = ["ds", "scope", "labelset", "session", "unit_id", "label", "sse_copy"] + [c for c in main if c in ns]
+    sel = (ns.ds == "spk") | (ns.scope == "VISp")
+    ns.loc[sel, keep].to_csv(OUT / "neuron_scores.csv", index=False, float_format="%.4g")
     sc_all = pd.concat(sc_rows, ignore_index=True)
     sc_all.to_csv(OUT / "session_scores.csv", index=False, float_format="%.6g")
     G = pd.DataFrame(gains)

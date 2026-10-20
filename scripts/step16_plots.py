@@ -83,34 +83,49 @@ def overview():
         a.set_yscale("symlog", linthresh=1e-3)
         a.set_ylabel("gain over no label (score, symlog)"); a.legend(fontsize=6, ncol=2)
         a.set_title("(b) label gain vs activity-summary gain (hatched: equal-weight / uniform designs)")
-    # (c) ratio
+    # (c) ratio: reference datasets and every VISp configuration
     a = ax[1, 0]
     if comp is not None:
-        x = np.arange(len(comp))
+        short = {"Neuropixels spikes": "spikes", "synthetic GCaMP6f": "6f", "synthetic GCaMP6s": "6s",
+                 "synthetic Allen-like (Pvalb 6s, others 6f)": "Allen-like",
+                 "synthetic Allen-like, 6s decay 1.5 s": "Allen-like 1.5 s"}
+        lsn = {"opto-tag (i)": "opto-tag", "FS / RS (ii)": "FS/RS", "mouse genotype (recording-level)": "genotype"}
+        cc = comp[comp.dataset.str.startswith(("Allen", "Bugeon")) | (comp.scope == "VISp")].reset_index(drop=True)
+        x = np.arange(len(cc))
         for j, (fam, c, mk) in enumerate([("ridge", "tab:blue", "o"), ("MLP", "tab:green", "o"),
                                           ("ridge (equal weights)", "tab:blue", "s"), ("MLP (uniform)", "tab:green", "s")]):
-            if f"ratio_{fam}" not in comp:
+            if f"ratio_{fam}" not in cc:
                 continue
-            v, lo, hi = comp[f"ratio_{fam}"], comp[f"ratio_{fam}_lo"], comp[f"ratio_{fam}_hi"]
-            a.errorbar(x + (j - 1.5) * 0.15, v, yerr=[(v - lo).clip(0), (hi - v).clip(0)], fmt=mk, color=c, label=fam, capsize=2,
-                       mfc="none" if j > 1 else c)
+            v, lo, hi = cc[f"ratio_{fam}"], cc[f"ratio_{fam}_lo"], cc[f"ratio_{fam}_hi"]
+            a.errorbar(x + (j - 1.5) * 0.17, v, yerr=[(v - lo).clip(0), (hi - v).clip(0)], fmt=mk, color=c, label=fam,
+                       capsize=2, ms=4, lw=0.8, mfc="none" if j > 1 else c)
         a.axhline(0, color="k", lw=0.5); a.axhline(1, color="k", lw=0.5, ls=":")
-        lbl = [f"{d}\n{s} {l}" if not d.startswith(("Allen", "Bugeon")) else d for d, s, l in zip(comp.dataset, comp.scope, comp.labelset)]
-        a.set_xticks(x, lbl, fontsize=6, rotation=55, ha="right")
-        a.set_ylim(-1, 2.5); a.set_ylabel("label gain / summary gain (95% CI)"); a.legend(fontsize=8)
-        a.set_title("(c) label / summary ratio across datasets")
-    # (d) synthetic calcium
+        lbl = [d.replace(" (deconvolved, 4.3 Hz)", "").replace("deconvolved ", "deconv. ") if d.startswith(("Allen", "Bugeon"))
+               else f"{short.get(d, d)}: {lsn.get(l, l)}" for d, l in zip(cc.dataset, cc.labelset)]
+        a.set_xticks(x, lbl, fontsize=6.5, rotation=60, ha="right")
+        a.set_ylim(-1, 2); a.set_ylabel("label gain / summary gain (95% bootstrap CI)"); a.legend(fontsize=7, ncol=2)
+        a.set_title("(c) label / summary ratio (VISp; CIs clipped; unstable where the summary gain is ~0)")
+    # (d) synthetic calcium: fair (equal-weight / uniform) label gains and the summary gain per signal
     a = ax[1, 1]
     if G is not None:
-        g = G[(G.scope == "VISp") & (G.subset == "all units") & (G.line == "all") & (G.gain == "label")]
-        for j, (ls, fam, mk) in enumerate([("tag", "ridge", "o"), ("tag", "MLP", "s"), ("fs", "ridge", "^"), ("fs", "MLP", "D")]):
-            h = g[(g.labelset == ls) & (g.family == fam)].set_index("ds").reindex(CAL)
-            a.errorbar(np.arange(len(CAL)) + (j - 1.5) * 0.12, h.gain_mean, yerr=h.gain_sem, fmt=mk + "-",
-                       label=f"{'opto-tag' if ls == 'tag' else 'FS/RS'}, {fam}", capsize=2)
+        g = G[(G.scope == "VISp") & (G.subset == "all units") & (G.line == "all")]
+        specs = [("tag", "ridge (equal weights)", "label", "o-", "tab:red", "opto-tag label, ridge (eq. weights)"),
+                 ("tag", "MLP (uniform)", "label", "s--", "tab:red", "opto-tag label, MLP (uniform)"),
+                 ("geno", "ridge (equal weights)", "label", "D-", "tab:purple", "mouse-genotype label (recording-level), ridge"),
+                 ("fs", "ridge (equal weights)", "label", "^-", "tab:orange", "FS/RS label, ridge (eq. weights)"),
+                 ("fs", "MLP (uniform)", "label", "v--", "tab:orange", "FS/RS label, MLP (uniform)"),
+                 ("tag", "ridge (equal weights)", "summary", "o-", "tab:cyan", "activity summary, ridge (opto-tag units)"),
+                 ("tag", "MLP (uniform)", "summary", "s--", "tab:cyan", "activity summary, MLP (uniform)")]
+        for j, (ls, fam, gain, st, c, nm) in enumerate(specs):
+            h = g[(g.labelset == ls) & (g.family == fam) & (g.gain == gain)].set_index("ds").reindex(CAL)
+            if h.gain_mean.isna().all():
+                continue
+            a.errorbar(np.arange(len(CAL)) + (j - 3) * 0.05, h.gain_mean, yerr=h.gain_sem, fmt=st, color=c, label=nm, capsize=2, ms=4)
         a.axhline(0, color="k", lw=0.5)
+        a.set_yscale("symlog", linthresh=1e-3)
         a.set_xticks(range(len(CAL)), [DSN[c] for c in CAL], fontsize=8)
-        a.set_ylabel("label gain (mean ± sem over sessions)"); a.legend(fontsize=8)
-        a.set_title("(d) same neurons, simulated indicator: label gain (VISp)")
+        a.set_ylabel("gain over no label (mean ± sem over sessions, symlog)"); a.legend(fontsize=6.5)
+        a.set_title("(d) same neurons, simulated indicator (VISp): label vs summary gain")
     fig.tight_layout()
     fig.savefig(PL / "step16_neuropixels.png", dpi=130)
     plt.close(fig)
@@ -211,8 +226,10 @@ def calcium():
         a.set_xlabel("s (test part)"); a.set_yticks([]); a.legend(fontsize=7)
         a.set_title("example tagged VISp units: z spikes vs synthetic calcium (10 Hz)")
     s = sc[(sc.subset == "all units") & (sc.scope == "VISp")]
-    for j, (ls, fam, none, lab_) in enumerate([("tag", "ridge", "r_none", "r_true"), ("tag", "MLP", "m_none", "m_true"),
-                                               ("fs", "ridge", "r_none", "r_true"), ("fs", "MLP", "m_none", "m_true")]):
+    for j, (ls, fam, none, lab_) in enumerate([("tag", "ridge, equal weights", "r_k1", "r_true"),
+                                               ("tag", "MLP, uniform", "m_none_u", "m_true_u"),
+                                               ("geno", "ridge, equal weights", "r_k1", "r_true"),
+                                               ("fs", "ridge, equal weights", "r_k1", "r_true")]):
         a = ax.flat[1 + j]
         base = s[(s.ds == "spk") & (s.labelset == ls)].set_index("session")
         if base.empty or none not in base or base[none].isna().any():
@@ -227,19 +244,24 @@ def calcium():
                       c=[LC.get(l, "k") for l in base.line])
             a.errorbar(k_ + 0.3, d.mean(), yerr=d.std(ddof=1) / np.sqrt(d.notna().sum()), fmt="k_", capsize=4)
         a.axhline(0, color="k", lw=0.5)
+        a.set_yscale("symlog", linthresh=1e-3)
         a.set_xticks(range(len(CAL)), [DSN[c] for c in CAL], fontsize=7)
-        a.set_title(f"label gain per session, {fam}, {'opto-tag (i)' if ls == 'tag' else 'FS/RS (ii)'} (VISp)", fontsize=9)
+        nm = {"tag": "opto-tag (i)", "fs": "FS/RS (ii)", "geno": "mouse genotype (recording-level)"}[ls]
+        a.set_title(f"label gain per session (symlog), {fam}\n{nm} (VISp)", fontsize=9)
     a = ax[1, 2]
     if cvs is not None and len(cvs):
-        for j, (ls, fam, mk) in enumerate([("tag", "ridge", "o"), ("tag", "MLP", "s"), ("fs", "ridge", "^"), ("fs", "MLP", "D")]):
+        for j, (ls, fam, mk) in enumerate([("tag", "ridge (equal weights)", "o"), ("tag", "MLP (uniform)", "s"),
+                                           ("geno", "ridge (equal weights)", "D"), ("fs", "ridge (equal weights)", "^")]):
             g = cvs[(cvs.scope == "VISp") & (cvs.labelset == ls) & (cvs.family == fam)].set_index("ds").reindex(CAL[1:])
             if g.ratio_spikes.isna().all():
                 continue
             y = np.r_[g.ratio_spikes.dropna().iloc[0], g.ratio_calcium]
-            a.plot(np.arange(len(CAL)) + (j - 1.5) * 0.08, y, mk + "-", label=f"{'opto-tag' if ls == 'tag' else 'FS/RS'}, {fam}")
+            a.plot(np.arange(len(CAL)) + (j - 1.5) * 0.08, y, mk + "-",
+                   label=f"{ {'tag': 'opto-tag', 'fs': 'FS/RS', 'geno': 'genotype'}[ls]}, {fam}")
         a.axhline(0, color="k", lw=0.5)
         a.set_xticks(range(len(CAL)), [DSN[c] for c in CAL], fontsize=7)
-        a.set_ylabel("label gain / summary gain"); a.legend(fontsize=7)
+        a.set_ylim(-1, 2.5)
+        a.set_ylabel("label gain / summary gain (spikes FS/RS clipped)"); a.legend(fontsize=7)
         a.set_title("label / summary ratio per signal (VISp)")
     fig.tight_layout()
     fig.savefig(PL / "step16_calcium.png", dpi=130)

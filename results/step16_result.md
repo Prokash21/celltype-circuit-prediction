@@ -1,13 +1,21 @@
 # Step 16 (Part 1 of 2): Neuropixels spikes, no calcium indicator. Genetic label vs activity summary, and synthetic calcium from the same spikes
-Date: 2026-10-19
+Date: 2026-10-19 to 2026-10-20
 
 ## What was run
 - `scripts/step16_extract.py`: resumable extraction of all 58 Allen Visual Coding Neuropixels sessions, one session at a time (download NWB → `data/step16/sessions/<id>.npz` → delete the NWB)
 - `scripts/step16_neuropixels.py <phase>`: `labels` (task 1), `bin`, then per dataset `gram`, `features`, and per configuration `cluster`, `ridge`, `mlp` (tasks 2–3)
 - `scripts/step16_analyse.py`: writes `results/step16/*.csv`. `scripts/step16_plots.py` makes every plot from those CSV files only
 - **Environment:** Python 3.11 (`.venv`, rebuilt), numpy 1.23.5, pandas 1.5.3, scipy 1.10.1, scikit-learn 1.7.2, PyTorch 2.14.1 (CPU), allensdk 2.16.2 (needs setuptools < 70 and statsmodels 0.13.5 to import), h5py 3.16. These are the library versions of steps 11–15. AllenSDK is imported only because the step 3–13 modules import it; the NWB files are read directly with h5py
+- **Order of runs:** extraction → labels → binning → ridge statistics and S features per signal → cluster / ridge per configuration → MLPs (balanced, then uniform) → genotype check → `analyse` → plots. The phases ran from a resumable driver; a container restart during the calcium MLPs lost no results
+- **Wall time on 4 CPU cores:**
 
-*Status of this file: task 1 is complete. Tasks 2 and 3 are running and their sections are filled in as each phase finishes.*
+  | Phase | Time |
+  |---|---|
+  | extraction (58 NWB, ~150 GB downloaded) | ~4 h |
+  | ridge statistics, per signal | ~20–30 min |
+  | ridge, per signal (4 configurations) | ~1.5 h |
+  | MLP, per configuration (70 fits) | 50–150 min |
+  | MLPs, total (24 configurations × 70 fits) | ~35 h |
 
 ## Data
 - **Allen Brain Observatory Visual Coding Neuropixels** (Siegle et al. 2021), public S3 bucket `allen-brain-observatory/visual-coding-neuropixels/ecephys-cache`. Session NWB files only (1.7–3.3 GB each); no LFP files were downloaded. The cache tables `sessions.csv`, `units.csv`, `probes.csv` and `channels.csv` came from the same bucket
@@ -131,7 +139,7 @@ Entries: mean gain (sessions up, Wilcoxon p).
 - **With balanced batches the opto-tag label does not separate cleanly from its shuffled control:**
   - Over all areas, even the *shuffled* label FiLM beats m1 by +0.0011 (24/28 sessions, p 2e-5)
   - The no-label m1 is fragile in this design. Its batches and its early-stopping val loss weight each group equally, so 14 Vip, 72 Sst and 133 Pvalb units count as much as 8,000 untagged ones
-  - The equal-weight ridge showed no label information at all. The uniform-sampling MLPs (m1u…contu, running) test this directly
+  - The equal-weight ridge showed no label information at all. The uniform-sampling MLPs (m1u…contu, next section) test this directly
 - **Waveform class gives a small, consistent gain:** +0.0009 / +0.0010 (41/56, 40/58 sessions); label − shuffled +0.0005 / +0.0011. FS units gain most (+0.0019, 47/56 in VISp)
 - **The continuous summary is not robust on held-out sessions:**
   - Typically it helps: median +0.0007 to +0.0016; +0.0026 in 22/27 VISp opto-tag sessions; RS units +0.0004 to +0.0007
@@ -146,7 +154,7 @@ Entries: mean gain (sessions up, Wilcoxon p).
 - **Label ÷ summary ratio (MLP, balanced):** VISp opto-tag 0.53 [0.02, 1.00]. In the other configurations the mean summary gain is ≤ 0, so the ratio is undefined (−0.6 to −2.4, CIs spanning ±5 to ±27; `label_vs_summary.csv`)
 
 #### MLP, uniform row sampling (m1u, m2u, m3u, contu)
-**Setup:** the same networks, optimiser, epochs, early stopping and seeds (offsets 3 / 4 / 5, contu uses m2u's). Batches are drawn uniformly over all units' windows, and the val loss is uniform over 20,000 × (number of groups) val rows. 4 of 280 fits reached the 40-epoch cap.
+**Setup:** the same networks, optimiser, epochs, early stopping and seeds (offsets 3 / 4 / 5, contu uses m2u's). Batches are drawn uniformly over all units' windows, and the val loss is uniform over 20,000 × (number of groups) val rows. 3 of 280 fits reached the 40-epoch cap.
 
 | Scope, label set | m1u − m1 (no label: uniform vs balanced) | Label (m2u − m1u) | Summary (contu − m1u) | Shuffled (m3u − m1u) | Label − shuffled | Summary − label |
 |---|---|---|---|---|---|---|
@@ -238,26 +246,116 @@ All VIS: the opto-tag label stays within −0.0002…+0.0008 and the summary is 
 - **So a slow indicator mostly makes per-unit conditioning in general more useful.** The summary captures the per-unit decay (here set by the indicator), not the genetic label
 - **Per line (Allen-like):** the opto-tag label is +0.0012 in Pvalb mice (+0.0031 with the 1.5 s decay) and ≈ 0 in Sst / Vip mice. Tagged and untagged units in a Pvalb mouse share 6s, but the "untagged" model is trained mostly on 6f units of other mice; the tagged-Pvalb model is a 6s model. This is the only place where the per-unit label picks up some indicator, and it is small because tagged units are few
 
-**Recording-level genotype label (added check):** *running.*
+#### Recording-level genotype label (added check; ridge, VISp, 56 sessions)
+The label is the genotype of the mouse (Pvalb / Sst / Vip / wild type), the same for every unit of a recording, as Allen's Cre line. Equal-weight design (d − k1); shuffled = genotypes permuted across sessions:
 
-#### MLP on synthetic calcium (VISp)
-*Running.*
+| Signal | Label (d − k1) | Median | Sessions up | p | Label − shuffled (p) | Pvalb / Sst / Vip / wt mice | Ratio, equal weights [CI] |
+|---|---|---|---|---|---|---|---|
+| spikes | −0.0002 | −0.0002 | 17/56 | 0.02 | +0.0002 (0.09) | +0.0006 / −0.0010 / +0.0002 / −0.0001 | −0.35 [−0.97, 1.75] |
+| GCaMP6f | −0.0005 | −0.0004 | 20/56 | 0.02 | +0.0003 (0.86) | +0.0010 / −0.0015 / −0.0002 / −0.0005 | −0.10 [−0.21, 0.11] |
+| GCaMP6s | −0.0006 | −0.0004 | 24/56 | 0.02 | +0.0002 (0.70) | −0.0000 / −0.0007 / +0.0002 / −0.0010 | −0.02 [−0.04, −0.005] |
+| **Allen-like** | **+0.0043** | +0.0000 | 29/56 | 0.53 | **+0.0055 (0.002)** | **+0.038** / −0.0010 / +0.0004 / −0.0018 | 0.31 [−0.59, 0.87] |
+| **Allen-like, 6s 1.5 s** | **+0.0114** | −0.0000 | 28/56 | 0.54 | **+0.0134 (0.006)** | **+0.093** / −0.0010 / +0.0003 / −0.0032 | 0.56 [−0.36, 1.73] |
+
+- **When the indicator is the same for every mouse (spikes, all 6f, all 6s), the genotype of the mouse carries nothing** (≤ 0, at or below the shuffled control)
+- **When it differs by genotype (Allen-like), the genotype label gains in the Pvalb mice** (+0.038 per session; +0.093 with the 1.5 s decay), and nowhere else. The 8 Pvalb sessions are exactly the 8 largest gains, each ≥ +0.021, or ≥ +0.061 with the slow decay (plot `step16_calcium.png`). It is significant against its shuffled control (+0.0055, 37/56, p 0.002)
+- In the balanced design (d − b) the Allen-like genotype gain is +0.0027 (38/56, p 0.003) and +0.0080 (41/56, p 0.001) for the slow version, against −0.0004 / −0.0010 / −0.0012 for spikes / 6f / 6s
+- **So an indicator assigned per recording alone recreates an Allen-style, Pvalb-concentrated label gain**, with a label ÷ summary ratio of 0.3–0.6 (wide CIs), against Allen dF/F's 0.53 (step 15, where Pvalb had the largest per-line gain, +0.056 ridge). It does this with no genetic information in the activity
+- The per-unit opto-tag label cannot pick this up, because tagged and untagged units in the same mouse share the indicator
+
+#### MLP on synthetic calcium (VISp; `gains.csv`, `calcium_vs_spikes.csv`)
+Mean gain (sessions up, Wilcoxon p):
+
+| Signal | m1u − m1 (opto-tag) | Opto-tag label, uniform (m2u − m1u) | Opto-tag summary, uniform (contu − m1u) | FS / RS label, uniform | FS / RS summary, uniform | Opto-tag label, balanced (m2 − m1) | Opto-tag summary, balanced |
+|---|---|---|---|---|---|---|---|
+| spikes | +0.0040 (25/27) | +0.0002 (16/27, 0.29) | +0.0001 (17/27, 0.61) | +0.0003 (38/56, 0.006) | −0.0018, median +0.0007 (31/56) | +0.0013 (20/27) | +0.0026 (22/27) |
+| GCaMP6f | +0.0143 (27/27) | −0.0001 (17/27, 0.7) | **+0.0134** (23/27, 2e-6) | +0.0005 (29/56, 0.9) | +0.0028 (50/56, 4e-8) | +0.0092 (23/27) | +0.0207 (27/27) |
+| GCaMP6s | +0.0144 (26/27) | −0.0013 (11/27, 0.2) | **+0.0307** (27/27, 1e-8) | −0.0042 (15/56, 0.001) | +0.0200 (55/56, 1e-9) | +0.0080 (23/27) | +0.0351 (27/27) |
+| Allen-like | +0.0113 (23/27) | −0.0001 (11/27, 0.4) | **+0.0249** (25/27, 7e-8) | +0.0011 (25/56, 0.7) | +0.0020 (49/56, 2e-8) | +0.0077 (21/27) | +0.0282 (27/27) |
+| Allen-like, 1.5 s | +0.0113 (23/27) | +0.0016 (17/27, 0.2) | **+0.0353** (26/27, 3e-8) | −0.0047 (25/56, 0.3) | +0.0064 (50/56, 1e-8) | +0.0042 (18/27) | +0.0370 (27/27) |
+
+- **The MLP agrees with the ridge:** with uniform sampling the opto-tag label adds nothing on any signal (−0.0013 to +0.0016, no p < 0.15), while the summary gains +0.013 to +0.035 (23–27/27 sessions)
+- **The rebalancing artifact grows on calcium:** uniform beats balanced m1 by +0.011 to +0.014. The balanced label gains (+0.004 to +0.009, 18–23/27 sessions) are again of that size and vanish with uniform sampling
+- **The FS / RS label FiLM does not help the uniform MLP on calcium** (−0.0047 to +0.0011), while the ridge FS / RS label grew to +0.005. For GCaMP6s the label FiLM and the shuffled FiLM are both below m1u (−0.0042 and −0.0101)
+- **Label ÷ summary, uniform MLP:** −0.04 to +0.05 for the opto-tag on every calcium version (6f −0.006 [−0.13, 0.10]; Allen-like −0.003 [−0.16, 0.12]; slow 0.05 [−0.04, 0.11]); spikes undefined
+- Fits: 1,680 MLP fits in this step; 12 (0.7%) reached the 40-epoch cap
+
+**Key question:**
+- **With spikes and no indicator, and types mixed within each recording, the genetic (opto-tag) label gain is zero, smaller even than Bugeon's**, once training weights are not label-balanced: ridge −0.0001 (9/27), MLP +0.0002 (p 0.29), ratio −0.04 [−0.09, 0.02] vs Bugeon 0.10–0.11. With the step 12 balanced design it looks like +0.002 with ratio ≈ 0.5, but an unlabelled equal-weight model gets the same gain
+- **The waveform class (FS / RS) carries a small, reliable amount on spikes** (ridge +0.0010, 48/56). It is the better "label" on spikes for FS units
+- **Does the activity summary beat the label?**
+  - Yes for ridge (opto-tag: summary − label +0.0025, 25/27, p 6e-7; FS / RS: more sessions favour the summary, 47/56, though the mean favours the label because of a few cluster failures)
+  - For the MLP on spikes neither helps: a uniformly trained MLP already exceeds every ridge
+- **Does a simulated indicator alone recreate the Allen-style label gain?**
+  - **For a per-unit genetic label, no:** on identical neurons, the opto-tag label stays ≈ 0 with GCaMP6f, GCaMP6s or the Allen-like mixture (ridge and MLP)
+  - **For a per-recording label, yes, partly:** in the Allen-like versions the genotype of the mouse gains +0.038 to +0.093 in the Pvalb (6s) mice, with a ratio of 0.3–0.6, close to Allen's 0.53. With a uniform indicator it gains nothing
+  - **What a slow indicator does recreate on every version is a large activity-summary gain:** +0.014 (6f) to +0.043 (slow Allen-like), up to Allen dF/F's +0.047, on neurons whose spike-level summary gain is +0.002
+  - So the Allen label gain is consistent with the indicator confound (one indicator per line and recording) plus the generally larger value of per-unit conditioning on calcium. It does not need cell-type information
 
 ## Plots
-- `plots/step16_optotag.png`:
-  - top: mean ± sem rate around the 10 ms pulse for tagged vs untagged units, per line (all VIS), with the baseline and evoked windows
-  - bottom left: the criterion (log ratio vs −log10 p; red = tagged, blue = wild type)
-  - bottom middle: waveform duration of the tagged units per line vs untagged, with the 0.4 ms FS threshold
-  - bottom right: every tagged unit's baseline-normalised response
+- `plots/step16_neuropixels.png` (overview):
+  - (a) units per label: tagged per line and FS, VISp and all VIS
+  - (b) label vs summary gain for Neuropixels spikes next to Allen dF/F / deconvolved A / B and Bugeon, balanced and (hatched) equal-weight / uniform designs
+  - (c) label ÷ summary ratio with bootstrap CI for every dataset and VISp configuration
+  - (d) synthetic calcium: label gains (opto-tag, genotype, FS / RS) and summary gain per signal, on the same neurons
+- `plots/step16_optotag.png` (task 1):
+  - mean response to the 10 ms pulse, tagged vs untagged, per line
+  - the tagging criterion with the wild-type false positives
+  - waveform durations of tagged units
+  - every tagged unit's response
+- `plots/step16_gains.png` (task 2): per-session gains (label, summary, shuffled) for VISp / all VIS × opto-tag / FS-RS, for the four families (ridge balanced b, ridge equal weights k1, MLP balanced, MLP uniform), coloured by genotype, with mean ± sem and median
+- `plots/step16_calcium.png` (task 3):
+  - example tagged VISp units as z-scored spikes vs synthetic 6f / 6s
+  - per-session label gains on each signal (opto-tag ridge and uniform MLP, genotype ridge, FS / RS ridge)
+  - label ÷ summary ratio per signal
 
 ## Problems / errors
+- **Label-balanced training creates an artificial label gain when one group dominates** (the most important caveat of this step):
+  - The step 12 design (b and m1 balanced over the label groups) gives the 3% tagged units 75% of the weight, which handicaps the no-label baseline on the untagged majority
+  - Equal-weight / uniform-sampling references were therefore added (ridge k1 / e_eq, MLP m1u / m2u / m3u / contu; 840 extra MLP fits). Both designs are reported. The conclusions about the opto-tag label rest on the equal-weight versions
+  - In Allen dF/F, k1 scored below b, so this artifact does not explain the Allen label gain. But steps 12–15 (Bugeon, Allen) had no uniform-sampling MLPs, so their MLP rows in the comparison table are balanced only
+- **Few tagged units:**
+  - VISp has 23 Pvalb, 20 Sst and only 2 Vip tagged units (all VIS: 133 / 72 / 14)
+  - The per-group label models of the tagged types are fitted on very few units (Vip: alpha 0.3–316 across folds)
+  - The tagged-unit-only comparisons have 14 (VISp) / 24 (VIS) sessions and are not significant
+  - With the p < 0.001 criterion, the expected false tags are ≈ 1 of 14 Vip, ≈ 2 of 72 Sst and ≈ 1 of 133 Pvalb (wild-type rate)
+  - Tagging misses many Cre+ cells (light reaches only part of the cortex), so "untagged" contains unlabelled Pvalb / Sst / Vip cells
+- **The per-cluster ridge summary has a few large failures:** a few held-out units fall into small clusters (some k = 16 clusters have 1 training unit, as in step 13), so two wild-type sessions lose 0.04–0.08. Means and medians are both reported; Wilcoxon (rank-based) and sessions-up are robust to this
+- **The continuous-summary MLP amplifies the errors of a few non-stationary held-out units** (units whose own copy-last score is very negative) on spikes, turning the mean negative in 3 of 4 spike configurations while the median stays positive. On calcium it helps clearly
+- **Label ÷ summary ratios are undefined where the summary gain is ≈ 0** (spikes FS / RS, spikes MLP), and their bootstrap CIs are then meaningless (marked "undefined")
+- **Synthetic calcium is idealised:**
+  - linear, no saturation or supralinearity
+  - one kinetic per indicator: the median of the step 15 OASIS fits, not per-neuron kinetics
+  - rise times approximate (Chen et al. 2013, taken as stated in the brief; the paper could not be opened from this environment)
+  - white noise with an SNR drawn from the Allen distribution, no neuropil, motion or bleaching
+  - Allen's real Pvalb mice also differ in reporter line and expression level, which this does not model
+- **Copy-last baselines differ by signal** (score with no label: spikes 0.44, calcium 0.20–0.26), so absolute gains are not on a common scale. The ratios and the within-neuron spike → calcium changes are the comparisons least affected
 - **Extraction failures, all resolved:**
-  - one Pvalb session (746083955) has no `invalid_times` table
-  - four wild-type sessions have no optotagging module
-  - both first raised errors and were marked failed in the manifest. The extractor was fixed (missing tables allowed) and the 5 sessions were re-extracted
-  - a Content-Length check on every download was added. No download failed in the end
+  - one Pvalb session (746083955) has no `invalid_times` table, and four wild-type sessions have no optotagging module
+  - both first raised errors and were marked failed in the manifest; the extractor was fixed (missing tables allowed) and the 5 sessions were re-extracted
+  - a Content-Length check on every download was added; no download failed in the end
   - `results/step16/manifest_summary.csv` lists every session with its unit counts
-- **An invalid-interval bug was found and fixed before any analysis:** an interval on a probe with no visual units was applied to all probes, which would have removed every unit of session 757216464
+- **Two bugs were found and fixed before any reported analysis:**
+  - an invalid-time interval on a probe with no visual units was applied to all probes, which would have removed every unit of session 757216464
+  - the labels phase failed on sessions without light pulses
+- **Memory:** the all-VIS ridge holds the per-unit statistics in float32 (checked: ≤ 4e-7 change in session scores). Synthetic calcium is regenerated on demand and the ridge statistics are deleted after use (disk)
+- **Size:** `neuron_scores.csv` holds per-unit scores for spikes (all configurations) and calcium VISp; the calcium all-VIS configurations are in `session_scores.csv` only (results/step16 is 14 MB)
+- **The opto-tag analyses use the 28 Cre sessions (27 with VISp units);** FS / RS, genotype and summary analyses use all 58 (56 with VISp units)
+
+### Code and ideas from other work
+- **This repo:**
+  - step 9: MLP, FiLM, optimiser / early stopping
+  - step 11: S features
+  - step 12: `neuron_stats` (re-implemented with contiguous products, checked against the original), `assemble`, `fit_weighted`, `balanced_weights`, `predict`, Sampler
+  - step 13: `fit_group`, `fit_clusters`, `val_sse`, `unit_val_score`, `CondMixin` (continuous-summary FiLM), k on val
+  - step 15: decay constants, comparison rows
+  - `scripts/allen_optotag_session.py`: the tutorial tagging windows
+- **AllenSDK optotagging tutorial:** windows and ratio criterion (re-implemented for the stored spike times)
+- No code was copied from other repositories
+
+## What I noticed
+- On spikes, with every type mixed in every recording, the genetic label is useless for the 1 s forecast once the training weights are fair. The large-looking gain under the step 12 design came from reweighting a 3% minority. The activity summary helps a linear model; a well-trained MLP does not need it.
+- Feeding the same spikes through a simulated indicator makes per-unit conditioning 6–18× more valuable, and an indicator that follows the mouse line hands a recording-level label an Allen-like, Pvalb-only gain. That fits the reading of steps 11–15: the Allen Cre-label gain reflects indicator and recording confounds, not cell-type dynamics.
 
 ## References
 - Siegle, J.H. et al. (2021). Survey of spiking in the mouse visual system reveals functional hierarchy. Nature 592, 86–92
